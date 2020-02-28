@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.Row {
+  margin: 20px;
+  display: -webkit-box;
+  display: flex;
+  height: 300px;
+}
+
+.Row .studyPlan {
+  flex-basis: 50%;
+  border: 1px solid black;
+}
+
+.Row .studentSchedule {
+  margin-left: 10px;
+  flex-basis: 50%;
+  border: 1px solid black;
+}
+
+.materialNode {
+  padding: 5px 5px;
+  font-size: 10pt;
+  color: #ffffff;
+  background-color: #19a83d;
+  border-radius: 20px;
+  border: none;
+}
+
+.materialNode:hover {
+  background-color: lightgreen;
+}
+
+.materialsProgram {
+  margin: 20px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.materialsProgram .materialsTable {
+  display: table;
+  direction: rtl;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.materialsProgram .materialsTable #drop-down {
+  display: inline-block;
+  box-shadow: none;
+  width: 90%;
+}
+
+.materialsProgram .materialsTable th {
+  height: 40px;
+  background-color: #19a83d;
+  color: white;
+}
+
+.materialsProgram .materialsTable th:first-child {
+  width: 10%;
+}
+
+.materialsProgram .materialsTable th:nth-child(4) {
+  width: 30%;
+}
+
+.materialsProgram .materialsTable td {
+  height: 20px;
+  padding: 10px 0px;
+}
+
+.materialsProgram .materialsTable th,
+.materialsProgram .materialsTable td {
+  border: 1px solid black;
+  display: table-cell;
+  direction: ltr;
+}
+
+.materialsProgram tr:hover {
+  background-color: rgba(151, 255, 151, 0.363);
+  /*
+  button :disabled{
+      opacity: 0.5;
+      background-color: #c52a2a;
+      cursor: none;
+  }
+  */
+}
+

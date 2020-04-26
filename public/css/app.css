@@ -8,7 +8,7 @@
   margin: 20px;
   display: -webkit-box;
   display: flex;
-  height: 300px;
+  height: 400px;
 }
 
 .Row .studyPlan {
@@ -85,12 +85,44 @@
 
 .materialsProgram tr:hover {
   background-color: rgba(151, 255, 151, 0.363);
-  /*
-  button :disabled{
-      opacity: 0.5;
-      background-color: #c52a2a;
-      cursor: none;
-  }
-  */
+}
+
+.studentSchedule {
+  display: -webkit-box;
+  display: flex;
+}
+
+.studentSchedule table {
+  display: table;
+  direction: ltr;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.studentSchedule table #drop-down {
+  display: inline-block;
+  box-shadow: none;
+  width: 90%;
+}
+
+.studentSchedule table th {
+  height: 40px;
+  background-color: #19a83d;
+  color: white;
+}
+
+.studentSchedule table td {
+  height: 20px;
+  padding: 10px 0px;
+}
+
+.studentSchedule table th,
+.studentSchedule table td {
+  border: 1px solid black;
+  display: table-cell;
+  direction: ltr;
 }
 

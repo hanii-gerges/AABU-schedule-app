@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Tree, {withStyles} from 'react-vertical-tree';
 
 class Material{
@@ -8,7 +8,10 @@ class Material{
         this.pre_req = prerequisite;
     }
 }
-const rows_of_data = [ 
+
+
+const rows_of_data =
+ [ 
     new Material(-1 ,'رياضيات متقطعة'), 
     new Material(-2 ,'نظرية الحسابات', -1), 
     new Material(-3 ,'تصميم منطق الحاسوب', -1), 
@@ -51,6 +54,23 @@ export const MaterialsTree = ()=>{
 
     //const data = getArrayForMaterials(rows_of_data);
 
+    // let rows_of_data = [];
+
+    useEffect(() => {
+        // fetch('http://46494bad.ngrok.io/api/sections',{
+        //     method: 'GET',
+        //     mode: 'cors',
+        //     headers: {
+        //     "Content-Type": "application/json" 
+        //     } 
+        // })
+        // .then(res => res.json())
+        // .then(res =>  rows_of_data = res.data)
+        // .catch( (e)=>
+        //     console.log(`ERR: ${e}`)
+        // );
+
+    }, []);
 
     const styles = {
         lines: {
@@ -72,7 +92,7 @@ export const MaterialsTree = ()=>{
     return(
         <div className="studyPlan">
             {parents_array.map( material => 
-                <StyledTree data={getArrayForMaterial(material)} 
+                <StyledTree key={material.id} data={getArrayForMaterial(material)} 
                     render={ item => <button className='materialNode'>{`${item.name}`}</button>}
                     onClick={(e) =>{alert(e.id)}} //implement a real fuken method!
                 />    

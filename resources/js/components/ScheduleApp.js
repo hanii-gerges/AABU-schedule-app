@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {MaterialsDisplay} from './MaterialsDisplay.js';
-import {MaterialsTree} from './MaterialsTree.js';
+import {MaterialsDisplay} from './MaterialsDisplay.jsx';
+import {MaterialsTree} from './MaterialsTree.jsx';
+import {StudentSchedule} from './StudentSchedule.jsx';
 
 const App = ()=> {
     return (
@@ -11,9 +12,7 @@ const App = ()=> {
                 
                 <MaterialsTree/>
 
-                <div className="studentSchedule">
-
-                </div>
+                <StudentSchedule/>
             </div>
 
             <MaterialsDisplay />

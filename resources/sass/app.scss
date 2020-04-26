@@ -10,7 +10,7 @@ $primary-greenColor:  #19a83d;
 .Row{
     margin: 20px;
     display: flex;
-    height: 300px;
+    height: 400px;
 
     .studyPlan{
         flex-basis: 50%;
@@ -88,15 +88,47 @@ $primary-greenColor:  #19a83d;
             direction: ltr;
         }
     }
-    tr:hover{
 
-            background-color: rgba(151, 255, 151, 0.363);
-        /*
-        button :disabled{
-            opacity: 0.5;
-            background-color: #c52a2a;
-            cursor: none;
+    tr:hover{
+        background-color: rgba(151, 255, 151, 0.363);
+    }
+}
+
+//? extract this style outside: belongs to => StudentSchedule.js
+
+.studentSchedule{
+    display: flex;
+    table{
+        display: table;
+        direction: ltr;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+        table-layout:fixed;
+        border-collapse: collapse;
+
+        #drop-down{
+            display: inline-block;
+            box-shadow: none;
+            width: 90%;
         }
-        */
+
+        th{
+            height: 40px;
+            background-color: $primary-greenColor;
+            color: white;
+        }
+
+        td{
+            height: 20px;
+            padding: 10px 0px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            display: table-cell; 
+            direction: ltr;
+        }
     }
 }

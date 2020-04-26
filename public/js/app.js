@@ -81667,10 +81667,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/components/MaterialsDisplay.js":
-/*!*****************************************************!*\
-  !*** ./resources/js/components/MaterialsDisplay.js ***!
-  \*****************************************************/
+/***/ "./resources/js/components/MaterialsDisplay.jsx":
+/*!******************************************************!*\
+  !*** ./resources/js/components/MaterialsDisplay.jsx ***!
+  \******************************************************/
 /*! exports provided: MaterialsDisplay */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -81703,7 +81703,7 @@ var Material = function Material(id, name, day_and_time, tutor, room) {
   this.tutor = tutor;
   this.room = room;
   this.pre_req = prerequisite;
-}; //? simulates an DB response
+}; //? simulates an API response
 
 
 var rows_of_data = [new Material(950010, 'C++', ['8.00-9.00 SUN TUE THR', '8.00-9.30 MON WED'], 'suhair', 'قريش'), new Material(544621, 'Discrete', ['9.00-10.00 SUN TUE THR', '11.00-1.30 MON WED'], 'shatnawi', 'تم 101')];
@@ -81712,8 +81712,9 @@ var MaterialsDisplay = function MaterialsDisplay() {
     className: "materialsProgram"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Avaliable Times:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Table"], {
     className: "materialsTable"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0636\u0641 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0631\u0642\u0645 \u0627\u0644\u0645\u0627\u062F\u0629"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0633\u0645 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0644\u0627\u064A\u0627\u0645 \u0648\u0627\u0644\u0627\u0648\u0642\u0627\u062A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "  \u0645\u062F\u0631\u0633 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0644\u0642\u0627\u0639\u0629  ")), rows_of_data.map(function (material) {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0636\u0641 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0631\u0642\u0645 \u0627\u0644\u0645\u0627\u062F\u0629"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0633\u0645 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0644\u0627\u064A\u0627\u0645 \u0648\u0627\u0644\u0627\u0648\u0642\u0627\u062A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "  \u0645\u062F\u0631\u0633 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0644\u0642\u0627\u0639\u0629  "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, rows_of_data.map(function (material) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+      key: material.id,
       id: "material"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
       color: "success"
@@ -81724,18 +81725,19 @@ var MaterialsDisplay = function MaterialsDisplay() {
       type: "select"
     }, material.day_and_time.map(function (choice) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        key: choice,
         className: "time-day-option"
       }, choice);
     }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", material.tutor, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", material.room, " "));
-  })));
+  }))));
 };
 
 /***/ }),
 
-/***/ "./resources/js/components/MaterialsTree.js":
-/*!**************************************************!*\
-  !*** ./resources/js/components/MaterialsTree.js ***!
-  \**************************************************/
+/***/ "./resources/js/components/MaterialsTree.jsx":
+/*!***************************************************!*\
+  !*** ./resources/js/components/MaterialsTree.jsx ***!
+  \***************************************************/
 /*! exports provided: MaterialsTree */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -81817,6 +81819,20 @@ var getArrayForMaterial = function getArrayForMaterial(material) {
 
 var MaterialsTree = function MaterialsTree() {
   //const data = getArrayForMaterials(rows_of_data);
+  // let rows_of_data = [];
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {// fetch('http://46494bad.ngrok.io/api/sections',{
+    //     method: 'GET',
+    //     mode: 'cors',
+    //     headers: {
+    //     "Content-Type": "application/json" 
+    //     } 
+    // })
+    // .then(res => res.json())
+    // .then(res =>  rows_of_data = res.data)
+    // .catch( (e)=>
+    //     console.log(`ERR: ${e}`)
+    // );
+  }, []);
   var styles = {
     lines: {
       color: 'green',
@@ -81837,6 +81853,7 @@ var MaterialsTree = function MaterialsTree() {
     className: "studyPlan"
   }, parents_array.map(function (material) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTree, {
+      key: material.id,
       data: getArrayForMaterial(material),
       render: function render(item) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -81866,8 +81883,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _MaterialsDisplay_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MaterialsDisplay.js */ "./resources/js/components/MaterialsDisplay.js");
-/* harmony import */ var _MaterialsTree_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MaterialsTree.js */ "./resources/js/components/MaterialsTree.js");
+/* harmony import */ var _MaterialsDisplay_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MaterialsDisplay.jsx */ "./resources/js/components/MaterialsDisplay.jsx");
+/* harmony import */ var _MaterialsTree_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MaterialsTree.jsx */ "./resources/js/components/MaterialsTree.jsx");
+/* harmony import */ var _StudentSchedule_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./StudentSchedule.jsx */ "./resources/js/components/StudentSchedule.jsx");
+
 
 
 
@@ -81878,13 +81897,138 @@ var App = function App() {
     className: "AABU-Schedule-App"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "AABU-Schedule-App"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "Row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialsTree_js__WEBPACK_IMPORTED_MODULE_3__["MaterialsTree"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "studentSchedule"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialsDisplay_js__WEBPACK_IMPORTED_MODULE_2__["MaterialsDisplay"], null));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialsTree_jsx__WEBPACK_IMPORTED_MODULE_3__["MaterialsTree"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_StudentSchedule_jsx__WEBPACK_IMPORTED_MODULE_4__["StudentSchedule"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialsDisplay_jsx__WEBPACK_IMPORTED_MODULE_2__["MaterialsDisplay"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null));
 if (document.getElementById('root')) react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('root'));else alert('err: root element not found!');
+
+/***/ }),
+
+/***/ "./resources/js/components/StudentSchedule.jsx":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/StudentSchedule.jsx ***!
+  \*****************************************************/
+/*! exports provided: StudentSchedule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentSchedule", function() { return StudentSchedule; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+ //? simulates the currently selected materials' state.
+
+var selectedMaterials = [{
+  name: "حاسوب 2 ",
+  time_day: " 8.00 AM- 9.00 AM  حد ثل خمس"
+}, {
+  name: "احصاء ",
+  time_day: " 10.00 AM- 11.00 AM  حد ثل خمس"
+}, {
+  name: "ديسكريت ",
+  time_day: " 2.00 PM- 3.30 PM  ثن ربع"
+}, {
+  name: "تنظيم اسرة ومجتمع ",
+  time_day: " 9.30 AM- 11.00 AM  ثن ربع"
+}, {
+  name: "مختبر 2 ",
+  time_day: " 11.00 AM- 12.00 AM  حد"
+}];
+var times = [8, 9, 9.30, 10, 11, 12, 12.30, 1, 2];
+var days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس']; // console.log(schedule);
+
+var init_schedule = {};
+
+var _loop = function _loop() {
+  var day = _days[_i];
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    var _loop2 = function _loop2() {
+      var time = _step.value;
+      init_schedule[day] = _objectSpread({}, init_schedule[day], _defineProperty({}, time, selectedMaterials.filter(function (m) {
+        return m.time_day.includes(day) && parseFloat(m.time_day) == time;
+      })[0] || null));
+    };
+
+    for (var _iterator = times[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      _loop2();
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+        _iterator["return"]();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+};
+
+for (var _i = 0, _days = days; _i < _days.length; _i++) {
+  _loop();
+}
+
+function StudentSchedule() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(init_schedule),
+      _useState2 = _slicedToArray(_useState, 2),
+      schedule = _useState2[0],
+      setSchedule = _useState2[1];
+
+  var handleRemove = function handleRemove(day, time) {
+    setSchedule(_objectSpread({}, schedule, _defineProperty({}, day, _objectSpread({}, schedule[day], _defineProperty({}, time, null)))));
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "studentSchedule"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "left-schedule"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " SUN "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " TUE "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " THR "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, times.map(function (t) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+      key: t
+    }, ['حد', 'ثل', 'خمس'].map(function (day) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: function onClick() {
+          return handleRemove(day, t);
+        }
+      }, schedule[day][t].name) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, null));
+    }));
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "right-schedule"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " MON "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " WED "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, times.map(function (t) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+      key: t
+    }, ['ثن', 'ربع'].map(function (day) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: function onClick() {
+          return handleRemove(day, t);
+        }
+      }, schedule[day][t].name) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, null));
+    }));
+  })))));
+}
 
 /***/ }),
 

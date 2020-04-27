@@ -1,40 +1,49 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
+import './StudentSchedule.module.scss';
 
-//? simulates the currently selected materials' state.
-const selectedMaterials = [ 
-	{name: "حاسوب 2 ", time_day: " 8.00 AM- 9.00 AM  حد ثل خمس"},
-	{name: "احصاء ",time_day: " 10.00 AM- 11.00 AM  حد ثل خمس"},
 
-	{name: "ديسكريت ", time_day: " 2.00 PM- 3.30 PM  ثن ربع"},
-	{name: "تنظيم اسرة ومجتمع ",time_day: " 9.30 AM- 11.00 AM  ثن ربع"},
+import { useSelector, useDispatch } from 'react-redux';
+import { REMOVE_FROM_SCHDULE } from "../Redux/actions/types";
 
-	{name: "مختبر 2 ",time_day: " 11.00 AM- 12.00 AM  حد"},
-
-];
 
 const times = [8, 9, 9.30, 10, 11, 12, 12.30, 1, 2];
 const days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
 
 // console.log(schedule);
 
-let init_schedule = {};
-for(let day of days){
-	for(let time of times){
-		init_schedule[day] = {
-			...init_schedule[day], 
-			[time]: selectedMaterials.filter(m => m.time_day.includes(day) &&  parseFloat(m.time_day) == time )[0] || null
-		};
-	}
-}
 export function StudentSchedule() {
 	
-	const [schedule, setSchedule] = useState(init_schedule);
+	const selectedMaterials = useSelector(state => state.materials.scheduleMaterials);
+	const [schedule, setSchedule] = useState({});
+	
+	useEffect(() => {
+		let init_schedule = {};
 
-	const handleRemove = (day, time)=>{
-		setSchedule({
-			...schedule, 
-			[day]: {...schedule[day],[time]: null},
+		for(let day of days){
+			for(let time of times){
+				init_schedule[day] = {
+					...init_schedule[day], 
+					[time]: selectedMaterials.filter(m => m.time_days.includes(day) &&  parseFloat(m.time_days) == time )[0] || null
+				};
+			}
+		}
+		
+		setSchedule(init_schedule);
+	}, [selectedMaterials]);
+	
+	// console.log(schedule);
+	
+	const dispatch = useDispatch();
+	const handleRemove = (material)=>{
+		dispatch({
+			type: REMOVE_FROM_SCHDULE,
+			payload: material,
 		});
+
+		// setSchedule({
+		// 	...schedule, 
+		// 	[day]: {...schedule[day],[time]: null},
+		// });
 	}
 
 	return (
@@ -50,13 +59,13 @@ export function StudentSchedule() {
 					</thead>
 
 					<tbody>
-						{times.map( t =>
-								<tr key={t}>
+						{times.map( (t, index) =>
+								<tr key={index}>
 									{
-											['حد','ثل','خمس'].map( (day)=>
-											
-											<td> {schedule[day][t] ? 
-												<button onClick={()=>handleRemove(day, t)}>
+											['حد','ثل','خمس'].map( (day, index)=>
+												
+											<td key={index}> {day in schedule && schedule[day][t] ? 
+												<button onClick={()=>handleRemove(schedule[day][t])}>
 													{	schedule[day][t].name }
 												</button> : <pre>{null}</pre>} 
 											</td>
@@ -79,13 +88,13 @@ export function StudentSchedule() {
 					</thead>
 
 					<tbody>
-						{times.map( t =>
-								<tr key={t}>
+						{times.map( (t, index) =>
+								<tr key={index}>
 									{
-											['ثن','ربع'].map( (day)=>
+											['ثن','ربع'].map( (day, index)=>
 											
-											<td> {schedule[day][t] ? 
-												<button onClick={()=>handleRemove(day, t)}>
+											<td key={index}> {day in schedule && schedule[day][t] ? 
+												<button onClick={()=>handleRemove(schedule[day][t])}>
 													{	schedule[day][t].name }
 												</button> : <pre>{null}</pre>} 
 											</td>

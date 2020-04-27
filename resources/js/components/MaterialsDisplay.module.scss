@@ -1,0 +1,53 @@
+@import '../../sass/app.scss';
+
+.materialsProgram{
+	margin: 20px;
+	height: 400px;
+	overflow: scroll;
+	border: 1px solid black;
+
+	.materialsTable{
+			display: table;
+			direction: rtl;
+			width: 90%;
+			margin: auto;
+			text-align: center;
+
+			table-layout:fixed;
+			border-collapse: collapse;
+
+			#drop-down{
+					display: inline-block;
+					box-shadow: none;
+					width: 90%;
+			}
+
+			th{
+					height: 40px;
+					background-color: $primary-greenColor;
+					color: white;
+					&:first-child{
+						width: 10%;
+					}
+					&:nth-child(4){
+							width: 30%;
+					}
+					
+			}
+
+			td{
+					height: 20px;
+					padding: 10px 0px;
+			}
+
+			th, td{
+					border: 1px solid black;
+					display: table-cell; 
+					direction: ltr;
+			}
+	}
+
+	tr:hover{
+			background-color: rgba(151, 255, 151, 0.363);
+	}
+}

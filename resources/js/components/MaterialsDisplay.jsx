@@ -1,35 +1,45 @@
 import React from 'react';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { ADD_TO_SCHDULE, REMOVE_FROM_SCHDULE } from "../Redux/actions/types";
+
 import { Table, FormGroup, Input, Button } from 'reactstrap';
 import '!style-loader!css-loader!bootstrap/dist/css/bootstrap.css';
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './MaterialsDisplay.module.scss';
 
-class Material{
-    constructor(id, name, day_and_time, tutor, room, prerequisite = null){
-        this.id = id;
-        this.name = name;
-        this.day_and_time = day_and_time;
-        this.tutor = tutor;
-        this.room = room;
-        this.pre_req = prerequisite;
-    }
-}
 
-//? simulates an API response
-const rows_of_data = [ 
-    new Material(950010 ,'C++', ['8.00-9.00 SUN TUE THR', '8.00-9.30 MON WED'], 'suhair', 'قريش'),  
-    new Material(544621, 'Discrete', ['9.00-10.00 SUN TUE THR', '11.00-1.30 MON WED'], 'shatnawi', 'تم 101'),
-];
+
 
 export const MaterialsDisplay = ()=>{
+    const rows_of_data = useSelector(state => state.materials.displayMaterials);
+    const selectedMaterials = useSelector(state => state.materials.scheduleMaterials);
+    console.log(selectedMaterials);
+
+    const dispatch = useDispatch();
+    const addToSchedule = (material) =>{
+        
+        //! WRONG, this compares all days, not the currently selected day.
+        if(selectedMaterials.some( _material => _material.time_days == material.time_days )){
+            console.log('TIME OCCUPIED');
+            return;
+        }
+        
+        dispatch({
+            type: ADD_TO_SCHDULE,
+            payload: {...material, time_days: material.time_days[0]}  //! NOT ACTUALLY CORRECT
+        });
+
+        console.log({...material, time_days: material.time_days[0]});
+    }
 
     return(
         <div className="materialsProgram">
             <h3>Avaliable Times:</h3>
 
             <Table className='materialsTable'>
-								<thead>
-
+                <thead>
                     <tr>
                         <th> اضف المادة  </th>
                         <th> رقم المادة</th>
@@ -38,30 +48,30 @@ export const MaterialsDisplay = ()=>{
                         <th>  مدرس المادة  </th>
                         <th> القاعة  </th>
                     </tr>
-								</thead>
+                </thead>
 
                 <tbody>
                     {rows_of_data.map( (material) =>
                         <tr key={material.id} id='material'>
                             <td>
-                                <Button color="success"> 
+                                <Button color="success" onClick={() => addToSchedule(material)}> 
                                     <FontAwesomeIcon icon={faPlus}/>
                                 </Button>
                             </td>
 
                             <td> {material.id} </td>
                             <td> {material.name} </td>
-                            <td> 
+                            <td>
                                 <Input id='drop-down' type='select'>
-                                    {material.day_and_time.map(
-                                        (choice) =>
-                                        <option key={choice} className='time-day-option'>
+                                    {material.time_days.map(
+                                        (choice, index) =>
+                                        <option key={index} className='time-day-option'>
                                             {choice}
                                         </option>
                                     )}
                                 </Input>
                             </td>
-                            <td> {material.tutor} </td>
+                            <td> {material.instructor} </td>
                             <td> {material.room} </td>
                         </tr>
 

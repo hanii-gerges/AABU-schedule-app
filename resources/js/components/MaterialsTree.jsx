@@ -12,17 +12,67 @@ import './MaterialsTree.module.scss';
 const rows_of_data =
  [ 
 
-    {id: 1, name: "حاسوب 2 ", time_days: [" 8.00 AM- 9.00 AM  حد ثل خمس"], room: "تم202", instructor: "TutorName", pre_req: null},
-    {id: 2, name: "برمجة كينونية ",time_days: [" 10.00 AM- 11.00 AM  حد ثل خمس"], room: "تم202", instructor: "TutorName", pre_req: 1},
-    
-        {id: 3, name: "تراكيب البيانات" ,time_days: [" 10.00 AM- 11.00 AM  حد ثل خمس"], room: "تم202", instructor: "TutorName", pre_req: 2},
-        {id: 4, name: "تصميم الصفحات الالكترونية",time_days: [" 10.00 AM- 11.00 AM  حد ثل خمس"], room: "تم202", instructor: "TutorName", pre_req: 2},
-        {id: 5, name: "البرمجة بلغة جافا",time_days: [" 10.00 AM- 11.00 AM  حد ثل خمس"], room: "تم202", instructor: "TutorName", pre_req: 2},
-             {id: 6, name: "البرمجة المرئية",time_days: [" 10.00 AM- 11.00 AM  حد ثل خمس"], room: "تم202", instructor: "TutorName", pre_req: 5},
+    {id: 1, name: "حاسوب 2 ", pre_req: null, 
+    sections: [
+        {
+            section: 1, time_days: " 8.00 AM- 9.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+        }
+    ]},
 
-    {id: 7,name: "ديسكريت ", time_days: [" 2.00 PM- 3.30 PM  ثن ربع"], room: "تم202", instructor: "TutorName", pre_req: null},
-    {id: 8,name: "تصميم منطق الحاسوب",time_days: [" 9.30 AM- 11.00 AM  ثن ربع"], room: "تم202", instructor: "TutorName", pre_req: 7},
-    {id: 9,name: "نظرية الحسابات ",time_days: [" 11.00 AM- 12.00 AM  حد"], room: "تم202", instructor: "TutorName", pre_req: 7},
+    {id: 2, name: "برمجة كينونية ", pre_req: 1,
+    sections: [
+        {
+            section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+        }
+    ]},
+    
+    
+    {id: 3, name: "تراكيب البيانات" , pre_req: 2,
+    sections: [
+        {
+            section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+        }
+    ]},
+        {id: 4, name: "تصميم الصفحات الالكترونية", pre_req: 2, sections: [
+            {
+                section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+            }
+        ]},
+        {id: 5, name: "البرمجة بلغة جافا", pre_req: 2, sections: [
+            {
+                section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "ابو عليم",
+            },
+            {
+                section: 2, time_days: " 8.00 AM- 9.30 AM  ثن ربع", room: "تم202", instructor: "جوجو",
+            },
+        ]} ,
+             {id: 6, name: "البرمجة المرئية", pre_req: 5, sections: [
+                {
+                    section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+                },
+                {
+                    section: 2, time_days: " 11.00 AM- 12.00 AM  حد ثل خمس", room: "تم202", instructor: "وحده هبله",
+                },
+                {
+                    section: 3, time_days: " 2.00 AM- 3.30 AM  حد ثل خمس", room: "تم202", instructor: "واحد اهبل",
+                }
+            ]},
+
+    {id: 7,name: "ديسكريت ", pre_req: null, sections: [
+        {
+            section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+        }
+    ]},
+    {id: 8,name: "تصميم منطق الحاسوب", pre_req: 7, sections: [
+        {
+            section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "قص قص",
+        }
+    ]},
+    {id: 9,name: "نظرية الحسابات ", pre_req: 7, sections: [
+        {
+            section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+        }
+    ]},
 
 ];
 
@@ -83,7 +133,7 @@ export const MaterialsTree = ()=>{
     
     //? add or remove a material from the MaterialsDisplay
     const toggleMaterialToDisplay = (material) =>{
-        const elem = document.querySelector(`button[id="${material.id}"]`);
+        const elem = document.querySelector(`button[id="${material.id}"]`); //? consider Refs here
         const isDisplayed = elem.classList.toggle('fadingNode');
         
         if(!isDisplayed)

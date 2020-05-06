@@ -12861,7 +12861,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  margin: 20px;\n  display: -webkit-box;\n  display: flex;\n  height: 400px;\n}\n.Row .studyPlan {\n  flex-basis: 50%;\n  border: 1px solid black;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  flex-basis: 50%;\n  border: 1px solid black;\n}\n\n.materialsProgram {\n  margin: 20px;\n  height: 400px;\n  overflow: scroll;\n  border: 1px solid black;\n}\n.materialsProgram .materialsTable {\n  display: table;\n  direction: rtl;\n  width: 90%;\n  margin: auto;\n  text-align: center;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.materialsProgram .materialsTable #drop-down {\n  display: inline-block;\n  box-shadow: none;\n  width: 90%;\n}\n.materialsProgram .materialsTable th {\n  height: 40px;\n  background-color: #19a83d;\n  color: white;\n}\n.materialsProgram .materialsTable th:first-child {\n  width: 10%;\n}\n.materialsProgram .materialsTable th:nth-child(4) {\n  width: 30%;\n}\n.materialsProgram .materialsTable td {\n  height: 20px;\n  padding: 10px 0px;\n}\n.materialsProgram .materialsTable th, .materialsProgram .materialsTable td {\n  border: 1px solid black;\n  display: table-cell;\n  direction: ltr;\n}\n.materialsProgram tr:hover {\n  background-color: rgba(151, 255, 151, 0.363);\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  margin: 20px;\n  display: -webkit-box;\n  display: flex;\n  height: 400px;\n}\n.Row .studyPlan {\n  flex-basis: 50%;\n  border: 1px solid black;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  flex-basis: 50%;\n  border: 1px solid black;\n}\n\n.materialsProgram {\n  margin: 20px;\n  height: 400px;\n  overflow-y: scroll;\n  border: 1px solid black;\n}\n.materialsProgram .materialsTable {\n  display: table;\n  direction: rtl;\n  width: 90%;\n  margin: auto;\n  margin-bottom: 100px;\n  text-align: center;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.materialsProgram .materialsTable #drop-down {\n  position: relative;\n  display: inline-block;\n  direction: rtl;\n  cursor: pointer;\n  background-color: white;\n}\n.materialsProgram .materialsTable #drop-down:before {\n  content: \"\";\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 16px;\n  top: 50%;\n  border-width: 6px 6px 0 6px;\n  border-style: solid;\n  border-color: black transparent;\n}\n.materialsProgram .materialsTable #drop-down table, .materialsProgram .materialsTable #drop-down tr {\n  display: table;\n  table-layout: fixed;\n  background-color: white;\n  width: 100%;\n}\n.materialsProgram .materialsTable #drop-down table td:nth-child(2), .materialsProgram .materialsTable #drop-down tr td:nth-child(2) {\n  width: 50%;\n}\n.materialsProgram .materialsTable #drop-down tr:hover {\n  color: white;\n  background-color: #19a83d;\n}\n.materialsProgram .materialsTable #drop-down #drop-down-menu {\n  border: none;\n  position: absolute;\n  top: 120%;\n  z-index: 1;\n  box-shadow: 0px 0px 5px 2px #19a83d;\n}\n.materialsProgram .materialsTable th {\n  background-color: #19a83d;\n  color: white;\n}\n.materialsProgram .materialsTable th:first-child {\n  width: 10%;\n}\n.materialsProgram .materialsTable th:nth-child(4) {\n  width: 30%;\n}\n.materialsProgram .materialsTable td {\n  padding: 0.5rem;\n  vertical-align: middle;\n}\n.materialsProgram .materialsTable th, .materialsProgram .materialsTable td {\n  border: 1px solid black;\n  direction: ltr;\n}\n.materialsProgram tr:hover {\n  background-color: rgba(151, 255, 151, 0.363);\n}", ""]);
 
 // exports
 
@@ -64406,7 +64406,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "whenMapDispatchToPropsIsFunction", function() { return whenMapDispatchToPropsIsFunction; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "whenMapDispatchToPropsIsMissing", function() { return whenMapDispatchToPropsIsMissing; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "whenMapDispatchToPropsIsObject", function() { return whenMapDispatchToPropsIsObject; });
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var _wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./wrapMapToProps */ "./node_modules/react-redux/es/connect/wrapMapToProps.js");
 
 
@@ -64422,7 +64422,7 @@ function whenMapDispatchToPropsIsMissing(mapDispatchToProps) {
 }
 function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
   return mapDispatchToProps && typeof mapDispatchToProps === 'object' ? Object(_wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__["wrapMapToPropsConstant"])(function (dispatch) {
-    return Object(redux__WEBPACK_IMPORTED_MODULE_2__["bindActionCreators"])(mapDispatchToProps, dispatch);
+    return Object(redux__WEBPACK_IMPORTED_MODULE_0__["bindActionCreators"])(mapDispatchToProps, dispatch);
   }) : undefined;
 }
 /* harmony default export */ __webpack_exports__["default"] = ([whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject]);
@@ -83732,7 +83732,7 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
 /* harmony import */ var _reducers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./reducers */ "./resources/js/Redux/reducers/index.js");
 
@@ -83740,7 +83740,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var initailState = {};
 var middleware = [redux_thunk__WEBPACK_IMPORTED_MODULE_1__["default"]];
-var store = Object(redux__WEBPACK_IMPORTED_MODULE_3__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_2__["default"], initailState, Object(redux__WEBPACK_IMPORTED_MODULE_3__["compose"])(redux__WEBPACK_IMPORTED_MODULE_3__["applyMiddleware"].apply(void 0, middleware), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()));
+var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_2__["default"], initailState, Object(redux__WEBPACK_IMPORTED_MODULE_0__["compose"])(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"].apply(void 0, middleware), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()));
 /* harmony default export */ __webpack_exports__["default"] = (store);
 
 /***/ }),
@@ -83921,18 +83921,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-/* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! style-loader!css-loader!bootstrap/dist/css/bootstrap.css */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/bootstrap/dist/css/bootstrap.css");
-/* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
-/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
-/* harmony import */ var _MaterialsDisplay_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./MaterialsDisplay.module.scss */ "./resources/js/components/MaterialsDisplay.module.scss");
-/* harmony import */ var _MaterialsDisplay_module_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_MaterialsDisplay_module_scss__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _utility_components_Dropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utility_components/Dropdown */ "./resources/js/utility_components/Dropdown.jsx");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+/* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! style-loader!css-loader!bootstrap/dist/css/bootstrap.css */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/bootstrap/dist/css/bootstrap.css");
+/* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _MaterialsDisplay_module_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./MaterialsDisplay.module.scss */ "./resources/js/components/MaterialsDisplay.module.scss");
+/* harmony import */ var _MaterialsDisplay_module_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_MaterialsDisplay_module_scss__WEBPACK_IMPORTED_MODULE_8__);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -83943,60 +83953,76 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 var MaterialsDisplay = function MaterialsDisplay() {
+  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useDispatch"])();
   var rows_of_data = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useSelector"])(function (state) {
     return state.materials.displayMaterials;
   });
   var selectedMaterials = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useSelector"])(function (state) {
     return state.materials.scheduleMaterials;
-  });
-  console.log(selectedMaterials);
-  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useDispatch"])();
+  }); //const optionsRefs = rows_of_data.map( () => createRef());
 
-  var addToSchedule = function addToSchedule(material) {
-    //! WRONG, this compares all days, not the currently selected day.
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      optionsRefs = _useState2[0],
+      setOptionsRefs = _useState2[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    setOptionsRefs(function (optionsRefs) {
+      return rows_of_data.map(function (_, i) {
+        return optionsRefs[i] || Object(react__WEBPACK_IMPORTED_MODULE_0__["createRef"])();
+      });
+    });
+  }, [rows_of_data]);
+
+  var addToSchedule = function addToSchedule(material, index) {
+    var sectionNum = optionsRefs[index].current.id;
+    var selectedTime = material.sections[sectionNum].time_days; //! WRONG, this compares all days, not the currently selected day.
+
     if (selectedMaterials.some(function (_material) {
-      return _material.time_days == material.time_days;
+      return _material.time_days == selectedTime;
     })) {
       console.log('TIME OCCUPIED');
+      return;
+    }
+
+    if (selectedMaterials.some(function (_material) {
+      return _material.id == material.id;
+    })) {
+      console.log('MATERIAL ALREADY ADDED');
       return;
     }
 
     dispatch({
       type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["ADD_TO_SCHDULE"],
       payload: _objectSpread({}, material, {
-        time_days: material.time_days[0]
+        time_days: selectedTime
       }) //! NOT ACTUALLY CORRECT
 
     });
     console.log(_objectSpread({}, material, {
-      time_days: material.time_days[0]
+      time_days: selectedTime
     }));
   };
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "materialsProgram"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Avaliable Times:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Table"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Avaliable Times:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Table"], {
     className: "materialsTable"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0636\u0641 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0631\u0642\u0645 \u0627\u0644\u0645\u0627\u062F\u0629"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0633\u0645 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0644\u0627\u064A\u0627\u0645 \u0648\u0627\u0644\u0627\u0648\u0642\u0627\u062A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "  \u0645\u062F\u0631\u0633 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0644\u0642\u0627\u0639\u0629  "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, rows_of_data.map(function (material) {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0636\u0641 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0633\u0645 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0645\u062F\u0631\u0633 \u0627\u0644\u0645\u0627\u062F\u0629  /  \u0627\u0644\u0627\u064A\u0627\u0645 \u0648\u0627\u0644\u0627\u0648\u0642\u0627\u062A / \u0627\u0644\u0642\u0627\u0639\u0629"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, rows_of_data.map(function (material, index) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-      key: material.id,
+      key: index,
       id: "material"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Button"], {
       color: "success",
       onClick: function onClick() {
-        return addToSchedule(material);
+        return addToSchedule(material, index);
       }
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faPlus"]
-    }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", material.id, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", material.name, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Input"], {
-      id: "drop-down",
-      type: "select"
-    }, material.time_days.map(function (choice, index) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        key: index,
-        className: "time-day-option"
-      }, choice);
-    }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", material.instructor, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", material.room, " "));
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_7__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faPlus"]
+    }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", material.name, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_utility_components_Dropdown__WEBPACK_IMPORTED_MODULE_3__["Dropdown"], {
+      ref: optionsRefs[index],
+      options: material.sections
+    })));
   }))));
 };
 
@@ -84065,66 +84091,108 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var rows_of_data = [{
   id: 1,
   name: "حاسوب 2 ",
-  time_days: [" 8.00 AM- 9.00 AM  حد ثل خمس"],
-  room: "تم202",
-  instructor: "TutorName",
-  pre_req: null
+  pre_req: null,
+  sections: [{
+    section: 1,
+    time_days: " 8.00 AM- 9.00 AM  حد ثل خمس",
+    room: "تم202",
+    instructor: "TutorName"
+  }]
 }, {
   id: 2,
   name: "برمجة كينونية ",
-  time_days: [" 10.00 AM- 11.00 AM  حد ثل خمس"],
-  room: "تم202",
-  instructor: "TutorName",
-  pre_req: 1
+  pre_req: 1,
+  sections: [{
+    section: 1,
+    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
+    room: "تم202",
+    instructor: "TutorName"
+  }]
 }, {
   id: 3,
   name: "تراكيب البيانات",
-  time_days: [" 10.00 AM- 11.00 AM  حد ثل خمس"],
-  room: "تم202",
-  instructor: "TutorName",
-  pre_req: 2
+  pre_req: 2,
+  sections: [{
+    section: 1,
+    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
+    room: "تم202",
+    instructor: "TutorName"
+  }]
 }, {
   id: 4,
   name: "تصميم الصفحات الالكترونية",
-  time_days: [" 10.00 AM- 11.00 AM  حد ثل خمس"],
-  room: "تم202",
-  instructor: "TutorName",
-  pre_req: 2
+  pre_req: 2,
+  sections: [{
+    section: 1,
+    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
+    room: "تم202",
+    instructor: "TutorName"
+  }]
 }, {
   id: 5,
   name: "البرمجة بلغة جافا",
-  time_days: [" 10.00 AM- 11.00 AM  حد ثل خمس"],
-  room: "تم202",
-  instructor: "TutorName",
-  pre_req: 2
+  pre_req: 2,
+  sections: [{
+    section: 1,
+    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
+    room: "تم202",
+    instructor: "ابو عليم"
+  }, {
+    section: 2,
+    time_days: " 8.00 AM- 9.30 AM  ثن ربع",
+    room: "تم202",
+    instructor: "جوجو"
+  }]
 }, {
   id: 6,
   name: "البرمجة المرئية",
-  time_days: [" 10.00 AM- 11.00 AM  حد ثل خمس"],
-  room: "تم202",
-  instructor: "TutorName",
-  pre_req: 5
+  pre_req: 5,
+  sections: [{
+    section: 1,
+    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
+    room: "تم202",
+    instructor: "TutorName"
+  }, {
+    section: 2,
+    time_days: " 11.00 AM- 12.00 AM  حد ثل خمس",
+    room: "تم202",
+    instructor: "وحده هبله"
+  }, {
+    section: 3,
+    time_days: " 2.00 AM- 3.30 AM  حد ثل خمس",
+    room: "تم202",
+    instructor: "واحد اهبل"
+  }]
 }, {
   id: 7,
   name: "ديسكريت ",
-  time_days: [" 2.00 PM- 3.30 PM  ثن ربع"],
-  room: "تم202",
-  instructor: "TutorName",
-  pre_req: null
+  pre_req: null,
+  sections: [{
+    section: 1,
+    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
+    room: "تم202",
+    instructor: "TutorName"
+  }]
 }, {
   id: 8,
   name: "تصميم منطق الحاسوب",
-  time_days: [" 9.30 AM- 11.00 AM  ثن ربع"],
-  room: "تم202",
-  instructor: "TutorName",
-  pre_req: 7
+  pre_req: 7,
+  sections: [{
+    section: 1,
+    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
+    room: "تم202",
+    instructor: "قص قص"
+  }]
 }, {
   id: 9,
   name: "نظرية الحسابات ",
-  time_days: [" 11.00 AM- 12.00 AM  حد"],
-  room: "تم202",
-  instructor: "TutorName",
-  pre_req: 7
+  pre_req: 7,
+  sections: [{
+    section: 1,
+    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
+    room: "تم202",
+    instructor: "TutorName"
+  }]
 }];
 
 var getMaterialsForParent = function getMaterialsForParent(id) {
@@ -84207,7 +84275,8 @@ var MaterialsTree = function MaterialsTree() {
   }; //? add or remove a material from the MaterialsDisplay
 
   var toggleMaterialToDisplay = function toggleMaterialToDisplay(material) {
-    var elem = document.querySelector("button[id=\"".concat(material.id, "\"]"));
+    var elem = document.querySelector("button[id=\"".concat(material.id, "\"]")); //? consider Refs here
+
     var isDisplayed = elem.classList.toggle('fadingNode');
     if (!isDisplayed) dispatch({
       type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__["ADD_TO_DISPLAY"],
@@ -84513,6 +84582,70 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
+
+/***/ }),
+
+/***/ "./resources/js/utility_components/Dropdown.jsx":
+/*!******************************************************!*\
+  !*** ./resources/js/utility_components/Dropdown.jsx ***!
+  \******************************************************/
+/*! exports provided: Dropdown */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Dropdown", function() { return Dropdown; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+var Dropdown = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function (_ref, ref) {
+  var options = _ref.options;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      selectValue = _useState2[0],
+      setSelectValue = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState4 = _slicedToArray(_useState3, 2),
+      isOpen = _useState4[0],
+      setOpen = _useState4[1];
+  /* //  TODO: 
+  
+  	* Clicking away from the drop-down-menu should close it!
+  
+  	* Think of a more user friendly way to deal with having only one option
+  
+  */
+
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "drop-down",
+    onClick: function onClick() {
+      return setOpen(!isOpen);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+    id: selectValue,
+    ref: ref
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, options[selectValue].instructor), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, options[selectValue].time_days), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, options[selectValue].room))), isOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
+    id: "drop-down-menu"
+  }, options.map(function (_option, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+      key: index,
+      onClick: function onClick() {
+        setSelectValue(index);
+      }
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, _option.instructor), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, _option.time_days), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, _option.room), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, index == selectValue ? "✔" : null));
+  }))));
+}); // export default Dropdown;
 
 /***/ }),
 

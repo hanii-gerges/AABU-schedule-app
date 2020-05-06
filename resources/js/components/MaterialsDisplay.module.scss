@@ -1,29 +1,77 @@
 @import '../../sass/app.scss';
 
+$hoverColor : rgba(151, 255, 151, 0.363);
+
 .materialsProgram{
 	margin: 20px;
 	height: 400px;
-	overflow: scroll;
+	overflow-y: scroll;
 	border: 1px solid black;
 
 	.materialsTable{
 			display: table;
 			direction: rtl;
+
 			width: 90%;
 			margin: auto;
+			margin-bottom: 100px;
+
 			text-align: center;
 
 			table-layout:fixed;
 			border-collapse: collapse;
 
 			#drop-down{
-					display: inline-block;
-					box-shadow: none;
-					width: 90%;
+
+				&:before{
+					content: '';
+					width: 0;
+					height: 0;
+					position: absolute;
+					left: 16px;
+					top: 50%;
+					border-width: 6px 6px 0 6px;
+					border-style: solid;
+					border-color: black transparent;
+				}
+
+				position: relative;
+				display: inline-block;
+				
+				direction: rtl;
+				cursor: pointer;
+				
+				// box-shadow: 0px 0px 5px $primary-greenColor;
+				background-color: white;
+				
+				table, tr{
+					display: table;
+					table-layout:fixed;
+					background-color: white;
+					width: 100%;
+
+					td:nth-child(2){
+						width: 50%;
+					}
+				}
+
+				tr:hover{
+					color: white;
+					background-color: $primary-greenColor;
+				}
+
+				#drop-down-menu{
+					border: none;
+					position: absolute;
+					top: 120%;
+					z-index: 1;
+					
+					box-shadow: 0px 0px 5px 2px $primary-greenColor;
+				}
 			}
 
+
 			th{
-					height: 40px;
 					background-color: $primary-greenColor;
 					color: white;
 					&:first-child{
@@ -32,22 +80,20 @@
 					&:nth-child(4){
 							width: 30%;
 					}
-					
 			}
 
 			td{
-					height: 20px;
-					padding: 10px 0px;
+				padding: 0.5rem;		
+				vertical-align: middle;
 			}
 
 			th, td{
-					border: 1px solid black;
-					display: table-cell; 
-					direction: ltr;
+				border: 1px solid black;
+				direction: ltr;
 			}
 	}
 
 	tr:hover{
-			background-color: rgba(151, 255, 151, 0.363);
+			background-color: $hoverColor;
 	}
 }

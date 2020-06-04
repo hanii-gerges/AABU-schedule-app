@@ -13,17 +13,19 @@
         return $result;
     }
 
-    $data=getSslPage("http://localhost/aabu-schedule-app/web%20scraping/sections_html.html");
+    $data=getSslPage("http://localhost/aabu-schedule-app/web%20scraping/optional_html.html");
     preg_match_all('/<t.*>(.*)<\/t.*>/',$data,$cols);
     $cols=$cols[1];
     require_once('pdo.php');
-    //echo "<pre>";
-    //print_r($cols);
+    // echo "<pre>";
+    // print_r($cols);
     $last='000000';
     try{
         for ($i=0; $i < count($cols); $i+=12) 
         {
+
             // defining culomns
+            // may accurr the 2 types of spaces so trim all
             $id=trim($cols[$i],' &nbsp;');
             if(strlen($id)==0)$id=$last;
             else $last=$id;
@@ -34,6 +36,15 @@
             $instructor=trim($cols[$i+7],' &nbsp;');
             $room=trim($cols[$i+8],' &nbsp;');
             $time_days=$start_time.'-'.$end_time.' '.$days;
+            // echo var_dump($id);
+            // echo $num.'<br>';
+            // echo $start_time.'<br>';
+            // echo $end_time.'<br>';
+            // echo $days.'<br>';
+            // echo $instructor.'<br>';
+            // echo $room.'<br>';
+            // echo '<br>';
+
             //inserting to database
             $sql='INSERT INTO sections
             VALUES(:cid,:num,:t_d,:ins,:room)';

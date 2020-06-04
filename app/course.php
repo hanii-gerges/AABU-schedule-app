@@ -4,9 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Section extends Model
+class course extends Model
 {
-    //
+    protected $primaryKey = 'id';
     public $incrementing = false;
-    protected $keyType = 'string';
 }

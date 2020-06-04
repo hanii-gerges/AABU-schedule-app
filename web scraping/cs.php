@@ -13,38 +13,36 @@
         return $result;
     }
 
-    $data=getSslPage("http://localhost/aabu-schedule-app/web%20scraping/sections_html.html");
+    $data=getSslPage("http://localhost/aabu-schedule-app/web%20scraping/cs_html.html");
     preg_match_all('/<t.*>(.*)<\/t.*>/',$data,$cols);
     $cols=$cols[1];
+    //  echo '<pre>';
+    //  print_r($cols);
     require_once('pdo.php');
-    //echo "<pre>";
-    //print_r($cols);
-    $last='000000';
     try{
-        for ($i=0; $i < count($cols); $i+=12) 
+        for ($i=0; $i < count($cols); $i+=5) 
         {
-            // defining culomns
             $id=trim($cols[$i],' &nbsp;');
-            if(strlen($id)==0)$id=$last;
-            else $last=$id;
-            $num=trim($cols[$i+2],' &nbsp;');
-            $start_time=trim($cols[$i+4],' &nbsp;');
-            $end_time=trim($cols[$i+5],' &nbsp;');
-            $days=trim($cols[$i+6],' &nbsp;');
-            $instructor=trim($cols[$i+7],' &nbsp;');
-            $room=trim($cols[$i+8],' &nbsp;');
-            $time_days=$start_time.'-'.$end_time.' '.$days;
+            $name=trim($cols[$i+1],' &nbsp;');
+            $hours=trim($cols[$i+2],' &nbsp;');
+            $pre_req=trim($cols[$i+4],' &nbsp;');
+            // echo $id.'<br>';
+            // echo $name.'<br>';
+            // echo $hours.'<br>';
+            // echo var_dump($pre_req).'<br>';
+            // echo '<br>';
+
             //inserting to database
-            $sql='INSERT INTO sections
-            VALUES(:cid,:num,:t_d,:ins,:room)';
+            $sql='INSERT INTO courses
+            VALUES(:cid,:name,:hours,:pr,"cs")';
             $stmt=$pdo->prepare($sql);
             $stmt->execute(array(
                 ':cid'=>$id,
-                ':num'=>$num,
-                't_d'=>$time_days,
-                ':ins'=>$instructor,
-                ':room'=>$room
+                ':name'=>$name,
+                ':hours'=>$hours,
+                ':pr'=>$pre_req
             ));
+            
             //die();
         }
         echo "Database Ready!";

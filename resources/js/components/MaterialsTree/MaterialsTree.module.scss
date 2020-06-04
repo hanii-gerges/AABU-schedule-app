@@ -1,7 +1,10 @@
-@import '../../sass/app.scss';
+@import '../../../sass/app.scss';
+
+.studyPlanTree{
+	height: 100%;
+}
 
 .materialNode{
-
 	padding: 5px 5px;
 	font-size: 10pt;
 

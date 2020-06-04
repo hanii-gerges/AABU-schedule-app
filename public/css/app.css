@@ -5,20 +5,18 @@
 }
 
 .Row {
+  position: relative;
   margin: 20px;
-  display: -webkit-box;
-  display: flex;
-  height: 400px;
+  height: 300px;
+  width: auto;
 }
 
-.Row .studyPlan {
-  flex-basis: 50%;
-  border: 1px solid black;
+.Row .studyPlanTree {
+  position: relative;
+  overflow: hidden;
 }
 
 .Row .studentSchedule {
   margin-left: 10px;
-  flex-basis: 50%;
-  border: 1px solid black;
 }
 

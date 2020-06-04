@@ -3,9 +3,16 @@ import { ADD_TO_SCHDULE, REMOVE_FROM_SCHDULE } from "../actions/types";
 
 const initialState = {
 	displayMaterials: [],
-	scheduleMaterials: [],
+	scheduleMaterials: [
+		{id: 2, name: "برمجة كينونية ", pre_req: 1,
+    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",}
+	],
 };
 
+/*
+ * ADD: 		action.payload is a material object.
+ * REMOVE: 	action.payload is just the id.
+*/
 export default function(state = initialState, action) {
 	switch(action.type){
 
@@ -22,7 +29,7 @@ export default function(state = initialState, action) {
 
 			return {
 				...state,
-				displayMaterials: state.displayMaterials.filter( m => m.id != action.payload.id)
+				displayMaterials: state.displayMaterials.filter( m => m.id != action.payload)
 			}
 
 
@@ -37,9 +44,10 @@ export default function(state = initialState, action) {
 			}
 
 		case REMOVE_FROM_SCHDULE:
+
 			return {
 				...state,
-				scheduleMaterials: state.scheduleMaterials.filter( m => m.id != action.payload.id)
+				scheduleMaterials: state.scheduleMaterials.filter( m => m.id != action.payload)
 			}
 		default:
 			return state;

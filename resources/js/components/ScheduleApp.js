@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import {MaterialsDisplay} from './MaterialsDisplay.jsx';
-import {MaterialsTree} from './MaterialsTree.jsx';
-import {StudentSchedule} from './StudentSchedule.jsx';
+import {MaterialsTree} from './MaterialsTree/MaterialsTree.jsx';
+import {StudentSchedule} from './StudentSchedule/StudentSchedule.jsx';
+import {MaterialsDisplay} from './MaterialsDisplay/MaterialsDisplay.jsx';
+
+import SplitPane from 'react-split-pane';
+import '../../sass/splitter.module.scss';
 
 import { Provider } from "react-redux";
 import store from '../Redux/Store.js';
@@ -28,12 +31,14 @@ const App = ()=> {
     return (
         <Provider store={store}>
             <div className="AABU-Schedule-App">
-                <h1>AABU-Schedule-App</h1>
-                <div className="Row">
-                    
-                    <MaterialsTree/>
 
-                    <StudentSchedule/>
+                <h1>AABU-Schedule-App</h1>
+
+                <div className="Row">
+                    <SplitPane minSize={10} maxSize={890} defaultSize={700}>
+                        <MaterialsTree/>
+                        <StudentSchedule/>
+                    </SplitPane>
                 </div>
 
                 <MaterialsDisplay />

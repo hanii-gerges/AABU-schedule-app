@@ -1,10 +1,11 @@
-@import '../../sass/app.scss';
+@import '../../../sass/app.scss';
 
 $hoverColor : rgba(151, 255, 151, 0.363);
 
 .materialsProgram{
 	margin: 20px;
-	height: 400px;
+	height: 320px; //? change this value to prevent the page from scrolling when you create the TopNav
+
 	overflow-y: scroll;
 	border: 1px solid black;
 

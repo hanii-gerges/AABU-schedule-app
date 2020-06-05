@@ -8,19 +8,26 @@
 $primary-greenColor:  #19a83d;
 
 .Row{
-    margin: 20px;
-    display: flex;
-    height: 400px;
+    position: relative;
+    
+    // border: 1px solid rgba(0, 0, 0, 0.3); //! debug
 
-    .studyPlan{
-        flex-basis: 50%;
-        border: 1px solid black;
+    margin: 20px;
+    // display: flex;
+
+    height: 300px;
+    width: auto;
+
+    .studyPlanTree{
+        position: relative;
+        overflow: hidden;
+        // flex-basis: 50%;
+        // border: 1px solid rgba(0, 0, 0, 0.3);
     }
     
     .studentSchedule{
         margin-left: 10px;
-        flex-basis: 50%;
-        border: 1px solid black;
+        // flex-basis: 50%;
+        // border: 1px solid rgba(0, 0, 0, 0.3);
     }
-
 }

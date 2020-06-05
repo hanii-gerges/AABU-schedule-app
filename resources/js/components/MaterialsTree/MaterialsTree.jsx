@@ -1,16 +1,16 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 
-import { ADD_TO_DISPLAY, REMOVE_FROM_DISPLAY } from "../Redux/actions/types";
 import { useDispatch } from 'react-redux';
 
 import Tree, {withStyles} from 'react-vertical-tree';
+import { MaterialNode } from './MaterialNode';
+
 import './MaterialsTree.module.scss';
 
-
-//? simulates the currently selected materials' state.
+//? data recieved from API.
 
 const rows_of_data =
- [ 
+ [
 
     {id: 1, name: "حاسوب 2 ", pre_req: null, 
     sections: [
@@ -102,6 +102,7 @@ export const MaterialsTree = ()=>{
 
     const dispatch = useDispatch();
 
+    //? API call 
     useEffect(() => {
         // fetch('http://46494bad.ngrok.io/api/sections',{
         //     method: 'GET',
@@ -118,6 +119,7 @@ export const MaterialsTree = ()=>{
 
     }, []);
 
+
     const styles = {
         lines: {
           color: 'green',
@@ -125,44 +127,25 @@ export const MaterialsTree = ()=>{
         },
         node: {
           backgroundColor: '#19a83d',
+          position: 'fixed',
         },
         text: {
           color: '#fff',
         }
+        
     };
-    
-    //? add or remove a material from the MaterialsDisplay
-    const toggleMaterialToDisplay = (material) =>{
-        const elem = document.querySelector(`button[id="${material.id}"]`); //? consider Refs here
-        const isDisplayed = elem.classList.toggle('fadingNode');
-        
-        if(!isDisplayed)
-            dispatch({
-                type: ADD_TO_DISPLAY,
-                payload: material
-            });
 
-        else
-            dispatch({
-                type: REMOVE_FROM_DISPLAY,
-                payload: material
-            });
-        
-    }
 
     const parents_array =  rows_of_data.filter(m => m.pre_req === null);
     const StyledTree = withStyles(styles)(Tree);
 
     return(
-        <div className="studyPlan">
-            {parents_array.map( material => 
+        <div className="studyPlanTree">
+            {parents_array.map( (material) => 
                 <StyledTree key={material.id} data={getArrayForMaterial(material)} 
-                    render={ item => 
-                        <button id={item.id} className={'materialNode fadingNode'}>
-                            {`${item.name}`}
-                        </button>
+                    render={ 
+                        (item) => <MaterialNode material={item} />
                     }
-                    onClick={(material) => toggleMaterialToDisplay(material) }
                 />    
             )}
         </div>

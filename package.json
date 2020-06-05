@@ -27,6 +27,7 @@
         "@fortawesome/react-fontawesome": "^0.1.8",
         "bootstrap": "^4.4.1",
         "react-redux": "^7.2.0",
+        "react-split-pane": "^0.1.91",
         "react-vertical-tree": "^1.1.7",
         "reactstrap": "^8.4.1",
         "redux": "^4.0.5",

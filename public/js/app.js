@@ -12849,57 +12849,76 @@ exports.push([module.i, "/*!\n * Bootstrap v4.4.1 (https://getbootstrap.com/)\n 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/MaterialsDisplay.module.scss":
-/*!*************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/MaterialsDisplay.module.scss ***!
-  \*************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/MaterialsDisplay/MaterialsDisplay.module.scss":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/MaterialsDisplay/MaterialsDisplay.module.scss ***!
+  \******************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  margin: 20px;\n  display: -webkit-box;\n  display: flex;\n  height: 400px;\n}\n.Row .studyPlan {\n  flex-basis: 50%;\n  border: 1px solid black;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  flex-basis: 50%;\n  border: 1px solid black;\n}\n\n.materialsProgram {\n  margin: 20px;\n  height: 400px;\n  overflow-y: scroll;\n  border: 1px solid black;\n}\n.materialsProgram .materialsTable {\n  display: table;\n  direction: rtl;\n  width: 90%;\n  margin: auto;\n  margin-bottom: 100px;\n  text-align: center;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.materialsProgram .materialsTable #drop-down {\n  position: relative;\n  display: inline-block;\n  direction: rtl;\n  cursor: pointer;\n  background-color: white;\n}\n.materialsProgram .materialsTable #drop-down:before {\n  content: \"\";\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 16px;\n  top: 50%;\n  border-width: 6px 6px 0 6px;\n  border-style: solid;\n  border-color: black transparent;\n}\n.materialsProgram .materialsTable #drop-down table, .materialsProgram .materialsTable #drop-down tr {\n  display: table;\n  table-layout: fixed;\n  background-color: white;\n  width: 100%;\n}\n.materialsProgram .materialsTable #drop-down table td:nth-child(2), .materialsProgram .materialsTable #drop-down tr td:nth-child(2) {\n  width: 50%;\n}\n.materialsProgram .materialsTable #drop-down tr:hover {\n  color: white;\n  background-color: #19a83d;\n}\n.materialsProgram .materialsTable #drop-down #drop-down-menu {\n  border: none;\n  position: absolute;\n  top: 120%;\n  z-index: 1;\n  box-shadow: 0px 0px 5px 2px #19a83d;\n}\n.materialsProgram .materialsTable th {\n  background-color: #19a83d;\n  color: white;\n}\n.materialsProgram .materialsTable th:first-child {\n  width: 10%;\n}\n.materialsProgram .materialsTable th:nth-child(4) {\n  width: 30%;\n}\n.materialsProgram .materialsTable td {\n  padding: 0.5rem;\n  vertical-align: middle;\n}\n.materialsProgram .materialsTable th, .materialsProgram .materialsTable td {\n  border: 1px solid black;\n  direction: ltr;\n}\n.materialsProgram tr:hover {\n  background-color: rgba(151, 255, 151, 0.363);\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 300px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.materialsProgram {\n  margin: 20px;\n  height: 320px;\n  overflow-y: scroll;\n  border: 1px solid black;\n}\n.materialsProgram .materialsTable {\n  display: table;\n  direction: rtl;\n  width: 90%;\n  margin: auto;\n  margin-bottom: 100px;\n  text-align: center;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.materialsProgram .materialsTable #drop-down {\n  position: relative;\n  display: inline-block;\n  direction: rtl;\n  cursor: pointer;\n  background-color: white;\n}\n.materialsProgram .materialsTable #drop-down:before {\n  content: \"\";\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 16px;\n  top: 50%;\n  border-width: 6px 6px 0 6px;\n  border-style: solid;\n  border-color: black transparent;\n}\n.materialsProgram .materialsTable #drop-down table, .materialsProgram .materialsTable #drop-down tr {\n  display: table;\n  table-layout: fixed;\n  background-color: white;\n  width: 100%;\n}\n.materialsProgram .materialsTable #drop-down table td:nth-child(2), .materialsProgram .materialsTable #drop-down tr td:nth-child(2) {\n  width: 50%;\n}\n.materialsProgram .materialsTable #drop-down tr:hover {\n  color: white;\n  background-color: #19a83d;\n}\n.materialsProgram .materialsTable #drop-down #drop-down-menu {\n  border: none;\n  position: absolute;\n  top: 120%;\n  z-index: 1;\n  box-shadow: 0px 0px 5px 2px #19a83d;\n}\n.materialsProgram .materialsTable th {\n  background-color: #19a83d;\n  color: white;\n}\n.materialsProgram .materialsTable th:first-child {\n  width: 10%;\n}\n.materialsProgram .materialsTable th:nth-child(4) {\n  width: 30%;\n}\n.materialsProgram .materialsTable td {\n  padding: 0.5rem;\n  vertical-align: middle;\n}\n.materialsProgram .materialsTable th, .materialsProgram .materialsTable td {\n  border: 1px solid black;\n  direction: ltr;\n}\n.materialsProgram tr:hover {\n  background-color: rgba(151, 255, 151, 0.363);\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/MaterialsTree.module.scss":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/MaterialsTree.module.scss ***!
-  \**********************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/MaterialsTree/MaterialsTree.module.scss":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/MaterialsTree/MaterialsTree.module.scss ***!
+  \************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  margin: 20px;\n  display: -webkit-box;\n  display: flex;\n  height: 400px;\n}\n.Row .studyPlan {\n  flex-basis: 50%;\n  border: 1px solid black;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  flex-basis: 50%;\n  border: 1px solid black;\n}\n\n.materialNode {\n  padding: 5px 5px;\n  font-size: 10pt;\n  color: #ffffff;\n  background-color: #19a83d;\n  border-radius: 20px;\n  border: none;\n}\n.materialNode:hover {\n  box-shadow: 0 0 3pt 2pt darkgreen;\n}\n\n.fadingNode {\n  background-color: lightgreen;\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 300px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.studyPlanTree {\n  height: 100%;\n}\n\n.materialNode {\n  padding: 5px 5px;\n  font-size: 10pt;\n  color: #ffffff;\n  background-color: #19a83d;\n  border-radius: 20px;\n  border: none;\n}\n.materialNode:hover {\n  box-shadow: 0 0 3pt 2pt darkgreen;\n}\n\n.fadingNode {\n  background-color: lightgreen;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/StudentSchedule.module.scss":
-/*!************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/StudentSchedule.module.scss ***!
-  \************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/StudentSchedule/StudentSchedule.module.scss":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/StudentSchedule/StudentSchedule.module.scss ***!
+  \****************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  margin: 20px;\n  display: -webkit-box;\n  display: flex;\n  height: 400px;\n}\n.Row .studyPlan {\n  flex-basis: 50%;\n  border: 1px solid black;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  flex-basis: 50%;\n  border: 1px solid black;\n}\n\n.studentSchedule {\n  display: -webkit-box;\n  display: flex;\n}\n.studentSchedule table {\n  display: table;\n  direction: ltr;\n  width: 80%;\n  margin: auto;\n  text-align: center;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.studentSchedule table #drop-down {\n  display: inline-block;\n  box-shadow: none;\n  width: 90%;\n}\n.studentSchedule table th {\n  height: 40px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td {\n  height: 20px;\n  padding: 10px 0px;\n}\n.studentSchedule table th, .studentSchedule table td {\n  border: 1px solid black;\n  display: table-cell;\n  direction: ltr;\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 300px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.studentSchedule {\n  display: -webkit-box;\n  display: flex;\n  height: 100%;\n}\n.studentSchedule .left-schedule, .studentSchedule .right-schedule {\n  display: none;\n  margin: 5px;\n}\n.studentSchedule table {\n  display: table;\n  direction: ltr;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  text-align: center;\n  table-layout: fixed;\n}\n.studentSchedule table tr {\n  height: 20px;\n}\n.studentSchedule table th {\n  height: 40px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td {\n  height: 20px;\n  text-align: center;\n}\n.studentSchedule table td .material {\n  position: relative;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-flow: column nowrap;\n  height: 50px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td .material .material-name {\n  overflow: hidden;\n  width: 100%;\n}\n.studentSchedule table td .material:hover .close-btn {\n  display: block;\n}\n.studentSchedule table td .material .close-btn {\n  position: absolute;\n  top: -5px;\n  right: 0px;\n  display: none;\n  margin: 2px;\n  color: rgba(231, 20, 20, 0.5);\n  background-color: transparent;\n  border: none;\n  border-radius: 30px;\n  cursor: pointer;\n}\n.studentSchedule table td .material .close-btn:hover {\n  color: #e71414;\n}\n.studentSchedule table th, .studentSchedule table td {\n  border: 1px solid black;\n  direction: ltr;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/sass/splitter.module.scss":
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/sass/splitter.module.scss ***!
+  \********************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 300px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.Resizer {\n  height: 100%;\n  background: #000;\n  opacity: 0.3;\n  z-index: 1;\n  box-sizing: border-box;\n  -moz-background-clip: padding;\n  -webkit-background-clip: padding;\n  background-clip: padding-box;\n}\n\n.Resizer:hover {\n  -webkit-transition: all 2s ease;\n  transition: all 2s ease;\n}\n\n.Resizer.horizontal {\n  margin: -5px 0;\n  border-top: 5px solid rgba(255, 255, 255, 0);\n  border-bottom: 5px solid rgba(255, 255, 255, 0);\n  cursor: row-resize;\n  width: 100%;\n}\n\n.Resizer.horizontal:hover {\n  border-top: 5px solid rgba(0, 0, 0, 0.5);\n  border-bottom: 5px solid rgba(0, 0, 0, 0.5);\n}\n\n.Resizer.vertical {\n  width: 11px;\n  margin: 0 -5px;\n  border-left: 5px solid rgba(255, 255, 255, 0);\n  border-right: 5px solid rgba(255, 255, 255, 0);\n  cursor: col-resize;\n}\n\n.Resizer.vertical:hover {\n  border-left: 5px solid rgba(0, 0, 0, 0.5);\n  border-right: 5px solid rgba(0, 0, 0, 0.5);\n}\n\n.Resizer.disabled {\n  cursor: not-allowed;\n}\n\n.Resizer.disabled:hover {\n  border-color: transparent;\n}", ""]);
 
 // exports
 
@@ -65437,6 +65456,2333 @@ function warning(message) {
 
 /***/ }),
 
+/***/ "./node_modules/react-split-pane/dist/index.esm.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-split-pane/dist/index.esm.js ***!
+  \*********************************************************/
+/*! exports provided: default, Pane */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Pane", function() { return Pane; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_style_proptype__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-style-proptype */ "./node_modules/react-style-proptype/src/index.js");
+/* harmony import */ var react_style_proptype__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_style_proptype__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_lifecycles_compat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-lifecycles-compat */ "./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js");
+
+
+
+
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    if (enumerableOnly) symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    });
+    keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread2(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    if (i % 2) {
+      ownKeys(Object(source), true).forEach(function (key) {
+        _defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+
+  return target;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (typeof call === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+var Pane = /*#__PURE__*/function (_React$PureComponent) {
+  _inherits(Pane, _React$PureComponent);
+
+  function Pane() {
+    _classCallCheck(this, Pane);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Pane).apply(this, arguments));
+  }
+
+  _createClass(Pane, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          children = _this$props.children,
+          className = _this$props.className,
+          split = _this$props.split,
+          styleProps = _this$props.style,
+          size = _this$props.size,
+          eleRef = _this$props.eleRef;
+      var classes = ['Pane', split, className];
+      var style = {
+        flex: 1,
+        position: 'relative',
+        outline: 'none'
+      };
+
+      if (size !== undefined) {
+        if (split === 'vertical') {
+          style.width = size;
+        } else {
+          style.height = size;
+          style.display = 'flex';
+        }
+
+        style.flex = 'none';
+      }
+
+      style = Object.assign({}, style, styleProps || {});
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        ref: eleRef,
+        className: classes.join(' '),
+        style: style
+      }, children);
+    }
+  }]);
+
+  return Pane;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent);
+
+Pane.propTypes = {
+  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node.isRequired,
+  size: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
+  split: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOf(['vertical', 'horizontal']),
+  style: react_style_proptype__WEBPACK_IMPORTED_MODULE_2___default.a,
+  eleRef: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
+};
+Pane.defaultProps = {};
+
+var RESIZER_DEFAULT_CLASSNAME = 'Resizer';
+
+var Resizer = /*#__PURE__*/function (_React$Component) {
+  _inherits(Resizer, _React$Component);
+
+  function Resizer() {
+    _classCallCheck(this, Resizer);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Resizer).apply(this, arguments));
+  }
+
+  _createClass(Resizer, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          className = _this$props.className,
+          _onClick = _this$props.onClick,
+          _onDoubleClick = _this$props.onDoubleClick,
+          _onMouseDown = _this$props.onMouseDown,
+          _onTouchEnd = _this$props.onTouchEnd,
+          _onTouchStart = _this$props.onTouchStart,
+          resizerClassName = _this$props.resizerClassName,
+          split = _this$props.split,
+          style = _this$props.style;
+      var classes = [resizerClassName, split, className];
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        role: "presentation",
+        className: classes.join(' '),
+        style: style,
+        onMouseDown: function onMouseDown(event) {
+          return _onMouseDown(event);
+        },
+        onTouchStart: function onTouchStart(event) {
+          event.preventDefault();
+
+          _onTouchStart(event);
+        },
+        onTouchEnd: function onTouchEnd(event) {
+          event.preventDefault();
+
+          _onTouchEnd(event);
+        },
+        onClick: function onClick(event) {
+          if (_onClick) {
+            event.preventDefault();
+
+            _onClick(event);
+          }
+        },
+        onDoubleClick: function onDoubleClick(event) {
+          if (_onDoubleClick) {
+            event.preventDefault();
+
+            _onDoubleClick(event);
+          }
+        }
+      });
+    }
+  }]);
+
+  return Resizer;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+Resizer.propTypes = {
+  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  onClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onDoubleClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onMouseDown: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
+  onTouchStart: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
+  onTouchEnd: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
+  split: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOf(['vertical', 'horizontal']),
+  style: react_style_proptype__WEBPACK_IMPORTED_MODULE_2___default.a,
+  resizerClassName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired
+};
+Resizer.defaultProps = {
+  resizerClassName: RESIZER_DEFAULT_CLASSNAME
+};
+
+function unFocus(document, window) {
+  if (document.selection) {
+    document.selection.empty();
+  } else {
+    try {
+      window.getSelection().removeAllRanges(); // eslint-disable-next-line no-empty
+    } catch (e) {}
+  }
+}
+
+function getDefaultSize(defaultSize, minSize, maxSize, draggedSize) {
+  if (typeof draggedSize === 'number') {
+    var min = typeof minSize === 'number' ? minSize : 0;
+    var max = typeof maxSize === 'number' && maxSize >= 0 ? maxSize : Infinity;
+    return Math.max(min, Math.min(max, draggedSize));
+  }
+
+  if (defaultSize !== undefined) {
+    return defaultSize;
+  }
+
+  return minSize;
+}
+
+function removeNullChildren(children) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.Children.toArray(children).filter(function (c) {
+    return c;
+  });
+}
+
+var SplitPane = /*#__PURE__*/function (_React$Component) {
+  _inherits(SplitPane, _React$Component);
+
+  function SplitPane(props) {
+    var _this;
+
+    _classCallCheck(this, SplitPane);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(SplitPane).call(this, props));
+    _this.onMouseDown = _this.onMouseDown.bind(_assertThisInitialized(_this));
+    _this.onTouchStart = _this.onTouchStart.bind(_assertThisInitialized(_this));
+    _this.onMouseMove = _this.onMouseMove.bind(_assertThisInitialized(_this));
+    _this.onTouchMove = _this.onTouchMove.bind(_assertThisInitialized(_this));
+    _this.onMouseUp = _this.onMouseUp.bind(_assertThisInitialized(_this)); // order of setting panel sizes.
+    // 1. size
+    // 2. getDefaultSize(defaultSize, minsize, maxSize)
+
+    var size = props.size,
+        defaultSize = props.defaultSize,
+        minSize = props.minSize,
+        maxSize = props.maxSize,
+        primary = props.primary;
+    var initialSize = size !== undefined ? size : getDefaultSize(defaultSize, minSize, maxSize, null);
+    _this.state = {
+      active: false,
+      resized: false,
+      pane1Size: primary === 'first' ? initialSize : undefined,
+      pane2Size: primary === 'second' ? initialSize : undefined,
+      // these are props that are needed in static functions. ie: gDSFP
+      instanceProps: {
+        size: size
+      }
+    };
+    return _this;
+  }
+
+  _createClass(SplitPane, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      document.addEventListener('mouseup', this.onMouseUp);
+      document.addEventListener('mousemove', this.onMouseMove);
+      document.addEventListener('touchmove', this.onTouchMove);
+      this.setState(SplitPane.getSizeUpdate(this.props, this.state));
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      document.removeEventListener('mouseup', this.onMouseUp);
+      document.removeEventListener('mousemove', this.onMouseMove);
+      document.removeEventListener('touchmove', this.onTouchMove);
+    }
+  }, {
+    key: "onMouseDown",
+    value: function onMouseDown(event) {
+      var eventWithTouches = Object.assign({}, event, {
+        touches: [{
+          clientX: event.clientX,
+          clientY: event.clientY
+        }]
+      });
+      this.onTouchStart(eventWithTouches);
+    }
+  }, {
+    key: "onTouchStart",
+    value: function onTouchStart(event) {
+      var _this$props = this.props,
+          allowResize = _this$props.allowResize,
+          onDragStarted = _this$props.onDragStarted,
+          split = _this$props.split;
+
+      if (allowResize) {
+        unFocus(document, window);
+        var position = split === 'vertical' ? event.touches[0].clientX : event.touches[0].clientY;
+
+        if (typeof onDragStarted === 'function') {
+          onDragStarted();
+        }
+
+        this.setState({
+          active: true,
+          position: position
+        });
+      }
+    }
+  }, {
+    key: "onMouseMove",
+    value: function onMouseMove(event) {
+      var eventWithTouches = Object.assign({}, event, {
+        touches: [{
+          clientX: event.clientX,
+          clientY: event.clientY
+        }]
+      });
+      this.onTouchMove(eventWithTouches);
+    }
+  }, {
+    key: "onTouchMove",
+    value: function onTouchMove(event) {
+      var _this$props2 = this.props,
+          allowResize = _this$props2.allowResize,
+          maxSize = _this$props2.maxSize,
+          minSize = _this$props2.minSize,
+          onChange = _this$props2.onChange,
+          split = _this$props2.split,
+          step = _this$props2.step;
+      var _this$state = this.state,
+          active = _this$state.active,
+          position = _this$state.position;
+
+      if (allowResize && active) {
+        unFocus(document, window);
+        var isPrimaryFirst = this.props.primary === 'first';
+        var ref = isPrimaryFirst ? this.pane1 : this.pane2;
+        var ref2 = isPrimaryFirst ? this.pane2 : this.pane1;
+
+        if (ref) {
+          var node = ref;
+          var node2 = ref2;
+
+          if (node.getBoundingClientRect) {
+            var width = node.getBoundingClientRect().width;
+            var height = node.getBoundingClientRect().height;
+            var current = split === 'vertical' ? event.touches[0].clientX : event.touches[0].clientY;
+            var size = split === 'vertical' ? width : height;
+            var positionDelta = position - current;
+
+            if (step) {
+              if (Math.abs(positionDelta) < step) {
+                return;
+              } // Integer division
+              // eslint-disable-next-line no-bitwise
+
+
+              positionDelta = ~~(positionDelta / step) * step;
+            }
+
+            var sizeDelta = isPrimaryFirst ? positionDelta : -positionDelta;
+            var pane1Order = parseInt(window.getComputedStyle(node).order);
+            var pane2Order = parseInt(window.getComputedStyle(node2).order);
+
+            if (pane1Order > pane2Order) {
+              sizeDelta = -sizeDelta;
+            }
+
+            var newMaxSize = maxSize;
+
+            if (maxSize !== undefined && maxSize <= 0) {
+              var splitPane = this.splitPane;
+
+              if (split === 'vertical') {
+                newMaxSize = splitPane.getBoundingClientRect().width + maxSize;
+              } else {
+                newMaxSize = splitPane.getBoundingClientRect().height + maxSize;
+              }
+            }
+
+            var newSize = size - sizeDelta;
+            var newPosition = position - positionDelta;
+
+            if (newSize < minSize) {
+              newSize = minSize;
+            } else if (maxSize !== undefined && newSize > newMaxSize) {
+              newSize = newMaxSize;
+            } else {
+              this.setState({
+                position: newPosition,
+                resized: true
+              });
+            }
+
+            if (onChange) onChange(newSize);
+            this.setState(_defineProperty({
+              draggedSize: newSize
+            }, isPrimaryFirst ? 'pane1Size' : 'pane2Size', newSize));
+          }
+        }
+      }
+    }
+  }, {
+    key: "onMouseUp",
+    value: function onMouseUp() {
+      var _this$props3 = this.props,
+          allowResize = _this$props3.allowResize,
+          onDragFinished = _this$props3.onDragFinished;
+      var _this$state2 = this.state,
+          active = _this$state2.active,
+          draggedSize = _this$state2.draggedSize;
+
+      if (allowResize && active) {
+        if (typeof onDragFinished === 'function') {
+          onDragFinished(draggedSize);
+        }
+
+        this.setState({
+          active: false
+        });
+      }
+    } // we have to check values since gDSFP is called on every render and more in StrictMode
+
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$props4 = this.props,
+          allowResize = _this$props4.allowResize,
+          children = _this$props4.children,
+          className = _this$props4.className,
+          onResizerClick = _this$props4.onResizerClick,
+          onResizerDoubleClick = _this$props4.onResizerDoubleClick,
+          paneClassName = _this$props4.paneClassName,
+          pane1ClassName = _this$props4.pane1ClassName,
+          pane2ClassName = _this$props4.pane2ClassName,
+          paneStyle = _this$props4.paneStyle,
+          pane1StyleProps = _this$props4.pane1Style,
+          pane2StyleProps = _this$props4.pane2Style,
+          resizerClassName = _this$props4.resizerClassName,
+          resizerStyle = _this$props4.resizerStyle,
+          split = _this$props4.split,
+          styleProps = _this$props4.style;
+      var _this$state3 = this.state,
+          pane1Size = _this$state3.pane1Size,
+          pane2Size = _this$state3.pane2Size;
+      var disabledClass = allowResize ? '' : 'disabled';
+      var resizerClassNamesIncludingDefault = resizerClassName ? "".concat(resizerClassName, " ").concat(RESIZER_DEFAULT_CLASSNAME) : resizerClassName;
+      var notNullChildren = removeNullChildren(children);
+
+      var style = _objectSpread2({
+        display: 'flex',
+        flex: 1,
+        height: '100%',
+        position: 'absolute',
+        outline: 'none',
+        overflow: 'hidden',
+        MozUserSelect: 'text',
+        WebkitUserSelect: 'text',
+        msUserSelect: 'text',
+        userSelect: 'text'
+      }, styleProps);
+
+      if (split === 'vertical') {
+        Object.assign(style, {
+          flexDirection: 'row',
+          left: 0,
+          right: 0
+        });
+      } else {
+        Object.assign(style, {
+          bottom: 0,
+          flexDirection: 'column',
+          minHeight: '100%',
+          top: 0,
+          width: '100%'
+        });
+      }
+
+      var classes = ['SplitPane', className, split, disabledClass];
+
+      var pane1Style = _objectSpread2({}, paneStyle, {}, pane1StyleProps);
+
+      var pane2Style = _objectSpread2({}, paneStyle, {}, pane2StyleProps);
+
+      var pane1Classes = ['Pane1', paneClassName, pane1ClassName].join(' ');
+      var pane2Classes = ['Pane2', paneClassName, pane2ClassName].join(' ');
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: classes.join(' '),
+        ref: function ref(node) {
+          _this2.splitPane = node;
+        },
+        style: style
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Pane, {
+        className: pane1Classes,
+        key: "pane1",
+        eleRef: function eleRef(node) {
+          _this2.pane1 = node;
+        },
+        size: pane1Size,
+        split: split,
+        style: pane1Style
+      }, notNullChildren[0]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Resizer, {
+        className: disabledClass,
+        onClick: onResizerClick,
+        onDoubleClick: onResizerDoubleClick,
+        onMouseDown: this.onMouseDown,
+        onTouchStart: this.onTouchStart,
+        onTouchEnd: this.onMouseUp,
+        key: "resizer",
+        resizerClassName: resizerClassNamesIncludingDefault,
+        split: split,
+        style: resizerStyle || {}
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Pane, {
+        className: pane2Classes,
+        key: "pane2",
+        eleRef: function eleRef(node) {
+          _this2.pane2 = node;
+        },
+        size: pane2Size,
+        split: split,
+        style: pane2Style
+      }, notNullChildren[1]));
+    }
+  }], [{
+    key: "getDerivedStateFromProps",
+    value: function getDerivedStateFromProps(nextProps, prevState) {
+      return SplitPane.getSizeUpdate(nextProps, prevState);
+    }
+  }, {
+    key: "getSizeUpdate",
+    value: function getSizeUpdate(props, state) {
+      var newState = {};
+      var instanceProps = state.instanceProps;
+
+      if (instanceProps.size === props.size && props.size !== undefined) {
+        return {};
+      }
+
+      var newSize = props.size !== undefined ? props.size : getDefaultSize(props.defaultSize, props.minSize, props.maxSize, state.draggedSize);
+
+      if (props.size !== undefined) {
+        newState.draggedSize = newSize;
+      }
+
+      var isPanel1Primary = props.primary === 'first';
+      newState[isPanel1Primary ? 'pane1Size' : 'pane2Size'] = newSize;
+      newState[isPanel1Primary ? 'pane2Size' : 'pane1Size'] = undefined;
+      newState.instanceProps = {
+        size: props.size
+      };
+      return newState;
+    }
+  }]);
+
+  return SplitPane;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+SplitPane.propTypes = {
+  allowResize: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node).isRequired,
+  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  primary: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOf(['first', 'second']),
+  minSize: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
+  maxSize: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
+  // eslint-disable-next-line react/no-unused-prop-types
+  defaultSize: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
+  size: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
+  split: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOf(['vertical', 'horizontal']),
+  onDragStarted: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onDragFinished: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onResizerClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onResizerDoubleClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  style: react_style_proptype__WEBPACK_IMPORTED_MODULE_2___default.a,
+  resizerStyle: react_style_proptype__WEBPACK_IMPORTED_MODULE_2___default.a,
+  paneClassName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  pane1ClassName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  pane2ClassName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  paneStyle: react_style_proptype__WEBPACK_IMPORTED_MODULE_2___default.a,
+  pane1Style: react_style_proptype__WEBPACK_IMPORTED_MODULE_2___default.a,
+  pane2Style: react_style_proptype__WEBPACK_IMPORTED_MODULE_2___default.a,
+  resizerClassName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  step: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number
+};
+SplitPane.defaultProps = {
+  allowResize: true,
+  minSize: 50,
+  primary: 'first',
+  split: 'vertical',
+  paneClassName: '',
+  pane1ClassName: '',
+  pane2ClassName: ''
+};
+Object(react_lifecycles_compat__WEBPACK_IMPORTED_MODULE_3__["polyfill"])(SplitPane);
+
+/* harmony default export */ __webpack_exports__["default"] = (SplitPane);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/react-style-proptype/src/css-properties.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-style-proptype/src/css-properties.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// GENERATED DO NOT EDIT
+module.exports = [
+  "alignContent",
+  "MozAlignContent",
+  "WebkitAlignContent",
+  "MSAlignContent",
+  "OAlignContent",
+  "alignItems",
+  "MozAlignItems",
+  "WebkitAlignItems",
+  "MSAlignItems",
+  "OAlignItems",
+  "alignSelf",
+  "MozAlignSelf",
+  "WebkitAlignSelf",
+  "MSAlignSelf",
+  "OAlignSelf",
+  "all",
+  "MozAll",
+  "WebkitAll",
+  "MSAll",
+  "OAll",
+  "animation",
+  "MozAnimation",
+  "WebkitAnimation",
+  "MSAnimation",
+  "OAnimation",
+  "animationDelay",
+  "MozAnimationDelay",
+  "WebkitAnimationDelay",
+  "MSAnimationDelay",
+  "OAnimationDelay",
+  "animationDirection",
+  "MozAnimationDirection",
+  "WebkitAnimationDirection",
+  "MSAnimationDirection",
+  "OAnimationDirection",
+  "animationDuration",
+  "MozAnimationDuration",
+  "WebkitAnimationDuration",
+  "MSAnimationDuration",
+  "OAnimationDuration",
+  "animationFillMode",
+  "MozAnimationFillMode",
+  "WebkitAnimationFillMode",
+  "MSAnimationFillMode",
+  "OAnimationFillMode",
+  "animationIterationCount",
+  "MozAnimationIterationCount",
+  "WebkitAnimationIterationCount",
+  "MSAnimationIterationCount",
+  "OAnimationIterationCount",
+  "animationName",
+  "MozAnimationName",
+  "WebkitAnimationName",
+  "MSAnimationName",
+  "OAnimationName",
+  "animationPlayState",
+  "MozAnimationPlayState",
+  "WebkitAnimationPlayState",
+  "MSAnimationPlayState",
+  "OAnimationPlayState",
+  "animationTimingFunction",
+  "MozAnimationTimingFunction",
+  "WebkitAnimationTimingFunction",
+  "MSAnimationTimingFunction",
+  "OAnimationTimingFunction",
+  "backfaceVisibility",
+  "MozBackfaceVisibility",
+  "WebkitBackfaceVisibility",
+  "MSBackfaceVisibility",
+  "OBackfaceVisibility",
+  "background",
+  "MozBackground",
+  "WebkitBackground",
+  "MSBackground",
+  "OBackground",
+  "backgroundAttachment",
+  "MozBackgroundAttachment",
+  "WebkitBackgroundAttachment",
+  "MSBackgroundAttachment",
+  "OBackgroundAttachment",
+  "backgroundBlendMode",
+  "MozBackgroundBlendMode",
+  "WebkitBackgroundBlendMode",
+  "MSBackgroundBlendMode",
+  "OBackgroundBlendMode",
+  "backgroundClip",
+  "MozBackgroundClip",
+  "WebkitBackgroundClip",
+  "MSBackgroundClip",
+  "OBackgroundClip",
+  "backgroundColor",
+  "MozBackgroundColor",
+  "WebkitBackgroundColor",
+  "MSBackgroundColor",
+  "OBackgroundColor",
+  "backgroundImage",
+  "MozBackgroundImage",
+  "WebkitBackgroundImage",
+  "MSBackgroundImage",
+  "OBackgroundImage",
+  "backgroundOrigin",
+  "MozBackgroundOrigin",
+  "WebkitBackgroundOrigin",
+  "MSBackgroundOrigin",
+  "OBackgroundOrigin",
+  "backgroundPosition",
+  "MozBackgroundPosition",
+  "WebkitBackgroundPosition",
+  "MSBackgroundPosition",
+  "OBackgroundPosition",
+  "backgroundRepeat",
+  "MozBackgroundRepeat",
+  "WebkitBackgroundRepeat",
+  "MSBackgroundRepeat",
+  "OBackgroundRepeat",
+  "backgroundSize",
+  "MozBackgroundSize",
+  "WebkitBackgroundSize",
+  "MSBackgroundSize",
+  "OBackgroundSize",
+  "blockSize",
+  "MozBlockSize",
+  "WebkitBlockSize",
+  "MSBlockSize",
+  "OBlockSize",
+  "border",
+  "MozBorder",
+  "WebkitBorder",
+  "MSBorder",
+  "OBorder",
+  "borderBlockEnd",
+  "MozBorderBlockEnd",
+  "WebkitBorderBlockEnd",
+  "MSBorderBlockEnd",
+  "OBorderBlockEnd",
+  "borderBlockEndColor",
+  "MozBorderBlockEndColor",
+  "WebkitBorderBlockEndColor",
+  "MSBorderBlockEndColor",
+  "OBorderBlockEndColor",
+  "borderBlockEndStyle",
+  "MozBorderBlockEndStyle",
+  "WebkitBorderBlockEndStyle",
+  "MSBorderBlockEndStyle",
+  "OBorderBlockEndStyle",
+  "borderBlockEndWidth",
+  "MozBorderBlockEndWidth",
+  "WebkitBorderBlockEndWidth",
+  "MSBorderBlockEndWidth",
+  "OBorderBlockEndWidth",
+  "borderBlockStart",
+  "MozBorderBlockStart",
+  "WebkitBorderBlockStart",
+  "MSBorderBlockStart",
+  "OBorderBlockStart",
+  "borderBlockStartColor",
+  "MozBorderBlockStartColor",
+  "WebkitBorderBlockStartColor",
+  "MSBorderBlockStartColor",
+  "OBorderBlockStartColor",
+  "borderBlockStartStyle",
+  "MozBorderBlockStartStyle",
+  "WebkitBorderBlockStartStyle",
+  "MSBorderBlockStartStyle",
+  "OBorderBlockStartStyle",
+  "borderBlockStartWidth",
+  "MozBorderBlockStartWidth",
+  "WebkitBorderBlockStartWidth",
+  "MSBorderBlockStartWidth",
+  "OBorderBlockStartWidth",
+  "borderBottom",
+  "MozBorderBottom",
+  "WebkitBorderBottom",
+  "MSBorderBottom",
+  "OBorderBottom",
+  "borderBottomColor",
+  "MozBorderBottomColor",
+  "WebkitBorderBottomColor",
+  "MSBorderBottomColor",
+  "OBorderBottomColor",
+  "borderBottomLeftRadius",
+  "MozBorderBottomLeftRadius",
+  "WebkitBorderBottomLeftRadius",
+  "MSBorderBottomLeftRadius",
+  "OBorderBottomLeftRadius",
+  "borderBottomRightRadius",
+  "MozBorderBottomRightRadius",
+  "WebkitBorderBottomRightRadius",
+  "MSBorderBottomRightRadius",
+  "OBorderBottomRightRadius",
+  "borderBottomStyle",
+  "MozBorderBottomStyle",
+  "WebkitBorderBottomStyle",
+  "MSBorderBottomStyle",
+  "OBorderBottomStyle",
+  "borderBottomWidth",
+  "MozBorderBottomWidth",
+  "WebkitBorderBottomWidth",
+  "MSBorderBottomWidth",
+  "OBorderBottomWidth",
+  "borderCollapse",
+  "MozBorderCollapse",
+  "WebkitBorderCollapse",
+  "MSBorderCollapse",
+  "OBorderCollapse",
+  "borderColor",
+  "MozBorderColor",
+  "WebkitBorderColor",
+  "MSBorderColor",
+  "OBorderColor",
+  "borderImage",
+  "MozBorderImage",
+  "WebkitBorderImage",
+  "MSBorderImage",
+  "OBorderImage",
+  "borderImageOutset",
+  "MozBorderImageOutset",
+  "WebkitBorderImageOutset",
+  "MSBorderImageOutset",
+  "OBorderImageOutset",
+  "borderImageRepeat",
+  "MozBorderImageRepeat",
+  "WebkitBorderImageRepeat",
+  "MSBorderImageRepeat",
+  "OBorderImageRepeat",
+  "borderImageSlice",
+  "MozBorderImageSlice",
+  "WebkitBorderImageSlice",
+  "MSBorderImageSlice",
+  "OBorderImageSlice",
+  "borderImageSource",
+  "MozBorderImageSource",
+  "WebkitBorderImageSource",
+  "MSBorderImageSource",
+  "OBorderImageSource",
+  "borderImageWidth",
+  "MozBorderImageWidth",
+  "WebkitBorderImageWidth",
+  "MSBorderImageWidth",
+  "OBorderImageWidth",
+  "borderInlineEnd",
+  "MozBorderInlineEnd",
+  "WebkitBorderInlineEnd",
+  "MSBorderInlineEnd",
+  "OBorderInlineEnd",
+  "borderInlineEndColor",
+  "MozBorderInlineEndColor",
+  "WebkitBorderInlineEndColor",
+  "MSBorderInlineEndColor",
+  "OBorderInlineEndColor",
+  "borderInlineEndStyle",
+  "MozBorderInlineEndStyle",
+  "WebkitBorderInlineEndStyle",
+  "MSBorderInlineEndStyle",
+  "OBorderInlineEndStyle",
+  "borderInlineEndWidth",
+  "MozBorderInlineEndWidth",
+  "WebkitBorderInlineEndWidth",
+  "MSBorderInlineEndWidth",
+  "OBorderInlineEndWidth",
+  "borderInlineStart",
+  "MozBorderInlineStart",
+  "WebkitBorderInlineStart",
+  "MSBorderInlineStart",
+  "OBorderInlineStart",
+  "borderInlineStartColor",
+  "MozBorderInlineStartColor",
+  "WebkitBorderInlineStartColor",
+  "MSBorderInlineStartColor",
+  "OBorderInlineStartColor",
+  "borderInlineStartStyle",
+  "MozBorderInlineStartStyle",
+  "WebkitBorderInlineStartStyle",
+  "MSBorderInlineStartStyle",
+  "OBorderInlineStartStyle",
+  "borderInlineStartWidth",
+  "MozBorderInlineStartWidth",
+  "WebkitBorderInlineStartWidth",
+  "MSBorderInlineStartWidth",
+  "OBorderInlineStartWidth",
+  "borderLeft",
+  "MozBorderLeft",
+  "WebkitBorderLeft",
+  "MSBorderLeft",
+  "OBorderLeft",
+  "borderLeftColor",
+  "MozBorderLeftColor",
+  "WebkitBorderLeftColor",
+  "MSBorderLeftColor",
+  "OBorderLeftColor",
+  "borderLeftStyle",
+  "MozBorderLeftStyle",
+  "WebkitBorderLeftStyle",
+  "MSBorderLeftStyle",
+  "OBorderLeftStyle",
+  "borderLeftWidth",
+  "MozBorderLeftWidth",
+  "WebkitBorderLeftWidth",
+  "MSBorderLeftWidth",
+  "OBorderLeftWidth",
+  "borderRadius",
+  "MozBorderRadius",
+  "WebkitBorderRadius",
+  "MSBorderRadius",
+  "OBorderRadius",
+  "borderRight",
+  "MozBorderRight",
+  "WebkitBorderRight",
+  "MSBorderRight",
+  "OBorderRight",
+  "borderRightColor",
+  "MozBorderRightColor",
+  "WebkitBorderRightColor",
+  "MSBorderRightColor",
+  "OBorderRightColor",
+  "borderRightStyle",
+  "MozBorderRightStyle",
+  "WebkitBorderRightStyle",
+  "MSBorderRightStyle",
+  "OBorderRightStyle",
+  "borderRightWidth",
+  "MozBorderRightWidth",
+  "WebkitBorderRightWidth",
+  "MSBorderRightWidth",
+  "OBorderRightWidth",
+  "borderSpacing",
+  "MozBorderSpacing",
+  "WebkitBorderSpacing",
+  "MSBorderSpacing",
+  "OBorderSpacing",
+  "borderStyle",
+  "MozBorderStyle",
+  "WebkitBorderStyle",
+  "MSBorderStyle",
+  "OBorderStyle",
+  "borderTop",
+  "MozBorderTop",
+  "WebkitBorderTop",
+  "MSBorderTop",
+  "OBorderTop",
+  "borderTopColor",
+  "MozBorderTopColor",
+  "WebkitBorderTopColor",
+  "MSBorderTopColor",
+  "OBorderTopColor",
+  "borderTopLeftRadius",
+  "MozBorderTopLeftRadius",
+  "WebkitBorderTopLeftRadius",
+  "MSBorderTopLeftRadius",
+  "OBorderTopLeftRadius",
+  "borderTopRightRadius",
+  "MozBorderTopRightRadius",
+  "WebkitBorderTopRightRadius",
+  "MSBorderTopRightRadius",
+  "OBorderTopRightRadius",
+  "borderTopStyle",
+  "MozBorderTopStyle",
+  "WebkitBorderTopStyle",
+  "MSBorderTopStyle",
+  "OBorderTopStyle",
+  "borderTopWidth",
+  "MozBorderTopWidth",
+  "WebkitBorderTopWidth",
+  "MSBorderTopWidth",
+  "OBorderTopWidth",
+  "borderWidth",
+  "MozBorderWidth",
+  "WebkitBorderWidth",
+  "MSBorderWidth",
+  "OBorderWidth",
+  "bottom",
+  "MozBottom",
+  "WebkitBottom",
+  "MSBottom",
+  "OBottom",
+  "boxDecorationBreak",
+  "MozBoxDecorationBreak",
+  "WebkitBoxDecorationBreak",
+  "MSBoxDecorationBreak",
+  "OBoxDecorationBreak",
+  "boxShadow",
+  "MozBoxShadow",
+  "WebkitBoxShadow",
+  "MSBoxShadow",
+  "OBoxShadow",
+  "boxSizing",
+  "MozBoxSizing",
+  "WebkitBoxSizing",
+  "MSBoxSizing",
+  "OBoxSizing",
+  "breakAfter",
+  "MozBreakAfter",
+  "WebkitBreakAfter",
+  "MSBreakAfter",
+  "OBreakAfter",
+  "breakBefore",
+  "MozBreakBefore",
+  "WebkitBreakBefore",
+  "MSBreakBefore",
+  "OBreakBefore",
+  "breakInside",
+  "MozBreakInside",
+  "WebkitBreakInside",
+  "MSBreakInside",
+  "OBreakInside",
+  "captionSide",
+  "MozCaptionSide",
+  "WebkitCaptionSide",
+  "MSCaptionSide",
+  "OCaptionSide",
+  "caretColor",
+  "MozCaretColor",
+  "WebkitCaretColor",
+  "MSCaretColor",
+  "OCaretColor",
+  "ch",
+  "MozCh",
+  "WebkitCh",
+  "MSCh",
+  "OCh",
+  "clear",
+  "MozClear",
+  "WebkitClear",
+  "MSClear",
+  "OClear",
+  "clip",
+  "MozClip",
+  "WebkitClip",
+  "MSClip",
+  "OClip",
+  "clipPath",
+  "MozClipPath",
+  "WebkitClipPath",
+  "MSClipPath",
+  "OClipPath",
+  "cm",
+  "MozCm",
+  "WebkitCm",
+  "MSCm",
+  "OCm",
+  "color",
+  "MozColor",
+  "WebkitColor",
+  "MSColor",
+  "OColor",
+  "columnCount",
+  "MozColumnCount",
+  "WebkitColumnCount",
+  "MSColumnCount",
+  "OColumnCount",
+  "columnFill",
+  "MozColumnFill",
+  "WebkitColumnFill",
+  "MSColumnFill",
+  "OColumnFill",
+  "columnGap",
+  "MozColumnGap",
+  "WebkitColumnGap",
+  "MSColumnGap",
+  "OColumnGap",
+  "columnRule",
+  "MozColumnRule",
+  "WebkitColumnRule",
+  "MSColumnRule",
+  "OColumnRule",
+  "columnRuleColor",
+  "MozColumnRuleColor",
+  "WebkitColumnRuleColor",
+  "MSColumnRuleColor",
+  "OColumnRuleColor",
+  "columnRuleStyle",
+  "MozColumnRuleStyle",
+  "WebkitColumnRuleStyle",
+  "MSColumnRuleStyle",
+  "OColumnRuleStyle",
+  "columnRuleWidth",
+  "MozColumnRuleWidth",
+  "WebkitColumnRuleWidth",
+  "MSColumnRuleWidth",
+  "OColumnRuleWidth",
+  "columnSpan",
+  "MozColumnSpan",
+  "WebkitColumnSpan",
+  "MSColumnSpan",
+  "OColumnSpan",
+  "columnWidth",
+  "MozColumnWidth",
+  "WebkitColumnWidth",
+  "MSColumnWidth",
+  "OColumnWidth",
+  "columns",
+  "MozColumns",
+  "WebkitColumns",
+  "MSColumns",
+  "OColumns",
+  "content",
+  "MozContent",
+  "WebkitContent",
+  "MSContent",
+  "OContent",
+  "counterIncrement",
+  "MozCounterIncrement",
+  "WebkitCounterIncrement",
+  "MSCounterIncrement",
+  "OCounterIncrement",
+  "counterReset",
+  "MozCounterReset",
+  "WebkitCounterReset",
+  "MSCounterReset",
+  "OCounterReset",
+  "cursor",
+  "MozCursor",
+  "WebkitCursor",
+  "MSCursor",
+  "OCursor",
+  "deg",
+  "MozDeg",
+  "WebkitDeg",
+  "MSDeg",
+  "ODeg",
+  "direction",
+  "MozDirection",
+  "WebkitDirection",
+  "MSDirection",
+  "ODirection",
+  "display",
+  "MozDisplay",
+  "WebkitDisplay",
+  "MSDisplay",
+  "ODisplay",
+  "dpcm",
+  "MozDpcm",
+  "WebkitDpcm",
+  "MSDpcm",
+  "ODpcm",
+  "dpi",
+  "MozDpi",
+  "WebkitDpi",
+  "MSDpi",
+  "ODpi",
+  "dppx",
+  "MozDppx",
+  "WebkitDppx",
+  "MSDppx",
+  "ODppx",
+  "em",
+  "MozEm",
+  "WebkitEm",
+  "MSEm",
+  "OEm",
+  "emptyCells",
+  "MozEmptyCells",
+  "WebkitEmptyCells",
+  "MSEmptyCells",
+  "OEmptyCells",
+  "ex",
+  "MozEx",
+  "WebkitEx",
+  "MSEx",
+  "OEx",
+  "filter",
+  "MozFilter",
+  "WebkitFilter",
+  "MSFilter",
+  "OFilter",
+  "flexBasis",
+  "MozFlexBasis",
+  "WebkitFlexBasis",
+  "MSFlexBasis",
+  "OFlexBasis",
+  "flexDirection",
+  "MozFlexDirection",
+  "WebkitFlexDirection",
+  "MSFlexDirection",
+  "OFlexDirection",
+  "flexFlow",
+  "MozFlexFlow",
+  "WebkitFlexFlow",
+  "MSFlexFlow",
+  "OFlexFlow",
+  "flexGrow",
+  "MozFlexGrow",
+  "WebkitFlexGrow",
+  "MSFlexGrow",
+  "OFlexGrow",
+  "flexShrink",
+  "MozFlexShrink",
+  "WebkitFlexShrink",
+  "MSFlexShrink",
+  "OFlexShrink",
+  "flexWrap",
+  "MozFlexWrap",
+  "WebkitFlexWrap",
+  "MSFlexWrap",
+  "OFlexWrap",
+  "float",
+  "MozFloat",
+  "WebkitFloat",
+  "MSFloat",
+  "OFloat",
+  "font",
+  "MozFont",
+  "WebkitFont",
+  "MSFont",
+  "OFont",
+  "fontFamily",
+  "MozFontFamily",
+  "WebkitFontFamily",
+  "MSFontFamily",
+  "OFontFamily",
+  "fontFeatureSettings",
+  "MozFontFeatureSettings",
+  "WebkitFontFeatureSettings",
+  "MSFontFeatureSettings",
+  "OFontFeatureSettings",
+  "fontKerning",
+  "MozFontKerning",
+  "WebkitFontKerning",
+  "MSFontKerning",
+  "OFontKerning",
+  "fontLanguageOverride",
+  "MozFontLanguageOverride",
+  "WebkitFontLanguageOverride",
+  "MSFontLanguageOverride",
+  "OFontLanguageOverride",
+  "fontSize",
+  "MozFontSize",
+  "WebkitFontSize",
+  "MSFontSize",
+  "OFontSize",
+  "fontSizeAdjust",
+  "MozFontSizeAdjust",
+  "WebkitFontSizeAdjust",
+  "MSFontSizeAdjust",
+  "OFontSizeAdjust",
+  "fontStretch",
+  "MozFontStretch",
+  "WebkitFontStretch",
+  "MSFontStretch",
+  "OFontStretch",
+  "fontStyle",
+  "MozFontStyle",
+  "WebkitFontStyle",
+  "MSFontStyle",
+  "OFontStyle",
+  "fontSynthesis",
+  "MozFontSynthesis",
+  "WebkitFontSynthesis",
+  "MSFontSynthesis",
+  "OFontSynthesis",
+  "fontVariant",
+  "MozFontVariant",
+  "WebkitFontVariant",
+  "MSFontVariant",
+  "OFontVariant",
+  "fontVariantAlternates",
+  "MozFontVariantAlternates",
+  "WebkitFontVariantAlternates",
+  "MSFontVariantAlternates",
+  "OFontVariantAlternates",
+  "fontVariantCaps",
+  "MozFontVariantCaps",
+  "WebkitFontVariantCaps",
+  "MSFontVariantCaps",
+  "OFontVariantCaps",
+  "fontVariantEastAsian",
+  "MozFontVariantEastAsian",
+  "WebkitFontVariantEastAsian",
+  "MSFontVariantEastAsian",
+  "OFontVariantEastAsian",
+  "fontVariantLigatures",
+  "MozFontVariantLigatures",
+  "WebkitFontVariantLigatures",
+  "MSFontVariantLigatures",
+  "OFontVariantLigatures",
+  "fontVariantNumeric",
+  "MozFontVariantNumeric",
+  "WebkitFontVariantNumeric",
+  "MSFontVariantNumeric",
+  "OFontVariantNumeric",
+  "fontVariantPosition",
+  "MozFontVariantPosition",
+  "WebkitFontVariantPosition",
+  "MSFontVariantPosition",
+  "OFontVariantPosition",
+  "fontWeight",
+  "MozFontWeight",
+  "WebkitFontWeight",
+  "MSFontWeight",
+  "OFontWeight",
+  "fr",
+  "MozFr",
+  "WebkitFr",
+  "MSFr",
+  "OFr",
+  "grad",
+  "MozGrad",
+  "WebkitGrad",
+  "MSGrad",
+  "OGrad",
+  "grid",
+  "MozGrid",
+  "WebkitGrid",
+  "MSGrid",
+  "OGrid",
+  "gridArea",
+  "MozGridArea",
+  "WebkitGridArea",
+  "MSGridArea",
+  "OGridArea",
+  "gridAutoColumns",
+  "MozGridAutoColumns",
+  "WebkitGridAutoColumns",
+  "MSGridAutoColumns",
+  "OGridAutoColumns",
+  "gridAutoFlow",
+  "MozGridAutoFlow",
+  "WebkitGridAutoFlow",
+  "MSGridAutoFlow",
+  "OGridAutoFlow",
+  "gridAutoRows",
+  "MozGridAutoRows",
+  "WebkitGridAutoRows",
+  "MSGridAutoRows",
+  "OGridAutoRows",
+  "gridColumn",
+  "MozGridColumn",
+  "WebkitGridColumn",
+  "MSGridColumn",
+  "OGridColumn",
+  "gridColumnEnd",
+  "MozGridColumnEnd",
+  "WebkitGridColumnEnd",
+  "MSGridColumnEnd",
+  "OGridColumnEnd",
+  "gridColumnGap",
+  "MozGridColumnGap",
+  "WebkitGridColumnGap",
+  "MSGridColumnGap",
+  "OGridColumnGap",
+  "gridColumnStart",
+  "MozGridColumnStart",
+  "WebkitGridColumnStart",
+  "MSGridColumnStart",
+  "OGridColumnStart",
+  "gridGap",
+  "MozGridGap",
+  "WebkitGridGap",
+  "MSGridGap",
+  "OGridGap",
+  "gridRow",
+  "MozGridRow",
+  "WebkitGridRow",
+  "MSGridRow",
+  "OGridRow",
+  "gridRowEnd",
+  "MozGridRowEnd",
+  "WebkitGridRowEnd",
+  "MSGridRowEnd",
+  "OGridRowEnd",
+  "gridRowGap",
+  "MozGridRowGap",
+  "WebkitGridRowGap",
+  "MSGridRowGap",
+  "OGridRowGap",
+  "gridRowStart",
+  "MozGridRowStart",
+  "WebkitGridRowStart",
+  "MSGridRowStart",
+  "OGridRowStart",
+  "gridTemplate",
+  "MozGridTemplate",
+  "WebkitGridTemplate",
+  "MSGridTemplate",
+  "OGridTemplate",
+  "gridTemplateAreas",
+  "MozGridTemplateAreas",
+  "WebkitGridTemplateAreas",
+  "MSGridTemplateAreas",
+  "OGridTemplateAreas",
+  "gridTemplateColumns",
+  "MozGridTemplateColumns",
+  "WebkitGridTemplateColumns",
+  "MSGridTemplateColumns",
+  "OGridTemplateColumns",
+  "gridTemplateRows",
+  "MozGridTemplateRows",
+  "WebkitGridTemplateRows",
+  "MSGridTemplateRows",
+  "OGridTemplateRows",
+  "height",
+  "MozHeight",
+  "WebkitHeight",
+  "MSHeight",
+  "OHeight",
+  "hyphens",
+  "MozHyphens",
+  "WebkitHyphens",
+  "MSHyphens",
+  "OHyphens",
+  "hz",
+  "MozHz",
+  "WebkitHz",
+  "MSHz",
+  "OHz",
+  "imageOrientation",
+  "MozImageOrientation",
+  "WebkitImageOrientation",
+  "MSImageOrientation",
+  "OImageOrientation",
+  "imageRendering",
+  "MozImageRendering",
+  "WebkitImageRendering",
+  "MSImageRendering",
+  "OImageRendering",
+  "imageResolution",
+  "MozImageResolution",
+  "WebkitImageResolution",
+  "MSImageResolution",
+  "OImageResolution",
+  "imeMode",
+  "MozImeMode",
+  "WebkitImeMode",
+  "MSImeMode",
+  "OImeMode",
+  "in",
+  "MozIn",
+  "WebkitIn",
+  "MSIn",
+  "OIn",
+  "inherit",
+  "MozInherit",
+  "WebkitInherit",
+  "MSInherit",
+  "OInherit",
+  "initial",
+  "MozInitial",
+  "WebkitInitial",
+  "MSInitial",
+  "OInitial",
+  "inlineSize",
+  "MozInlineSize",
+  "WebkitInlineSize",
+  "MSInlineSize",
+  "OInlineSize",
+  "isolation",
+  "MozIsolation",
+  "WebkitIsolation",
+  "MSIsolation",
+  "OIsolation",
+  "justifyContent",
+  "MozJustifyContent",
+  "WebkitJustifyContent",
+  "MSJustifyContent",
+  "OJustifyContent",
+  "khz",
+  "MozKhz",
+  "WebkitKhz",
+  "MSKhz",
+  "OKhz",
+  "left",
+  "MozLeft",
+  "WebkitLeft",
+  "MSLeft",
+  "OLeft",
+  "letterSpacing",
+  "MozLetterSpacing",
+  "WebkitLetterSpacing",
+  "MSLetterSpacing",
+  "OLetterSpacing",
+  "lineBreak",
+  "MozLineBreak",
+  "WebkitLineBreak",
+  "MSLineBreak",
+  "OLineBreak",
+  "lineHeight",
+  "MozLineHeight",
+  "WebkitLineHeight",
+  "MSLineHeight",
+  "OLineHeight",
+  "listStyle",
+  "MozListStyle",
+  "WebkitListStyle",
+  "MSListStyle",
+  "OListStyle",
+  "listStyleImage",
+  "MozListStyleImage",
+  "WebkitListStyleImage",
+  "MSListStyleImage",
+  "OListStyleImage",
+  "listStylePosition",
+  "MozListStylePosition",
+  "WebkitListStylePosition",
+  "MSListStylePosition",
+  "OListStylePosition",
+  "listStyleType",
+  "MozListStyleType",
+  "WebkitListStyleType",
+  "MSListStyleType",
+  "OListStyleType",
+  "margin",
+  "MozMargin",
+  "WebkitMargin",
+  "MSMargin",
+  "OMargin",
+  "marginBlockEnd",
+  "MozMarginBlockEnd",
+  "WebkitMarginBlockEnd",
+  "MSMarginBlockEnd",
+  "OMarginBlockEnd",
+  "marginBlockStart",
+  "MozMarginBlockStart",
+  "WebkitMarginBlockStart",
+  "MSMarginBlockStart",
+  "OMarginBlockStart",
+  "marginBottom",
+  "MozMarginBottom",
+  "WebkitMarginBottom",
+  "MSMarginBottom",
+  "OMarginBottom",
+  "marginInlineEnd",
+  "MozMarginInlineEnd",
+  "WebkitMarginInlineEnd",
+  "MSMarginInlineEnd",
+  "OMarginInlineEnd",
+  "marginInlineStart",
+  "MozMarginInlineStart",
+  "WebkitMarginInlineStart",
+  "MSMarginInlineStart",
+  "OMarginInlineStart",
+  "marginLeft",
+  "MozMarginLeft",
+  "WebkitMarginLeft",
+  "MSMarginLeft",
+  "OMarginLeft",
+  "marginRight",
+  "MozMarginRight",
+  "WebkitMarginRight",
+  "MSMarginRight",
+  "OMarginRight",
+  "marginTop",
+  "MozMarginTop",
+  "WebkitMarginTop",
+  "MSMarginTop",
+  "OMarginTop",
+  "mask",
+  "MozMask",
+  "WebkitMask",
+  "MSMask",
+  "OMask",
+  "maskClip",
+  "MozMaskClip",
+  "WebkitMaskClip",
+  "MSMaskClip",
+  "OMaskClip",
+  "maskComposite",
+  "MozMaskComposite",
+  "WebkitMaskComposite",
+  "MSMaskComposite",
+  "OMaskComposite",
+  "maskImage",
+  "MozMaskImage",
+  "WebkitMaskImage",
+  "MSMaskImage",
+  "OMaskImage",
+  "maskMode",
+  "MozMaskMode",
+  "WebkitMaskMode",
+  "MSMaskMode",
+  "OMaskMode",
+  "maskOrigin",
+  "MozMaskOrigin",
+  "WebkitMaskOrigin",
+  "MSMaskOrigin",
+  "OMaskOrigin",
+  "maskPosition",
+  "MozMaskPosition",
+  "WebkitMaskPosition",
+  "MSMaskPosition",
+  "OMaskPosition",
+  "maskRepeat",
+  "MozMaskRepeat",
+  "WebkitMaskRepeat",
+  "MSMaskRepeat",
+  "OMaskRepeat",
+  "maskSize",
+  "MozMaskSize",
+  "WebkitMaskSize",
+  "MSMaskSize",
+  "OMaskSize",
+  "maskType",
+  "MozMaskType",
+  "WebkitMaskType",
+  "MSMaskType",
+  "OMaskType",
+  "maxHeight",
+  "MozMaxHeight",
+  "WebkitMaxHeight",
+  "MSMaxHeight",
+  "OMaxHeight",
+  "maxWidth",
+  "MozMaxWidth",
+  "WebkitMaxWidth",
+  "MSMaxWidth",
+  "OMaxWidth",
+  "minBlockSize",
+  "MozMinBlockSize",
+  "WebkitMinBlockSize",
+  "MSMinBlockSize",
+  "OMinBlockSize",
+  "minHeight",
+  "MozMinHeight",
+  "WebkitMinHeight",
+  "MSMinHeight",
+  "OMinHeight",
+  "minInlineSize",
+  "MozMinInlineSize",
+  "WebkitMinInlineSize",
+  "MSMinInlineSize",
+  "OMinInlineSize",
+  "minWidth",
+  "MozMinWidth",
+  "WebkitMinWidth",
+  "MSMinWidth",
+  "OMinWidth",
+  "mixBlendMode",
+  "MozMixBlendMode",
+  "WebkitMixBlendMode",
+  "MSMixBlendMode",
+  "OMixBlendMode",
+  "mm",
+  "MozMm",
+  "WebkitMm",
+  "MSMm",
+  "OMm",
+  "ms",
+  "MozMs",
+  "WebkitMs",
+  "MSMs",
+  "OMs",
+  "objectFit",
+  "MozObjectFit",
+  "WebkitObjectFit",
+  "MSObjectFit",
+  "OObjectFit",
+  "objectPosition",
+  "MozObjectPosition",
+  "WebkitObjectPosition",
+  "MSObjectPosition",
+  "OObjectPosition",
+  "offsetBlockEnd",
+  "MozOffsetBlockEnd",
+  "WebkitOffsetBlockEnd",
+  "MSOffsetBlockEnd",
+  "OOffsetBlockEnd",
+  "offsetBlockStart",
+  "MozOffsetBlockStart",
+  "WebkitOffsetBlockStart",
+  "MSOffsetBlockStart",
+  "OOffsetBlockStart",
+  "offsetInlineEnd",
+  "MozOffsetInlineEnd",
+  "WebkitOffsetInlineEnd",
+  "MSOffsetInlineEnd",
+  "OOffsetInlineEnd",
+  "offsetInlineStart",
+  "MozOffsetInlineStart",
+  "WebkitOffsetInlineStart",
+  "MSOffsetInlineStart",
+  "OOffsetInlineStart",
+  "opacity",
+  "MozOpacity",
+  "WebkitOpacity",
+  "MSOpacity",
+  "OOpacity",
+  "order",
+  "MozOrder",
+  "WebkitOrder",
+  "MSOrder",
+  "OOrder",
+  "orphans",
+  "MozOrphans",
+  "WebkitOrphans",
+  "MSOrphans",
+  "OOrphans",
+  "outline",
+  "MozOutline",
+  "WebkitOutline",
+  "MSOutline",
+  "OOutline",
+  "outlineColor",
+  "MozOutlineColor",
+  "WebkitOutlineColor",
+  "MSOutlineColor",
+  "OOutlineColor",
+  "outlineOffset",
+  "MozOutlineOffset",
+  "WebkitOutlineOffset",
+  "MSOutlineOffset",
+  "OOutlineOffset",
+  "outlineStyle",
+  "MozOutlineStyle",
+  "WebkitOutlineStyle",
+  "MSOutlineStyle",
+  "OOutlineStyle",
+  "outlineWidth",
+  "MozOutlineWidth",
+  "WebkitOutlineWidth",
+  "MSOutlineWidth",
+  "OOutlineWidth",
+  "overflow",
+  "MozOverflow",
+  "WebkitOverflow",
+  "MSOverflow",
+  "OOverflow",
+  "overflowWrap",
+  "MozOverflowWrap",
+  "WebkitOverflowWrap",
+  "MSOverflowWrap",
+  "OOverflowWrap",
+  "overflowX",
+  "MozOverflowX",
+  "WebkitOverflowX",
+  "MSOverflowX",
+  "OOverflowX",
+  "overflowY",
+  "MozOverflowY",
+  "WebkitOverflowY",
+  "MSOverflowY",
+  "OOverflowY",
+  "padding",
+  "MozPadding",
+  "WebkitPadding",
+  "MSPadding",
+  "OPadding",
+  "paddingBlockEnd",
+  "MozPaddingBlockEnd",
+  "WebkitPaddingBlockEnd",
+  "MSPaddingBlockEnd",
+  "OPaddingBlockEnd",
+  "paddingBlockStart",
+  "MozPaddingBlockStart",
+  "WebkitPaddingBlockStart",
+  "MSPaddingBlockStart",
+  "OPaddingBlockStart",
+  "paddingBottom",
+  "MozPaddingBottom",
+  "WebkitPaddingBottom",
+  "MSPaddingBottom",
+  "OPaddingBottom",
+  "paddingInlineEnd",
+  "MozPaddingInlineEnd",
+  "WebkitPaddingInlineEnd",
+  "MSPaddingInlineEnd",
+  "OPaddingInlineEnd",
+  "paddingInlineStart",
+  "MozPaddingInlineStart",
+  "WebkitPaddingInlineStart",
+  "MSPaddingInlineStart",
+  "OPaddingInlineStart",
+  "paddingLeft",
+  "MozPaddingLeft",
+  "WebkitPaddingLeft",
+  "MSPaddingLeft",
+  "OPaddingLeft",
+  "paddingRight",
+  "MozPaddingRight",
+  "WebkitPaddingRight",
+  "MSPaddingRight",
+  "OPaddingRight",
+  "paddingTop",
+  "MozPaddingTop",
+  "WebkitPaddingTop",
+  "MSPaddingTop",
+  "OPaddingTop",
+  "pageBreakAfter",
+  "MozPageBreakAfter",
+  "WebkitPageBreakAfter",
+  "MSPageBreakAfter",
+  "OPageBreakAfter",
+  "pageBreakBefore",
+  "MozPageBreakBefore",
+  "WebkitPageBreakBefore",
+  "MSPageBreakBefore",
+  "OPageBreakBefore",
+  "pageBreakInside",
+  "MozPageBreakInside",
+  "WebkitPageBreakInside",
+  "MSPageBreakInside",
+  "OPageBreakInside",
+  "pc",
+  "MozPc",
+  "WebkitPc",
+  "MSPc",
+  "OPc",
+  "perspective",
+  "MozPerspective",
+  "WebkitPerspective",
+  "MSPerspective",
+  "OPerspective",
+  "perspectiveOrigin",
+  "MozPerspectiveOrigin",
+  "WebkitPerspectiveOrigin",
+  "MSPerspectiveOrigin",
+  "OPerspectiveOrigin",
+  "pointerEvents",
+  "MozPointerEvents",
+  "WebkitPointerEvents",
+  "MSPointerEvents",
+  "OPointerEvents",
+  "position",
+  "MozPosition",
+  "WebkitPosition",
+  "MSPosition",
+  "OPosition",
+  "pt",
+  "MozPt",
+  "WebkitPt",
+  "MSPt",
+  "OPt",
+  "px",
+  "MozPx",
+  "WebkitPx",
+  "MSPx",
+  "OPx",
+  "q",
+  "MozQ",
+  "WebkitQ",
+  "MSQ",
+  "OQ",
+  "quotes",
+  "MozQuotes",
+  "WebkitQuotes",
+  "MSQuotes",
+  "OQuotes",
+  "rad",
+  "MozRad",
+  "WebkitRad",
+  "MSRad",
+  "ORad",
+  "rem",
+  "MozRem",
+  "WebkitRem",
+  "MSRem",
+  "ORem",
+  "resize",
+  "MozResize",
+  "WebkitResize",
+  "MSResize",
+  "OResize",
+  "revert",
+  "MozRevert",
+  "WebkitRevert",
+  "MSRevert",
+  "ORevert",
+  "right",
+  "MozRight",
+  "WebkitRight",
+  "MSRight",
+  "ORight",
+  "rubyAlign",
+  "MozRubyAlign",
+  "WebkitRubyAlign",
+  "MSRubyAlign",
+  "ORubyAlign",
+  "rubyMerge",
+  "MozRubyMerge",
+  "WebkitRubyMerge",
+  "MSRubyMerge",
+  "ORubyMerge",
+  "rubyPosition",
+  "MozRubyPosition",
+  "WebkitRubyPosition",
+  "MSRubyPosition",
+  "ORubyPosition",
+  "s",
+  "MozS",
+  "WebkitS",
+  "MSS",
+  "OS",
+  "scrollBehavior",
+  "MozScrollBehavior",
+  "WebkitScrollBehavior",
+  "MSScrollBehavior",
+  "OScrollBehavior",
+  "scrollSnapCoordinate",
+  "MozScrollSnapCoordinate",
+  "WebkitScrollSnapCoordinate",
+  "MSScrollSnapCoordinate",
+  "OScrollSnapCoordinate",
+  "scrollSnapDestination",
+  "MozScrollSnapDestination",
+  "WebkitScrollSnapDestination",
+  "MSScrollSnapDestination",
+  "OScrollSnapDestination",
+  "scrollSnapType",
+  "MozScrollSnapType",
+  "WebkitScrollSnapType",
+  "MSScrollSnapType",
+  "OScrollSnapType",
+  "shapeImageThreshold",
+  "MozShapeImageThreshold",
+  "WebkitShapeImageThreshold",
+  "MSShapeImageThreshold",
+  "OShapeImageThreshold",
+  "shapeMargin",
+  "MozShapeMargin",
+  "WebkitShapeMargin",
+  "MSShapeMargin",
+  "OShapeMargin",
+  "shapeOutside",
+  "MozShapeOutside",
+  "WebkitShapeOutside",
+  "MSShapeOutside",
+  "OShapeOutside",
+  "tabSize",
+  "MozTabSize",
+  "WebkitTabSize",
+  "MSTabSize",
+  "OTabSize",
+  "tableLayout",
+  "MozTableLayout",
+  "WebkitTableLayout",
+  "MSTableLayout",
+  "OTableLayout",
+  "textAlign",
+  "MozTextAlign",
+  "WebkitTextAlign",
+  "MSTextAlign",
+  "OTextAlign",
+  "textAlignLast",
+  "MozTextAlignLast",
+  "WebkitTextAlignLast",
+  "MSTextAlignLast",
+  "OTextAlignLast",
+  "textCombineUpright",
+  "MozTextCombineUpright",
+  "WebkitTextCombineUpright",
+  "MSTextCombineUpright",
+  "OTextCombineUpright",
+  "textDecoration",
+  "MozTextDecoration",
+  "WebkitTextDecoration",
+  "MSTextDecoration",
+  "OTextDecoration",
+  "textDecorationColor",
+  "MozTextDecorationColor",
+  "WebkitTextDecorationColor",
+  "MSTextDecorationColor",
+  "OTextDecorationColor",
+  "textDecorationLine",
+  "MozTextDecorationLine",
+  "WebkitTextDecorationLine",
+  "MSTextDecorationLine",
+  "OTextDecorationLine",
+  "textDecorationStyle",
+  "MozTextDecorationStyle",
+  "WebkitTextDecorationStyle",
+  "MSTextDecorationStyle",
+  "OTextDecorationStyle",
+  "textEmphasis",
+  "MozTextEmphasis",
+  "WebkitTextEmphasis",
+  "MSTextEmphasis",
+  "OTextEmphasis",
+  "textEmphasisColor",
+  "MozTextEmphasisColor",
+  "WebkitTextEmphasisColor",
+  "MSTextEmphasisColor",
+  "OTextEmphasisColor",
+  "textEmphasisPosition",
+  "MozTextEmphasisPosition",
+  "WebkitTextEmphasisPosition",
+  "MSTextEmphasisPosition",
+  "OTextEmphasisPosition",
+  "textEmphasisStyle",
+  "MozTextEmphasisStyle",
+  "WebkitTextEmphasisStyle",
+  "MSTextEmphasisStyle",
+  "OTextEmphasisStyle",
+  "textIndent",
+  "MozTextIndent",
+  "WebkitTextIndent",
+  "MSTextIndent",
+  "OTextIndent",
+  "textOrientation",
+  "MozTextOrientation",
+  "WebkitTextOrientation",
+  "MSTextOrientation",
+  "OTextOrientation",
+  "textOverflow",
+  "MozTextOverflow",
+  "WebkitTextOverflow",
+  "MSTextOverflow",
+  "OTextOverflow",
+  "textRendering",
+  "MozTextRendering",
+  "WebkitTextRendering",
+  "MSTextRendering",
+  "OTextRendering",
+  "textShadow",
+  "MozTextShadow",
+  "WebkitTextShadow",
+  "MSTextShadow",
+  "OTextShadow",
+  "textTransform",
+  "MozTextTransform",
+  "WebkitTextTransform",
+  "MSTextTransform",
+  "OTextTransform",
+  "textUnderlinePosition",
+  "MozTextUnderlinePosition",
+  "WebkitTextUnderlinePosition",
+  "MSTextUnderlinePosition",
+  "OTextUnderlinePosition",
+  "top",
+  "MozTop",
+  "WebkitTop",
+  "MSTop",
+  "OTop",
+  "touchAction",
+  "MozTouchAction",
+  "WebkitTouchAction",
+  "MSTouchAction",
+  "OTouchAction",
+  "transform",
+  "MozTransform",
+  "WebkitTransform",
+  "msTransform",
+  "OTransform",
+  "transformBox",
+  "MozTransformBox",
+  "WebkitTransformBox",
+  "MSTransformBox",
+  "OTransformBox",
+  "transformOrigin",
+  "MozTransformOrigin",
+  "WebkitTransformOrigin",
+  "MSTransformOrigin",
+  "OTransformOrigin",
+  "transformStyle",
+  "MozTransformStyle",
+  "WebkitTransformStyle",
+  "MSTransformStyle",
+  "OTransformStyle",
+  "transition",
+  "MozTransition",
+  "WebkitTransition",
+  "MSTransition",
+  "OTransition",
+  "transitionDelay",
+  "MozTransitionDelay",
+  "WebkitTransitionDelay",
+  "MSTransitionDelay",
+  "OTransitionDelay",
+  "transitionDuration",
+  "MozTransitionDuration",
+  "WebkitTransitionDuration",
+  "MSTransitionDuration",
+  "OTransitionDuration",
+  "transitionProperty",
+  "MozTransitionProperty",
+  "WebkitTransitionProperty",
+  "MSTransitionProperty",
+  "OTransitionProperty",
+  "transitionTimingFunction",
+  "MozTransitionTimingFunction",
+  "WebkitTransitionTimingFunction",
+  "MSTransitionTimingFunction",
+  "OTransitionTimingFunction",
+  "turn",
+  "MozTurn",
+  "WebkitTurn",
+  "MSTurn",
+  "OTurn",
+  "unicodeBidi",
+  "MozUnicodeBidi",
+  "WebkitUnicodeBidi",
+  "MSUnicodeBidi",
+  "OUnicodeBidi",
+  "unset",
+  "MozUnset",
+  "WebkitUnset",
+  "MSUnset",
+  "OUnset",
+  "verticalAlign",
+  "MozVerticalAlign",
+  "WebkitVerticalAlign",
+  "MSVerticalAlign",
+  "OVerticalAlign",
+  "vh",
+  "MozVh",
+  "WebkitVh",
+  "MSVh",
+  "OVh",
+  "visibility",
+  "MozVisibility",
+  "WebkitVisibility",
+  "MSVisibility",
+  "OVisibility",
+  "vmax",
+  "MozVmax",
+  "WebkitVmax",
+  "MSVmax",
+  "OVmax",
+  "vmin",
+  "MozVmin",
+  "WebkitVmin",
+  "MSVmin",
+  "OVmin",
+  "vw",
+  "MozVw",
+  "WebkitVw",
+  "MSVw",
+  "OVw",
+  "whiteSpace",
+  "MozWhiteSpace",
+  "WebkitWhiteSpace",
+  "MSWhiteSpace",
+  "OWhiteSpace",
+  "widows",
+  "MozWidows",
+  "WebkitWidows",
+  "MSWidows",
+  "OWidows",
+  "width",
+  "MozWidth",
+  "WebkitWidth",
+  "MSWidth",
+  "OWidth",
+  "willChange",
+  "MozWillChange",
+  "WebkitWillChange",
+  "MSWillChange",
+  "OWillChange",
+  "wordBreak",
+  "MozWordBreak",
+  "WebkitWordBreak",
+  "MSWordBreak",
+  "OWordBreak",
+  "wordSpacing",
+  "MozWordSpacing",
+  "WebkitWordSpacing",
+  "MSWordSpacing",
+  "OWordSpacing",
+  "wordWrap",
+  "MozWordWrap",
+  "WebkitWordWrap",
+  "MSWordWrap",
+  "OWordWrap",
+  "writingMode",
+  "MozWritingMode",
+  "WebkitWritingMode",
+  "MSWritingMode",
+  "OWritingMode",
+  "zIndex",
+  "MozZIndex",
+  "WebkitZIndex",
+  "MSZIndex",
+  "OZIndex",
+  "fontSize",
+  "MozFontSize",
+  "WebkitFontSize",
+  "MSFontSize",
+  "OFontSize",
+  "flex",
+  "MozFlex",
+  "WebkitFlex",
+  "MSFlex",
+  "OFlex",
+  "fr",
+  "MozFr",
+  "WebkitFr",
+  "MSFr",
+  "OFr",
+  "overflowScrolling",
+  "MozOverflowScrolling",
+  "WebkitOverflowScrolling",
+  "MSOverflowScrolling",
+  "OOverflowScrolling",
+  "userSelect",
+  "MozUserSelect",
+  "WebkitUserSelect",
+  "MSUserSelect",
+  "OUserSelect"
+]
+
+
+/***/ }),
+
+/***/ "./node_modules/react-style-proptype/src/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/react-style-proptype/src/index.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var properties = __webpack_require__(/*! ./css-properties.js */ "./node_modules/react-style-proptype/src/css-properties.js");
+var PropTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+module.exports = function(props, propName, componentName) {
+  var styles = props[propName];
+  if (!styles) {
+    return;
+  }
+
+  var failures = [];
+  Object.keys(styles).forEach(function(styleKey){
+    if (properties.indexOf(styleKey) === -1) {
+      failures.push(styleKey);
+    }
+  });
+  if (failures.length) {
+    throw new Error('Prop ' + propName + ' passed to ' + componentName + '. Has invalid keys ' + failures.join(', '));
+  }
+};
+
+module.exports.isRequired = function(props, propName, componentName) {
+  if (!props[propName]) {
+    throw new Error('Prop ' + propName + ' passed to ' + componentName + ' is required');
+  }
+  return module.exports(props, propName, componentName);
+};
+
+module.exports.supportingArrays = PropTypes.oneOfType([
+  PropTypes.arrayOf(module.exports),
+  module.exports
+]);
+
+
+/***/ }),
+
 /***/ "./node_modules/react-transition-group/CSSTransition.js":
 /*!**************************************************************!*\
   !*** ./node_modules/react-transition-group/CSSTransition.js ***!
@@ -83812,8 +86158,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var initialState = {
   displayMaterials: [],
-  scheduleMaterials: []
+  scheduleMaterials: [{
+    id: 2,
+    name: "برمجة كينونية ",
+    pre_req: 1,
+    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس"
+  }]
 };
+/*
+ * ADD: 		action.payload is a material object.
+ * REMOVE: 	action.payload is just the id.
+*/
+
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
@@ -83828,7 +86184,7 @@ var initialState = {
       //! There has to be a cleaner way READ: Actions when using Redux Hooks!
       return _objectSpread({}, state, {
         displayMaterials: state.displayMaterials.filter(function (m) {
-          return m.id != action.payload.id;
+          return m.id != action.payload;
         })
       });
 
@@ -83840,7 +86196,7 @@ var initialState = {
     case _actions_types__WEBPACK_IMPORTED_MODULE_0__["REMOVE_FROM_SCHDULE"]:
       return _objectSpread({}, state, {
         scheduleMaterials: state.scheduleMaterials.filter(function (m) {
-          return m.id != action.payload.id;
+          return m.id != action.payload;
         })
       });
 
@@ -83907,10 +86263,84 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/components/MaterialsDisplay.jsx":
-/*!******************************************************!*\
-  !*** ./resources/js/components/MaterialsDisplay.jsx ***!
-  \******************************************************/
+/***/ "./resources/js/components/MaterialsDisplay/InteractiveRow.jsx":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/MaterialsDisplay/InteractiveRow.jsx ***!
+  \*********************************************************************/
+/*! exports provided: InteractiveRow */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InteractiveRow", function() { return InteractiveRow; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Modal */ "./resources/js/components/MaterialsDisplay/Modal.jsx");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var InteractiveRow = function InteractiveRow(_ref) {
+  var material = _ref.material;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      selectIndex = _useState2[0],
+      setSelectIndex = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState4 = _slicedToArray(_useState3, 2),
+      isDropDownOpen = _useState4[0],
+      setDropDownOpen = _useState4[1];
+  /* //  TODO: 
+  
+  	* Clicking away from the drop-down-menu should close it!
+  
+  	* Think of a more user friendly way to deal with having only one option
+  
+  */
+
+
+  var options = material.sections;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+    id: "material"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal__WEBPACK_IMPORTED_MODULE_1__["ButtonModal"], {
+    material: material,
+    selectIndex: selectIndex
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", material.name, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "drop-down",
+    onClick: function onClick() {
+      return setDropDownOpen(!isDropDownOpen);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+    id: selectIndex
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, options[selectIndex].instructor), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, options[selectIndex].time_days), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, options[selectIndex].room))), isDropDownOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
+    id: "drop-down-menu",
+    onMouseLeave: function onMouseLeave() {
+      return setDropDownOpen(false);
+    }
+  }, options.map(function (_option, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+      key: index,
+      onClick: function onClick() {
+        setSelectIndex(index);
+      }
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, _option.instructor), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, _option.time_days), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, _option.room), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, index == selectIndex ? "✔" : null));
+  }))))));
+};
+
+/***/ }),
+
+/***/ "./resources/js/components/MaterialsDisplay/MaterialsDisplay.jsx":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/MaterialsDisplay/MaterialsDisplay.jsx ***!
+  \***********************************************************************/
 /*! exports provided: MaterialsDisplay */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -83920,15 +86350,82 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
-/* harmony import */ var _utility_components_Dropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utility_components/Dropdown */ "./resources/js/utility_components/Dropdown.jsx");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
-/* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! style-loader!css-loader!bootstrap/dist/css/bootstrap.css */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/bootstrap/dist/css/bootstrap.css");
-/* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
-/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
-/* harmony import */ var _MaterialsDisplay_module_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./MaterialsDisplay.module.scss */ "./resources/js/components/MaterialsDisplay.module.scss");
-/* harmony import */ var _MaterialsDisplay_module_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_MaterialsDisplay_module_scss__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _InteractiveRow__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./InteractiveRow */ "./resources/js/components/MaterialsDisplay/InteractiveRow.jsx");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+/* harmony import */ var _MaterialsDisplay_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MaterialsDisplay.module.scss */ "./resources/js/components/MaterialsDisplay/MaterialsDisplay.module.scss");
+/* harmony import */ var _MaterialsDisplay_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_MaterialsDisplay_module_scss__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+var MaterialsDisplay = function MaterialsDisplay() {
+  var rows_of_data = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useSelector"])(function (state) {
+    return state.materials.displayMaterials;
+  });
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "materialsProgram"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Avaliable Times:"), rows_of_data.length > 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Table"], {
+    className: "materialsTable"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0636\u0641 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0633\u0645 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0645\u062F\u0631\u0633 \u0627\u0644\u0645\u0627\u062F\u0629  /  \u0627\u0644\u0627\u064A\u0627\u0645 \u0648\u0627\u0644\u0627\u0648\u0642\u0627\u062A / \u0627\u0644\u0642\u0627\u0639\u0629"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, rows_of_data.map(function (material, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_InteractiveRow__WEBPACK_IMPORTED_MODULE_2__["InteractiveRow"], {
+      key: index,
+      material: material
+    });
+  }))));
+};
+
+/***/ }),
+
+/***/ "./resources/js/components/MaterialsDisplay/MaterialsDisplay.module.scss":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/MaterialsDisplay/MaterialsDisplay.module.scss ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./MaterialsDisplay.module.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/MaterialsDisplay/MaterialsDisplay.module.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/js/components/MaterialsDisplay/Modal.jsx":
+/*!************************************************************!*\
+  !*** ./resources/js/components/MaterialsDisplay/Modal.jsx ***!
+  \************************************************************/
+/*! exports provided: ButtonModal */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ButtonModal", function() { return ButtonModal; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+/* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! style-loader!css-loader!bootstrap/dist/css/bootstrap.css */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/bootstrap/dist/css/bootstrap.css");
+/* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -83950,45 +86447,42 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+var ButtonModal = function ButtonModal(_ref) {
+  var material = _ref.material,
+      selectIndex = _ref.selectIndex;
 
-
-var MaterialsDisplay = function MaterialsDisplay() {
-  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useDispatch"])();
-  var rows_of_data = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useSelector"])(function (state) {
-    return state.materials.displayMaterials;
-  });
-  var selectedMaterials = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useSelector"])(function (state) {
-    return state.materials.scheduleMaterials;
-  }); //const optionsRefs = rows_of_data.map( () => createRef());
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       _useState2 = _slicedToArray(_useState, 2),
-      optionsRefs = _useState2[0],
-      setOptionsRefs = _useState2[1];
+      modal = _useState2[0],
+      setModal = _useState2[1];
 
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    setOptionsRefs(function (optionsRefs) {
-      return rows_of_data.map(function (_, i) {
-        return optionsRefs[i] || Object(react__WEBPACK_IMPORTED_MODULE_0__["createRef"])();
-      });
-    });
-  }, [rows_of_data]);
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    title: '',
+    content: 'تشرفنا'
+  }),
+      _useState4 = _slicedToArray(_useState3, 2),
+      modalInfo = _useState4[0],
+      setModalInfo = _useState4[1];
 
-  var addToSchedule = function addToSchedule(material, index) {
-    var sectionNum = optionsRefs[index].current.id;
-    var selectedTime = material.sections[sectionNum].time_days; //! WRONG, this compares all days, not the currently selected day.
+  var toggle = function toggle() {
+    return setModal(!modal);
+  };
 
-    if (selectedMaterials.some(function (_material) {
-      return _material.time_days == selectedTime;
-    })) {
-      console.log('TIME OCCUPIED');
+  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useDispatch"])();
+  var materialsInSchedule = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useSelector"])(function (state) {
+    return state.materials.scheduleMaterials;
+  });
+
+  var addToSchedule = function addToSchedule() {
+    var selectedTime = material.sections[selectIndex].time_days;
+
+    if (isAlreadyScheduled()) {
+      console.log('MATERIAL ALREADY ADDED');
       return;
     }
 
-    if (selectedMaterials.some(function (_material) {
-      return _material.id == material.id;
-    })) {
-      console.log('MATERIAL ALREADY ADDED');
+    if (isTimeOccupied()) {
+      console.log('TIME OCCUPIED');
       return;
     }
 
@@ -83996,72 +86490,177 @@ var MaterialsDisplay = function MaterialsDisplay() {
       type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["ADD_TO_SCHDULE"],
       payload: _objectSpread({}, material, {
         time_days: selectedTime
-      }) //! NOT ACTUALLY CORRECT
-
+      })
     });
-    console.log(_objectSpread({}, material, {
-      time_days: selectedTime
-    }));
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "materialsProgram"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Avaliable Times:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Table"], {
-    className: "materialsTable"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0636\u0641 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0633\u0645 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0645\u062F\u0631\u0633 \u0627\u0644\u0645\u0627\u062F\u0629  /  \u0627\u0644\u0627\u064A\u0627\u0645 \u0648\u0627\u0644\u0627\u0648\u0642\u0627\u062A / \u0627\u0644\u0642\u0627\u0639\u0629"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, rows_of_data.map(function (material, index) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-      key: index,
-      id: "material"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Button"], {
-      color: "success",
-      onClick: function onClick() {
-        return addToSchedule(material, index);
-      }
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_7__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__["faPlus"]
-    }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", material.name, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_utility_components_Dropdown__WEBPACK_IMPORTED_MODULE_3__["Dropdown"], {
-      ref: optionsRefs[index],
-      options: material.sections
-    })));
-  }))));
+  var isAlreadyScheduled = function isAlreadyScheduled() {
+    return materialsInSchedule.some(function (_material) {
+      return _material.id == material.id;
+    });
+  };
+
+  var isTimeOccupied = function isTimeOccupied() {
+    var selectedTime = material.sections[selectIndex].time_days;
+    return materialsInSchedule.some(function (_material) {
+      return _material.time_days === selectedTime;
+    });
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (isAlreadyScheduled()) {
+      setModalInfo({
+        renderBtn: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+          color: "danger",
+          onClick: toggle
+        }, "  ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faBan"]
+        }), " "),
+        onAccept: function onAccept() {
+          return dispatch({
+            type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
+            payload: material.id
+          });
+        },
+        title: 'already dude المادة مضافة',
+        content: " بتحب تحذفها؟ "
+      });
+    } else if (isTimeOccupied()) {
+      var selectedTime = material.sections[selectIndex].time_days;
+      var otherMaterial = materialsInSchedule.filter(function (material) {
+        return material.time_days == selectedTime;
+      })[0];
+      setModalInfo({
+        renderBtn: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+          color: "warning",
+          onClick: toggle
+        }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faCalendarTimes"]
+        }), " "),
+        onAccept: function onAccept() {
+          dispatch({
+            type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
+            payload: otherMaterial.id
+          });
+          dispatch({
+            type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["ADD_TO_SCHDULE"],
+            payload: _objectSpread({}, material, {
+              time_days: selectedTime
+            })
+          });
+        },
+        title: 'تعارض وقت',
+        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0634\u0648\u0641 \u0639\u0644\u064A.. \u0645\u0627\u062F\u0629 \u0627\u0644 \"", otherMaterial.name, "\" \u0648\u0642\u062A\u0647\u0627 \u0628\u062A\u0639\u0627\u0631\u0636 \u0645\u0639 \u0627\u0644 \"", material.name, "\" \u0628\u062A\u062D\u0628 \u062A\u0628\u062F\u0644 \u0627\u0644\u0645\u0648\u0627\u062F \u0628\u0628\u0639\u0636\u061F")
+      });
+    } else {
+      var _selectedTime = material.sections[selectIndex].time_days;
+      setModalInfo({
+        renderBtn: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+          color: "success",
+          onClick: toggle
+        }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faPlus"]
+        }), " "),
+        onAccept: function onAccept() {
+          return dispatch({
+            type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["ADD_TO_SCHDULE"],
+            payload: _objectSpread({}, material, {
+              time_days: _selectedTime
+            })
+          });
+        },
+        title: 'اضافة مادة',
+        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0628\u062F\u0643 \u0627\u062A\u0636\u064A\u0641 \"", material.name, "\" \u061F")
+      });
+    }
+  }, [materialsInSchedule, selectIndex]);
+  console.log(modal);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, modalInfo.renderBtn, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Modal"], {
+    isOpen: modal,
+    toggle: toggle
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["ModalHeader"], {
+    toggle: toggle
+  }, modalInfo.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["ModalBody"], null, " ", modalInfo.content, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["ModalFooter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    color: "danger",
+    onClick: toggle
+  }, " \u0643\u0646\u0633\u0644 \u0639\u0627\u0644\u0645\u0648\u0636\u0648\u0639"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    color: "primary",
+    onClick: function onClick() {
+      modalInfo.onAccept();
+      toggle();
+    }
+  }, "\u062A\u0645\u0627\u0645"), ' ')));
+}; // isAlreadyScheduled() ?
+
+{}
+/* <Button color="danger" onClick={() => addToSchedule()}> 
+	<FontAwesomeIcon icon={faBan}/>
+</Button> */
+// :
+// isTimeOccupied() ?
+// <Button color="warning" onClick={() => addToSchedule()}>
+// 		<FontAwesomeIcon icon={faCalendarTimes}/>
+// </Button>
+// : 
+
+{
+  /* <Button color="success" onClick={() => addToSchedule()}> 
+  	<FontAwesomeIcon icon={faPlus}/>
+  </Button> */
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/MaterialsTree/MaterialNode.jsx":
+/*!****************************************************************!*\
+  !*** ./resources/js/components/MaterialsTree/MaterialNode.jsx ***!
+  \****************************************************************/
+/*! exports provided: MaterialNode */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialNode", function() { return MaterialNode; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+
+
+
+var MaterialNode = function MaterialNode(_ref) {
+  var material = _ref.material;
+  var materialRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["createRef"])();
+  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["useDispatch"])(); //? add or remove a material from the MaterialsDisplay
+
+  var ToggleMaterialToDisplay = function ToggleMaterialToDisplay() {
+    //! USE REFS!
+    var isDisplayed = materialRef.current.classList.toggle('fadingNode');
+    if (!isDisplayed) dispatch({
+      type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__["ADD_TO_DISPLAY"],
+      payload: material
+    });else dispatch({
+      type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__["REMOVE_FROM_DISPLAY"],
+      payload: material.id
+    });
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    id: material.id,
+    ref: materialRef,
+    className: 'materialNode fadingNode',
+    onClick: function onClick() {
+      return ToggleMaterialToDisplay();
+    }
+  }, "".concat(material.name)));
 };
 
 /***/ }),
 
-/***/ "./resources/js/components/MaterialsDisplay.module.scss":
-/*!**************************************************************!*\
-  !*** ./resources/js/components/MaterialsDisplay.module.scss ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./MaterialsDisplay.module.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/MaterialsDisplay.module.scss");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./resources/js/components/MaterialsTree.jsx":
-/*!***************************************************!*\
-  !*** ./resources/js/components/MaterialsTree.jsx ***!
-  \***************************************************/
+/***/ "./resources/js/components/MaterialsTree/MaterialsTree.jsx":
+/*!*****************************************************************!*\
+  !*** ./resources/js/components/MaterialsTree/MaterialsTree.jsx ***!
+  \*****************************************************************/
 /*! exports provided: MaterialsTree */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -84070,11 +86669,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialsTree", function() { return MaterialsTree; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_vertical_tree__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-vertical-tree */ "./node_modules/react-vertical-tree/dist/index.js");
-/* harmony import */ var react_vertical_tree__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_vertical_tree__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MaterialsTree.module.scss */ "./resources/js/components/MaterialsTree.module.scss");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react_vertical_tree__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-vertical-tree */ "./node_modules/react-vertical-tree/dist/index.js");
+/* harmony import */ var react_vertical_tree__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_vertical_tree__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _MaterialNode__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MaterialNode */ "./resources/js/components/MaterialsTree/MaterialNode.jsx");
+/* harmony import */ var _MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MaterialsTree.module.scss */ "./resources/js/components/MaterialsTree/MaterialsTree.module.scss");
 /* harmony import */ var _MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_4__);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -84086,7 +86685,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
- //? simulates the currently selected materials' state.
+ //? data recieved from API.
 
 var rows_of_data = [{
   id: 1,
@@ -84247,7 +86846,8 @@ var getArrayForMaterial = function getArrayForMaterial(material) {
 };
 
 var MaterialsTree = function MaterialsTree() {
-  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["useDispatch"])();
+  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useDispatch"])(); //? API call 
+
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {// fetch('http://46494bad.ngrok.io/api/sections',{
     //     method: 'GET',
     //     mode: 'cors',
@@ -84267,44 +86867,27 @@ var MaterialsTree = function MaterialsTree() {
       height: '20px'
     },
     node: {
-      backgroundColor: '#19a83d'
+      backgroundColor: '#19a83d',
+      position: 'fixed'
     },
     text: {
       color: '#fff'
     }
-  }; //? add or remove a material from the MaterialsDisplay
-
-  var toggleMaterialToDisplay = function toggleMaterialToDisplay(material) {
-    var elem = document.querySelector("button[id=\"".concat(material.id, "\"]")); //? consider Refs here
-
-    var isDisplayed = elem.classList.toggle('fadingNode');
-    if (!isDisplayed) dispatch({
-      type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__["ADD_TO_DISPLAY"],
-      payload: material
-    });else dispatch({
-      type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__["REMOVE_FROM_DISPLAY"],
-      payload: material
-    });
   };
-
   var parents_array = rows_of_data.filter(function (m) {
     return m.pre_req === null;
   });
-  var StyledTree = Object(react_vertical_tree__WEBPACK_IMPORTED_MODULE_3__["withStyles"])(styles)(react_vertical_tree__WEBPACK_IMPORTED_MODULE_3___default.a);
+  var StyledTree = Object(react_vertical_tree__WEBPACK_IMPORTED_MODULE_2__["withStyles"])(styles)(react_vertical_tree__WEBPACK_IMPORTED_MODULE_2___default.a);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "studyPlan"
+    className: "studyPlanTree"
   }, parents_array.map(function (material) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTree, {
       key: material.id,
       data: getArrayForMaterial(material),
       render: function render(item) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-          id: item.id,
-          className: 'materialNode fadingNode'
-        }, "".concat(item.name));
-      },
-      onClick: function onClick(material) {
-        return toggleMaterialToDisplay(material);
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialNode__WEBPACK_IMPORTED_MODULE_3__["MaterialNode"], {
+          material: item
+        });
       }
     });
   }));
@@ -84312,15 +86895,15 @@ var MaterialsTree = function MaterialsTree() {
 
 /***/ }),
 
-/***/ "./resources/js/components/MaterialsTree.module.scss":
-/*!***********************************************************!*\
-  !*** ./resources/js/components/MaterialsTree.module.scss ***!
-  \***********************************************************/
+/***/ "./resources/js/components/MaterialsTree/MaterialsTree.module.scss":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/MaterialsTree/MaterialsTree.module.scss ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./MaterialsTree.module.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/MaterialsTree.module.scss");
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./MaterialsTree.module.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/MaterialsTree/MaterialsTree.module.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -84334,7 +86917,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -84355,11 +86938,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _MaterialsDisplay_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MaterialsDisplay.jsx */ "./resources/js/components/MaterialsDisplay.jsx");
-/* harmony import */ var _MaterialsTree_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MaterialsTree.jsx */ "./resources/js/components/MaterialsTree.jsx");
-/* harmony import */ var _StudentSchedule_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./StudentSchedule.jsx */ "./resources/js/components/StudentSchedule.jsx");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _Redux_Store_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Redux/Store.js */ "./resources/js/Redux/Store.js");
+/* harmony import */ var _MaterialsTree_MaterialsTree_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MaterialsTree/MaterialsTree.jsx */ "./resources/js/components/MaterialsTree/MaterialsTree.jsx");
+/* harmony import */ var _StudentSchedule_StudentSchedule_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StudentSchedule/StudentSchedule.jsx */ "./resources/js/components/StudentSchedule/StudentSchedule.jsx");
+/* harmony import */ var _MaterialsDisplay_MaterialsDisplay_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MaterialsDisplay/MaterialsDisplay.jsx */ "./resources/js/components/MaterialsDisplay/MaterialsDisplay.jsx");
+/* harmony import */ var react_split_pane__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-split-pane */ "./node_modules/react-split-pane/dist/index.esm.js");
+/* harmony import */ var _sass_splitter_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../sass/splitter.module.scss */ "./resources/sass/splitter.module.scss");
+/* harmony import */ var _sass_splitter_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_sass_splitter_module_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _Redux_Store_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Redux/Store.js */ "./resources/js/Redux/Store.js");
+
+
 
 
 
@@ -84386,13 +86974,17 @@ __webpack_require__.r(__webpack_exports__);
 */
 
 var App = function App() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_5__["Provider"], {
-    store: _Redux_Store_js__WEBPACK_IMPORTED_MODULE_6__["default"]
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_7__["Provider"], {
+    store: _Redux_Store_js__WEBPACK_IMPORTED_MODULE_8__["default"]
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "AABU-Schedule-App"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "AABU-Schedule-App"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "Row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialsTree_jsx__WEBPACK_IMPORTED_MODULE_3__["MaterialsTree"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_StudentSchedule_jsx__WEBPACK_IMPORTED_MODULE_4__["StudentSchedule"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialsDisplay_jsx__WEBPACK_IMPORTED_MODULE_2__["MaterialsDisplay"], null)));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_split_pane__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    minSize: 10,
+    maxSize: 890,
+    defaultSize: 700
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialsTree_MaterialsTree_jsx__WEBPACK_IMPORTED_MODULE_2__["MaterialsTree"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_StudentSchedule_StudentSchedule_jsx__WEBPACK_IMPORTED_MODULE_3__["StudentSchedule"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialsDisplay_MaterialsDisplay_jsx__WEBPACK_IMPORTED_MODULE_4__["MaterialsDisplay"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null));
@@ -84400,10 +86992,74 @@ if (document.getElementById('root')) react_dom__WEBPACK_IMPORTED_MODULE_1___defa
 
 /***/ }),
 
-/***/ "./resources/js/components/StudentSchedule.jsx":
-/*!*****************************************************!*\
-  !*** ./resources/js/components/StudentSchedule.jsx ***!
-  \*****************************************************/
+/***/ "./resources/js/components/StudentSchedule/MaterialCard.jsx":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/StudentSchedule/MaterialCard.jsx ***!
+  \******************************************************************/
+/*! exports provided: MaterialCard */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialCard", function() { return MaterialCard; });
+/* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+
+
+
+
+
+var MaterialCard = function MaterialCard(_ref) {
+  var materialID = _ref.materialID,
+      materialName = _ref.materialName,
+      materialTime = _ref.materialTime;
+  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["useDispatch"])();
+
+  var handleRemove = function handleRemove() {
+    dispatch({
+      type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_0__["REMOVE_FROM_SCHDULE"],
+      payload: materialID
+    });
+  };
+
+  var getTimeOnly = function getTimeOnly(str) {
+    var days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
+
+    for (var _i = 0, _days = days; _i < _days.length; _i++) {
+      var day = _days[_i];
+      str = str.replace(day, '');
+    }
+
+    str = str.replace(new RegExp('(AM)|(PM)', 'g'), '');
+    return str;
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "material"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    className: "close-btn",
+    onClick: function onClick() {
+      return handleRemove();
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faWindowClose"]
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "material-name"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", null, " ", materialName, " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "material-time"
+  }, getTimeOnly(materialTime)));
+};
+
+/***/ }),
+
+/***/ "./resources/js/components/StudentSchedule/StudentSchedule.jsx":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/StudentSchedule/StudentSchedule.jsx ***!
+  \*********************************************************************/
 /*! exports provided: StudentSchedule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -84412,10 +87068,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentSchedule", function() { return StudentSchedule; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _StudentSchedule_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StudentSchedule.module.scss */ "./resources/js/components/StudentSchedule.module.scss");
+/* harmony import */ var _StudentSchedule_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StudentSchedule.module.scss */ "./resources/js/components/StudentSchedule/StudentSchedule.module.scss");
 /* harmony import */ var _StudentSchedule_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_StudentSchedule_module_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
+/* harmony import */ var _MaterialCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MaterialCard */ "./resources/js/components/StudentSchedule/MaterialCard.jsx");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -84435,10 +87091,9 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var times = [8, 9, 9.30, 10, 11, 12, 12.30, 1, 2];
-var days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس']; // console.log(schedule);
-
+var days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
 function StudentSchedule() {
-  var selectedMaterials = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["useSelector"])(function (state) {
+  var materialsInSchedule = Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["useSelector"])(function (state) {
     return state.materials.scheduleMaterials;
   });
 
@@ -84448,7 +87103,7 @@ function StudentSchedule() {
       setSchedule = _useState2[1];
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    var init_schedule = {};
+    var updated_schedule = {};
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
     var _iteratorError = undefined;
@@ -84463,7 +87118,7 @@ function StudentSchedule() {
         try {
           var _loop2 = function _loop2() {
             var time = _step2.value;
-            init_schedule[day] = _objectSpread({}, init_schedule[day], _defineProperty({}, time, selectedMaterials.filter(function (m) {
+            updated_schedule[day] = _objectSpread({}, updated_schedule[day], _defineProperty({}, time, materialsInSchedule.filter(function (m) {
               return m.time_days.includes(day) && parseFloat(m.time_days) == time;
             })[0] || null));
           };
@@ -84505,36 +87160,39 @@ function StudentSchedule() {
       }
     }
 
-    setSchedule(init_schedule);
-  }, [selectedMaterials]); // console.log(schedule);
-
-  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["useDispatch"])();
-
-  var handleRemove = function handleRemove(material) {
-    dispatch({
-      type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_3__["REMOVE_FROM_SCHDULE"],
-      payload: material
-    }); // setSchedule({
-    // 	...schedule, 
-    // 	[day]: {...schedule[day],[time]: null},
-    // });
-  };
-
+    setSchedule(updated_schedule);
+  }, [materialsInSchedule]);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "studentSchedule"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
+    className: "singleTable"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " SUN "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " MON "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " TUE "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " WED "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " THR "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, times.map(function (t, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+      key: index
+    }, days.map(function (day, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        key: index
+      }, " ", day in schedule && schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialCard__WEBPACK_IMPORTED_MODULE_2__["MaterialCard"], {
+        materialID: schedule[day][t].id,
+        materialName: schedule[day][t].name,
+        materialTime: schedule[day][t].time_days
+      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, null));
+    }));
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "left-schedule"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " SUN "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " TUE "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " THR "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, times.map(function (t, index) {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " SUN "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " TUE "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " THR "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, times.filter(function (t) {
+    return t === parseInt(t);
+  }).map(function (t, index) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
       key: index
     }, ['حد', 'ثل', 'خمس'].map(function (day, index) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         key: index
-      }, " ", day in schedule && schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        onClick: function onClick() {
-          return handleRemove(schedule[day][t]);
-        }
-      }, schedule[day][t].name) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, null));
+      }, " ", day in schedule && schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialCard__WEBPACK_IMPORTED_MODULE_2__["MaterialCard"], {
+        materialID: schedule[day][t].id,
+        materialName: schedule[day][t].name,
+        materialTime: schedule[day][t].time_days
+      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, null));
     }));
   })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "right-schedule"
@@ -84544,26 +87202,26 @@ function StudentSchedule() {
     }, ['ثن', 'ربع'].map(function (day, index) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         key: index
-      }, " ", day in schedule && schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        onClick: function onClick() {
-          return handleRemove(schedule[day][t]);
-        }
-      }, schedule[day][t].name) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, null));
+      }, " ", day in schedule && schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialCard__WEBPACK_IMPORTED_MODULE_2__["MaterialCard"], {
+        materialID: schedule[day][t].id,
+        materialName: schedule[day][t].name,
+        materialTime: schedule[day][t].time_days
+      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, null));
     }));
   })))));
 }
 
 /***/ }),
 
-/***/ "./resources/js/components/StudentSchedule.module.scss":
-/*!*************************************************************!*\
-  !*** ./resources/js/components/StudentSchedule.module.scss ***!
-  \*************************************************************/
+/***/ "./resources/js/components/StudentSchedule/StudentSchedule.module.scss":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/StudentSchedule/StudentSchedule.module.scss ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./StudentSchedule.module.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/StudentSchedule.module.scss");
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./StudentSchedule.module.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/StudentSchedule/StudentSchedule.module.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -84577,75 +87235,11 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
-
-/***/ }),
-
-/***/ "./resources/js/utility_components/Dropdown.jsx":
-/*!******************************************************!*\
-  !*** ./resources/js/utility_components/Dropdown.jsx ***!
-  \******************************************************/
-/*! exports provided: Dropdown */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Dropdown", function() { return Dropdown; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-var Dropdown = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function (_ref, ref) {
-  var options = _ref.options;
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
-      _useState2 = _slicedToArray(_useState, 2),
-      selectValue = _useState2[0],
-      setSelectValue = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      _useState4 = _slicedToArray(_useState3, 2),
-      isOpen = _useState4[0],
-      setOpen = _useState4[1];
-  /* //  TODO: 
-  
-  	* Clicking away from the drop-down-menu should close it!
-  
-  	* Think of a more user friendly way to deal with having only one option
-  
-  */
-
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "drop-down",
-    onClick: function onClick() {
-      return setOpen(!isOpen);
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-    id: selectValue,
-    ref: ref
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, options[selectValue].instructor), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, options[selectValue].time_days), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, options[selectValue].room))), isOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
-    id: "drop-down-menu"
-  }, options.map(function (_option, index) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-      key: index,
-      onClick: function onClick() {
-        setSelectValue(index);
-      }
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, _option.instructor), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, _option.time_days), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, _option.room), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, index == selectValue ? "✔" : null));
-  }))));
-}); // export default Dropdown;
 
 /***/ }),
 
@@ -84657,6 +87251,36 @@ var Dropdown = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function 
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/splitter.module.scss":
+/*!*********************************************!*\
+  !*** ./resources/sass/splitter.module.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/postcss-loader/src??ref--7-2!../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./splitter.module.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/sass/splitter.module.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 

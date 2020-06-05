@@ -3,8 +3,6 @@
 namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use App\HTTP\Resources\Section as SectionResource;
-
 
 class Section extends JsonResource
 {
@@ -16,10 +14,6 @@ class Section extends JsonResource
      */
     public function toArray($request)
     {
-        return [
-            'id' => SectionResource::collection($this->id),
-            'name' => $this->name,
-            'hours'=>$this->hours
-        ];
+        return parent::toArray($request);
     }
 }

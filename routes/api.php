@@ -17,5 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('sections','SectionController@index');
-Route::get('section/{id}','SectionController@show');
+Route::get('courses/{major}','CourseController@show');

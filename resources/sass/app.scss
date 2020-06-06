@@ -5,8 +5,12 @@
     margin: 0px;
 }
 
-$primary-greenColor:  #19a83d;
+$primary-greenColor:    #19a83d;
+$primary-yellowColor:   #ecb419;
 
+body{
+    margin-top: 60px;
+}
 .Row{
     position: relative;
     
@@ -15,7 +19,7 @@ $primary-greenColor:  #19a83d;
     margin: 20px;
     // display: flex;
 
-    height: 300px;
+    height: 310px;  //! adjust this so the schedule looks good even if materials at all times are full.
     width: auto;
 
     .studyPlanTree{

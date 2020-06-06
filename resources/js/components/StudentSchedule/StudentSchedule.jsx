@@ -11,7 +11,7 @@ const times = [8, 9, 9.30, 10, 11, 12, 12.30, 1, 2];
 const days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
 
 
-export function StudentSchedule() {
+export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 	
 	const materialsInSchedule = useSelector(state => state.materials.scheduleMaterials);
 	const [schedule, setSchedule] = useState({});
@@ -34,18 +34,19 @@ export function StudentSchedule() {
 	
 
 	return (
-		<div className='studentSchedule'>
+		<div className='studentSchedule' ref={tableRef}>
 
 			<table className='singleTable'>
-			<thead>
-				<tr>
-					<th> SUN </th>
-					<th> MON </th>
-					<th> TUE </th>
-					<th> WED </th>
-					<th> THR </th>
-				</tr>
-			</thead>
+				
+				<thead>
+					<tr>
+						<th> SUN </th>
+						<th> MON </th>
+						<th> TUE </th>
+						<th> WED </th>
+						<th> THR </th>
+					</tr>
+				</thead>
 
 			<tbody>
 				{times.map( (t, index) =>
@@ -139,5 +140,5 @@ export function StudentSchedule() {
 			</div>
 		</div>
 	);
-}
+})
 

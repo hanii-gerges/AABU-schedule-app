@@ -12861,7 +12861,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 300px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.materialsProgram {\n  margin: 20px;\n  height: 320px;\n  overflow-y: scroll;\n  border: 1px solid black;\n}\n.materialsProgram .materialsTable {\n  display: table;\n  direction: rtl;\n  width: 90%;\n  margin: auto;\n  margin-bottom: 100px;\n  text-align: center;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.materialsProgram .materialsTable #drop-down {\n  position: relative;\n  display: inline-block;\n  direction: rtl;\n  cursor: pointer;\n  background-color: white;\n}\n.materialsProgram .materialsTable #drop-down:before {\n  content: \"\";\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 16px;\n  top: 50%;\n  border-width: 6px 6px 0 6px;\n  border-style: solid;\n  border-color: black transparent;\n}\n.materialsProgram .materialsTable #drop-down table, .materialsProgram .materialsTable #drop-down tr {\n  display: table;\n  table-layout: fixed;\n  background-color: white;\n  width: 100%;\n}\n.materialsProgram .materialsTable #drop-down table td:nth-child(2), .materialsProgram .materialsTable #drop-down tr td:nth-child(2) {\n  width: 50%;\n}\n.materialsProgram .materialsTable #drop-down tr:hover {\n  color: white;\n  background-color: #19a83d;\n}\n.materialsProgram .materialsTable #drop-down #drop-down-menu {\n  border: none;\n  position: absolute;\n  top: 120%;\n  z-index: 1;\n  box-shadow: 0px 0px 5px 2px #19a83d;\n}\n.materialsProgram .materialsTable th {\n  background-color: #19a83d;\n  color: white;\n}\n.materialsProgram .materialsTable th:first-child {\n  width: 10%;\n}\n.materialsProgram .materialsTable th:nth-child(4) {\n  width: 30%;\n}\n.materialsProgram .materialsTable td {\n  padding: 0.5rem;\n  vertical-align: middle;\n}\n.materialsProgram .materialsTable th, .materialsProgram .materialsTable td {\n  border: 1px solid black;\n  direction: ltr;\n}\n.materialsProgram tr:hover {\n  background-color: rgba(151, 255, 151, 0.363);\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n#modal {\n  direction: rtl;\n  text-align: right;\n}\n#modal .close {\n  display: none;\n}\n\n.materialsProgram {\n  margin: 20px;\n  height: 320px;\n  overflow-y: scroll;\n  border: 1px solid black;\n}\n.materialsProgram .materialsTable {\n  display: table;\n  direction: rtl;\n  width: 90%;\n  margin: auto;\n  margin-bottom: 100px;\n  text-align: center;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.materialsProgram .materialsTable #drop-down {\n  position: relative;\n  display: inline-block;\n  direction: rtl;\n  cursor: pointer;\n  background-color: white;\n}\n.materialsProgram .materialsTable #drop-down:before {\n  content: \"\";\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 16px;\n  top: 50%;\n  border-width: 6px 6px 0 6px;\n  border-style: solid;\n  border-color: black transparent;\n}\n.materialsProgram .materialsTable #drop-down table, .materialsProgram .materialsTable #drop-down tr {\n  display: table;\n  table-layout: fixed;\n  background-color: white;\n  width: 100%;\n}\n.materialsProgram .materialsTable #drop-down table td:nth-child(2), .materialsProgram .materialsTable #drop-down tr td:nth-child(2) {\n  width: 50%;\n}\n.materialsProgram .materialsTable #drop-down tr:hover {\n  color: white;\n  background-color: #19a83d;\n}\n.materialsProgram .materialsTable #drop-down #drop-down-menu {\n  border: none;\n  position: absolute;\n  top: 120%;\n  z-index: 1;\n  box-shadow: 0px 0px 5px 2px #19a83d;\n}\n.materialsProgram .materialsTable th {\n  background-color: #19a83d;\n  color: white;\n}\n.materialsProgram .materialsTable th:first-child {\n  width: 10%;\n}\n.materialsProgram .materialsTable th:nth-child(4) {\n  width: 30%;\n}\n.materialsProgram .materialsTable td {\n  padding: 0.5rem;\n  vertical-align: middle;\n}\n.materialsProgram .materialsTable th, .materialsProgram .materialsTable td {\n  border: 1px solid black;\n  direction: ltr;\n}\n.materialsProgram tr:hover {\n  background-color: rgba(151, 255, 151, 0.363);\n}", ""]);
 
 // exports
 
@@ -12880,7 +12880,26 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 300px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.studyPlanTree {\n  height: 100%;\n}\n\n.materialNode {\n  padding: 5px 5px;\n  font-size: 10pt;\n  color: #ffffff;\n  background-color: #19a83d;\n  border-radius: 20px;\n  border: none;\n}\n.materialNode:hover {\n  box-shadow: 0 0 3pt 2pt darkgreen;\n}\n\n.fadingNode {\n  background-color: lightgreen;\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.studyPlanTree {\n  height: 100%;\n}\n\n.materialNode {\n  padding: 5px 5px;\n  font-size: 10pt;\n  color: #ffffff;\n  background-color: #19a83d;\n  border-radius: 20px;\n  border: none;\n}\n.materialNode:hover {\n  box-shadow: 0 0 3pt 2pt darkgreen;\n}\n\n.fadingNode {\n  background-color: lightgreen;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/NavBar/NavBar.module.scss":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/NavBar/NavBar.module.scss ***!
+  \**********************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n#top-menu {\n  position: fixed;\n  top: 0;\n  z-index: 2;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  padding: 0px 5px;\n  width: 100%;\n  background-color: #19a83d;\n  color: white;\n  border-bottom: 5px solid #ecb419;\n}\n#top-menu #left-nav {\n  display: -webkit-box;\n  display: flex;\n  justify-content: space-around;\n}\n#top-menu #left-nav span {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n#top-menu #left-nav span #title {\n  margin-left: 10px;\n}\n#top-menu #left-nav span #logo {\n  width: 36px;\n  border: 2px solid black;\n  border-radius: 50%;\n}\n#top-menu #right-nav {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n}\n#top-menu #right-nav #btn {\n  color: white;\n  background: transparent;\n  border: none;\n  padding: 0px 25px;\n  border-right: 1px solid white;\n  text-decoration: none;\n  -webkit-transition: padding ease 0.5s;\n  transition: padding ease 0.5s;\n}\n#top-menu #right-nav #btn:hover {\n  font-weight: bold;\n}\n#top-menu #right-nav #btn:focus {\n  outline: none !important;\n}\n#top-menu #right-nav :last-child {\n  border: none;\n}\n@media only screen and (max-width: 768px) {\n  #top-menu {\n    /* For mobile phones: */\n  }\n  #top-menu #right-nav {\n    display: none;\n  }\n}", ""]);
 
 // exports
 
@@ -12899,7 +12918,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 300px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.studentSchedule {\n  display: -webkit-box;\n  display: flex;\n  height: 100%;\n}\n.studentSchedule .left-schedule, .studentSchedule .right-schedule {\n  display: none;\n  margin: 5px;\n}\n.studentSchedule table {\n  display: table;\n  direction: ltr;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  text-align: center;\n  table-layout: fixed;\n}\n.studentSchedule table tr {\n  height: 20px;\n}\n.studentSchedule table th {\n  height: 40px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td {\n  height: 20px;\n  text-align: center;\n}\n.studentSchedule table td .material {\n  position: relative;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-flow: column nowrap;\n  height: 50px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td .material .material-name {\n  overflow: hidden;\n  width: 100%;\n}\n.studentSchedule table td .material:hover .close-btn {\n  display: block;\n}\n.studentSchedule table td .material .close-btn {\n  position: absolute;\n  top: -5px;\n  right: 0px;\n  display: none;\n  margin: 2px;\n  color: rgba(231, 20, 20, 0.5);\n  background-color: transparent;\n  border: none;\n  border-radius: 30px;\n  cursor: pointer;\n}\n.studentSchedule table td .material .close-btn:hover {\n  color: #e71414;\n}\n.studentSchedule table th, .studentSchedule table td {\n  border: 1px solid black;\n  direction: ltr;\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.studentSchedule {\n  position: absolute;\n  display: -webkit-box;\n  display: flex;\n  height: 100%;\n}\n.studentSchedule .left-schedule, .studentSchedule .right-schedule {\n  display: none;\n  margin: 5px;\n}\n.studentSchedule table {\n  margin: auto;\n  display: table;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  direction: ltr;\n  background-color: white;\n  table-layout: fixed;\n}\n.studentSchedule table tr {\n  height: 20px;\n}\n.studentSchedule table th {\n  height: 40px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td {\n  text-align: center;\n}\n.studentSchedule table td .material {\n  position: relative;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-flow: column nowrap;\n  height: 50px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td .material .material-name {\n  overflow: hidden;\n  width: 100%;\n}\n.studentSchedule table td .material:hover .close-btn {\n  display: block;\n}\n.studentSchedule table td .material .close-btn {\n  position: absolute;\n  top: -5px;\n  right: 0px;\n  display: none;\n  margin: 2px;\n  color: rgba(231, 20, 20, 0.5);\n  background-color: transparent;\n  border: none;\n  border-radius: 30px;\n  cursor: pointer;\n}\n.studentSchedule table td .material .close-btn:hover {\n  color: #d42839;\n}\n.studentSchedule table th, .studentSchedule table td {\n  border: 1px solid black;\n  direction: ltr;\n}", ""]);
 
 // exports
 
@@ -12918,7 +12937,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 300px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.Resizer {\n  height: 100%;\n  background: #000;\n  opacity: 0.3;\n  z-index: 1;\n  box-sizing: border-box;\n  -moz-background-clip: padding;\n  -webkit-background-clip: padding;\n  background-clip: padding-box;\n}\n\n.Resizer:hover {\n  -webkit-transition: all 2s ease;\n  transition: all 2s ease;\n}\n\n.Resizer.horizontal {\n  margin: -5px 0;\n  border-top: 5px solid rgba(255, 255, 255, 0);\n  border-bottom: 5px solid rgba(255, 255, 255, 0);\n  cursor: row-resize;\n  width: 100%;\n}\n\n.Resizer.horizontal:hover {\n  border-top: 5px solid rgba(0, 0, 0, 0.5);\n  border-bottom: 5px solid rgba(0, 0, 0, 0.5);\n}\n\n.Resizer.vertical {\n  width: 11px;\n  margin: 0 -5px;\n  border-left: 5px solid rgba(255, 255, 255, 0);\n  border-right: 5px solid rgba(255, 255, 255, 0);\n  cursor: col-resize;\n}\n\n.Resizer.vertical:hover {\n  border-left: 5px solid rgba(0, 0, 0, 0.5);\n  border-right: 5px solid rgba(0, 0, 0, 0.5);\n}\n\n.Resizer.disabled {\n  cursor: not-allowed;\n}\n\n.Resizer.disabled:hover {\n  border-color: transparent;\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.Resizer {\n  height: 100%;\n  background: #000;\n  opacity: 0.3;\n  z-index: 1;\n  box-sizing: border-box;\n  -moz-background-clip: padding;\n  -webkit-background-clip: padding;\n  background-clip: padding-box;\n}\n\n.Resizer:hover {\n  -webkit-transition: all 2s ease;\n  transition: all 2s ease;\n}\n\n.Resizer.horizontal {\n  margin: -5px 0;\n  border-top: 5px solid rgba(255, 255, 255, 0);\n  border-bottom: 5px solid rgba(255, 255, 255, 0);\n  cursor: row-resize;\n  width: 100%;\n}\n\n.Resizer.horizontal:hover {\n  border-top: 5px solid rgba(0, 0, 0, 0.5);\n  border-bottom: 5px solid rgba(0, 0, 0, 0.5);\n}\n\n.Resizer.vertical {\n  width: 11px;\n  margin: 0 -5px;\n  border-left: 5px solid rgba(255, 255, 255, 0);\n  border-right: 5px solid rgba(255, 255, 255, 0);\n  cursor: col-resize;\n}\n\n.Resizer.vertical:hover {\n  border-left: 5px solid rgba(0, 0, 0, 0.5);\n  border-right: 5px solid rgba(0, 0, 0, 0.5);\n}\n\n.Resizer.disabled {\n  cursor: not-allowed;\n}\n\n.Resizer.disabled:hover {\n  border-color: transparent;\n}", ""]);
 
 // exports
 
@@ -13268,6 +13287,179 @@ function replaceClassName(origClass, classToRemove) {
 module.exports = function removeClass(element, className) {
   if (element.classList) element.classList.remove(className);else if (typeof element.className === 'string') element.className = replaceClassName(element.className, className);else element.setAttribute('class', replaceClassName(element.className && element.className.baseVal || '', className));
 };
+
+/***/ }),
+
+/***/ "./node_modules/downloadjs/download.js":
+/*!*********************************************!*\
+  !*** ./node_modules/downloadjs/download.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//download.js v4.2, by dandavis; 2008-2016. [MIT] see http://danml.com/download.html for tests/usage
+// v1 landed a FF+Chrome compat way of downloading strings to local un-named files, upgraded to use a hidden frame and optional mime
+// v2 added named files via a[download], msSaveBlob, IE (10+) support, and window.URL support for larger+faster saves than dataURLs
+// v3 added dataURL and Blob Input, bind-toggle arity, and legacy dataURL fallback was improved with force-download mime and base64 support. 3.1 improved safari handling.
+// v4 adds AMD/UMD, commonJS, and plain browser support
+// v4.1 adds url download capability via solo URL argument (same domain/CORS only)
+// v4.2 adds semantic variable names, long (over 2MB) dataURL support, and hidden by default temp anchors
+// https://github.com/rndme/download
+
+(function (root, factory) {
+	if (true) {
+		// AMD. Register as an anonymous module.
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}(this, function () {
+
+	return function download(data, strFileName, strMimeType) {
+
+		var self = window, // this script is only for browsers anyway...
+			defaultMime = "application/octet-stream", // this default mime also triggers iframe downloads
+			mimeType = strMimeType || defaultMime,
+			payload = data,
+			url = !strFileName && !strMimeType && payload,
+			anchor = document.createElement("a"),
+			toString = function(a){return String(a);},
+			myBlob = (self.Blob || self.MozBlob || self.WebKitBlob || toString),
+			fileName = strFileName || "download",
+			blob,
+			reader;
+			myBlob= myBlob.call ? myBlob.bind(self) : Blob ;
+	  
+		if(String(this)==="true"){ //reverse arguments, allowing download.bind(true, "text/xml", "export.xml") to act as a callback
+			payload=[payload, mimeType];
+			mimeType=payload[0];
+			payload=payload[1];
+		}
+
+
+		if(url && url.length< 2048){ // if no filename and no mime, assume a url was passed as the only argument
+			fileName = url.split("/").pop().split("?")[0];
+			anchor.href = url; // assign href prop to temp anchor
+		  	if(anchor.href.indexOf(url) !== -1){ // if the browser determines that it's a potentially valid url path:
+        		var ajax=new XMLHttpRequest();
+        		ajax.open( "GET", url, true);
+        		ajax.responseType = 'blob';
+        		ajax.onload= function(e){ 
+				  download(e.target.response, fileName, defaultMime);
+				};
+        		setTimeout(function(){ ajax.send();}, 0); // allows setting custom ajax headers using the return:
+			    return ajax;
+			} // end if valid url?
+		} // end if url?
+
+
+		//go ahead and download dataURLs right away
+		if(/^data:([\w+-]+\/[\w+.-]+)?[,;]/.test(payload)){
+		
+			if(payload.length > (1024*1024*1.999) && myBlob !== toString ){
+				payload=dataUrlToBlob(payload);
+				mimeType=payload.type || defaultMime;
+			}else{			
+				return navigator.msSaveBlob ?  // IE10 can't do a[download], only Blobs:
+					navigator.msSaveBlob(dataUrlToBlob(payload), fileName) :
+					saver(payload) ; // everyone else can save dataURLs un-processed
+			}
+			
+		}else{//not data url, is it a string with special needs?
+			if(/([\x80-\xff])/.test(payload)){			  
+				var i=0, tempUiArr= new Uint8Array(payload.length), mx=tempUiArr.length;
+				for(i;i<mx;++i) tempUiArr[i]= payload.charCodeAt(i);
+			 	payload=new myBlob([tempUiArr], {type: mimeType});
+			}		  
+		}
+		blob = payload instanceof myBlob ?
+			payload :
+			new myBlob([payload], {type: mimeType}) ;
+
+
+		function dataUrlToBlob(strUrl) {
+			var parts= strUrl.split(/[:;,]/),
+			type= parts[1],
+			decoder= parts[2] == "base64" ? atob : decodeURIComponent,
+			binData= decoder( parts.pop() ),
+			mx= binData.length,
+			i= 0,
+			uiArr= new Uint8Array(mx);
+
+			for(i;i<mx;++i) uiArr[i]= binData.charCodeAt(i);
+
+			return new myBlob([uiArr], {type: type});
+		 }
+
+		function saver(url, winMode){
+
+			if ('download' in anchor) { //html5 A[download]
+				anchor.href = url;
+				anchor.setAttribute("download", fileName);
+				anchor.className = "download-js-link";
+				anchor.innerHTML = "downloading...";
+				anchor.style.display = "none";
+				document.body.appendChild(anchor);
+				setTimeout(function() {
+					anchor.click();
+					document.body.removeChild(anchor);
+					if(winMode===true){setTimeout(function(){ self.URL.revokeObjectURL(anchor.href);}, 250 );}
+				}, 66);
+				return true;
+			}
+
+			// handle non-a[download] safari as best we can:
+			if(/(Version)\/(\d+)\.(\d+)(?:\.(\d+))?.*Safari\//.test(navigator.userAgent)) {
+				if(/^data:/.test(url))	url="data:"+url.replace(/^data:([\w\/\-\+]+)/, defaultMime);
+				if(!window.open(url)){ // popup blocked, offer direct download:
+					if(confirm("Displaying New Document\n\nUse Save As... to download, then click back to return to this page.")){ location.href=url; }
+				}
+				return true;
+			}
+
+			//do iframe dataURL download (old ch+FF):
+			var f = document.createElement("iframe");
+			document.body.appendChild(f);
+
+			if(!winMode && /^data:/.test(url)){ // force a mime that will download:
+				url="data:"+url.replace(/^data:([\w\/\-\+]+)/, defaultMime);
+			}
+			f.src=url;
+			setTimeout(function(){ document.body.removeChild(f); }, 333);
+
+		}//end saver
+
+
+
+
+		if (navigator.msSaveBlob) { // IE10+ : (has Blob, but not a[download] or URL)
+			return navigator.msSaveBlob(blob, fileName);
+		}
+
+		if(self.URL){ // simple fast and modern way using Blob and URL:
+			saver(self.URL.createObjectURL(blob), true);
+		}else{
+			// handle non-Blob()+non-URL browsers:
+			if(typeof blob === "string" || blob.constructor===toString ){
+				try{
+					return saver( "data:" +  mimeType   + ";base64,"  +  self.btoa(blob)  );
+				}catch(y){
+					return saver( "data:" +  mimeType   + "," + encodeURIComponent(blob)  );
+				}
+			}
+
+			// Blob but not URL support:
+			reader=new FileReader();
+			reader.onload=function(e){
+				saver(this.result);
+			};
+			reader.readAsDataURL(blob);
+		}
+		return true;
+	}; /* end download() */
+}));
+
 
 /***/ }),
 
@@ -13840,6 +14032,875 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 }
 
 module.exports = hoistNonReactStatics;
+
+
+/***/ }),
+
+/***/ "./node_modules/html-to-image/lib/applyStyleWithOptions.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/html-to-image/lib/applyStyleWithOptions.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+function applyStyleWithOptions(clonedNode, options) {
+    var style = clonedNode.style;
+    if (options.backgroundColor) {
+        style.backgroundColor = options.backgroundColor;
+    }
+    if (options.width) {
+        style.width = options.width + "px";
+    }
+    if (options.height) {
+        style.height = options.height + "px";
+    }
+    if (options.style) {
+        Object.assign(style, options.style);
+    }
+    return clonedNode;
+}
+exports.default = applyStyleWithOptions;
+
+
+/***/ }),
+
+/***/ "./node_modules/html-to-image/lib/cloneNode.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/html-to-image/lib/cloneNode.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var utils_1 = __webpack_require__(/*! ./utils */ "./node_modules/html-to-image/lib/utils.js");
+var clonePseudoElements_1 = __importDefault(__webpack_require__(/*! ./clonePseudoElements */ "./node_modules/html-to-image/lib/clonePseudoElements.js"));
+function cloneSingleNode(nativeNode) {
+    if (nativeNode instanceof HTMLCanvasElement) {
+        return utils_1.createImage(nativeNode.toDataURL());
+    }
+    if (nativeNode.tagName && nativeNode.tagName.toLowerCase() === 'svg') {
+        return Promise.resolve(nativeNode)
+            .then(function (svg) { return utils_1.svgToDataURL(svg); })
+            .then(utils_1.createImage);
+    }
+    return Promise.resolve(nativeNode.cloneNode(false));
+}
+function cloneChildren(nativeNode, clonedNode, filter) {
+    var children = utils_1.toArray(nativeNode.childNodes);
+    if (children.length === 0) {
+        return Promise.resolve(clonedNode);
+    }
+    // clone children in order
+    return children.reduce(function (done, child) { return done
+        .then(function () { return cloneNode(child, filter); })
+        .then(function (clonedChild) {
+        if (clonedChild) {
+            clonedNode.appendChild(clonedChild);
+        }
+    }); }, Promise.resolve())
+        .then(function () { return clonedNode; });
+}
+function cloneCssStyle(nativeNode, clonedNode) {
+    var source = window.getComputedStyle(nativeNode);
+    var target = clonedNode.style;
+    if (source.cssText) {
+        target.cssText = source.cssText;
+    }
+    else {
+        utils_1.toArray(source).forEach(function (name) {
+            target.setProperty(name, source.getPropertyValue(name), source.getPropertyPriority(name));
+        });
+    }
+}
+function cloneInputValue(nativeNode, clonedNode) {
+    if (nativeNode instanceof HTMLTextAreaElement) {
+        clonedNode.innerHTML = nativeNode.value;
+    }
+    if (nativeNode instanceof HTMLInputElement) {
+        clonedNode.setAttribute('value', nativeNode.value);
+    }
+}
+function decorate(nativeNode, clonedNode) {
+    if (!(clonedNode instanceof Element)) {
+        return clonedNode;
+    }
+    return Promise.resolve()
+        .then(function () { return cloneCssStyle(nativeNode, clonedNode); })
+        .then(function () { return clonePseudoElements_1.default(nativeNode, clonedNode); })
+        .then(function () { return cloneInputValue(nativeNode, clonedNode); })
+        .then(function () { return clonedNode; });
+}
+function cloneNode(domNode, filter, isRoot) {
+    if (!isRoot && filter && !filter(domNode)) {
+        return Promise.resolve(null);
+    }
+    return Promise.resolve(domNode)
+        .then(cloneSingleNode)
+        .then(function (clonedNode) { return cloneChildren(domNode, clonedNode, filter); })
+        .then(function (clonedNode) { return decorate(domNode, clonedNode); });
+}
+exports.default = cloneNode;
+
+
+/***/ }),
+
+/***/ "./node_modules/html-to-image/lib/clonePseudoElements.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/html-to-image/lib/clonePseudoElements.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var utils_1 = __webpack_require__(/*! ./utils */ "./node_modules/html-to-image/lib/utils.js");
+function formatCssText(style) {
+    var content = style.getPropertyValue('content');
+    return style.cssText + " content: " + content + ";";
+}
+function formatCssProperties(style) {
+    return utils_1.toArray(style).map(function (name) {
+        var value = style.getPropertyValue(name);
+        var priority = style.getPropertyPriority(name);
+        return name + ": " + value + (priority ? ' !important' : '') + ";";
+    }).join(' ');
+}
+function getPseudoElementStyle(className, pseudo, style) {
+    var selector = "." + className + ":" + pseudo;
+    var cssText = style.cssText ? formatCssText(style) : formatCssProperties(style);
+    return document.createTextNode(selector + "{" + cssText + "}");
+}
+function clonePseudoElement(nativeNode, clonedNode, pseudo) {
+    var style = window.getComputedStyle(nativeNode, pseudo);
+    var content = style.getPropertyValue('content');
+    if (content === '' || content === 'none') {
+        return;
+    }
+    var className = utils_1.uuid();
+    var styleElement = document.createElement('style');
+    styleElement.appendChild(getPseudoElementStyle(className, pseudo, style));
+    clonedNode.className = clonedNode.className + " " + className;
+    clonedNode.appendChild(styleElement);
+}
+function clonePseudoElements(nativeNode, clonedNode) {
+    [
+        ':before',
+        ':after',
+    ].forEach(function (pseudo) { return clonePseudoElement(nativeNode, clonedNode, pseudo); });
+}
+exports.default = clonePseudoElements;
+
+
+/***/ }),
+
+/***/ "./node_modules/html-to-image/lib/createSvgDataURL.js":
+/*!************************************************************!*\
+  !*** ./node_modules/html-to-image/lib/createSvgDataURL.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var utils_1 = __webpack_require__(/*! ./utils */ "./node_modules/html-to-image/lib/utils.js");
+function createSvgDataURL(clonedNode, width, height) {
+    var xmlns = 'http://www.w3.org/2000/svg';
+    var svg = document.createElementNS(xmlns, 'svg');
+    var foreignObject = document.createElementNS(xmlns, 'foreignObject');
+    svg.setAttributeNS('', 'width', "" + width);
+    svg.setAttributeNS('', 'height', "" + height);
+    foreignObject.setAttributeNS('', 'width', '100%');
+    foreignObject.setAttributeNS('', 'height', '100%');
+    foreignObject.setAttributeNS('', 'x', '0');
+    foreignObject.setAttributeNS('', 'y', '0');
+    foreignObject.setAttributeNS('', 'externalResourcesRequired', 'true');
+    svg.appendChild(foreignObject);
+    foreignObject.appendChild(clonedNode);
+    return utils_1.svgToDataURL(svg);
+}
+exports.default = createSvgDataURL;
+
+
+/***/ }),
+
+/***/ "./node_modules/html-to-image/lib/embedImages.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/html-to-image/lib/embedImages.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var utils_1 = __webpack_require__(/*! ./utils */ "./node_modules/html-to-image/lib/utils.js");
+var getBlobFromURL_1 = __importDefault(__webpack_require__(/*! ./getBlobFromURL */ "./node_modules/html-to-image/lib/getBlobFromURL.js"));
+var embedResources_1 = __importDefault(__webpack_require__(/*! ./embedResources */ "./node_modules/html-to-image/lib/embedResources.js"));
+function embedBackground(clonedNode, options) {
+    var background = clonedNode.style.getPropertyValue('background');
+    if (!background) {
+        return Promise.resolve(clonedNode);
+    }
+    return Promise.resolve(background)
+        .then(function (cssString) { return embedResources_1.default(cssString, null, options); })
+        .then(function (cssString) {
+        clonedNode.style.setProperty('background', cssString, clonedNode.style.getPropertyPriority('background'));
+        return clonedNode;
+    });
+}
+function embedImageNode(clonedNode, options) {
+    if (!(clonedNode instanceof HTMLImageElement) || utils_1.isDataUrl(clonedNode.src)) {
+        return Promise.resolve(clonedNode);
+    }
+    return Promise.resolve(clonedNode.src)
+        .then(function (url) { return getBlobFromURL_1.default(url, options); })
+        .then(function (data) { return utils_1.toDataURL(data, utils_1.getMimeType(clonedNode.src)); })
+        .then(function (dataURL) { return new Promise((function (resolve, reject) {
+        clonedNode.onload = resolve;
+        clonedNode.onerror = reject;
+        clonedNode.src = dataURL;
+    })); })
+        .then(function () { return clonedNode; }, function () { return clonedNode; });
+}
+function embedChildren(clonedNode, options) {
+    var children = utils_1.toArray(clonedNode.childNodes);
+    var deferreds = children.map(function (child) { return embedImages(child, options); });
+    return Promise.all(deferreds).then(function () { return clonedNode; });
+}
+function embedImages(clonedNode, options) {
+    if (!(clonedNode instanceof Element)) {
+        return Promise.resolve(clonedNode);
+    }
+    return Promise.resolve(clonedNode)
+        .then(function (node) { return embedBackground(node, options); })
+        .then(function (node) { return embedImageNode(node, options); })
+        .then(function (node) { return embedChildren(node, options); });
+}
+exports.default = embedImages;
+
+
+/***/ }),
+
+/***/ "./node_modules/html-to-image/lib/embedResources.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/html-to-image/lib/embedResources.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var getBlobFromURL_1 = __importDefault(__webpack_require__(/*! ./getBlobFromURL */ "./node_modules/html-to-image/lib/getBlobFromURL.js"));
+var utils_1 = __webpack_require__(/*! ./utils */ "./node_modules/html-to-image/lib/utils.js");
+var URL_REGEX = /url\((['"]?)([^'"]+?)\1\)/g;
+function resolveUrl(url, baseUrl) {
+    // url is absolute already
+    if (url.match(/^[a-z]+:\/\//i)) {
+        return url;
+    }
+    // url is absolute already, without protocol
+    if (url.match(/^\/\//)) {
+        return window.location.protocol + url;
+    }
+    // dataURI, mailto:, tel:, etc.
+    if (url.match(/^[a-z]+:/i)) {
+        return url;
+    }
+    var doc = document.implementation.createHTMLDocument();
+    var base = doc.createElement('base');
+    var a = doc.createElement('a');
+    doc.head.appendChild(base);
+    doc.body.appendChild(a);
+    if (baseUrl) {
+        base.href = baseUrl;
+    }
+    a.href = url;
+    return a.href;
+}
+function escape(url) {
+    return url.replace(/([.*+?^${}()|\[\]\/\\])/g, '\\$1');
+}
+function urlToRegex(url) {
+    return new RegExp("(url\\(['\"]?)(" + escape(url) + ")(['\"]?\\))", 'g');
+}
+function parseURLs(str) {
+    var result = [];
+    str.replace(URL_REGEX, function (raw, quotation, url) {
+        result.push(url);
+        return raw;
+    });
+    return result.filter(function (url) { return !utils_1.isDataUrl(url); });
+}
+function embed(cssString, resourceURL, baseURL, options) {
+    var resolvedURL = baseURL ? resolveUrl(resourceURL, baseURL) : resourceURL;
+    return Promise.resolve(resolvedURL)
+        .then(function (url) { return getBlobFromURL_1.default(url, options); })
+        .then(function (data) { return utils_1.toDataURL(data, utils_1.getMimeType(resourceURL)); })
+        .then(function (dataURL) { return cssString.replace(urlToRegex(resourceURL), "$1" + dataURL + "$3"); })
+        .then(function (content) { return content; }, function () { return resolvedURL; });
+}
+function shouldEmbed(string) {
+    return string.search(URL_REGEX) !== -1;
+}
+exports.shouldEmbed = shouldEmbed;
+function embedResources(cssString, baseUrl, options) {
+    if (!shouldEmbed(cssString)) {
+        return Promise.resolve(cssString);
+    }
+    return Promise.resolve(cssString)
+        .then(parseURLs)
+        .then(function (urls) { return urls.reduce(function (done, url) { return done.then(function (ret) { return embed(ret, url, baseUrl, options); }); }, Promise.resolve(cssString)); });
+}
+exports.default = embedResources;
+
+
+/***/ }),
+
+/***/ "./node_modules/html-to-image/lib/embedWebFonts.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/html-to-image/lib/embedWebFonts.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var utils_1 = __webpack_require__(/*! ./utils */ "./node_modules/html-to-image/lib/utils.js");
+var embedResources_1 = __importStar(__webpack_require__(/*! ./embedResources */ "./node_modules/html-to-image/lib/embedResources.js"));
+function parseCSS(source) {
+    if (source === undefined) {
+        return [];
+    }
+    var cssText = source;
+    var css = [];
+    var cssKeyframeRegex = '((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})';
+    var combinedCSSRegex = '((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]'
+        + '*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})'; // to match css & media queries together
+    var cssCommentsRegex = new RegExp('(\\/\\*[\\s\\S]*?\\*\\/)', 'gi');
+    // strip out comments
+    cssText = cssText.replace(cssCommentsRegex, '');
+    var keyframesRegex = new RegExp(cssKeyframeRegex, 'gi');
+    var arr;
+    while (true) {
+        arr = keyframesRegex.exec(cssText);
+        if (arr === null) {
+            break;
+        }
+        css.push(arr[0]);
+    }
+    cssText = cssText.replace(keyframesRegex, '');
+    // unified regex
+    var unified = new RegExp(combinedCSSRegex, 'gi');
+    while (true) {
+        arr = unified.exec(cssText);
+        if (arr === null) {
+            break;
+        }
+        css.push(arr[0]);
+    }
+    return css;
+}
+function fetchCSS(url, sheet) {
+    return fetch(url).then(function (res) {
+        return {
+            url: url,
+            cssText: res.text(),
+        };
+    }, function (e) {
+        console.log('ERROR FETCHING CSS: ', e.toString());
+    });
+}
+function embedFonts(data) {
+    return data.cssText.then(function (resolved) {
+        var cssText = resolved;
+        var fontLocations = cssText.match(/url\([^)]+\)/g) || [];
+        var fontLoadedPromises = fontLocations.map(function (location) {
+            var url = location.replace(/url\(([^]+)\)/g, '$1');
+            if (!url.startsWith('https://')) {
+                var source = data.url;
+                url = new URL(url, source).href;
+            }
+            return new Promise(function (resolve, reject) {
+                fetch(url)
+                    .then(function (res) { return res.blob(); })
+                    .then(function (blob) {
+                    var reader = new FileReader();
+                    reader.addEventListener('load', function (res) {
+                        // Side Effect
+                        cssText = cssText.replace(location, "url(" + reader.result + ")");
+                        resolve([location, reader.result]);
+                    });
+                    reader.readAsDataURL(blob);
+                })
+                    .catch(reject);
+            });
+        });
+        return Promise.all(fontLoadedPromises).then(function () { return cssText; });
+    });
+}
+function getCssRules(styleSheets) {
+    var ret = [];
+    var promises = [];
+    // First loop inlines imports
+    styleSheets.forEach(function (sheet) {
+        if ('cssRules' in sheet) {
+            try {
+                utils_1.toArray(sheet.cssRules).forEach(function (item) {
+                    if (item.type === CSSRule.IMPORT_RULE) {
+                        promises.push(fetchCSS(item.href, sheet)
+                            .then(embedFonts)
+                            .then(function (cssText) {
+                            var parsed = parseCSS(cssText);
+                            parsed.forEach(function (rule) {
+                                sheet.insertRule(rule, sheet.cssRules.length);
+                            });
+                        })
+                            .catch(function (e) {
+                            console.log('Error loading remote css', e.toString());
+                        }));
+                    }
+                });
+            }
+            catch (e) {
+                var inline_1 = styleSheets.find(function (a) { return a.href === null; }) || document.styleSheets[0];
+                if (sheet.href != null) {
+                    promises.push(fetchCSS(sheet.href, inline_1)
+                        .then(embedFonts)
+                        .then(function (cssText) {
+                        var parsed = parseCSS(cssText);
+                        parsed.forEach(function (rule) {
+                            inline_1.insertRule(rule, sheet.cssRules.length);
+                        });
+                    })
+                        .catch(function (e) {
+                        console.log('Error loading remote stylesheet', e.toString());
+                    }));
+                }
+                console.log('Error inlining remote css file', e.toString());
+            }
+        }
+    });
+    return Promise
+        .all(promises)
+        .then(function () {
+        // Second loop parses rules
+        styleSheets.forEach(function (sheet) {
+            if ('cssRules' in sheet) {
+                try {
+                    utils_1.toArray(sheet.cssRules).forEach(function (item) {
+                        ret.push(item);
+                    });
+                }
+                catch (e) {
+                    console.log("Error while reading CSS rules from " + sheet.href, e.toString());
+                }
+            }
+        });
+        return ret;
+    });
+}
+function getWebFontRules(cssRules) {
+    return cssRules
+        .filter(function (rule) { return rule.type === CSSRule.FONT_FACE_RULE; })
+        .filter(function (rule) { return embedResources_1.shouldEmbed(rule.style.getPropertyValue('src')); });
+}
+function parseWebFontRules(clonedNode) {
+    return new Promise(function (resolve, reject) {
+        if (!clonedNode.ownerDocument) {
+            reject(new Error('Provided element is not within a Document'));
+        }
+        resolve(utils_1.toArray(clonedNode.ownerDocument.styleSheets));
+    })
+        .then(getCssRules)
+        .then(getWebFontRules);
+}
+exports.parseWebFontRules = parseWebFontRules;
+function embedWebFonts(clonedNode, options) {
+    return parseWebFontRules(clonedNode)
+        .then(function (rules) { return Promise.all(rules.map(function (rule) {
+        var baseUrl = rule.parentStyleSheet ? rule.parentStyleSheet.href : null;
+        return embedResources_1.default(rule.cssText, baseUrl, options);
+    })); })
+        .then(function (cssStrings) { return cssStrings.join('\n'); })
+        .then(function (cssString) {
+        var styleNode = document.createElement('style');
+        var sytleContent = document.createTextNode(cssString);
+        styleNode.appendChild(sytleContent);
+        if (clonedNode.firstChild) {
+            clonedNode.insertBefore(styleNode, clonedNode.firstChild);
+        }
+        else {
+            clonedNode.appendChild(styleNode);
+        }
+        return clonedNode;
+    });
+}
+exports.default = embedWebFonts;
+
+
+/***/ }),
+
+/***/ "./node_modules/html-to-image/lib/getBlobFromURL.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/html-to-image/lib/getBlobFromURL.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/* tslint:disable:max-line-length */
+Object.defineProperty(exports, "__esModule", { value: true });
+var utils_1 = __webpack_require__(/*! ./utils */ "./node_modules/html-to-image/lib/utils.js");
+// KNOWN ISSUE
+// -----------
+// Can not handle redirect-url, such as when access 'http://something.com/avatar.png'
+// will redirect to 'http://something.com/65fc2ffcc8aea7ba65a1d1feda173540'
+var TIMEOUT = 30000;
+function getBlobFromURL(url, options) {
+    // cache bypass so we dont have CORS issues with cached images
+    // ref: https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#Bypassing_the_cache
+    if (options.cacheBust) {
+        url += ((/\?/).test(url) ? '&' : '?') + (new Date()).getTime(); // tslint:disable-line
+    }
+    var failed = function (reason) {
+        var placeholder = '';
+        if (options.imagePlaceholder) {
+            var split = options.imagePlaceholder.split(/,/);
+            if (split && split[1]) {
+                placeholder = split[1];
+            }
+        }
+        var msg = "Failed to fetch resource: " + url;
+        if (reason) {
+            msg = typeof reason === 'string' ? reason : reason.message;
+        }
+        if (msg) {
+            console.error(msg);
+        }
+        return placeholder;
+    };
+    var deferred = window.fetch
+        // fetch
+        ? window.fetch(url)
+            .then(function (response) { return response.blob(); })
+            .then(function (blob) { return new Promise(function (resolve, reject) {
+            var reader = new FileReader();
+            reader.onloadend = function () { return resolve(reader.result); };
+            reader.onerror = reject;
+            reader.readAsDataURL(blob);
+        }); })
+            .then(utils_1.getDataURLContent)
+            .catch(function () { return new Promise(function (resolve, reject) {
+            reject();
+        }); })
+        // xhr
+        : new Promise((function (resolve, reject) {
+            var req = new XMLHttpRequest();
+            var timeout = function () {
+                reject(new Error("Timeout of " + TIMEOUT + "ms occured while fetching resource: " + url));
+            };
+            var done = function () {
+                if (req.readyState !== 4) {
+                    return;
+                }
+                if (req.status !== 200) {
+                    reject(new Error("Failed to fetch resource: " + url + ", status: " + req.status));
+                    return;
+                }
+                var encoder = new FileReader();
+                encoder.onloadend = function () {
+                    resolve(utils_1.getDataURLContent(encoder.result));
+                };
+                encoder.readAsDataURL(req.response);
+            };
+            req.onreadystatechange = done;
+            req.ontimeout = timeout;
+            req.responseType = 'blob';
+            req.timeout = TIMEOUT;
+            req.open('GET', url, true);
+            req.send();
+        }));
+    return deferred.catch(failed);
+}
+exports.default = getBlobFromURL;
+
+
+/***/ }),
+
+/***/ "./node_modules/html-to-image/lib/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/html-to-image/lib/index.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var cloneNode_1 = __importDefault(__webpack_require__(/*! ./cloneNode */ "./node_modules/html-to-image/lib/cloneNode.js"));
+var embedWebFonts_1 = __importDefault(__webpack_require__(/*! ./embedWebFonts */ "./node_modules/html-to-image/lib/embedWebFonts.js"));
+var embedImages_1 = __importDefault(__webpack_require__(/*! ./embedImages */ "./node_modules/html-to-image/lib/embedImages.js"));
+var createSvgDataURL_1 = __importDefault(__webpack_require__(/*! ./createSvgDataURL */ "./node_modules/html-to-image/lib/createSvgDataURL.js"));
+var applyStyleWithOptions_1 = __importDefault(__webpack_require__(/*! ./applyStyleWithOptions */ "./node_modules/html-to-image/lib/applyStyleWithOptions.js"));
+var utils_1 = __webpack_require__(/*! ./utils */ "./node_modules/html-to-image/lib/utils.js");
+function getImageSize(domNode, options) {
+    if (options === void 0) { options = {}; }
+    var width = options.width || utils_1.getNodeWidth(domNode);
+    var height = options.height || utils_1.getNodeHeight(domNode);
+    return { width: width, height: height };
+}
+function toSvgDataURL(domNode, options) {
+    if (options === void 0) { options = {}; }
+    var _a = getImageSize(domNode, options), width = _a.width, height = _a.height;
+    return cloneNode_1.default(domNode, options.filter, true)
+        .then(function (clonedNode) { return embedWebFonts_1.default(clonedNode, options); })
+        .then(function (clonedNode) { return embedImages_1.default(clonedNode, options); })
+        .then(function (clonedNode) { return applyStyleWithOptions_1.default(clonedNode, options); })
+        .then(function (clonedNode) { return createSvgDataURL_1.default(clonedNode, width, height); });
+}
+exports.toSvgDataURL = toSvgDataURL;
+function toCanvas(domNode, options) {
+    if (options === void 0) { options = {}; }
+    return toSvgDataURL(domNode, options)
+        .then(utils_1.createImage)
+        .then(utils_1.delay(100))
+        .then(function (image) {
+        var canvas = document.createElement('canvas');
+        var context = canvas.getContext('2d');
+        var ratio = utils_1.getPixelRatio();
+        var _a = getImageSize(domNode, options), width = _a.width, height = _a.height;
+        canvas.width = width * ratio;
+        canvas.height = height * ratio;
+        canvas.style.width = "" + width;
+        canvas.style.height = "" + height;
+        context.scale(ratio, ratio);
+        if (options.backgroundColor) {
+            context.fillStyle = options.backgroundColor;
+            context.fillRect(0, 0, canvas.width, canvas.height);
+        }
+        context.drawImage(image, 0, 0);
+        return canvas;
+    });
+}
+exports.toCanvas = toCanvas;
+function toPixelData(domNode, options) {
+    if (options === void 0) { options = {}; }
+    var _a = getImageSize(domNode, options), width = _a.width, height = _a.height;
+    return toCanvas(domNode, options)
+        .then(function (canvas) { return (canvas.getContext('2d').getImageData(0, 0, width, height).data); });
+}
+exports.toPixelData = toPixelData;
+function toPng(domNode, options) {
+    if (options === void 0) { options = {}; }
+    return toCanvas(domNode, options).then(function (canvas) { return (canvas.toDataURL()); });
+}
+exports.toPng = toPng;
+function toJpeg(domNode, options) {
+    if (options === void 0) { options = {}; }
+    return toCanvas(domNode, options).then(function (canvas) { return (canvas.toDataURL('image/jpeg', options.quality || 1)); });
+}
+exports.toJpeg = toJpeg;
+function toBlob(domNode, options) {
+    if (options === void 0) { options = {}; }
+    return toCanvas(domNode, options).then(utils_1.canvasToBlob);
+}
+exports.toBlob = toBlob;
+exports.default = {
+    toSvgDataURL: toSvgDataURL,
+    toCanvas: toCanvas,
+    toPixelData: toPixelData,
+    toPng: toPng,
+    toJpeg: toJpeg,
+    toBlob: toBlob,
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/html-to-image/lib/utils.js":
+/*!*************************************************!*\
+  !*** ./node_modules/html-to-image/lib/utils.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var WOFF = 'application/font-woff';
+var JPEG = 'image/jpeg';
+var mimes = {
+    woff: WOFF,
+    woff2: WOFF,
+    ttf: 'application/font-truetype',
+    eot: 'application/vnd.ms-fontobject',
+    png: 'image/png',
+    jpg: JPEG,
+    jpeg: JPEG,
+    gif: 'image/gif',
+    tiff: 'image/tiff',
+    svg: 'image/svg+xml',
+};
+exports.uuid = (function uuid() {
+    // generate uuid for className of pseudo elements.
+    // We should not use GUIDs, otherwise pseudo elements sometimes cannot be captured.
+    var counter = 0;
+    // ref: http://stackoverflow.com/a/6248722/2519373
+    var randomFourChars = function () {
+        return ("0000" + (Math.random() * (Math.pow(36, 4)) << 0).toString(36)).slice(-4);
+    };
+    return function () {
+        counter += 1;
+        return "u" + randomFourChars() + counter;
+    };
+}());
+function parseExtension(url) {
+    var match = /\.([^./]*?)$/g.exec(url);
+    if (match)
+        return match[1];
+    return '';
+}
+exports.parseExtension = parseExtension;
+function getMimeType(url) {
+    var ext = parseExtension(url).toLowerCase();
+    return mimes[ext] || '';
+}
+exports.getMimeType = getMimeType;
+function delay(ms) {
+    return function (args) { return new Promise((function (resolve) {
+        setTimeout(function () {
+            resolve(args);
+        }, ms);
+    })); };
+}
+exports.delay = delay;
+function createImage(url) {
+    return new Promise((function (resolve, reject) {
+        var image = new Image();
+        image.onload = function () {
+            resolve(image);
+        };
+        image.onerror = reject;
+        image.crossOrigin = 'anonymous';
+        image.src = url;
+    }));
+}
+exports.createImage = createImage;
+function isDataUrl(url) {
+    return url.search(/^(data:)/) !== -1;
+}
+exports.isDataUrl = isDataUrl;
+function toDataURL(content, mimeType) {
+    return "data:" + mimeType + ";base64," + content;
+}
+exports.toDataURL = toDataURL;
+function getDataURLContent(dataURL) {
+    return dataURL.split(/,/)[1];
+}
+exports.getDataURLContent = getDataURLContent;
+function toBlob(canvas) {
+    return new Promise((function (resolve) {
+        var binaryString = window.atob(canvas.toDataURL().split(',')[1]);
+        var len = binaryString.length;
+        var binaryArray = new Uint8Array(len);
+        for (var i = 0; i < len; i += 1) {
+            binaryArray[i] = binaryString.charCodeAt(i);
+        }
+        resolve(new Blob([binaryArray], {
+            type: 'image/png',
+        }));
+    }));
+}
+function canvasToBlob(canvas) {
+    if (canvas.toBlob) {
+        return new Promise((function (resolve) {
+            canvas.toBlob(resolve);
+        }));
+    }
+    return toBlob(canvas);
+}
+exports.canvasToBlob = canvasToBlob;
+function toArray(arrayLike) {
+    var arr = [];
+    for (var i = 0, l = arrayLike.length; i < l; i += 1) {
+        arr.push(arrayLike[i]);
+    }
+    return arr;
+}
+exports.toArray = toArray;
+function px(node, styleProperty) {
+    var value = window.getComputedStyle(node).getPropertyValue(styleProperty);
+    return parseFloat(value.replace('px', ''));
+}
+function getNodeWidth(node) {
+    var leftBorder = px(node, 'border-left-width');
+    var rightBorder = px(node, 'border-right-width');
+    return node.scrollWidth + leftBorder + rightBorder;
+}
+exports.getNodeWidth = getNodeWidth;
+function getNodeHeight(node) {
+    var topBorder = px(node, 'border-top-width');
+    var bottomBorder = px(node, 'border-bottom-width');
+    return node.scrollHeight + topBorder + bottomBorder;
+}
+exports.getNodeHeight = getNodeHeight;
+function getPixelRatio() {
+    return (window.devicePixelRatio || 1);
+}
+exports.getPixelRatio = getPixelRatio;
+function svgToDataURL(svg) {
+    return Promise.resolve()
+        .then(function () { return new XMLSerializer().serializeToString(svg); })
+        .then(encodeURIComponent)
+        .then(function (html) { return "data:image/svg+xml;charset=utf-8," + html; });
+}
+exports.svgToDataURL = svgToDataURL;
+function getBlobFromImageURL(url) {
+    return createImage(url).then(function (image) {
+        var width = image.width, height = image.height;
+        var canvas = document.createElement('canvas');
+        var context = canvas.getContext('2d');
+        var ratio = getPixelRatio();
+        canvas.width = width * ratio;
+        canvas.height = height * ratio;
+        canvas.style.width = "" + width;
+        canvas.style.height = "" + height;
+        context.scale(ratio, ratio);
+        context.drawImage(image, 0, 0);
+        var dataURL = canvas.toDataURL(getMimeType(url));
+        return getDataURLContent(dataURL);
+    });
+}
+exports.getBlobFromImageURL = getBlobFromImageURL;
 
 
 /***/ }),
@@ -86095,7 +87156,7 @@ var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers_
 /*!*********************************************!*\
   !*** ./resources/js/Redux/actions/types.js ***!
   \*********************************************/
-/*! exports provided: ADD_TO_DISPLAY, REMOVE_FROM_DISPLAY, ADD_TO_SCHDULE, REMOVE_FROM_SCHDULE */
+/*! exports provided: ADD_TO_DISPLAY, REMOVE_FROM_DISPLAY, ADD_TO_SCHDULE, REMOVE_FROM_SCHDULE, CLEAR_SCHDULE */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -86104,10 +87165,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "REMOVE_FROM_DISPLAY", function() { return REMOVE_FROM_DISPLAY; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ADD_TO_SCHDULE", function() { return ADD_TO_SCHDULE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "REMOVE_FROM_SCHDULE", function() { return REMOVE_FROM_SCHDULE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CLEAR_SCHDULE", function() { return CLEAR_SCHDULE; });
 var ADD_TO_DISPLAY = 'ADD_TO_DISPLAY';
 var REMOVE_FROM_DISPLAY = 'REMOVE_FROM_DISPLAY';
 var ADD_TO_SCHDULE = 'ADD_TO_SCHDULE';
 var REMOVE_FROM_SCHDULE = 'REMOVE_FROM_SCHDULE';
+var CLEAR_SCHDULE = 'CLEAR_SCHDULE';
 
 /***/ }),
 
@@ -86153,6 +87216,7 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -86202,6 +87266,11 @@ var initialState = {
 
     default:
       return state;
+
+    case _actions_types__WEBPACK_IMPORTED_MODULE_0__["CLEAR_SCHDULE"]:
+      return _objectSpread({}, state, {
+        scheduleMaterials: []
+      });
   }
 });
 
@@ -86307,7 +87376,6 @@ var InteractiveRow = function InteractiveRow(_ref) {
   */
 
 
-  var options = material.sections;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
     id: "material"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal__WEBPACK_IMPORTED_MODULE_1__["ButtonModal"], {
@@ -86320,12 +87388,12 @@ var InteractiveRow = function InteractiveRow(_ref) {
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
     id: selectIndex
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, options[selectIndex].instructor), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, options[selectIndex].time_days), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, options[selectIndex].room))), isDropDownOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, material.sections[selectIndex].instructor), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, material.sections[selectIndex].time_days), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, material.sections[selectIndex].room))), isDropDownOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
     id: "drop-down-menu",
     onMouseLeave: function onMouseLeave() {
       return setDropDownOpen(false);
     }
-  }, options.map(function (_option, index) {
+  }, material.sections.map(function (_option, index) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
       key: index,
       onClick: function onClick() {
@@ -86473,27 +87541,6 @@ var ButtonModal = function ButtonModal(_ref) {
     return state.materials.scheduleMaterials;
   });
 
-  var addToSchedule = function addToSchedule() {
-    var selectedTime = material.sections[selectIndex].time_days;
-
-    if (isAlreadyScheduled()) {
-      console.log('MATERIAL ALREADY ADDED');
-      return;
-    }
-
-    if (isTimeOccupied()) {
-      console.log('TIME OCCUPIED');
-      return;
-    }
-
-    dispatch({
-      type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["ADD_TO_SCHDULE"],
-      payload: _objectSpread({}, material, {
-        time_days: selectedTime
-      })
-    });
-  };
-
   var isAlreadyScheduled = function isAlreadyScheduled() {
     return materialsInSchedule.some(function (_material) {
       return _material.id == material.id;
@@ -86570,44 +87617,28 @@ var ButtonModal = function ButtonModal(_ref) {
           });
         },
         title: 'اضافة مادة',
-        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0628\u062F\u0643 \u0627\u062A\u0636\u064A\u0641 \"", material.name, "\" \u061F")
+        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0628\u062F\u0643 \u0627\u0636\u064A\u0641 \"", material.name, "\" \u061F")
       });
     }
   }, [materialsInSchedule, selectIndex]);
   console.log(modal);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, modalInfo.renderBtn, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Modal"], {
+    id: "modal",
     isOpen: modal,
     toggle: toggle
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["ModalHeader"], {
     toggle: toggle
   }, modalInfo.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["ModalBody"], null, " ", modalInfo.content, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["ModalFooter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
-    color: "danger",
-    onClick: toggle
-  }, " \u0643\u0646\u0633\u0644 \u0639\u0627\u0644\u0645\u0648\u0636\u0648\u0639"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     color: "primary",
     onClick: function onClick() {
       modalInfo.onAccept();
       toggle();
     }
-  }, "\u062A\u0645\u0627\u0645"), ' ')));
-}; // isAlreadyScheduled() ?
-
-{}
-/* <Button color="danger" onClick={() => addToSchedule()}> 
-	<FontAwesomeIcon icon={faBan}/>
-</Button> */
-// :
-// isTimeOccupied() ?
-// <Button color="warning" onClick={() => addToSchedule()}>
-// 		<FontAwesomeIcon icon={faCalendarTimes}/>
-// </Button>
-// : 
-
-{
-  /* <Button color="success" onClick={() => addToSchedule()}> 
-  	<FontAwesomeIcon icon={faPlus}/>
-  </Button> */
-}
+  }, "\u062A\u0645\u0627\u0645"), ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    color: "danger",
+    onClick: toggle
+  }, " \u0643\u0646\u0633\u0644 \u0639\u0627\u0644\u0645\u0648\u0636\u0648\u0639"))));
+};
 
 /***/ }),
 
@@ -86669,18 +87700,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialsTree", function() { return MaterialsTree; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_vertical_tree__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-vertical-tree */ "./node_modules/react-vertical-tree/dist/index.js");
-/* harmony import */ var react_vertical_tree__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_vertical_tree__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _MaterialNode__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MaterialNode */ "./resources/js/components/MaterialsTree/MaterialNode.jsx");
-/* harmony import */ var _MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MaterialsTree.module.scss */ "./resources/js/components/MaterialsTree/MaterialsTree.module.scss");
-/* harmony import */ var _MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_vertical_tree__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-vertical-tree */ "./node_modules/react-vertical-tree/dist/index.js");
+/* harmony import */ var react_vertical_tree__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_vertical_tree__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _MaterialNode__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MaterialNode */ "./resources/js/components/MaterialsTree/MaterialNode.jsx");
+/* harmony import */ var _MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MaterialsTree.module.scss */ "./resources/js/components/MaterialsTree/MaterialsTree.module.scss");
+/* harmony import */ var _MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_3__);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 
 
 
@@ -86846,8 +87875,7 @@ var getArrayForMaterial = function getArrayForMaterial(material) {
 };
 
 var MaterialsTree = function MaterialsTree() {
-  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useDispatch"])(); //? API call 
-
+  //? API call 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {// fetch('http://46494bad.ngrok.io/api/sections',{
     //     method: 'GET',
     //     mode: 'cors',
@@ -86877,7 +87905,7 @@ var MaterialsTree = function MaterialsTree() {
   var parents_array = rows_of_data.filter(function (m) {
     return m.pre_req === null;
   });
-  var StyledTree = Object(react_vertical_tree__WEBPACK_IMPORTED_MODULE_2__["withStyles"])(styles)(react_vertical_tree__WEBPACK_IMPORTED_MODULE_2___default.a);
+  var StyledTree = Object(react_vertical_tree__WEBPACK_IMPORTED_MODULE_1__["withStyles"])(styles)(react_vertical_tree__WEBPACK_IMPORTED_MODULE_1___default.a);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "studyPlanTree"
   }, parents_array.map(function (material) {
@@ -86885,7 +87913,7 @@ var MaterialsTree = function MaterialsTree() {
       key: material.id,
       data: getArrayForMaterial(material),
       render: function render(item) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialNode__WEBPACK_IMPORTED_MODULE_3__["MaterialNode"], {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialNode__WEBPACK_IMPORTED_MODULE_2__["MaterialNode"], {
           material: item
         });
       }
@@ -86925,6 +87953,167 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./resources/js/components/NavBar/NavBar.jsx":
+/*!***************************************************!*\
+  !*** ./resources/js/components/NavBar/NavBar.jsx ***!
+  \***************************************************/
+/*! exports provided: NavBar */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavBar", function() { return NavBar; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! style-loader!css-loader!bootstrap/dist/css/bootstrap.css */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/bootstrap/dist/css/bootstrap.css");
+/* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./NavBar.module.scss */ "./resources/js/components/NavBar/NavBar.module.scss");
+/* harmony import */ var _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_NavBar_module_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var html_to_image__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! html-to-image */ "./node_modules/html-to-image/lib/index.js");
+/* harmony import */ var html_to_image__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(html_to_image__WEBPACK_IMPORTED_MODULE_7__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+var download = __webpack_require__(/*! downloadjs */ "./node_modules/downloadjs/download.js");
+
+var NavBar = function NavBar(_ref) {
+  var table = _ref.table;
+
+  //? init hooks
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      tableLayout = _useState2[0],
+      setTableLayout = _useState2[1];
+
+  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["useDispatch"])();
+
+  var TakeImageOfTable = function TakeImageOfTable() {
+    html_to_image__WEBPACK_IMPORTED_MODULE_7___default.a.toPng(table.current, {
+      backgroundColor: 'white',
+      style: {
+        margin: '0px'
+      }
+    }).then(function (dataUrl) {
+      download(dataUrl, 'my-table.png');
+    })["catch"](function (error) {
+      console.error('oops, something went wrong!', error);
+    });
+  }; //?  ChangeTableLayout:
+
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    console.log(tableLayout);
+
+    if (tableLayout == 3) {
+      table.current.children[0].style.display = "none";
+
+      for (var i = 1; i < 3; ++i) {
+        table.current.children[i].style.display = "table";
+      }
+    } else {
+      for (var _i2 = 0; _i2 < 3; ++_i2) {
+        if (_i2 === tableLayout) table.current.children[_i2].style.display = "table";else table.current.children[_i2].style.display = "none";
+      }
+    }
+  }, [tableLayout]);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("menu", {
+    id: "top-menu"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "left-nav"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    id: "logo"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    id: "logo",
+    src: 'Assets/logo/somename.jpg',
+    alt: "LOGO"
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    id: "title"
+  }, " AABU Schedule App "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "right-nav"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    id: "btn"
+  }, "   \u0645\u064A\u0646 \u0633\u0645\u064A\u0631 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faInfoCircle"]
+  }), "   "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    id: "btn",
+    onClick: function onClick() {
+      return TakeImageOfTable();
+    }
+  }, "\u062D\u0641\u0638 \u0635\u0648\u0631\u0629 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faFileImage"]
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    id: "btn",
+    onClick: function onClick() {
+      return setTableLayout(function (tableLayout) {
+        return ++tableLayout % 4;
+      });
+    }
+  }, "\u062A\u063A\u064A\u064A\u0631 \u0646\u0648\u0639 \u0627\u0644\u062C\u062F\u0648\u0644 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faTable"]
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    id: "btn",
+    onClick: function onClick() {
+      return dispatch({
+        type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__["CLEAR_SCHDULE"]
+      });
+    }
+  }, "\u0645\u0633\u062D \u0627\u0644\u062C\u062F\u0648\u0644 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faTrash"]
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    id: "btn"
+  }, "\u062A\u0648\u0627\u0635\u0644 \u0645\u0639\u0646\u0627")));
+};
+
+/***/ }),
+
+/***/ "./resources/js/components/NavBar/NavBar.module.scss":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/NavBar/NavBar.module.scss ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./NavBar.module.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/NavBar/NavBar.module.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./resources/js/components/ScheduleApp.js":
 /*!************************************************!*\
   !*** ./resources/js/components/ScheduleApp.js ***!
@@ -86941,11 +88130,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MaterialsTree_MaterialsTree_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MaterialsTree/MaterialsTree.jsx */ "./resources/js/components/MaterialsTree/MaterialsTree.jsx");
 /* harmony import */ var _StudentSchedule_StudentSchedule_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StudentSchedule/StudentSchedule.jsx */ "./resources/js/components/StudentSchedule/StudentSchedule.jsx");
 /* harmony import */ var _MaterialsDisplay_MaterialsDisplay_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MaterialsDisplay/MaterialsDisplay.jsx */ "./resources/js/components/MaterialsDisplay/MaterialsDisplay.jsx");
-/* harmony import */ var react_split_pane__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-split-pane */ "./node_modules/react-split-pane/dist/index.esm.js");
-/* harmony import */ var _sass_splitter_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../sass/splitter.module.scss */ "./resources/sass/splitter.module.scss");
-/* harmony import */ var _sass_splitter_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_sass_splitter_module_scss__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _Redux_Store_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Redux/Store.js */ "./resources/js/Redux/Store.js");
+/* harmony import */ var _NavBar_NavBar_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./NavBar/NavBar.jsx */ "./resources/js/components/NavBar/NavBar.jsx");
+/* harmony import */ var react_split_pane__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-split-pane */ "./node_modules/react-split-pane/dist/index.esm.js");
+/* harmony import */ var _sass_splitter_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../sass/splitter.module.scss */ "./resources/sass/splitter.module.scss");
+/* harmony import */ var _sass_splitter_module_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_sass_splitter_module_scss__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _Redux_Store_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Redux/Store.js */ "./resources/js/Redux/Store.js");
 
 
 
@@ -86955,36 +88145,52 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/*  //TODO:
 
-    *[major-fix] know what is the currently selected time_days to be added
+/*  // TODO:
 
-    *[major-fix] prevent adding a material that are already there in the schedule 
+	*[upd] when attempting to add an already added material but different time suggest replacement of time.
+		-> new icon for updating a previously added material.
+
+    ?[DONE][major-fix] know what is the currently selected time_days to be added
+
+    ?[DONE][major-fix] prevent adding a material that are already there in the schedule 
         -> doesn't compare the current selected time.
+            ? fixed :)
         -> doesn't prevent to click to check if it's occupied
+           ? instead it replaces materials if clicked.
 
-    *  calculate the total credit hours so far
+    *[feature]  calculate the total credit hours so far
 
+    ?[DONE][feature] create a navbar for extra options like:
+        -> save schedule as picture
+        -> clear everything
     
-    *  StudentSchedule should display the time of each row
+    ?[DONE]  StudentSchedule should display the time of each row
     
-    *[design] when hovering over a material in the schedule display a little (x) icon to remove it
+    ?[DONE][design] when hovering over a material in the schedule display a little (x) icon to remove it
     
     *[design] view the schedule in full-view mode (with instructors names displayed)
+
+    *[design] when the materials display is empty display a helpful and cute svg.
 */
 
 var App = function App() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_7__["Provider"], {
-    store: _Redux_Store_js__WEBPACK_IMPORTED_MODULE_8__["default"]
+  var tableRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_8__["Provider"], {
+    store: _Redux_Store_js__WEBPACK_IMPORTED_MODULE_9__["default"]
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "AABU-Schedule-App"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "AABU-Schedule-App"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "Row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_split_pane__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_split_pane__WEBPACK_IMPORTED_MODULE_6__["default"], {
     minSize: 10,
     maxSize: 890,
     defaultSize: 700
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialsTree_MaterialsTree_jsx__WEBPACK_IMPORTED_MODULE_2__["MaterialsTree"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_StudentSchedule_StudentSchedule_jsx__WEBPACK_IMPORTED_MODULE_3__["StudentSchedule"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialsDisplay_MaterialsDisplay_jsx__WEBPACK_IMPORTED_MODULE_4__["MaterialsDisplay"], null)));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialsTree_MaterialsTree_jsx__WEBPACK_IMPORTED_MODULE_2__["MaterialsTree"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_StudentSchedule_StudentSchedule_jsx__WEBPACK_IMPORTED_MODULE_3__["StudentSchedule"], {
+    ref: tableRef
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavBar_NavBar_jsx__WEBPACK_IMPORTED_MODULE_5__["NavBar"], {
+    table: tableRef
+  }), "  ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialsDisplay_MaterialsDisplay_jsx__WEBPACK_IMPORTED_MODULE_4__["MaterialsDisplay"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null));
@@ -87092,7 +88298,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var times = [8, 9, 9.30, 10, 11, 12, 12.30, 1, 2];
 var days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
-function StudentSchedule() {
+var StudentSchedule = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function (_, tableRef) {
   var materialsInSchedule = Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["useSelector"])(function (state) {
     return state.materials.scheduleMaterials;
   });
@@ -87163,7 +88369,8 @@ function StudentSchedule() {
     setSchedule(updated_schedule);
   }, [materialsInSchedule]);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "studentSchedule"
+    className: "studentSchedule",
+    ref: tableRef
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
     className: "singleTable"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " SUN "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " MON "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " TUE "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " WED "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " THR "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, times.map(function (t, index) {
@@ -87209,7 +88416,7 @@ function StudentSchedule() {
       }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, null));
     }));
   })))));
-}
+});
 
 /***/ }),
 

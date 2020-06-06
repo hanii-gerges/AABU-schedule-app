@@ -2,6 +2,13 @@
 
 $hoverColor : rgba(151, 255, 151, 0.363);
 
+#modal{
+	direction: rtl;
+	text-align: right;
+	.close{
+		display: none;
+	}
+}
 .materialsProgram{
 	margin: 20px;
 	height: 320px; //? change this value to prevent the page from scrolling when you create the TopNav

@@ -20,26 +20,6 @@ export const ButtonModal = ({material, selectIndex}) => {
 
 	const materialsInSchedule = useSelector(state => state.materials.scheduleMaterials);
 
-	const addToSchedule = () =>{
-		const selectedTime = material.sections[selectIndex].time_days;
-
-		if(isAlreadyScheduled()){
-				console.log('MATERIAL ALREADY ADDED');
-				return;
-		}
-
-		if(isTimeOccupied()){
-			console.log('TIME OCCUPIED');
-			return;
-		}
-
-		dispatch({
-				type: ADD_TO_SCHDULE,
-				payload: {...material, time_days: selectedTime}
-		});
-
-	}
-
 	const isAlreadyScheduled = ()=>{
 			return materialsInSchedule.some( _material => _material.id == material.id);
 	}
@@ -111,7 +91,7 @@ export const ButtonModal = ({material, selectIndex}) => {
 				
 				title:'اضافة مادة',
 				content: <p>
-					  بدك اتضيف   
+					  بدك اضيف   
 
 					 "{ material.name }" 
 					 
@@ -129,37 +109,16 @@ export const ButtonModal = ({material, selectIndex}) => {
       {/* <Button color="danger" onClick={toggle}>{}</Button> */}
 			{modalInfo.renderBtn}
 
-      <Modal isOpen={modal} toggle={toggle}>
+      <Modal id='modal' isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>{modalInfo.title}</ModalHeader>
 
         <ModalBody> {modalInfo.content} </ModalBody>
 
         <ModalFooter>
-          <Button color="danger" onClick={toggle}> كنسل عالموضوع</Button>
           <Button color="primary" onClick={()=>{modalInfo.onAccept(); toggle()}}>تمام</Button>{' '}
+          <Button color="danger" onClick={toggle}> كنسل عالموضوع</Button>
         </ModalFooter>
       </Modal>
     </div>
   );
 }
-
-
-
-// isAlreadyScheduled() ?
-					
-{/* <Button color="danger" onClick={() => addToSchedule()}> 
-		<FontAwesomeIcon icon={faBan}/>
-</Button> */}
-
-// :
-// isTimeOccupied() ?
-
-// <Button color="warning" onClick={() => addToSchedule()}>
-// 		<FontAwesomeIcon icon={faCalendarTimes}/>
-// </Button>
-
-// : 
-
-{/* <Button color="success" onClick={() => addToSchedule()}> 
-		<FontAwesomeIcon icon={faPlus}/>
-</Button> */}

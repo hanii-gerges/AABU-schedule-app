@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 
-import { useDispatch } from 'react-redux';
-
 import Tree, {withStyles} from 'react-vertical-tree';
 import { MaterialNode } from './MaterialNode';
 
@@ -100,7 +98,6 @@ const getArrayForMaterial = (material)=>{
 
 export const MaterialsTree = ()=>{
 
-    const dispatch = useDispatch();
 
     //? API call 
     useEffect(() => {

@@ -1,5 +1,6 @@
 import { ADD_TO_DISPLAY, REMOVE_FROM_DISPLAY } from "../actions/types";
 import { ADD_TO_SCHDULE, REMOVE_FROM_SCHDULE } from "../actions/types";
+import { CLEAR_SCHDULE } from "../../Redux/actions/types";
 
 const initialState = {
 	displayMaterials: [],
@@ -51,6 +52,12 @@ export default function(state = initialState, action) {
 			}
 		default:
 			return state;
+
+		case CLEAR_SCHDULE:
+			return {
+				...state,
+				scheduleMaterials: [],
+			}
 	}
 
 }

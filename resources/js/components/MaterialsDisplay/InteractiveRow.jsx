@@ -16,8 +16,6 @@ export const InteractiveRow = ({material}) => {
 	
 	*/
 
-	const options = material.sections;
-
 
 	return (
 		<tr id='material'>
@@ -33,16 +31,16 @@ export const InteractiveRow = ({material}) => {
 							
 							<tbody>
 								<tr id={selectIndex}>
-										<td>{options[selectIndex].instructor}</td>
-										<td>{options[selectIndex].time_days}</td>
-										<td>{options[selectIndex].room}</td>
+										<td>{material.sections[selectIndex].instructor}</td>
+										<td>{material.sections[selectIndex].time_days}</td>
+										<td>{material.sections[selectIndex].room}</td>
 								</tr>
 							</tbody>
 						
 							
 							{isDropDownOpen && 
 								<tbody id='drop-down-menu' onMouseLeave={()=> setDropDownOpen(false)}>
-									{options.map(
+									{material.sections.map(
 										(_option, index)=>
 											<tr key={index} onClick={()=>{setSelectIndex(index)}}>
 													<td>{_option.instructor}</td>

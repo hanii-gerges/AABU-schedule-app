@@ -1,48 +1,62 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import ReactDOM from 'react-dom';
 
 import {MaterialsTree} from './MaterialsTree/MaterialsTree.jsx';
 import {StudentSchedule} from './StudentSchedule/StudentSchedule.jsx';
 import {MaterialsDisplay} from './MaterialsDisplay/MaterialsDisplay.jsx';
+import {NavBar} from './NavBar/NavBar.jsx';
 
 import SplitPane from 'react-split-pane';
 import '../../sass/splitter.module.scss';
 
 import { Provider } from "react-redux";
 import store from '../Redux/Store.js';
-/*  //TODO:
+/*  // TODO:
 
-    *[major-fix] know what is the currently selected time_days to be added
+	*[upd] when attempting to add an already added material but different time suggest replacement of time.
+		-> new icon for updating a previously added material.
 
-    *[major-fix] prevent adding a material that are already there in the schedule 
+    ?[DONE][major-fix] know what is the currently selected time_days to be added
+
+    ?[DONE][major-fix] prevent adding a material that are already there in the schedule 
         -> doesn't compare the current selected time.
+            ? fixed :)
         -> doesn't prevent to click to check if it's occupied
+           ? instead it replaces materials if clicked.
 
-    *  calculate the total credit hours so far
+    *[feature]  calculate the total credit hours so far
 
+    ?[DONE][feature] create a navbar for extra options like:
+        -> save schedule as picture
+        -> clear everything
     
-    *  StudentSchedule should display the time of each row
+    ?[DONE]  StudentSchedule should display the time of each row
     
-    *[design] when hovering over a material in the schedule display a little (x) icon to remove it
+    ?[DONE][design] when hovering over a material in the schedule display a little (x) icon to remove it
     
     *[design] view the schedule in full-view mode (with instructors names displayed)
+
+    *[design] when the materials display is empty display a helpful and cute svg.
 */
 const App = ()=> {
+
+	const tableRef = useRef(null);
     return (
         <Provider store={store}>
             <div className="AABU-Schedule-App">
 
-                <h1>AABU-Schedule-App</h1>
 
                 <div className="Row">
                     <SplitPane minSize={10} maxSize={890} defaultSize={700}>
                         <MaterialsTree/>
-                        <StudentSchedule/>
+                        <StudentSchedule ref={tableRef}/>
+
                     </SplitPane>
                 </div>
 
-                <MaterialsDisplay />
-                
+				<NavBar table={tableRef} />  {/*  */}
+
+                <MaterialsDisplay />                
             </div>
         </Provider>
     );

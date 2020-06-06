@@ -26,6 +26,8 @@
         "@fortawesome/free-solid-svg-icons": "^5.12.1",
         "@fortawesome/react-fontawesome": "^0.1.8",
         "bootstrap": "^4.4.1",
+        "downloadjs": "^1.4.7",
+        "html-to-image": "^0.1.1",
         "react-redux": "^7.2.0",
         "react-split-pane": "^0.1.91",
         "react-vertical-tree": "^1.1.7",

@@ -4,10 +4,14 @@
   margin: 0px;
 }
 
+body {
+  margin-top: 60px;
+}
+
 .Row {
   position: relative;
   margin: 20px;
-  height: 300px;
+  height: 310px;
   width: auto;
 }
 

@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Section;
-use App\HTTP\Resources\Section as SectionResource;
+use App\Http\Requests;
+use App\Course;
+use App\Http\Resources\Course as CourseResource;
 
-class SectionController extends Controller
+class CourseController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +16,17 @@ class SectionController extends Controller
      */
     public function index()
     {
-        $sections=Section::all();
-        return SectionResource::collection($sections);
+        //
+    }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
     }
 
     /**
@@ -28,7 +37,7 @@ class SectionController extends Controller
      */
     public function store(Request $request)
     {
-
+        //
     }
 
     /**
@@ -37,11 +46,22 @@ class SectionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($major)
     {
-        //intval-->because of numeric_strings issue in the DataBase
-        $section=Section::where('id',intval($id))->get();
-        return new SectionResource($section);
+        //retrieving courses in a major
+        $courses=Course::where('major',$major)->get();
+        return CourseResource::collection($courses);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
     }
 
     /**

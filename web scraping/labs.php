@@ -13,7 +13,7 @@
         return $result;
     }
 
-    $data=getSslPage("http://localhost/aabu-schedule-app/web%20scraping/optional_html.html");
+    $data=getSslPage("http://localhost/aabu-schedule-app/web%20scraping/sections_html.html");
     preg_match_all('/<t.*>(.*)<\/t.*>/',$data,$cols);
     $cols=$cols[1];
     require_once('pdo.php');
@@ -27,6 +27,7 @@
             // may accurr the 2 types of spaces so trim all
             $id=trim($cols[$i],' &nbsp;');
             if(strlen($id)==0)continue;
+            if(strlen($id)<8)continue;
             $name=trim($cols[$i+1],' &nbsp;');
             $hours=trim($cols[$i+3],' &nbsp;');
             // echo var_dump($id);

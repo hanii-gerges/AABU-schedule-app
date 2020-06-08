@@ -21,6 +21,7 @@ class Course extends JsonResource
             'hours'=>$this->hours,
             'pre_req'=>$this->pre_req,
             'sections'=>Section::where('course_id',$this->id)->get(),
+            'lab_sections'=>Section::where('course_id',$this->id.'00')->get(),
         ];
     }
 }

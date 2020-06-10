@@ -1,33 +1,23 @@
-import { REMOVE_FROM_SCHDULE } from "../../Redux/actions/types";
-
 import React from 'react';
+
 import { useDispatch } from 'react-redux';
+import { REMOVE_FROM_SCHDULE } from "../../Redux/actions/types";
 
 import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const MaterialCard = ({materialID, materialName, materialTime}) => {
+export const MaterialCard = ({material}) => {
 
 	const dispatch = useDispatch();
 
 	const handleRemove = ()=>{
 		dispatch({
 			type: REMOVE_FROM_SCHDULE,
-			payload: materialID,
+			payload: material.id,
 		});
 	}
 
-	const getTimeOnly = (str) => {
-		const days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
-
-		for(let day of days)
-			str = str.replace(day, '');
-		
-		str = str.replace(new RegExp('(AM)|(PM)', 'g'), '');
-
-		return str;
-	}
-
+	const getTimeOnly = (str) => str.replace(new RegExp('[^\\d\\.-]', 'g'), '');
 
 	return (
 		<div className='material'>
@@ -37,11 +27,12 @@ export const MaterialCard = ({materialID, materialName, materialTime}) => {
 			</button>
 
 			<div className='material-name'>
-				<b> {materialName} </b> 
+				{/* if lab add a (lab) label */}
+				<b>{material.name} </b> 
 			</div> 
 
 			<div className='material-time'>
-				{getTimeOnly(materialTime)}
+				{getTimeOnly(material.time_days)}
 			</div>
 
 		</div> 

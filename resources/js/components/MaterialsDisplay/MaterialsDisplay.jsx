@@ -17,7 +17,8 @@ export const MaterialsDisplay = ()=>{
 
     return(
         <div className="materialsProgram">
-            <h3>Avaliable Times:</h3>
+
+            {rows_of_data.length === 0 && <object className='girlSvg' type="image/svg+xml" data="GirlandSchedule.svg"></object>}
 
             {rows_of_data.length > 0 && 
 			<Table className='materialsTable'>

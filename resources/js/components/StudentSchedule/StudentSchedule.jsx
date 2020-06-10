@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './StudentSchedule.module.scss';
 
-import { MaterialCard } from './MaterialCard';
 
 import { useSelector } from 'react-redux';
 
-
+import { MaterialCard } from './MaterialCard';
 
 const times = [8, 9, 9.30, 10, 11, 12, 12.30, 1, 2];
 const days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
@@ -36,7 +35,8 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 	return (
 		<div className='studentSchedule' ref={tableRef}>
 
-			<table className='singleTable'>
+			{ //! PROBLEM CREATOR TABLE REMOVED!
+			/* <Table className='singleTable'>
 				
 				<thead>
 					<tr>
@@ -56,18 +56,16 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 										
 									<td key={index}> {day in schedule && schedule[day][t] ? 
 										<MaterialCard
-											materialID={schedule[day][t].id}
-											materialName={schedule[day][t].name} 
-											materialTime={schedule[day][t].time_days} 
+											material={schedule[day][t]}
 										/> 
-										: <pre>{null}</pre>} 
+										: <pre> {null} </pre>} 
 									</td>
 								)
 							}
 						</tr>
 				)}
 			</tbody>
-			</table>
+			</Table> */}
 			
 			<div className='left-schedule'>
 				<table>
@@ -89,9 +87,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 											<td key={index}> {day in schedule && schedule[day][t] ? 
 
 												<MaterialCard
-														materialID={schedule[day][t].id} 
-														materialName={schedule[day][t].name} 
-														materialTime={schedule[day][t].time_days} 
+													material={schedule[day][t]}
 												/>
 
 											: <pre>{null}</pre>}
@@ -123,9 +119,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 
 											<td key={index}> {day in schedule && schedule[day][t] ? 
 												<MaterialCard
-													materialID={schedule[day][t].id}
-													materialName={schedule[day][t].name} 
-													materialTime={schedule[day][t].time_days} 
+													material={schedule[day][t]} 
 												/>
 											 : <pre>{null}</pre>} 
 											</td>

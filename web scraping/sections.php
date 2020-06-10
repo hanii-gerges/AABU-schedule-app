@@ -1,4 +1,5 @@
 <?php
+                                                            //html pages splitted because of database insertions time
     function getSslPage($url) 
     {
         $ch = curl_init();
@@ -13,7 +14,7 @@
         return $result;
     }
 
-    $data=getSslPage("http://localhost/aabu-schedule-app/web%20scraping/sections_html.html");
+    $data=getSslPage("http://localhost/aabu-schedule-app/web%20scraping/sections_html1.html");
     preg_match_all('/<t.*>(.*)<\/t.*>/',$data,$cols);
     $cols=$cols[1];
     require_once('pdo.php');

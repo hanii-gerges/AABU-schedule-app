@@ -4,10 +4,7 @@ import { CLEAR_SCHDULE } from "../../Redux/actions/types";
 
 const initialState = {
 	displayMaterials: [],
-	scheduleMaterials: [
-		{id: 2, name: "برمجة كينونية ", pre_req: 1,
-    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",}
-	],
+	scheduleMaterials: [],
 };
 
 /*

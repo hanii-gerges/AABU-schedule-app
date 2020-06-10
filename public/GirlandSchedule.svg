@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="736" height="310" viewBox="0 0 1920 1080">
+  <defs>
+    <filter id="Path_1" x="326.261" y="36.944" width="1030.241" height="941.833" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="rect-green" x="677.659" y="199.378" width="533.77" height="264.197" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect width="331" height="183" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect width="331" height="43" fill="none"/>
+    </clipPath>
+    <filter id="hair-2_cupcake" x="403.375" y="233.116" width="118.986" height="133.157" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="ear" x="566.729" y="345.852" width="51.798" height="60.526" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_1)">
+      <path id="Path_1-2" data-name="Path 1" d="M473.593,97.278C739.926,175.363,953.12,164.671,925.9,413.507S1069.813,886.672,512.473,871,60.811,607.91,54.331,413.507,207.259,19.193,473.593,97.278Z" transform="translate(351 32)" fill="rgba(119,0,255,0.36)"/>
+    </g>
+    <g id="Schedule" transform="translate(-5.341 -47.487)">
+      <g transform="matrix(1, 0, 0, 1, 5.34, 47.49)" filter="url(#rect-green)">
+        <path id="rect-green-2" data-name="rect-green" d="M0,0H509.77V240.2H0Z" transform="translate(683.66 211.38)" fill="#30d85a"/>
+      </g>
+      <rect id="rect-front" width="509.77" height="208.228" transform="translate(689 290.833)" fill="#f3f3f3"/>
+      <g id="Lines" transform="translate(771.504 258.432)">
+        <line id="Line_1" data-name="Line 1" y2="240.629" transform="translate(0 0)" fill="none" stroke="#7e7e7e" stroke-width="1"/>
+        <line id="Line_1-2" data-name="Line 1" y2="240.629" transform="translate(86.19 0)" fill="none" stroke="#7e7e7e" stroke-width="1"/>
+        <line id="Line_1-3" data-name="Line 1" y2="240.629" transform="translate(172.381 0)" fill="none" stroke="#7e7e7e" stroke-width="1"/>
+        <line id="Line_1-4" data-name="Line 1" y2="240.629" transform="translate(258.571 0)" fill="none" stroke="#7e7e7e" stroke-width="1"/>
+        <line id="Line_1-5" data-name="Line 1" y2="240.629" transform="translate(344.762 0)" fill="none" stroke="#7e7e7e" stroke-width="1"/>
+      </g>
+      <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(697.341 303.487)" clip-path="url(#clip-path)">
+        <g transform="translate(-697.341 -303.487)">
+          <rect id="material" width="66" height="30" transform="translate(697.341 306.487)" fill="#30d85a"/>
+        </g>
+        <g transform="translate(-440.341 -303.487)">
+          <rect id="material-2" data-name="material" width="66" height="30" transform="translate(697.341 306.487)" fill="#30d85a"/>
+        </g>
+        <g transform="translate(-697.341 -164.487)">
+          <rect id="material-3" data-name="material" width="66" height="30" transform="translate(697.341 306.487)" fill="#30d85a"/>
+        </g>
+        <g transform="translate(-440.341 -164.487)">
+          <rect id="material-4" data-name="material" width="66" height="30" transform="translate(697.341 306.487)" fill="#30d85a"/>
+        </g>
+      </g>
+      <g id="Repeat_Grid_2" data-name="Repeat Grid 2" transform="translate(785.341 335.487)" clip-path="url(#clip-path-2)">
+        <g transform="translate(-697.341 -303.487)">
+          <rect id="material-5" data-name="material" width="66" height="30" transform="translate(697.341 306.487)" fill="#30d85a"/>
+        </g>
+        <g transform="translate(-440.341 -303.487)">
+          <rect id="material-6" data-name="material" width="66" height="30" transform="translate(697.341 306.487)" fill="#30d85a"/>
+        </g>
+      </g>
+    </g>
+    <g id="Girl">
+      <g id="Lower">
+        <path id="hand-right" d="M718.177,495.023c-48.27-30.021-64.1-48.716-64.3-48.716-2.176,14.244,17.3,20.523,19.19,28.927.2-.148-11.905-1.125-12.894,4.019-1.187,10.683,12.382,19.706,9.4,14.789s-5.567-17.293,2.057-13.031,23.987,11.588,21.217,16.336-6.371,6.3-19.783-7.122C677.423,510.8,698.893,512,698.893,512v27.383s22.544,5.718,22.544-8.13S717.782,494.875,718.177,495.023Z" transform="translate(-7 -13)" fill="#fde9d3"/>
+        <path id="hand-left" d="M522.363,792.5c-1.732-1.3-4.471.392-4.471.392l-5.634-9.882s-8.7,7.258-9.112,14.509,3.294,3.373,7.059,13.02,3.577,17.311,5.412,11.295S522.363,792.5,522.363,792.5Z" transform="translate(-5 -9)" fill="#fde9d3"/>
+        <path id="body" d="M483.381,513.469S555.14,467.7,641.024,494.823c1.7-1.13,37.292,70.063,40.117,92.1S667.015,664.9,667.015,664.9,697.626,876.669,721.131,896.5s-216.688,0-216.688,0S512,839.7,522.43,796.059c2.938-12.3,9.486-32.293,9.486-32.293s9.625-107.129-36.514-190.045c-.721.065-12.624,54.9-9.516,97.318S514.826,787.11,514.826,787.11s-1.268,33.97-10.774,17.519-37.867-59.142-48.6-129.771S483.381,513.469,483.381,513.469Z" transform="translate(-7 -13)" fill="#a7f7e4"/>
+        <path id="arm-shadow" d="M686.159,606.08c-3,21.467-12.327,55.455-13.365,58.83-9.165-25.362-1.9-7.04-20.586-46.157s-28.717-85.529-26.861-90.567,7.059-13.959,14.04-16.861" transform="translate(-12.761 -13)" fill="rgba(134,134,134,0.25)"/>
+        <path id="arm" d="M659.992,561.62c4.372,13.373,27.759,68.373,32.662,70.725,3.622-3.79,6.233-93.359,6.233-93.359s22.151,1.943,22.547-7.3,10.887,145.921-18.689,146.95S634.58,579.26,626.6,553.591s-6.548-31.615,6.893-42.816" transform="translate(-7 -13)" fill="#a7f7e4"/>
+      </g>
+      <g id="Upper" transform="matrix(0.998, -0.07, 0.07, 0.998, -23.549, 38.358)">
+        <path id="face" d="M98.426,0c54.359,0,90.19,39.321,92.772,105.7s-38.832,83.035-82.609,90.722C61.166,196.723,0,152.786,0,98.426A98.426,98.426,0,0,1,98.426,0Z" transform="translate(462.399 254.234)" fill="#fde9d3"/>
+        <path id="hair-1" d="M564.581,357.219c-5.423-8.91,9.614-35.823,19.057,4.294s-.538,57.877,20.411,83.627c.1.188-9.966-15.556,1.478-85.058,12.925-33.74,39.291-46.057,27.625-93.238-5.2-18.968-90.591-85.1-155.955-37.8.387.175-66.361,66.008-33.76,119.7-.976-.7-13.059,84.891,59.019,89.289S580.467,390.977,564.581,357.219Z" transform="translate(16.49 27.76)" fill="#7b4f4f"/>
+        <g transform="matrix(1, 0.07, -0.07, 1, 26.17, -36.62)" filter="url(#hair-2_cupcake)">
+          <path id="hair-2_cupcake-2" data-name="hair-2 cupcake" d="M55.3,1.777c26.242,0,38.5,26.017,38.5,52.259s-20.456,45.389-46.7,45.389S10.215,72.04,11.524,46.617C12.179,16.285,29.054,1.777,55.3,1.777Z" transform="matrix(1, -0.07, 0.07, 1, 401.86, 247.89)" fill="#7b4f4f"/>
+        </g>
+        <g transform="matrix(1, 0.07, -0.07, 1, 26.17, -36.62)" filter="url(#ear)">
+          <path id="ear-2" data-name="ear" d="M11.99,0c6.622,0,11.99,7.9,11.99,17.656S18.612,35.312,11.99,35.312,0,27.407,0,17.656,5.368,0,11.99,0Z" transform="translate(577.23 359.34) rotate(-12)" fill="#fde9d3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

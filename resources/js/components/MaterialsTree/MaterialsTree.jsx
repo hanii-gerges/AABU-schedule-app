@@ -13,14 +13,14 @@ const rows_of_data =
     {id: 1, name: "حاسوب 2 ", pre_req: null, 
     sections: [
         {
-            section: 1, time_days: " 8.00 AM- 9.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+           id:1, section: 1, time_days: " 8.00 AM- 9.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
         }
     ]},
 
     {id: 2, name: "برمجة كينونية ", pre_req: 1,
     sections: [
         {
-            section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+           id:2, section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
         }
     ]},
     
@@ -28,35 +28,55 @@ const rows_of_data =
     {id: 3, name: "تراكيب البيانات" , pre_req: 2,
     sections: [
         {
-            section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+            id:3, section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
         }
     ]},
-        {id: 4, name: "تصميم الصفحات الالكترونية", pre_req: 2, sections: [
+        {id: 4, name: "تصميم الصفحات الالكترونية", pre_req: 2, 
+            sections: [
             {
-                section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
-            }
-        ]},
+                id:4, section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+            }],
+            
+            lab_sections: [
+            {
+                id:44, section: 1, time_days: " 8.00 AM- 9.30 AM ربع", room: "تم202", instructor: "TutorName",
+            }   
+            ]
+        },
         {id: 5, name: "البرمجة بلغة جافا", pre_req: 2, sections: [
             {
-                section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "ابو عليم",
+               id:5, section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "ابو عليم",
             },
             {
-                section: 2, time_days: " 8.00 AM- 9.30 AM  ثن ربع", room: "تم202", instructor: "جوجو",
+               id:5, section: 2, time_days: " 8.00 AM- 9.30 AM  ثن ربع", room: "تم202", instructor: "جوجو",
             },
         ]} ,
-             {id: 6, name: "البرمجة المرئية", pre_req: 5, sections: [
-                {
-                    section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+             {id: 6, name: "البرمجة المرئية", pre_req: 5, 
+             sections: [
+                {   
+                    id: 6, section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
                 },
                 {
-                    section: 2, time_days: " 11.00 AM- 12.00 AM  حد ثل خمس", room: "تم202", instructor: "وحده هبله",
+                    id: 6, section: 2, time_days: " 11.00 AM- 12.00 AM  حد ثل خمس", room: "تم202", instructor: "وحده هبله",
                 },
                 {
-                    section: 3, time_days: " 2.00 AM- 3.30 AM  حد ثل خمس", room: "تم202", instructor: "واحد اهبل",
+                    id: 6, section: 3, time_days: " 2.00 AM- 3.30 AM  حد ثل خمس", room: "تم202", instructor: "واحد اهبل",
                 }
-            ]},
+            ],
+            
+            'lab_sections': [
+            
+                {
+                    id: 66, section: 1, time_days: " 8.00 AM- 9.00 AM  ثن ", room: "تم202", instructor: "واحد اهبل",
+                },
+                {
+                    id: 66, section: 2, time_days: " 9.00 AM- 10.00 AM  خمس", room: "تم202", instructor: "وحده هبله",
+                },
+                
+            ]
+        },
 
-    {id: 7,name: "ديسكريت ", pre_req: null, sections: [
+    {id: 7,name: "رياضيات متقطعة", pre_req: null, sections: [
         {
             section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
         }

@@ -12861,7 +12861,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n#modal {\n  direction: rtl;\n  text-align: right;\n}\n#modal .close {\n  display: none;\n}\n\n.materialsProgram {\n  margin: 20px;\n  height: 320px;\n  overflow-y: scroll;\n  border: 1px solid black;\n}\n.materialsProgram .materialsTable {\n  display: table;\n  direction: rtl;\n  width: 90%;\n  margin: auto;\n  margin-bottom: 100px;\n  text-align: center;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.materialsProgram .materialsTable #drop-down {\n  position: relative;\n  display: inline-block;\n  direction: rtl;\n  cursor: pointer;\n  background-color: white;\n}\n.materialsProgram .materialsTable #drop-down:before {\n  content: \"\";\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 16px;\n  top: 50%;\n  border-width: 6px 6px 0 6px;\n  border-style: solid;\n  border-color: black transparent;\n}\n.materialsProgram .materialsTable #drop-down table, .materialsProgram .materialsTable #drop-down tr {\n  display: table;\n  table-layout: fixed;\n  background-color: white;\n  width: 100%;\n}\n.materialsProgram .materialsTable #drop-down table td:nth-child(2), .materialsProgram .materialsTable #drop-down tr td:nth-child(2) {\n  width: 50%;\n}\n.materialsProgram .materialsTable #drop-down tr:hover {\n  color: white;\n  background-color: #19a83d;\n}\n.materialsProgram .materialsTable #drop-down #drop-down-menu {\n  border: none;\n  position: absolute;\n  top: 120%;\n  z-index: 1;\n  box-shadow: 0px 0px 5px 2px #19a83d;\n}\n.materialsProgram .materialsTable th {\n  background-color: #19a83d;\n  color: white;\n}\n.materialsProgram .materialsTable th:first-child {\n  width: 10%;\n}\n.materialsProgram .materialsTable th:nth-child(4) {\n  width: 30%;\n}\n.materialsProgram .materialsTable td {\n  padding: 0.5rem;\n  vertical-align: middle;\n}\n.materialsProgram .materialsTable th, .materialsProgram .materialsTable td {\n  border: 1px solid black;\n  direction: ltr;\n}\n.materialsProgram tr:hover {\n  background-color: rgba(151, 255, 151, 0.363);\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n#modal {\n  direction: rtl;\n  text-align: right;\n}\n#modal .close {\n  display: none;\n}\n\n.girlSvg {\n  position: absolute;\n  margin: auto;\n  top: 0px;\n  bottom: 0;\n  right: 0;\n  left: 0;\n}\n\n.materialsProgram {\n  position: relative;\n  margin: 20px;\n  height: 320px;\n  overflow-y: scroll;\n  border-top: 2px solid #ccc;\n}\n.materialsProgram .materialsTable {\n  display: table;\n  direction: rtl;\n  width: 90%;\n  margin: 50px auto;\n  text-align: center;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.materialsProgram .materialsTable #drop-down {\n  position: relative;\n  display: inline-block;\n  direction: rtl;\n  cursor: pointer;\n  background-color: white;\n}\n.materialsProgram .materialsTable #drop-down:before {\n  content: \"\";\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 16px;\n  top: 50%;\n  border-width: 6px 6px 0 6px;\n  border-style: solid;\n  border-color: black transparent;\n}\n.materialsProgram .materialsTable #drop-down table, .materialsProgram .materialsTable #drop-down tr {\n  display: table;\n  table-layout: fixed;\n  background-color: white;\n  width: 100%;\n}\n.materialsProgram .materialsTable #drop-down table td:nth-child(2), .materialsProgram .materialsTable #drop-down tr td:nth-child(2) {\n  width: 50%;\n}\n.materialsProgram .materialsTable #drop-down tr:hover {\n  color: white;\n  background-color: #19a83d;\n}\n.materialsProgram .materialsTable #drop-down #drop-down-menu {\n  border: none;\n  position: absolute;\n  top: 120%;\n  z-index: 1;\n  box-shadow: 0px 0px 5px 2px #19a83d;\n}\n.materialsProgram .materialsTable th {\n  background-color: #19a83d;\n  color: white;\n}\n.materialsProgram .materialsTable th:first-child {\n  width: 10%;\n}\n.materialsProgram .materialsTable th:nth-child(4) {\n  width: 30%;\n}\n.materialsProgram .materialsTable td {\n  padding: 0.5rem;\n  vertical-align: middle;\n}\n.materialsProgram .materialsTable th, .materialsProgram .materialsTable td {\n  border: 1px solid black;\n  direction: ltr;\n}\n.materialsProgram tr:hover {\n  background-color: rgba(151, 255, 151, 0.363);\n}", ""]);
 
 // exports
 
@@ -12880,7 +12880,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.studyPlanTree {\n  height: 100%;\n}\n\n.materialNode {\n  padding: 5px 5px;\n  font-size: 10pt;\n  color: #ffffff;\n  background-color: #19a83d;\n  border-radius: 20px;\n  border: none;\n}\n.materialNode:hover {\n  box-shadow: 0 0 3pt 2pt darkgreen;\n}\n\n.fadingNode {\n  background-color: lightgreen;\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.studyPlanTree {\n  height: 100%;\n}\n\n.materialNode {\n  padding: 5px 5px;\n  font-size: 10pt;\n  color: #ffffff;\n  background-color: #19a83d;\n  border-radius: 20px;\n  border: none;\n}\n.materialNode:hover {\n  box-shadow: 0 0 3pt 2pt darkgreen;\n}\n\n.fadingNode {\n  background-color: lightgreen;\n}", ""]);
 
 // exports
 
@@ -12899,7 +12899,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n#top-menu {\n  position: fixed;\n  top: 0;\n  z-index: 2;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  padding: 0px 5px;\n  width: 100%;\n  background-color: #19a83d;\n  color: white;\n  border-bottom: 5px solid #ecb419;\n}\n#top-menu #left-nav {\n  display: -webkit-box;\n  display: flex;\n  justify-content: space-around;\n}\n#top-menu #left-nav span {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n#top-menu #left-nav span #title {\n  margin-left: 10px;\n}\n#top-menu #left-nav span #logo {\n  width: 36px;\n  border: 2px solid black;\n  border-radius: 50%;\n}\n#top-menu #right-nav {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n}\n#top-menu #right-nav #btn {\n  color: white;\n  background: transparent;\n  border: none;\n  padding: 0px 25px;\n  border-right: 1px solid white;\n  text-decoration: none;\n  -webkit-transition: padding ease 0.5s;\n  transition: padding ease 0.5s;\n}\n#top-menu #right-nav #btn:hover {\n  font-weight: bold;\n}\n#top-menu #right-nav #btn:focus {\n  outline: none !important;\n}\n#top-menu #right-nav :last-child {\n  border: none;\n}\n@media only screen and (max-width: 768px) {\n  #top-menu {\n    /* For mobile phones: */\n  }\n  #top-menu #right-nav {\n    display: none;\n  }\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n#top-menu {\n  position: fixed;\n  top: 0;\n  z-index: 2;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  padding: 0px 5px;\n  width: 100%;\n  background-color: #19a83d;\n  color: white;\n  border-bottom: 5px solid #ecb419;\n}\n#top-menu #left-nav {\n  display: -webkit-box;\n  display: flex;\n  justify-content: space-around;\n}\n#top-menu #left-nav span {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n#top-menu #left-nav span #title {\n  margin-left: 10px;\n}\n#top-menu #left-nav span #logo {\n  width: 36px;\n  border: 2px solid black;\n  border-radius: 50%;\n}\n#top-menu #right-nav {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n}\n#top-menu #right-nav #btn {\n  color: white;\n  background: transparent;\n  border: none;\n  padding: 0px 25px;\n  border-right: 1px solid white;\n  text-decoration: none;\n  -webkit-transition: padding ease 0.5s;\n  transition: padding ease 0.5s;\n}\n#top-menu #right-nav #btn:hover {\n  font-weight: bold;\n}\n#top-menu #right-nav #btn:focus {\n  outline: none !important;\n}\n#top-menu #right-nav :last-child {\n  border: none;\n}\n@media only screen and (max-width: 768px) {\n  #top-menu {\n    /* For mobile phones: */\n  }\n  #top-menu #right-nav {\n    display: none;\n  }\n}", ""]);
 
 // exports
 
@@ -12918,7 +12918,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.studentSchedule {\n  position: absolute;\n  display: -webkit-box;\n  display: flex;\n  height: 100%;\n}\n.studentSchedule .left-schedule, .studentSchedule .right-schedule {\n  display: none;\n  margin: 5px;\n}\n.studentSchedule table {\n  margin: auto;\n  display: table;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  direction: ltr;\n  background-color: white;\n  table-layout: fixed;\n}\n.studentSchedule table tr {\n  height: 20px;\n}\n.studentSchedule table th {\n  height: 40px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td {\n  text-align: center;\n}\n.studentSchedule table td .material {\n  position: relative;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-flow: column nowrap;\n  height: 50px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td .material .material-name {\n  overflow: hidden;\n  width: 100%;\n}\n.studentSchedule table td .material:hover .close-btn {\n  display: block;\n}\n.studentSchedule table td .material .close-btn {\n  position: absolute;\n  top: -5px;\n  right: 0px;\n  display: none;\n  margin: 2px;\n  color: rgba(231, 20, 20, 0.5);\n  background-color: transparent;\n  border: none;\n  border-radius: 30px;\n  cursor: pointer;\n}\n.studentSchedule table td .material .close-btn:hover {\n  color: #d42839;\n}\n.studentSchedule table th, .studentSchedule table td {\n  border: 1px solid black;\n  direction: ltr;\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.studentSchedule {\n  position: absolute;\n  display: -webkit-box;\n  display: flex;\n  height: 100%;\n}\n.studentSchedule .left-schedule, .studentSchedule .right-schedule {\n  margin: 5px;\n  display: none;\n  height: 90%;\n}\n.studentSchedule table {\n  margin: auto;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  direction: ltr;\n  background-color: white;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.studentSchedule table tr {\n  height: 20px;\n}\n.studentSchedule table th {\n  height: 40px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td {\n  text-align: center;\n}\n.studentSchedule table td .material {\n  position: relative;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-flow: column nowrap;\n  height: 50px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td .material .material-name {\n  overflow: hidden;\n  width: 100%;\n}\n.studentSchedule table td .material:hover .close-btn {\n  display: block;\n}\n.studentSchedule table td .material .close-btn {\n  position: absolute;\n  top: -5px;\n  right: 0px;\n  display: none;\n  margin: 2px;\n  color: rgba(231, 20, 20, 0.5);\n  background-color: transparent;\n  border: none;\n  border-radius: 30px;\n  cursor: pointer;\n}\n.studentSchedule table td .material .close-btn:hover {\n  color: #d42839;\n}\n.studentSchedule table th, .studentSchedule table td {\n  border: 1px solid black;\n  direction: ltr;\n}", ""]);
 
 // exports
 
@@ -12937,7 +12937,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n}\n\n.Resizer {\n  height: 100%;\n  background: #000;\n  opacity: 0.3;\n  z-index: 1;\n  box-sizing: border-box;\n  -moz-background-clip: padding;\n  -webkit-background-clip: padding;\n  background-clip: padding-box;\n}\n\n.Resizer:hover {\n  -webkit-transition: all 2s ease;\n  transition: all 2s ease;\n}\n\n.Resizer.horizontal {\n  margin: -5px 0;\n  border-top: 5px solid rgba(255, 255, 255, 0);\n  border-bottom: 5px solid rgba(255, 255, 255, 0);\n  cursor: row-resize;\n  width: 100%;\n}\n\n.Resizer.horizontal:hover {\n  border-top: 5px solid rgba(0, 0, 0, 0.5);\n  border-bottom: 5px solid rgba(0, 0, 0, 0.5);\n}\n\n.Resizer.vertical {\n  width: 11px;\n  margin: 0 -5px;\n  border-left: 5px solid rgba(255, 255, 255, 0);\n  border-right: 5px solid rgba(255, 255, 255, 0);\n  cursor: col-resize;\n}\n\n.Resizer.vertical:hover {\n  border-left: 5px solid rgba(0, 0, 0, 0.5);\n  border-right: 5px solid rgba(0, 0, 0, 0.5);\n}\n\n.Resizer.disabled {\n  cursor: not-allowed;\n}\n\n.Resizer.disabled:hover {\n  border-color: transparent;\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.Resizer {\n  height: 100%;\n  background: #000;\n  opacity: 0.3;\n  z-index: 1;\n  box-sizing: border-box;\n  -moz-background-clip: padding;\n  -webkit-background-clip: padding;\n  background-clip: padding-box;\n}\n\n.Resizer:hover {\n  -webkit-transition: all 2s ease;\n  transition: all 2s ease;\n}\n\n.Resizer.horizontal {\n  margin: -5px 0;\n  border-top: 5px solid rgba(255, 255, 255, 0);\n  border-bottom: 5px solid rgba(255, 255, 255, 0);\n  cursor: row-resize;\n  width: 100%;\n}\n\n.Resizer.horizontal:hover {\n  border-top: 5px solid rgba(0, 0, 0, 0.5);\n  border-bottom: 5px solid rgba(0, 0, 0, 0.5);\n}\n\n.Resizer.vertical {\n  width: 11px;\n  margin: 0 -5px;\n  border-left: 5px solid rgba(255, 255, 255, 0);\n  border-right: 5px solid rgba(255, 255, 255, 0);\n  cursor: col-resize;\n}\n\n.Resizer.vertical:hover {\n  border-left: 5px solid rgba(0, 0, 0, 0.5);\n  border-right: 5px solid rgba(0, 0, 0, 0.5);\n}\n\n.Resizer.disabled {\n  cursor: not-allowed;\n}\n\n.Resizer.disabled:hover {\n  border-color: transparent;\n}", ""]);
 
 // exports
 
@@ -87222,12 +87222,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var initialState = {
   displayMaterials: [],
-  scheduleMaterials: [{
-    id: 2,
-    name: "برمجة كينونية ",
-    pre_req: 1,
-    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس"
-  }]
+  scheduleMaterials: []
 };
 /*
  * ADD: 		action.payload is a material object.
@@ -87345,6 +87340,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Modal */ "./resources/js/components/MaterialsDisplay/Modal.jsx");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -87367,33 +87368,55 @@ var InteractiveRow = function InteractiveRow(_ref) {
       _useState4 = _slicedToArray(_useState3, 2),
       isDropDownOpen = _useState4[0],
       setDropDownOpen = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    useLabs: false,
+    displaySections: material.sections
+  }),
+      _useState6 = _slicedToArray(_useState5, 2),
+      sectionsControl = _useState6[0],
+      setSectionsControl = _useState6[1];
   /* //  TODO: 
   
-  	* Clicking away from the drop-down-menu should close it!
+  	* Clicking away from the drop-down-menu should close it! 
+  				-> (ترقيع: onMouseLeave)
   
   	* Think of a more user friendly way to deal with having only one option
   
   */
 
 
+  var ToggleLabs = function ToggleLabs() {
+    setSelectIndex(0);
+    setSectionsControl({
+      useLabs: !sectionsControl.useLabs,
+      displaySections: !sectionsControl.useLabs ? material.lab_sections : material.sections
+    });
+  };
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
     id: "material"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal__WEBPACK_IMPORTED_MODULE_1__["ButtonModal"], {
-    material: material,
-    selectIndex: selectIndex
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", material.name, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    material: _objectSpread({
+      name: material.name
+    }, sectionsControl.displaySections[selectIndex])
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, //	only for materials with lab_sections
+  typeof material.lab_sections != 'undefined' && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "toggle-labs-btn",
+    onClick: ToggleLabs
+  }, " \u0644\u0627\u0628\u0627\u062A\u061F "), material.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "drop-down",
     onClick: function onClick() {
       return setDropDownOpen(!isDropDownOpen);
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
     id: selectIndex
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, material.sections[selectIndex].instructor), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, material.sections[selectIndex].time_days), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, material.sections[selectIndex].room))), isDropDownOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, sectionsControl.displaySections[selectIndex].instructor), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, sectionsControl.displaySections[selectIndex].time_days), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, sectionsControl.displaySections[selectIndex].room))), isDropDownOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
     id: "drop-down-menu",
     onMouseLeave: function onMouseLeave() {
       return setDropDownOpen(false);
     }
-  }, material.sections.map(function (_option, index) {
+  }, sectionsControl.displaySections.map(function (_option, index) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
       key: index,
       onClick: function onClick() {
@@ -87433,7 +87456,11 @@ var MaterialsDisplay = function MaterialsDisplay() {
   });
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "materialsProgram"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Avaliable Times:"), rows_of_data.length > 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Table"], {
+  }, rows_of_data.length === 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("object", {
+    className: "girlSvg",
+    type: "image/svg+xml",
+    data: "GirlandSchedule.svg"
+  }), rows_of_data.length > 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Table"], {
     className: "materialsTable"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0636\u0641 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0627\u0633\u0645 \u0627\u0644\u0645\u0627\u062F\u0629  "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " \u0645\u062F\u0631\u0633 \u0627\u0644\u0645\u0627\u062F\u0629  /  \u0627\u0644\u0627\u064A\u0627\u0645 \u0648\u0627\u0644\u0627\u0648\u0642\u0627\u062A / \u0627\u0644\u0642\u0627\u0639\u0629"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, rows_of_data.map(function (material, index) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_InteractiveRow__WEBPACK_IMPORTED_MODULE_2__["InteractiveRow"], {
@@ -87494,12 +87521,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
 /* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -87516,8 +87537,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var ButtonModal = function ButtonModal(_ref) {
-  var material = _ref.material,
-      selectIndex = _ref.selectIndex;
+  var material = _ref.material;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       _useState2 = _slicedToArray(_useState, 2),
@@ -87525,8 +87545,10 @@ var ButtonModal = function ButtonModal(_ref) {
       setModal = _useState2[1];
 
   var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    renderBtn: null,
+    onAccept: null,
     title: '',
-    content: 'تشرفنا'
+    content: ''
   }),
       _useState4 = _slicedToArray(_useState3, 2),
       modalInfo = _useState4[0],
@@ -87548,14 +87570,47 @@ var ButtonModal = function ButtonModal(_ref) {
   };
 
   var isTimeOccupied = function isTimeOccupied() {
-    var selectedTime = material.sections[selectIndex].time_days;
-    return materialsInSchedule.some(function (_material) {
-      return _material.time_days === selectedTime;
+    var days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
+
+    var getTimeOnly = function getTimeOnly(str) {
+      return str.replace(new RegExp('[^\\d\\.-]', 'g'), '');
+    };
+
+    var getDate = function getDate(time) {
+      var today = new Date();
+
+      var _t = time.split(".");
+
+      today.setHours(_t[0], _t[1], 0, 0);
+      return today;
+    };
+
+    var timeOverLaps = function timeOverLaps(time1, time2) {
+      time1 = getTimeOnly(time1).split('-');
+      time2 = getTimeOnly(time2).split('-');
+      var startTime = getDate(time1[0]);
+      var endTime = getDate(time1[1]);
+      if (getDate(time2[0]) <= startTime && startTime <= getDate(time2[1]) || getDate(time2[0]) <= endTime && endTime <= getDate(time2[1])) return true;
+      return false;
+    };
+
+    var selectedTime = material.time_days;
+    var array_of_occupation = materialsInSchedule.filter(function (otherMaterial) {
+      return timeOverLaps(otherMaterial.time_days, selectedTime) && days.some(function (day) {
+        return otherMaterial.time_days.includes(day) && selectedTime.includes(day);
+      });
+    });
+    return array_of_occupation;
+  };
+
+  var isAlreadyScheduledAtExactTime = function isAlreadyScheduledAtExactTime() {
+    return materialsInSchedule.some(function (mat) {
+      return mat.id == material.id && mat.time_days == material.time_days;
     });
   };
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (isAlreadyScheduled()) {
+    if (isAlreadyScheduledAtExactTime()) {
       setModalInfo({
         renderBtn: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
           color: "danger",
@@ -87569,14 +87624,45 @@ var ButtonModal = function ButtonModal(_ref) {
             payload: material.id
           });
         },
-        title: 'already dude المادة مضافة',
-        content: " بتحب تحذفها؟ "
+        title: 'المادة مضافة مسبقا وبنفس الموعد',
+        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0647\u0644 \u062A\u0631\u063A\u0628 \u0628\u062D\u0630\u0641 \u0645\u0627\u062F\u0629 \u0627\u0644 \"", material.name, "\" \u0645\u0646 \u0627\u0644\u062C\u062F\u0648\u0644\u061F")
       });
-    } else if (isTimeOccupied()) {
-      var selectedTime = material.sections[selectIndex].time_days;
-      var otherMaterial = materialsInSchedule.filter(function (material) {
-        return material.time_days == selectedTime;
+    } else if (isAlreadyScheduled()) {
+      var otherMaterial = materialsInSchedule.filter(function (otherMat) {
+        return otherMat.id == material.id;
       })[0];
+      setModalInfo({
+        renderBtn: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+          color: "primary",
+          onClick: toggle
+        }, "  ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faRedoAlt"]
+        }), " "),
+        onAccept: function onAccept() {
+          dispatch({
+            type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
+            payload: material.id
+          });
+          dispatch({
+            type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["ADD_TO_SCHDULE"],
+            payload: material
+          });
+        },
+        title: ' المادة مضافة مسبقا',
+        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0647\u0644 \u062A\u0631\u064A\u062F \u062A\u063A\u064A\u064A\u0631 \u0648\u0642\u062A \u0627\u0644\u0645\u0627\u062F\u0629\u061F", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "\u0645\u0646 \u0627\u0644\u0645\u0648\u0639\u062F \u0627\u0644\u0633\u0627\u0628\u0642", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          style: {
+            direction: 'ltr'
+          }
+        }, "\"", otherMaterial.time_days, "\""), ":\u0627\u0644\u0649 \u0627\u0644\u0645\u0648\u0639\u062F \u0627\u0644\u062C\u062F\u064A\u062F", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          style: {
+            direction: 'ltr'
+          }
+        }, "\"", material.time_days, "\""))
+      });
+    } else if (isTimeOccupied().length > 0) {
+      // const selectedTime = material.time_days;
+      var otherMaterials = isTimeOccupied();
+      console.log(otherMaterials);
       setModalInfo({
         renderBtn: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
           color: "warning",
@@ -87585,22 +87671,44 @@ var ButtonModal = function ButtonModal(_ref) {
           icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faCalendarTimes"]
         }), " "),
         onAccept: function onAccept() {
-          dispatch({
-            type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
-            payload: otherMaterial.id
-          });
+          var _iteratorNormalCompletion = true;
+          var _didIteratorError = false;
+          var _iteratorError = undefined;
+
+          try {
+            for (var _iterator = otherMaterials[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+              var mat = _step.value;
+              dispatch({
+                type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
+                payload: mat.id
+              });
+            }
+          } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+          } finally {
+            try {
+              if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+                _iterator["return"]();
+              }
+            } finally {
+              if (_didIteratorError) {
+                throw _iteratorError;
+              }
+            }
+          }
+
           dispatch({
             type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["ADD_TO_SCHDULE"],
-            payload: _objectSpread({}, material, {
-              time_days: selectedTime
-            })
+            payload: material
           });
         },
         title: 'تعارض وقت',
-        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0634\u0648\u0641 \u0639\u0644\u064A.. \u0645\u0627\u062F\u0629 \u0627\u0644 \"", otherMaterial.name, "\" \u0648\u0642\u062A\u0647\u0627 \u0628\u062A\u0639\u0627\u0631\u0636 \u0645\u0639 \u0627\u0644 \"", material.name, "\" \u0628\u062A\u062D\u0628 \u062A\u0628\u062F\u0644 \u0627\u0644\u0645\u0648\u0627\u062F \u0628\u0628\u0639\u0636\u061F")
+        content: otherMaterials.length > 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0627\u0644\u0645\u0627\u062F\u0629 \u0627\u0644\u062A\u064A \u062A\u062D\u0627\u0648\u0644 \u0627\u0636\u0627\u0641\u062A\u0647\u0627 \"", material.name, "\" :\u0648\u0642\u062A\u0647\u0627 \u0628\u062A\u0639\u0627\u0631\u0636 \u0645\u0639 \u0627\u0644\u0645\u0648\u0627\u062F \u0627\u0644\u062A\u0627\u0644\u064A\u0629", otherMaterials.map(function (_mat) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, " \"", _mat.name, "\" ");
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "\u0647\u0644 \u062A\u0631\u063A\u0628 \u0628\u062D\u0630\u0641 \u0627\u0644\u0645\u0648\u0627\u062F \u0627\u0644\u0645\u0630\u0643\u0648\u0631\u0629 \u0644\u062A\u0633\u062C\u064A\u0644 \u0627\u0644\u0645\u0627\u062F\u0629 \u0627\u0644\u0645\u0631\u0627\u062F \u062A\u0633\u062C\u064A\u0644\u0647\u0627\u061F") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0627\u0644\u0645\u0627\u062F\u0629 \u0627\u0644\u062A\u064A \u062A\u062D\u0627\u0648\u0644 \u0627\u0636\u0627\u0641\u062A\u0647\u0627 \"", material.name, "\" \u0648\u0642\u062A\u0647\u0627 \u0628\u062A\u0639\u0627\u0631\u0636 \u0645\u0639 \"", otherMaterials[0].name, "\" \u0647\u0644 \u062A\u0631\u063A\u0628 \u0628\u062A\u0628\u062F\u064A\u0644 \u0627\u0644\u0645\u0627\u062F\u062A\u064A\u0646 \u0628\u0628\u0639\u0636\u0647\u0645\u0627\u061F")
       });
     } else {
-      var _selectedTime = material.sections[selectIndex].time_days;
       setModalInfo({
         renderBtn: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
           color: "success",
@@ -87611,17 +87719,14 @@ var ButtonModal = function ButtonModal(_ref) {
         onAccept: function onAccept() {
           return dispatch({
             type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["ADD_TO_SCHDULE"],
-            payload: _objectSpread({}, material, {
-              time_days: _selectedTime
-            })
+            payload: material
           });
         },
         title: 'اضافة مادة',
-        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0628\u062F\u0643 \u0627\u0636\u064A\u0641 \"", material.name, "\" \u061F")
+        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0647\u0644 \u062A\u0631\u063A\u0628 \u0628\u0627\u0636\u0627\u0641\u0629 \"", material.name, "\" \u061F")
       });
     }
-  }, [materialsInSchedule, selectIndex]);
-  console.log(modal);
+  }, [materialsInSchedule, material]);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, modalInfo.renderBtn, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Modal"], {
     id: "modal",
     isOpen: modal,
@@ -87721,6 +87826,7 @@ var rows_of_data = [{
   name: "حاسوب 2 ",
   pre_req: null,
   sections: [{
+    id: 1,
     section: 1,
     time_days: " 8.00 AM- 9.00 AM  حد ثل خمس",
     room: "تم202",
@@ -87731,6 +87837,7 @@ var rows_of_data = [{
   name: "برمجة كينونية ",
   pre_req: 1,
   sections: [{
+    id: 2,
     section: 1,
     time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
     room: "تم202",
@@ -87741,6 +87848,7 @@ var rows_of_data = [{
   name: "تراكيب البيانات",
   pre_req: 2,
   sections: [{
+    id: 3,
     section: 1,
     time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
     room: "تم202",
@@ -87751,8 +87859,16 @@ var rows_of_data = [{
   name: "تصميم الصفحات الالكترونية",
   pre_req: 2,
   sections: [{
+    id: 4,
     section: 1,
     time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
+    room: "تم202",
+    instructor: "TutorName"
+  }],
+  lab_sections: [{
+    id: 44,
+    section: 1,
+    time_days: " 8.00 AM- 9.30 AM ربع",
     room: "تم202",
     instructor: "TutorName"
   }]
@@ -87761,11 +87877,13 @@ var rows_of_data = [{
   name: "البرمجة بلغة جافا",
   pre_req: 2,
   sections: [{
+    id: 5,
     section: 1,
     time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
     room: "تم202",
     instructor: "ابو عليم"
   }, {
+    id: 5,
     section: 2,
     time_days: " 8.00 AM- 9.30 AM  ثن ربع",
     room: "تم202",
@@ -87776,24 +87894,40 @@ var rows_of_data = [{
   name: "البرمجة المرئية",
   pre_req: 5,
   sections: [{
+    id: 6,
     section: 1,
     time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
     room: "تم202",
     instructor: "TutorName"
   }, {
+    id: 6,
     section: 2,
     time_days: " 11.00 AM- 12.00 AM  حد ثل خمس",
     room: "تم202",
     instructor: "وحده هبله"
   }, {
+    id: 6,
     section: 3,
     time_days: " 2.00 AM- 3.30 AM  حد ثل خمس",
     room: "تم202",
     instructor: "واحد اهبل"
+  }],
+  'lab_sections': [{
+    id: 66,
+    section: 1,
+    time_days: " 8.00 AM- 9.00 AM  ثن ",
+    room: "تم202",
+    instructor: "واحد اهبل"
+  }, {
+    id: 66,
+    section: 2,
+    time_days: " 9.00 AM- 10.00 AM  خمس",
+    room: "تم202",
+    instructor: "وحده هبله"
   }]
 }, {
   id: 7,
-  name: "ديسكريت ",
+  name: "رياضيات متقطعة",
   pre_req: null,
   sections: [{
     section: 1,
@@ -87998,7 +88132,7 @@ var NavBar = function NavBar(_ref) {
   var table = _ref.table;
 
   //? init hooks
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(2),
       _useState2 = _slicedToArray(_useState, 2),
       tableLayout = _useState2[0],
       setTableLayout = _useState2[1];
@@ -88020,16 +88154,13 @@ var NavBar = function NavBar(_ref) {
 
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    console.log(tableLayout);
-
-    if (tableLayout == 3) {
-      table.current.children[0].style.display = "none";
-
-      for (var i = 1; i < 3; ++i) {
+    if (tableLayout == 2) {
+      // table.current.children[0].style.display = "none";
+      for (var i = 0; i < 2; ++i) {
         table.current.children[i].style.display = "table";
       }
     } else {
-      for (var _i2 = 0; _i2 < 3; ++_i2) {
+      for (var _i2 = 0; _i2 < 2; ++_i2) {
         if (_i2 === tableLayout) table.current.children[_i2].style.display = "table";else table.current.children[_i2].style.display = "none";
       }
     }
@@ -88063,7 +88194,7 @@ var NavBar = function NavBar(_ref) {
     id: "btn",
     onClick: function onClick() {
       return setTableLayout(function (tableLayout) {
-        return ++tableLayout % 4;
+        return ++tableLayout % 3;
       });
     }
   }, "\u062A\u063A\u064A\u064A\u0631 \u0646\u0648\u0639 \u0627\u0644\u062C\u062F\u0648\u0644 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeIcon"], {
@@ -88208,10 +88339,10 @@ if (document.getElementById('root')) react_dom__WEBPACK_IMPORTED_MODULE_1___defa
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialCard", function() { return MaterialCard; });
-/* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
 /* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
 
@@ -88220,44 +88351,34 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var MaterialCard = function MaterialCard(_ref) {
-  var materialID = _ref.materialID,
-      materialName = _ref.materialName,
-      materialTime = _ref.materialTime;
-  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["useDispatch"])();
+  var material = _ref.material;
+  var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useDispatch"])();
 
   var handleRemove = function handleRemove() {
     dispatch({
-      type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_0__["REMOVE_FROM_SCHDULE"],
-      payload: materialID
+      type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
+      payload: material.id
     });
   };
 
   var getTimeOnly = function getTimeOnly(str) {
-    var days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
-
-    for (var _i = 0, _days = days; _i < _days.length; _i++) {
-      var day = _days[_i];
-      str = str.replace(day, '');
-    }
-
-    str = str.replace(new RegExp('(AM)|(PM)', 'g'), '');
-    return str;
+    return str.replace(new RegExp('[^\\d\\.-]', 'g'), '');
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "material"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "close-btn",
     onClick: function onClick() {
       return handleRemove();
     }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__["FontAwesomeIcon"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__["FontAwesomeIcon"], {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faWindowClose"]
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "material-name"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", null, " ", materialName, " ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, material.name, " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "material-time"
-  }, getTimeOnly(materialTime)));
+  }, getTimeOnly(material.time_days)));
 };
 
 /***/ }),
@@ -88276,8 +88397,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _StudentSchedule_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StudentSchedule.module.scss */ "./resources/js/components/StudentSchedule/StudentSchedule.module.scss");
 /* harmony import */ var _StudentSchedule_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_StudentSchedule_module_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _MaterialCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MaterialCard */ "./resources/js/components/StudentSchedule/MaterialCard.jsx");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _MaterialCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MaterialCard */ "./resources/js/components/StudentSchedule/MaterialCard.jsx");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -88299,7 +88420,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var times = [8, 9, 9.30, 10, 11, 12, 12.30, 1, 2];
 var days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
 var StudentSchedule = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function (_, tableRef) {
-  var materialsInSchedule = Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["useSelector"])(function (state) {
+  var materialsInSchedule = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["useSelector"])(function (state) {
     return state.materials.scheduleMaterials;
   });
 
@@ -88371,21 +88492,7 @@ var StudentSchedule = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(fu
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "studentSchedule",
     ref: tableRef
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
-    className: "singleTable"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " SUN "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " MON "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " TUE "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " WED "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " THR "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, times.map(function (t, index) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-      key: index
-    }, days.map(function (day, index) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        key: index
-      }, " ", day in schedule && schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialCard__WEBPACK_IMPORTED_MODULE_2__["MaterialCard"], {
-        materialID: schedule[day][t].id,
-        materialName: schedule[day][t].name,
-        materialTime: schedule[day][t].time_days
-      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, null));
-    }));
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "left-schedule"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " SUN "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " TUE "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " THR "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, times.filter(function (t) {
     return t === parseInt(t);
@@ -88395,10 +88502,8 @@ var StudentSchedule = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(fu
     }, ['حد', 'ثل', 'خمس'].map(function (day, index) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         key: index
-      }, " ", day in schedule && schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialCard__WEBPACK_IMPORTED_MODULE_2__["MaterialCard"], {
-        materialID: schedule[day][t].id,
-        materialName: schedule[day][t].name,
-        materialTime: schedule[day][t].time_days
+      }, " ", day in schedule && schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialCard__WEBPACK_IMPORTED_MODULE_3__["MaterialCard"], {
+        material: schedule[day][t]
       }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, null));
     }));
   })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -88409,10 +88514,8 @@ var StudentSchedule = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(fu
     }, ['ثن', 'ربع'].map(function (day, index) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
         key: index
-      }, " ", day in schedule && schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialCard__WEBPACK_IMPORTED_MODULE_2__["MaterialCard"], {
-        materialID: schedule[day][t].id,
-        materialName: schedule[day][t].name,
-        materialTime: schedule[day][t].time_days
+      }, " ", day in schedule && schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialCard__WEBPACK_IMPORTED_MODULE_3__["MaterialCard"], {
+        material: schedule[day][t]
       }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, null));
     }));
   })))));

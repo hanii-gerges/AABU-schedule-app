@@ -9,96 +9,108 @@ $hoverColor : rgba(151, 255, 151, 0.363);
 		display: none;
 	}
 }
+
+.girlSvg{
+	position: absolute;
+	margin: auto;
+	
+	top: 		0px;
+	bottom: 0;
+	right: 	0;
+	left: 	0;
+
+}
+
 .materialsProgram{
+	position: relative;
 	margin: 20px;
 	height: 320px; //? change this value to prevent the page from scrolling when you create the TopNav
 
 	overflow-y: scroll;
-	border: 1px solid black;
+	border-top: 2px solid #ccc;
 
 	.materialsTable{
-			display: table;
+		display: table;
+		direction: rtl;
+
+		width: 90%;
+		margin: 50px auto;
+
+		text-align: center;
+
+		table-layout:			fixed;
+		border-collapse: 	collapse;
+
+		#drop-down{
+
+			&:before{
+				content: '';
+				width: 0;
+				height: 0;
+				position: absolute;
+				left: 16px;
+				top: 50%;
+				border-width: 6px 6px 0 6px;
+				border-style: solid;
+				border-color: black transparent;
+			}
+
+			position: relative;
+			display: inline-block;
+			
 			direction: rtl;
-
-			width: 90%;
-			margin: auto;
-			margin-bottom: 100px;
-
-			text-align: center;
-
-			table-layout:fixed;
-			border-collapse: collapse;
-
-			#drop-down{
-
-				&:before{
-					content: '';
-					width: 0;
-					height: 0;
-					position: absolute;
-					left: 16px;
-					top: 50%;
-					border-width: 6px 6px 0 6px;
-					border-style: solid;
-					border-color: black transparent;
-				}
-
-				position: relative;
-				display: inline-block;
-				
-				direction: rtl;
-				cursor: pointer;
-				
-				// box-shadow: 0px 0px 5px $primary-greenColor;
+			cursor: pointer;
+			
+			// box-shadow: 0px 0px 5px $primary-greenColor;
+			background-color: white;
+			
+			table, tr{
+				display: table;
+				table-layout:fixed;
 				background-color: white;
+				width: 100%;
+
+				td:nth-child(2){
+					width: 50%;
+				}
+			}
+
+			tr:hover{
+				color: white;
+				background-color: $primary-greenColor;
+			}
+
+			#drop-down-menu{
+				border: none;
+				position: absolute;
+				top: 120%;
+				z-index: 1;
 				
-				table, tr{
-					display: table;
-					table-layout:fixed;
-					background-color: white;
-					width: 100%;
+				box-shadow: 0px 0px 5px 2px $primary-greenColor;
+			}
+		}
 
-					td:nth-child(2){
-						width: 50%;
-					}
+
+		th{
+				background-color: $primary-greenColor;
+				color: white;
+				&:first-child{
+					width: 10%;
 				}
-
-				tr:hover{
-					color: white;
-					background-color: $primary-greenColor;
+				&:nth-child(4){
+						width: 30%;
 				}
+		}
 
-				#drop-down-menu{
-					border: none;
-					position: absolute;
-					top: 120%;
-					z-index: 1;
-					
-					box-shadow: 0px 0px 5px 2px $primary-greenColor;
-				}
-			}
+		td{
+			padding: 0.5rem;		
+			vertical-align: middle;
+		}
 
-
-			th{
-					background-color: $primary-greenColor;
-					color: white;
-					&:first-child{
-						width: 10%;
-					}
-					&:nth-child(4){
-							width: 30%;
-					}
-			}
-
-			td{
-				padding: 0.5rem;		
-				vertical-align: middle;
-			}
-
-			th, td{
-				border: 1px solid black;
-				direction: ltr;
-			}
+		th, td{
+			border: 1px solid black;
+			direction: ltr;
+		}
 	}
 
 	tr:hover{

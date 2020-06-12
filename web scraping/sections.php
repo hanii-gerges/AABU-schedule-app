@@ -1,5 +1,7 @@
 <?php
                                                             //html pages splitted because of database insertions time
+    set_time_limit(300);
+
     function getSslPage($url) 
     {
         $ch = curl_init();
@@ -14,7 +16,7 @@
         return $result;
     }
 
-    $data=getSslPage("http://localhost/aabu-schedule-app/web%20scraping/sections_html1.html");
+    $data=getSslPage("http://localhost/aabu-schedule-app/web%20scraping/sections_html.html");
     preg_match_all('/<t.*>(.*)<\/t.*>/',$data,$cols);
     $cols=$cols[1];
     require_once('pdo.php');
@@ -24,6 +26,7 @@
     try{
         for ($i=0; $i < count($cols); $i+=12) 
         {
+            if($i+8>=count($cols))break;
             // defining culomns
             $id=trim($cols[$i],' &nbsp;');
             if(strlen($id)==0)$id=$last;

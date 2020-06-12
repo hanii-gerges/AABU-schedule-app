@@ -17,7 +17,7 @@ class CreateCoursesTable extends Migration
             $table->integer('id');
             $table->string('name');
             $table->integer('hours');
-            $table->string('pre_req')->nullable();
+            $table->integer('pre_req');
             $table->string('major');
 
             $table->index('major');

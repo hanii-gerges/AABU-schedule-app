@@ -14,6 +14,12 @@ class Section extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return[
+            'lab_id'=>$this->course_id,
+            'section_num'=>$this->number,
+            'time_days'=>$this->time_days,
+            'instructor'=>$this->instructor,
+            'room'=>$this->room,
+        ];
     }
 }

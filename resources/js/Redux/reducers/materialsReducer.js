@@ -3,8 +3,8 @@ import { ADD_TO_SCHDULE, REMOVE_FROM_SCHDULE } from "../actions/types";
 import { CLEAR_SCHDULE } from "../../Redux/actions/types";
 
 const initialState = {
-	displayMaterials: [],
-	scheduleMaterials: [],
+	displayMaterials: 	[],
+	scheduleMaterials: 	[],
 };
 
 /*
@@ -23,7 +23,7 @@ export default function(state = initialState, action) {
 				]
 			}
 
-		case REMOVE_FROM_DISPLAY:  //! There has to be a cleaner way READ: Actions when using Redux Hooks!
+		case REMOVE_FROM_DISPLAY:  //? There has to be a cleaner way READ: Actions when using Redux Hooks!
 
 			return {
 				...state,
@@ -45,7 +45,7 @@ export default function(state = initialState, action) {
 
 			return {
 				...state,
-				scheduleMaterials: state.scheduleMaterials.filter( m => m.id != action.payload)
+				scheduleMaterials: state.scheduleMaterials.filter( m => m.course_id != action.payload)
 			}
 		default:
 			return state;

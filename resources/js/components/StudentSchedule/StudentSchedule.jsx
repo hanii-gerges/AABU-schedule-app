@@ -6,7 +6,8 @@ import { useSelector } from 'react-redux';
 
 import { MaterialCard } from './MaterialCard';
 
-const times = [8, 9, 9.30, 10, 11, 12, 12.30, 1, 2];
+// const times = [8, 9, 9.30, 10, 11, 12, 12.30, 1, 2];
+let times = ['noval'];
 const days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
 
 
@@ -17,26 +18,30 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 	
 	useEffect(() => {
 		let updated_schedule = {};
-
+		
+		
 		for(let day of days){
 			for(let time of times){
+				if(materialsInSchedule.some(m => m.time_days.includes(day)))
+					console.log(
+							parseFloat(materialsInSchedule.filter(m => m.time_days.includes(day))[0].time_days)
+						);
+
 				updated_schedule[day] = {
 					...updated_schedule[day],
 					[time]: materialsInSchedule.filter(m => m.time_days.includes(day) &&  parseFloat(m.time_days) == time )[0] || null
 				};
 			}
 		}
-
+		
 		setSchedule(updated_schedule);
-
 	}, [materialsInSchedule]);
 	
 
 	return (
 		<div className='studentSchedule' ref={tableRef}>
 
-			{ //! PROBLEM CREATOR TABLE REMOVED!
-			/* <Table className='singleTable'>
+		<table className='singleTable'>
 				
 				<thead>
 					<tr>
@@ -65,7 +70,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 						</tr>
 				)}
 			</tbody>
-			</Table> */}
+			</table> 
 			
 			<div className='left-schedule'>
 				<table>

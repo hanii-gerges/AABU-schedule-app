@@ -12880,7 +12880,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.studyPlanTree {\n  height: 100%;\n}\n\n.materialNode {\n  padding: 5px 5px;\n  font-size: 10pt;\n  color: #ffffff;\n  background-color: #19a83d;\n  border-radius: 20px;\n  border: none;\n}\n.materialNode:hover {\n  box-shadow: 0 0 3pt 2pt darkgreen;\n}\n\n.fadingNode {\n  background-color: lightgreen;\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.studyPlanTree {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-flow: row wrap;\n  height: 100%;\n}\n.studyPlanTree .tree {\n  border: 5px dashed rgba(255, 0, 0, 0.5);\n}\n\n.materialNode {\n  padding: 5px 5px;\n  font-size: 10pt;\n  color: #ffffff;\n  background-color: #19a83d;\n  border-radius: 20px;\n  border: none;\n}\n.materialNode:hover {\n  box-shadow: 0 0 3pt 2pt darkgreen;\n}\n\n.fadingNode {\n  background-color: lightgreen;\n}", ""]);
 
 // exports
 
@@ -12918,7 +12918,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.studentSchedule {\n  position: absolute;\n  display: -webkit-box;\n  display: flex;\n  height: 100%;\n}\n.studentSchedule .left-schedule, .studentSchedule .right-schedule {\n  margin: 5px;\n  display: none;\n  height: 90%;\n}\n.studentSchedule table {\n  margin: auto;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  direction: ltr;\n  background-color: white;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.studentSchedule table tr {\n  height: 20px;\n}\n.studentSchedule table th {\n  height: 40px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td {\n  text-align: center;\n}\n.studentSchedule table td .material {\n  position: relative;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-flow: column nowrap;\n  height: 50px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td .material .material-name {\n  overflow: hidden;\n  width: 100%;\n}\n.studentSchedule table td .material:hover .close-btn {\n  display: block;\n}\n.studentSchedule table td .material .close-btn {\n  position: absolute;\n  top: -5px;\n  right: 0px;\n  display: none;\n  margin: 2px;\n  color: rgba(231, 20, 20, 0.5);\n  background-color: transparent;\n  border: none;\n  border-radius: 30px;\n  cursor: pointer;\n}\n.studentSchedule table td .material .close-btn:hover {\n  color: #d42839;\n}\n.studentSchedule table th, .studentSchedule table td {\n  border: 1px solid black;\n  direction: ltr;\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\nbody {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .studyPlanTree {\n  position: relative;\n  overflow: hidden;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.studentSchedule {\n  position: absolute;\n  display: -webkit-box;\n  display: flex;\n  height: 100%;\n}\n.studentSchedule .left-schedule, .studentSchedule .right-schedule {\n  display: none;\n  margin: 5px;\n  display: none;\n  height: 90%;\n}\n.studentSchedule table {\n  margin: auto;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  direction: ltr;\n  background-color: white;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.studentSchedule table tr {\n  height: 20px;\n}\n.studentSchedule table th {\n  height: 40px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td {\n  text-align: center;\n}\n.studentSchedule table td .material {\n  position: relative;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-flow: column nowrap;\n  height: 50px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td .material .material-name {\n  overflow: hidden;\n  width: 100%;\n}\n.studentSchedule table td .material:hover .close-btn {\n  display: block;\n}\n.studentSchedule table td .material .close-btn {\n  position: absolute;\n  top: -5px;\n  right: 0px;\n  display: none;\n  margin: 2px;\n  color: rgba(231, 20, 20, 0.5);\n  background-color: transparent;\n  border: none;\n  border-radius: 30px;\n  cursor: pointer;\n}\n.studentSchedule table td .material .close-btn:hover {\n  color: #d42839;\n}\n.studentSchedule table th, .studentSchedule table td {\n  border: 1px solid black;\n  direction: ltr;\n}", ""]);
 
 // exports
 
@@ -87240,7 +87240,7 @@ var initialState = {
       });
 
     case _actions_types__WEBPACK_IMPORTED_MODULE_0__["REMOVE_FROM_DISPLAY"]:
-      //! There has to be a cleaner way READ: Actions when using Redux Hooks!
+      //? There has to be a cleaner way READ: Actions when using Redux Hooks!
       return _objectSpread({}, state, {
         displayMaterials: state.displayMaterials.filter(function (m) {
           return m.id != action.payload;
@@ -87255,7 +87255,7 @@ var initialState = {
     case _actions_types__WEBPACK_IMPORTED_MODULE_0__["REMOVE_FROM_SCHDULE"]:
       return _objectSpread({}, state, {
         scheduleMaterials: state.scheduleMaterials.filter(function (m) {
-          return m.id != action.payload;
+          return m.course_id != action.payload;
         })
       });
 
@@ -87378,7 +87378,7 @@ var InteractiveRow = function InteractiveRow(_ref) {
       setSectionsControl = _useState6[1];
   /* //  TODO: 
   
-  	* Clicking away from the drop-down-menu should close it! 
+  	* Clicking away from the drop-down-menu should close it!
   				-> (ترقيع: onMouseLeave)
   
   	* Think of a more user friendly way to deal with having only one option
@@ -87387,6 +87387,7 @@ var InteractiveRow = function InteractiveRow(_ref) {
 
 
   var ToggleLabs = function ToggleLabs() {
+    //! TEMPORARY DOESN'T WORK BEC. OF A CHANGE IN LAB_SECTIONS' ID -> LAB_ID
     setSelectIndex(0);
     setSectionsControl({
       useLabs: !sectionsControl.useLabs,
@@ -87401,7 +87402,7 @@ var InteractiveRow = function InteractiveRow(_ref) {
       name: material.name
     }, sectionsControl.displaySections[selectIndex])
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, //	only for materials with lab_sections
-  typeof material.lab_sections != 'undefined' && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  material.lab_sections.length > 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "toggle-labs-btn",
     onClick: ToggleLabs
   }, " \u0644\u0627\u0628\u0627\u062A\u061F "), material.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87565,7 +87566,7 @@ var ButtonModal = function ButtonModal(_ref) {
 
   var isAlreadyScheduled = function isAlreadyScheduled() {
     return materialsInSchedule.some(function (_material) {
-      return _material.id == material.id;
+      return _material.course_id == material.course_id;
     });
   };
 
@@ -87588,9 +87589,10 @@ var ButtonModal = function ButtonModal(_ref) {
     var timeOverLaps = function timeOverLaps(time1, time2) {
       time1 = getTimeOnly(time1).split('-');
       time2 = getTimeOnly(time2).split('-');
-      var startTime = getDate(time1[0]);
-      var endTime = getDate(time1[1]);
-      if (getDate(time2[0]) <= startTime && startTime <= getDate(time2[1]) || getDate(time2[0]) <= endTime && endTime <= getDate(time2[1])) return true;
+      var _ref2 = [getDate(time1[0]), getDate(time1[1])],
+          startTime = _ref2[0],
+          endTime = _ref2[1];
+      if (getDate(time2[0]) <= startTime && startTime < getDate(time2[1]) || getDate(time2[0]) < endTime && endTime <= getDate(time2[1])) return true;
       return false;
     };
 
@@ -87605,12 +87607,14 @@ var ButtonModal = function ButtonModal(_ref) {
 
   var isAlreadyScheduledAtExactTime = function isAlreadyScheduledAtExactTime() {
     return materialsInSchedule.some(function (mat) {
-      return mat.id == material.id && mat.time_days == material.time_days;
+      return mat.course_id == material.course_id && mat.time_days == material.time_days;
     });
   };
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (isAlreadyScheduledAtExactTime()) {
+    console.log(materialsInSchedule); //! DEBUG
+
+    if (isAlreadyScheduledAtExactTime() || isAlreadyScheduled() && isTimeOccupied().length > 0) {
       setModalInfo({
         renderBtn: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
           color: "danger",
@@ -87621,7 +87625,7 @@ var ButtonModal = function ButtonModal(_ref) {
         onAccept: function onAccept() {
           return dispatch({
             type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
-            payload: material.id
+            payload: material.course_id
           });
         },
         title: 'المادة مضافة مسبقا وبنفس الموعد',
@@ -87629,7 +87633,7 @@ var ButtonModal = function ButtonModal(_ref) {
       });
     } else if (isAlreadyScheduled()) {
       var otherMaterial = materialsInSchedule.filter(function (otherMat) {
-        return otherMat.id == material.id;
+        return otherMat.course_id == material.course_id;
       })[0];
       setModalInfo({
         renderBtn: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -87641,7 +87645,7 @@ var ButtonModal = function ButtonModal(_ref) {
         onAccept: function onAccept() {
           dispatch({
             type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
-            payload: material.id
+            payload: material.course_id
           });
           dispatch({
             type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["ADD_TO_SCHDULE"],
@@ -87649,7 +87653,7 @@ var ButtonModal = function ButtonModal(_ref) {
           });
         },
         title: ' المادة مضافة مسبقا',
-        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0647\u0644 \u062A\u0631\u064A\u062F \u062A\u063A\u064A\u064A\u0631 \u0648\u0642\u062A \u0627\u0644\u0645\u0627\u062F\u0629\u061F", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "\u0645\u0646 \u0627\u0644\u0645\u0648\u0639\u062F \u0627\u0644\u0633\u0627\u0628\u0642", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "\u0647\u0644 \u062A\u0631\u064A\u062F \u062A\u063A\u064A\u064A\u0631 \u0648\u0642\u062A \u0627\u0644\u0645\u0627\u062F\u0629\u061F", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "\u0645\u0646 \u0627\u0644\u0645\u0648\u0639\u062F \u0627\u0644\u0633\u0627\u0628\u0642", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           style: {
             direction: 'ltr'
           }
@@ -87678,9 +87682,10 @@ var ButtonModal = function ButtonModal(_ref) {
           try {
             for (var _iterator = otherMaterials[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
               var mat = _step.value;
+              console.log("Removing: ".concat(mat.name));
               dispatch({
                 type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
-                payload: mat.id
+                payload: mat.course_id
               });
             }
           } catch (err) {
@@ -87770,7 +87775,6 @@ var MaterialNode = function MaterialNode(_ref) {
   var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["useDispatch"])(); //? add or remove a material from the MaterialsDisplay
 
   var ToggleMaterialToDisplay = function ToggleMaterialToDisplay() {
-    //! USE REFS!
     var isDisplayed = materialRef.current.classList.toggle('fadingNode');
     if (!isDisplayed) dispatch({
       type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__["ADD_TO_DISPLAY"],
@@ -87781,13 +87785,15 @@ var MaterialNode = function MaterialNode(_ref) {
     });
   };
 
+  var isenabled = material.sections.length > 0;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     id: material.id,
     ref: materialRef,
     className: 'materialNode fadingNode',
     onClick: function onClick() {
       return ToggleMaterialToDisplay();
-    }
+    },
+    disabled: !isenabled
   }, "".concat(material.name)));
 };
 
@@ -87810,6 +87816,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MaterialNode__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MaterialNode */ "./resources/js/components/MaterialsTree/MaterialNode.jsx");
 /* harmony import */ var _MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MaterialsTree.module.scss */ "./resources/js/components/MaterialsTree/MaterialsTree.module.scss");
 /* harmony import */ var _MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_MaterialsTree_module_scss__WEBPACK_IMPORTED_MODULE_3__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -87820,208 +87834,155 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
  //? data recieved from API.
-
-var rows_of_data = [{
-  id: 1,
-  name: "حاسوب 2 ",
-  pre_req: null,
-  sections: [{
-    id: 1,
-    section: 1,
-    time_days: " 8.00 AM- 9.00 AM  حد ثل خمس",
-    room: "تم202",
-    instructor: "TutorName"
-  }]
-}, {
-  id: 2,
-  name: "برمجة كينونية ",
-  pre_req: 1,
-  sections: [{
-    id: 2,
-    section: 1,
-    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
-    room: "تم202",
-    instructor: "TutorName"
-  }]
-}, {
-  id: 3,
-  name: "تراكيب البيانات",
-  pre_req: 2,
-  sections: [{
-    id: 3,
-    section: 1,
-    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
-    room: "تم202",
-    instructor: "TutorName"
-  }]
-}, {
-  id: 4,
-  name: "تصميم الصفحات الالكترونية",
-  pre_req: 2,
-  sections: [{
-    id: 4,
-    section: 1,
-    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
-    room: "تم202",
-    instructor: "TutorName"
-  }],
-  lab_sections: [{
-    id: 44,
-    section: 1,
-    time_days: " 8.00 AM- 9.30 AM ربع",
-    room: "تم202",
-    instructor: "TutorName"
-  }]
-}, {
-  id: 5,
-  name: "البرمجة بلغة جافا",
-  pre_req: 2,
-  sections: [{
-    id: 5,
-    section: 1,
-    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
-    room: "تم202",
-    instructor: "ابو عليم"
-  }, {
-    id: 5,
-    section: 2,
-    time_days: " 8.00 AM- 9.30 AM  ثن ربع",
-    room: "تم202",
-    instructor: "جوجو"
-  }]
-}, {
-  id: 6,
-  name: "البرمجة المرئية",
-  pre_req: 5,
-  sections: [{
-    id: 6,
-    section: 1,
-    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
-    room: "تم202",
-    instructor: "TutorName"
-  }, {
-    id: 6,
-    section: 2,
-    time_days: " 11.00 AM- 12.00 AM  حد ثل خمس",
-    room: "تم202",
-    instructor: "وحده هبله"
-  }, {
-    id: 6,
-    section: 3,
-    time_days: " 2.00 AM- 3.30 AM  حد ثل خمس",
-    room: "تم202",
-    instructor: "واحد اهبل"
-  }],
-  'lab_sections': [{
-    id: 66,
-    section: 1,
-    time_days: " 8.00 AM- 9.00 AM  ثن ",
-    room: "تم202",
-    instructor: "واحد اهبل"
-  }, {
-    id: 66,
-    section: 2,
-    time_days: " 9.00 AM- 10.00 AM  خمس",
-    room: "تم202",
-    instructor: "وحده هبله"
-  }]
-}, {
-  id: 7,
-  name: "رياضيات متقطعة",
-  pre_req: null,
-  sections: [{
-    section: 1,
-    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
-    room: "تم202",
-    instructor: "TutorName"
-  }]
-}, {
-  id: 8,
-  name: "تصميم منطق الحاسوب",
-  pre_req: 7,
-  sections: [{
-    section: 1,
-    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
-    room: "تم202",
-    instructor: "قص قص"
-  }]
-}, {
-  id: 9,
-  name: "نظرية الحسابات ",
-  pre_req: 7,
-  sections: [{
-    section: 1,
-    time_days: " 10.00 AM- 11.00 AM  حد ثل خمس",
-    room: "تم202",
-    instructor: "TutorName"
-  }]
-}];
-
-var getMaterialsForParent = function getMaterialsForParent(id) {
-  var result_child_array = [];
-  var child_array = rows_of_data.filter(function (m) {
-    return m.pre_req === id;
-  });
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
-
-  try {
-    for (var _iterator = child_array[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var material = _step.value;
-
-      var dataObject = _objectSpread({}, material, {
-        parent: id,
-        children: []
-      }); //{id: material.id, parent: id, name: material.name, children: []};
-
-
-      dataObject.children = getMaterialsForParent(material.id);
-      result_child_array.push(dataObject);
-    }
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-        _iterator["return"]();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
-    }
-  }
-
-  return result_child_array;
-};
-
-var getArrayForMaterial = function getArrayForMaterial(material) {
-  var dataObject = _objectSpread({}, material, {
-    parent: null,
-    children: []
-  }); //{id: material.id, parent: null, name: material.name, children: []};
-
-
-  dataObject.children = getMaterialsForParent(material.id);
-  return [dataObject];
-};
+// const rows_of_data =
+//  [
+//     {id: 1, name: "حاسوب 2 ", pre_req: null, 
+//     sections: [
+//         {
+//            id:1, section: 1, time_days: " 8.00 AM- 9.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+//         }
+//     ]},
+//     {id: 2, name: "برمجة كينونية ", pre_req: 1,
+//     sections: [
+//         {
+//            id:2, section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+//         }
+//     ]},
+//     {id: 3, name: "تراكيب البيانات" , pre_req: 2,
+//     sections: [
+//         {
+//             id:3, section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+//         }
+//     ]},
+//         {id: 4, name: "تصميم الصفحات الالكترونية", pre_req: 2, 
+//             sections: [
+//             {
+//                 id:4, section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+//             }],
+//             lab_sections: [
+//             {
+//                 id:44, section: 1, time_days: " 8.00 AM- 9.30 AM ربع", room: "تم202", instructor: "TutorName",
+//             }   
+//             ]
+//         },
+//         {id: 5, name: "البرمجة بلغة جافا", pre_req: 2, sections: [
+//             {
+//                id:5, section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "ابو عليم",
+//             },
+//             {
+//                id:5, section: 2, time_days: " 8.00 AM- 9.30 AM  ثن ربع", room: "تم202", instructor: "جوجو",
+//             },
+//         ]} ,
+//              {id: 6, name: "البرمجة المرئية", pre_req: 5, 
+//              sections: [
+//                 {   
+//                     id: 6, section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+//                 },
+//                 {
+//                     id: 6, section: 2, time_days: " 11.00 AM- 12.00 AM  حد ثل خمس", room: "تم202", instructor: "وحده هبله",
+//                 },
+//                 {
+//                     id: 6, section: 3, time_days: " 2.00 AM- 3.30 AM  حد ثل خمس", room: "تم202", instructor: "واحد اهبل",
+//                 }
+//             ],
+//             'lab_sections': [
+//                 {
+//                     id: 66, section: 1, time_days: " 8.00 AM- 9.00 AM  ثن ", room: "تم202", instructor: "واحد اهبل",
+//                 },
+//                 {
+//                     id: 66, section: 2, time_days: " 9.00 AM- 10.00 AM  خمس", room: "تم202", instructor: "وحده هبله",
+//                 },
+//             ]
+//         },
+//     {id: 7,name: "رياضيات متقطعة", pre_req: null, sections: [
+//         {
+//             section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+//         }
+//     ]},
+//     {id: 8,name: "تصميم منطق الحاسوب", pre_req: 7, sections: [
+//         {
+//             section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "قص قص",
+//         }
+//     ]},
+//     {id: 9,name: "نظرية الحسابات ", pre_req: 7, sections: [
+//         {
+//             section: 1, time_days: " 10.00 AM- 11.00 AM  حد ثل خمس", room: "تم202", instructor: "TutorName",
+//         }
+//     ]},
+// ];
 
 var MaterialsTree = function MaterialsTree() {
-  //? API call 
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {// fetch('http://46494bad.ngrok.io/api/sections',{
-    //     method: 'GET',
-    //     mode: 'cors',
-    //     headers: {
-    //     "Content-Type": "application/json" 
-    //     } 
-    // })
-    // .then(res => res.json())
-    // .then(res =>  rows_of_data = res.data)
-    // .catch( (e)=>
-    //     console.log(`ERR: ${e}`)
-    // );
+  var getMaterialsForParent = function getMaterialsForParent(id) {
+    var result_child_array = [];
+    var child_array = rows_of_data.filter(function (m) {
+      return m.pre_req === id;
+    });
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = child_array[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var material = _step.value;
+
+        var dataObject = _objectSpread({}, material, {
+          parent: id,
+          children: []
+        }); //{id: material.id, parent: id, name: material.name, children: []};
+
+
+        dataObject.children = getMaterialsForParent(material.id);
+        result_child_array.push(dataObject);
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+          _iterator["return"]();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+
+    return result_child_array;
+  };
+
+  var getArrayForMaterial = function getArrayForMaterial(material) {
+    var dataObject = _objectSpread({}, material, {
+      parent: null,
+      children: []
+    }); //{id: material.id, parent: null, name: material.name, children: []};
+
+
+    dataObject.children = getMaterialsForParent(material.id);
+    return [dataObject];
+  };
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      rows_of_data = _useState2[0],
+      setData = _useState2[1]; //? API call 
+
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    fetch('https://aabuschedule.herokuapp.com/api/courses/cs', {
+      method: 'GET',
+      mode: 'cors',
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }).then(function (res) {
+      return res.json();
+    }).then(function (res) {
+      return setData(res.data);
+    })["catch"](function (e) {
+      return console.log("ERR: ".concat(e));
+    });
   }, []);
   var styles = {
     lines: {
@@ -88037,21 +87998,23 @@ var MaterialsTree = function MaterialsTree() {
     }
   };
   var parents_array = rows_of_data.filter(function (m) {
-    return m.pre_req === null;
+    return m.pre_req === 0;
   });
   var StyledTree = Object(react_vertical_tree__WEBPACK_IMPORTED_MODULE_1__["withStyles"])(styles)(react_vertical_tree__WEBPACK_IMPORTED_MODULE_1___default.a);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "studyPlanTree"
-  }, parents_array.map(function (material) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTree, {
-      key: material.id,
+  }, parents_array.map(function (material, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: index,
+      className: "tree"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledTree, {
       data: getArrayForMaterial(material),
       render: function render(item) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialNode__WEBPACK_IMPORTED_MODULE_2__["MaterialNode"], {
           material: item
         });
       }
-    });
+    }));
   }));
 };
 
@@ -88132,7 +88095,7 @@ var NavBar = function NavBar(_ref) {
   var table = _ref.table;
 
   //? init hooks
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(2),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
       _useState2 = _slicedToArray(_useState, 2),
       tableLayout = _useState2[0],
       setTableLayout = _useState2[1];
@@ -88148,19 +88111,20 @@ var NavBar = function NavBar(_ref) {
     }).then(function (dataUrl) {
       download(dataUrl, 'my-table.png');
     })["catch"](function (error) {
-      console.error('oops, something went wrong!', error);
+      console.error('oops, something went wrong! ', error);
     });
   }; //?  ChangeTableLayout:
 
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (tableLayout == 2) {
-      // table.current.children[0].style.display = "none";
-      for (var i = 0; i < 2; ++i) {
+    if (tableLayout == 3) {
+      table.current.children[0].style.display = "none";
+
+      for (var i = 1; i < 3; ++i) {
         table.current.children[i].style.display = "table";
       }
     } else {
-      for (var _i2 = 0; _i2 < 2; ++_i2) {
+      for (var _i2 = 0; _i2 < 3; ++_i2) {
         if (_i2 === tableLayout) table.current.children[_i2].style.display = "table";else table.current.children[_i2].style.display = "none";
       }
     }
@@ -88194,7 +88158,7 @@ var NavBar = function NavBar(_ref) {
     id: "btn",
     onClick: function onClick() {
       return setTableLayout(function (tableLayout) {
-        return ++tableLayout % 3;
+        return ++tableLayout % 4;
       });
     }
   }, "\u062A\u063A\u064A\u064A\u0631 \u0646\u0648\u0639 \u0627\u0644\u062C\u062F\u0648\u0644 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__["FontAwesomeIcon"], {
@@ -88357,7 +88321,7 @@ var MaterialCard = function MaterialCard(_ref) {
   var handleRemove = function handleRemove() {
     dispatch({
       type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
-      payload: material.id
+      payload: material.course_id
     });
   };
 
@@ -88416,8 +88380,9 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+ // const times = [8, 9, 9.30, 10, 11, 12, 12.30, 1, 2];
 
-var times = [8, 9, 9.30, 10, 11, 12, 12.30, 1, 2];
+var times = ['noval'];
 var days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
 var StudentSchedule = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function (_, tableRef) {
   var materialsInSchedule = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["useSelector"])(function (state) {
@@ -88445,6 +88410,11 @@ var StudentSchedule = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(fu
         try {
           var _loop2 = function _loop2() {
             var time = _step2.value;
+            if (materialsInSchedule.some(function (m) {
+              return m.time_days.includes(day);
+            })) console.log(parseFloat(materialsInSchedule.filter(function (m) {
+              return m.time_days.includes(day);
+            })[0].time_days));
             updated_schedule[day] = _objectSpread({}, updated_schedule[day], _defineProperty({}, time, materialsInSchedule.filter(function (m) {
               return m.time_days.includes(day) && parseFloat(m.time_days) == time;
             })[0] || null));
@@ -88492,7 +88462,19 @@ var StudentSchedule = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(fu
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "studentSchedule",
     ref: tableRef
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
+    className: "singleTable"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " SUN "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " MON "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " TUE "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " WED "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " THR "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, times.map(function (t, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+      key: index
+    }, days.map(function (day, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        key: index
+      }, " ", day in schedule && schedule[day][t] ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MaterialCard__WEBPACK_IMPORTED_MODULE_3__["MaterialCard"], {
+        material: schedule[day][t]
+      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, " ", null, " "));
+    }));
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "left-schedule"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " SUN "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " TUE "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " THR "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, times.filter(function (t) {
     return t === parseInt(t);

@@ -23,7 +23,7 @@ export const ButtonModal = ({material}) => {
 	const materialsInSchedule = useSelector(state => state.materials.scheduleMaterials);
 
 	const isAlreadyScheduled = ()=>{
-			return materialsInSchedule.some( _material => _material.id == material.id);
+			return materialsInSchedule.some( _material => _material.course_id == material.course_id);
 	}
 
 	const isTimeOccupied = ()=>{
@@ -43,11 +43,10 @@ export const ButtonModal = ({material}) => {
 			time1 = getTimeOnly(time1).split('-');
 			time2 = getTimeOnly(time2).split('-');
 
-			const startTime = getDate(time1[0]);
-			const endTime 	= getDate(time1[1]);
+			const [startTime, endTime] = [getDate(time1[0]), getDate(time1[1])];
 
-			if( getDate(time2[0]) <= startTime && startTime <= getDate(time2[1]) ||
-					getDate(time2[0]) <= endTime && endTime <= getDate(time2[1]) )
+			if( getDate(time2[0]) <= startTime && startTime < getDate(time2[1]) ||
+					getDate(time2[0]) < endTime && endTime <= getDate(time2[1]) )
 				return true;
 
 			return false;
@@ -66,16 +65,18 @@ export const ButtonModal = ({material}) => {
 	}
 
 	const isAlreadyScheduledAtExactTime = () =>
-	 	materialsInSchedule.some(mat => mat.id == material.id && mat.time_days == material.time_days);
+	 	materialsInSchedule.some(mat => mat.course_id == material.course_id && mat.time_days == material.time_days);
 
 	useEffect(() => {
+		console.log(materialsInSchedule); //! DEBUG
 
-		if(isAlreadyScheduledAtExactTime()){
+		if(isAlreadyScheduledAtExactTime() || 
+			isAlreadyScheduled() && isTimeOccupied().length > 0){
 			setModalInfo({
 				renderBtn: <Button color="danger" onClick={toggle}>  <FontAwesomeIcon icon={faBan}/> </Button>,
 				onAccept:	() => dispatch({
 					type: REMOVE_FROM_SCHDULE,
-					payload: material.id,
+					payload: material.course_id,
 				}),
 
 				title:'المادة مضافة مسبقا وبنفس الموعد',
@@ -89,14 +90,14 @@ export const ButtonModal = ({material}) => {
 			});
 			
 		}else if(isAlreadyScheduled()){
-			const otherMaterial = materialsInSchedule.filter(otherMat => otherMat.id == material.id)[0];
+			const otherMaterial = materialsInSchedule.filter(otherMat => otherMat.course_id == material.course_id)[0];
 
 			setModalInfo({
 				renderBtn: <Button color="primary" onClick={toggle}>  <FontAwesomeIcon icon={faRedoAlt}/> </Button>,
 				onAccept:	() => {
 					dispatch({
 						type: REMOVE_FROM_SCHDULE,
-						payload: material.id,
+						payload: material.course_id,
 					});
 
 					dispatch({
@@ -107,7 +108,7 @@ export const ButtonModal = ({material}) => {
 
 				title:' المادة مضافة مسبقا',
 				content: 
-				<p>
+				<div>
 					هل تريد تغيير وقت المادة؟
 					<br/>
 					من الموعد السابق 
@@ -121,7 +122,7 @@ export const ButtonModal = ({material}) => {
 						<p style={{direction: 'ltr'}}>
 							"{ material.time_days }"  
 						</p>
-			</p>,
+				</div>,
 			});
 	
 		}else if(isTimeOccupied().length > 0){
@@ -134,9 +135,10 @@ export const ButtonModal = ({material}) => {
 				onAccept:	() => {
 
 					for(let mat of otherMaterials){
+						console.log(`Removing: ${mat.name}`);
 						dispatch({
 							type: REMOVE_FROM_SCHDULE,
-							payload: mat.id,
+							payload: mat.course_id,
 						});
 					}
 						
@@ -178,7 +180,6 @@ export const ButtonModal = ({material}) => {
 			});
 	
 		}else{
-
 			setModalInfo({
 				renderBtn: <Button color="success" onClick={toggle}> <FontAwesomeIcon icon={faPlus}/> </Button>,	
 				onAccept:	() => dispatch({

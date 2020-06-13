@@ -16,7 +16,7 @@ const download = require("downloadjs");
 export const NavBar = ({table})=> {
 
 	//? init hooks
-	const [tableLayout, setTableLayout] =  useState(2);
+	const [tableLayout, setTableLayout] =  useState(0);
 	const dispatch = useDispatch();
 
 	const TakeImageOfTable = ()=> {
@@ -25,24 +25,24 @@ export const NavBar = ({table})=> {
 				download(dataUrl, 'my-table.png');
 			})
 			.catch(function (error) {
-				console.error('oops, something went wrong!', error);
+				console.error('oops, something went wrong! ', error);
 		});
 	}
 
 	//?  ChangeTableLayout:
 	useEffect(()=>{
 
-		if(tableLayout == 2){
+		if(tableLayout == 3){
 
-			// table.current.children[0].style.display = "none";
+			table.current.children[0].style.display = "none";
 
-			for(let i = 0; i < 2; ++i)
+			for(let i = 1; i < 3; ++i)
 				table.current.children[i].style.display = "table";
 
 		}
 		else{
 
-			for(let i = 0; i < 2; ++i){
+			for(let i = 0; i < 3; ++i){
 				if(i === tableLayout)
 					table.current.children[i].style.display = "table";
 				else
@@ -74,7 +74,7 @@ export const NavBar = ({table})=> {
 									حفظ صورة <FontAwesomeIcon icon={faFileImage}/> 
 							</button>
 
-							<button id='btn' onClick={()=> setTableLayout(tableLayout => ++tableLayout%3)}>
+							<button id='btn' onClick={()=> setTableLayout(tableLayout => ++tableLayout%4)}>
 								 تغيير نوع الجدول <FontAwesomeIcon icon={faTable}/>	
 							</button>
 

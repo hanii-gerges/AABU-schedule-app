@@ -12,7 +12,7 @@ export const InteractiveRow = ({material}) => {
 	
 	/* //  TODO: 
 
-		* Clicking away from the drop-down-menu should close it! 
+		* Clicking away from the drop-down-menu should close it!
 					-> (ترقيع: onMouseLeave)
 
 		* Think of a more user friendly way to deal with having only one option
@@ -20,13 +20,14 @@ export const InteractiveRow = ({material}) => {
 	*/
 
 	const ToggleLabs = ()=>{
-
+		//! TEMPORARY DOESN'T WORK BEC. OF A CHANGE IN LAB_SECTIONS' ID -> LAB_ID
 		setSelectIndex(0);
 
 		setSectionsControl({
 			useLabs: !sectionsControl.useLabs,
 			displaySections: !sectionsControl.useLabs ? material.lab_sections : material.sections,
 		});
+		
 	}
 
 	return (
@@ -40,8 +41,9 @@ export const InteractiveRow = ({material}) => {
 
 			<td>
 
-				{ //	only for materials with lab_sections
-					typeof material.lab_sections != 'undefined' && 
+				{ 
+					//	only for materials with lab_sections
+					material.lab_sections.length > 0 && 
 					<button className='toggle-labs-btn' 
 					onClick={ToggleLabs}> لابات؟ </button>
 				}

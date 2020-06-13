@@ -13,7 +13,7 @@ export const MaterialCard = ({material}) => {
 	const handleRemove = ()=>{
 		dispatch({
 			type: REMOVE_FROM_SCHDULE,
-			payload: material.id,
+			payload: material.course_id,
 		});
 	}
 

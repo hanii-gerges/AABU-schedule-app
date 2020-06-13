@@ -11,7 +11,7 @@ export const MaterialNode = ({material})=>{
 
 	//? add or remove a material from the MaterialsDisplay
 	const ToggleMaterialToDisplay = () =>{
-		//! USE REFS!
+		
 		const isDisplayed = materialRef.current.classList.toggle('fadingNode');
 				
 		if(!isDisplayed)
@@ -28,9 +28,11 @@ export const MaterialNode = ({material})=>{
 		
 }
 
+	const isenabled = (material.sections.length > 0);
 	return <div>
 
-			<button id={material.id} ref={materialRef} className={'materialNode fadingNode'} onClick={()=>ToggleMaterialToDisplay()}>
+			<button id={material.id} ref={materialRef} className={'materialNode fadingNode'}
+			 onClick={()=>ToggleMaterialToDisplay()} disabled={!isenabled}>
 
 					{`${material.name}`}
 

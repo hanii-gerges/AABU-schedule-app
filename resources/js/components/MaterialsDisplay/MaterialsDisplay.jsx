@@ -11,8 +11,7 @@ import './MaterialsDisplay.module.scss';
 
 
 export const MaterialsDisplay = ()=>{
-
-
+ 
     const rows_of_data = useSelector(state => state.materials.displayMaterials);
 
     return(
@@ -32,7 +31,7 @@ export const MaterialsDisplay = ()=>{
 
                 <tbody>
                     {rows_of_data.map( (material, index) =>
-                        <InteractiveRow key={index} material={material}/>
+                         <InteractiveRow key={index} material={material}/>
                     )}
 
                 </tbody>

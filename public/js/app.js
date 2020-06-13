@@ -87376,6 +87376,13 @@ var InteractiveRow = function InteractiveRow(_ref) {
       _useState6 = _slicedToArray(_useState5, 2),
       sectionsControl = _useState6[0],
       setSectionsControl = _useState6[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    setSectionsControl({
+      useLabs: false,
+      displaySections: material.sections
+    });
+  }, [material]);
   /* //  TODO: 
   
   	* Clicking away from the drop-down-menu should close it!
@@ -87384,7 +87391,6 @@ var InteractiveRow = function InteractiveRow(_ref) {
   	* Think of a more user friendly way to deal with having only one option
   
   */
-
 
   var ToggleLabs = function ToggleLabs() {
     //! TEMPORARY DOESN'T WORK BEC. OF A CHANGE IN LAB_SECTIONS' ID -> LAB_ID

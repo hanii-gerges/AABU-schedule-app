@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { ButtonModal } from './Modal';
 
@@ -9,7 +9,13 @@ export const InteractiveRow = ({material}) => {
 
 	const [sectionsControl, setSectionsControl] = useState({useLabs: false, displaySections: material.sections});
 
-	
+	useEffect(()=>{
+		setSectionsControl({
+			useLabs: false,
+			displaySections: material.sections
+		});
+	}, [material]);
+
 	/* //  TODO: 
 
 		* Clicking away from the drop-down-menu should close it!

@@ -30,8 +30,6 @@ export default function(state = initialState, action) {
 				displayMaterials: state.displayMaterials.filter( m => m.id != action.payload)
 			}
 
-
-
 		case ADD_TO_SCHDULE:
 			return {
 				...state,

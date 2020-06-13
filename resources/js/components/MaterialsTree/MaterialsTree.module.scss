@@ -4,12 +4,15 @@
 	display: flex;
 	flex-flow: row wrap;
 	height: 100%;
+
 	.tree{
-		border: 5px dashed rgba(255, 0, 0, 0.5);
+		border: 5px dashed rgba(172, 164, 164, 0.5); //! DEBUG
+		margin: 5px;
 	}
 }
 
 .materialNode{
+	position: relative;
 	padding: 5px 5px;
 	font-size: 10pt;
 
@@ -17,6 +20,13 @@
 	background-color: $primary-greenColor;
 	border-radius: 20px;
 	border: none;
+
+	.disabled-material-ico{
+		position: absolute;
+		color: red;
+		top: 0;
+		left: 0;
+	}
 
 	&:hover{
 		box-shadow: 0 0 3pt 2pt darkgreen;

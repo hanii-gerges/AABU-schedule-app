@@ -16,7 +16,7 @@ const download = require("downloadjs");
 export const NavBar = ({table})=> {
 
 	//? init hooks
-	const [tableLayout, setTableLayout] =  useState(0);
+	const [tableLayout, setTableLayout] =  useState(3);
 	const dispatch = useDispatch();
 
 	const TakeImageOfTable = ()=> {
@@ -41,7 +41,7 @@ export const NavBar = ({table})=> {
 
 		}
 		else{
-
+			
 			for(let i = 0; i < 3; ++i){
 				if(i === tableLayout)
 					table.current.children[i].style.display = "table";

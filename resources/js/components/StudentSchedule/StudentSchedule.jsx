@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { MaterialCard } from './MaterialCard';
 
 // const times = [8, 9, 9.30, 10, 11, 12, 12.30, 1, 2];
-let times = ['noval'];
+let times = new Set();
 const days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
 
 
@@ -18,25 +18,30 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 	
 	useEffect(() => {
 		let updated_schedule = {};
-		
+		times.clear();
 		
 		for(let day of days){
-			for(let time of times){
-				if(materialsInSchedule.some(m => m.time_days.includes(day)))
-					console.log(
-							parseFloat(materialsInSchedule.filter(m => m.time_days.includes(day))[0].time_days)
-						);
+				for(let m of materialsInSchedule.filter(m => m.time_days.includes(day))){
+					times.add(parseInt(m.time_days));
 
-				updated_schedule[day] = {
-					...updated_schedule[day],
-					[time]: materialsInSchedule.filter(m => m.time_days.includes(day) &&  parseFloat(m.time_days) == time )[0] || null
-				};
-			}
+					if(typeof updated_schedule[day] === 'undefined')
+						updated_schedule[day] = [];
+
+					updated_schedule[day].push(m);
+				}
 		}
 		
+
 		setSchedule(updated_schedule);
 	}, [materialsInSchedule]);
 	
+	const compTimes = (time1, time2)=> {
+		const timeOrder = [8, 9, 10, 11, 12, 1, 2, 3, 6];
+		for(let time of timeOrder){
+			if(time == time1) return -1;
+			if(time == time2) return  1;
+		}
+	}
 
 	return (
 		<div className='studentSchedule' ref={tableRef}>
@@ -54,14 +59,14 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 				</thead>
 
 			<tbody>
-				{times.map( (t, index) =>
+				{[...times].sort((a, b)=> compTimes(a,b)).map( (t, index) =>
 						<tr key={index}>
 							{
 									days.map( (day, index)=>
 										
-									<td key={index}> {day in schedule && schedule[day][t] ? 
+									<td key={index}> {day in schedule && schedule[day].some( m => t == parseInt(m.time_days)) ? 
 										<MaterialCard
-											material={schedule[day][t]}
+											material={schedule[day].filter( m => t == parseInt(m.time_days))[0]}
 										/> 
 										: <pre> {null} </pre>} 
 									</td>
@@ -84,23 +89,21 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 
 					<tbody>
 						{/* on this scheduel/table the times is filterd to only integers */}
-						{times.filter(t => t === parseInt(t)).map( (t, index) => 
-								<tr key={index}>
-									{
-											['حد','ثل','خمس'].map( (day, index)=>
-												
-											<td key={index}> {day in schedule && schedule[day][t] ? 
 
-												<MaterialCard
-													material={schedule[day][t]}
-												/>
-
-											: <pre>{null}</pre>}
-
-											</td>
-										)
-									}
-								</tr>
+						{[...times].sort((a, b)=> compTimes(a,b)).map( (t, index) =>
+							<tr key={index}>
+								{
+										['حد','ثل','خمس'].map( (day, index)=>
+											
+										<td key={index}> {day in schedule && schedule[day].some( m => t == parseInt(m.time_days)) ? 
+											<MaterialCard
+												material={schedule[day].filter( m => t == parseInt(m.time_days))[0]}
+											/> 
+											: <pre> {null} </pre>} 
+										</td>
+									)
+								}
+							</tr>
 						)}
 					</tbody>
 				</table>
@@ -108,7 +111,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 
 			<div className='right-schedule'>
 
-			<table>
+				<table>
 					<thead>
 						<tr>
 							<th> MON </th>
@@ -117,27 +120,29 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 					</thead>
 
 					<tbody>
-						{times.map( (t, index) =>
-								<tr key={index}>
-									{
-											['ثن','ربع'].map( (day, index)=>
-
-											<td key={index}> {day in schedule && schedule[day][t] ? 
-												<MaterialCard
-													material={schedule[day][t]} 
-												/>
-											 : <pre>{null}</pre>} 
-											</td>
-
-										)
-									}
-								</tr>
+						{[...times].sort((a, b)=> compTimes(a,b)).map( (t, index) =>
+							<tr key={index}>
+								{
+										['ثن','ربع'].map( (day, index)=>
+											
+										<td key={index}> {day in schedule && schedule[day].some( m => t == parseInt(m.time_days)) ? 
+											<MaterialCard
+												material={schedule[day].filter( m => t == parseInt(m.time_days))[0]}
+											/> 
+											: <pre> {null} </pre>} 
+										</td>
+									)
+								}
+							</tr>
 						)}
+						
 					</tbody>
 				</table>
 
 			</div>
+
 		</div>
 	);
 })
+
 

@@ -47,7 +47,7 @@ const App = ()=> {
 
 
                 <div className="Row">
-                    <SplitPane minSize={10} maxSize={890} defaultSize={700}>
+                    <SplitPane minSize={10} maxSize={890} defaultSize={770}>
                         <MaterialsTree/>
                         <StudentSchedule ref={tableRef}/>
 

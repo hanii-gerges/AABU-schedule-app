@@ -6,6 +6,8 @@ import { REMOVE_FROM_SCHDULE } from "../../Redux/actions/types";
 import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { Badge, Button } from 'reactstrap';
+
 export const MaterialCard = ({material}) => {
 
 	const dispatch = useDispatch();
@@ -25,6 +27,8 @@ export const MaterialCard = ({material}) => {
 			<button className='close-btn' onClick={()=>handleRemove()}> 
 				<FontAwesomeIcon icon={faWindowClose}/>
 			</button>
+
+			{material.isLab && <Badge className='islab-badge' color="secondary">مختبر</Badge> }
 
 			<div className='material-name'>
 				{/* if lab add a (lab) label */}

@@ -22,9 +22,15 @@ body{
     height: 310px;  //! adjust this so the schedule looks good even if materials at all times are full.
     width: auto;
 
+    .Pane1{
+        direction: rtl;
+        overflow-y: scroll;
+    }
+    
     .studyPlanTree{
+        direction: ltr;
         position: relative;
-        overflow: hidden;
+
         // flex-basis: 50%;
         // border: 1px solid rgba(0, 0, 0, 0.3);
     }

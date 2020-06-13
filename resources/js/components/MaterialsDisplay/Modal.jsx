@@ -12,7 +12,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export const ButtonModal = ({material}) => {
-
   const [modal, setModal] = useState(false);
 	const [modalInfo, setModalInfo] = useState({renderBtn: null, onAccept: null, title: '', content: ''});
 
@@ -30,19 +29,22 @@ export const ButtonModal = ({material}) => {
 
 		const days = ['حد', 'ثن', 'ثل', 'ربع', 'خمس'];
 
-		const getTimeOnly = (str) => str.replace(new RegExp('[^\\d\\.-]', 'g'), '');
+		const getTimeOnly = (str) => str.replace(new RegExp('[^\\d\\.\\-AMP]', 'g'), '');
 
 		const getDate = (time) => {
 			let today = new Date();
-			const _t = time.split(".");
-			today.setHours(_t[0], _t[1], 0, 0);
+			const isPM = time.includes('PM');
+			const _t = time.replace(new RegExp('(AM)|(PM)', 'g'), '').split(".");
+
+			today.setHours( (isPM ? _t[0] + 12 : _t[0])
+										, _t[1], 0, 0);
 			return today;
 		}
 
 		const timeOverLaps = (time1, time2) => {
 			time1 = getTimeOnly(time1).split('-');
 			time2 = getTimeOnly(time2).split('-');
-
+			
 			const [startTime, endTime] = [getDate(time1[0]), getDate(time1[1])];
 
 			if( getDate(time2[0]) <= startTime && startTime < getDate(time2[1]) ||
@@ -53,7 +55,6 @@ export const ButtonModal = ({material}) => {
 		}
 
 		const selectedTime = material.time_days;
-
 
 		const array_of_occupation = materialsInSchedule.filter( 
 			otherMaterial => 
@@ -68,8 +69,6 @@ export const ButtonModal = ({material}) => {
 	 	materialsInSchedule.some(mat => mat.course_id == material.course_id && mat.time_days == material.time_days);
 
 	useEffect(() => {
-		console.log(materialsInSchedule); //! DEBUG
-
 		if(isAlreadyScheduledAtExactTime() || 
 			isAlreadyScheduled() && isTimeOccupied().length > 0){
 			setModalInfo({

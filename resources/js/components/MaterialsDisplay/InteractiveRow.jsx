@@ -35,8 +35,9 @@ export const InteractiveRow = ({material}) => {
 			<td>
 					<ButtonModal material={{
 						name: material.name,
+						isLab: sectionsControl.useLabs, // check if should add badge in student schedule
 						...sectionsControl.displaySections[selectIndex],
-					}}/>					
+					}}/>
 			</td>
 
 			<td>

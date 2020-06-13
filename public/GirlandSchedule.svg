@@ -41,7 +41,12 @@
   <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
     <rect width="1920" height="1080" fill="#fff"/>
     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_1)">
-      <path id="Path_1-2" data-name="Path 1" d="M473.593,97.278C739.926,175.363,953.12,164.671,925.9,413.507S1069.813,886.672,512.473,871,60.811,607.91,54.331,413.507,207.259,19.193,473.593,97.278Z" transform="translate(351 32)" fill="rgba(119,0,255,0.36)"/>
+      <path id="Path_1-2" data-name="Path 1" d="M473.593,97.278C739.926,175.363,953.12,164.671,925.9,413.507S1069.813,886.672,512.473,871,60.811,607.91,54.331,413.507,207.259,19.193,473.593,97.278Z" transform="translate(351 32)" 
+      fill="rgba(119,0,255,0.36)"/> 
+      <!-- change color -->
+      <!-- green:   rgba(151, 255, 151, 0.363) -->
+      <!-- purple:  rgba(119,0,255,0.36) -->
+
     </g>
     <g id="Schedule" transform="translate(-5.341 -47.487)">
       <g transform="matrix(1, 0, 0, 1, 5.34, 47.49)" filter="url(#rect-green)">

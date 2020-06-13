@@ -1,4 +1,7 @@
 <?php
+                                                            //html pages splitted because of database insertions time
+    set_time_limit(300);
+
     function getSslPage($url) 
     {
         $ch = curl_init();
@@ -23,6 +26,7 @@
     try{
         for ($i=0; $i < count($cols); $i+=12) 
         {
+            if($i+8>=count($cols))break;
             // defining culomns
             $id=trim($cols[$i],' &nbsp;');
             if(strlen($id)==0)$id=$last;

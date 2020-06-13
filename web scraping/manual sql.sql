@@ -12,3 +12,19 @@ INSERT INTO sections VALUES
 (90235000,1,"8.00 AM-10.00 AM حد ثل","سحر محمد فاضي الحسبان","1 تم"),
 (90235000,3,"10.20 AM-12.20 AM ثن ربع","محمد ابراهيم عبد القادر الحسن","1 تم");
 
+-- change pre_reqs
+UPDATE courses SET pre_req=0 WHERE id=901133; -- c++
+UPDATE courses SET pre_req=901133 WHERE id=901210; -- object
+UPDATE courses SET pre_req=901325 WHERE id=901327; -- wireless
+UPDATE courses SET pre_req=901320 WHERE id=901332 AND major="cs"; -- os cs
+UPDATE courses SET pre_req=902220 WHERE id=901332 AND major="cis"; -- os cis
+UPDATE courses SET pre_req=901325 WHERE id=901480 AND major="cs"; -- security cs
+UPDATE courses SET pre_req=904460 WHERE id=901480 AND major="cis"; -- security cis
+
+
+
+
+
+
+
+

@@ -23,7 +23,7 @@ $hoverColor : rgba(151, 255, 151, 0.363);
 
 .materialsProgram{
 	position: relative;
-	margin: 20px;
+	margin: 20px 10px;
 	height: 320px; //? change this value to prevent the page from scrolling when you create the TopNav
 
 	overflow-y: scroll;
@@ -33,16 +33,14 @@ $hoverColor : rgba(151, 255, 151, 0.363);
 		display: table;
 		direction: rtl;
 
-		width: 90%;
+		width: 95%;
 		margin: 50px auto;
 
 		text-align: center;
 
-		table-layout:			fixed;
-		border-collapse: 	collapse;
+		table-layout:	fixed;
 
-		#drop-down{
-
+		.drop-down{
 			&:before{
 				content: '';
 				width: 0;
@@ -80,7 +78,7 @@ $hoverColor : rgba(151, 255, 151, 0.363);
 				background-color: $primary-greenColor;
 			}
 
-			#drop-down-menu{
+			.drop-down-menu{
 				border: none;
 				position: absolute;
 				top: 120%;
@@ -97,8 +95,8 @@ $hoverColor : rgba(151, 255, 151, 0.363);
 				&:first-child{
 					width: 10%;
 				}
-				&:nth-child(4){
-						width: 30%;
+				&:nth-child(3){
+					width: 50%;
 				}
 		}
 

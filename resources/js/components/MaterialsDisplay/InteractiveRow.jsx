@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { ButtonModal } from './Modal';
+import Switch from '@material-ui/core/Switch';
 
 export const InteractiveRow = ({material}) => {
 	
@@ -26,7 +27,6 @@ export const InteractiveRow = ({material}) => {
 	*/
 
 	const ToggleLabs = ()=>{
-		//! TEMPORARY DOESN'T WORK BEC. OF A CHANGE IN LAB_SECTIONS' ID -> LAB_ID
 		setSelectIndex(0);
 
 		setSectionsControl({
@@ -36,8 +36,10 @@ export const InteractiveRow = ({material}) => {
 		
 	}
 
+	const containsLabs = material.lab_sections.length > 0;
+
 	return (
-		<tr id='material'>
+		<tr>
 			<td>
 					<ButtonModal material={{
 						name: material.name,
@@ -46,23 +48,33 @@ export const InteractiveRow = ({material}) => {
 					}}/>
 			</td>
 
-			<td>
-
-				{ 
-					//	only for materials with lab_sections
-					material.lab_sections.length > 0 && 
-					<button className='toggle-labs-btn' 
-					onClick={ToggleLabs}> لابات؟ </button>
-				}
-
-				{material.name}
-
+			<td colSpan={containsLabs ? 0 : 2}>
+				<span className='material-name'>{material.name}</span>
 			</td>
 
 			
+			{ //	only for materials with lab_sections
+				containsLabs &&
+				<td>
+					<span>
+							
+						<span> مختبرات </span>
+						
+						<Switch
+							checked={sectionsControl.useLabs}
+							onChange={ToggleLabs}
+							color="primary"
+							size="small" 
+							// inputProps={{ 'aria-label': 'secondary checkbox' }}
+						/> 
+				
+						<span> شعب المادة </span> 
+					</span>
+				</td>
+			}
 
 			<td>
-				<div id='drop-down' onClick={()=> setDropDownOpen(!isDropDownOpen)}>
+				<div className='drop-down' onClick={()=> setDropDownOpen(!isDropDownOpen)}>
 						<table>
 							
 							<tbody>
@@ -75,7 +87,7 @@ export const InteractiveRow = ({material}) => {
 						
 							
 							{isDropDownOpen && 
-								<tbody id='drop-down-menu' onMouseLeave={()=> setDropDownOpen(false)}>
+								<tbody className='drop-down-menu' onMouseLeave={()=> setDropDownOpen(false)}>
 									{sectionsControl.displaySections.map(
 										(_option, index)=>
 											<tr key={index} onClick={()=>{setSelectIndex(index)}}>

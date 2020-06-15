@@ -5,9 +5,16 @@
 	flex-flow: row wrap;
 	height: 100%;
 
+	.loading-spinner{
+		margin: auto;
+		width: 	100px;
+		height: 100px;
+	}
+
 	.tree{
-		border: 5px dashed rgba(172, 164, 164, 0.5); //! DEBUG
+		border: 3px dashed rgba(172, 164, 164, 0.5); //! DEBUG
 		margin: 5px;
+		padding: 3px;
 	}
 }
 

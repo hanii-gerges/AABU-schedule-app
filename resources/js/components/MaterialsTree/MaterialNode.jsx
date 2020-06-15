@@ -22,21 +22,22 @@ export const MaterialNode = ({material})=>{
 }
 
 	const is_disabled = (material.sections.length == 0);
+
 	return <div>
 			<button id={`MATERIAL${material.id}`} ref={materialRef} className={'materialNode fadingNode'}
 			 onClick={()=>ToggleMaterialToDisplay()} disabled={is_disabled}>
 
 			 		{is_disabled && 
-					//  <div className='disabled-material-ico'> X </div>
-					 <FontAwesomeIcon className='disabled-material-ico' icon={faBan}/>
-					}
+							<FontAwesomeIcon className='disabled-material-ico' icon={faBan}/>}
 
-					{`${material.name}`}
+					{material.name}
 
 			</button>
 				
-			{is_disabled && <UncontrolledTooltip placement="top" target={`MATERIAL${material.id}`}>
-					لا يوجد شعب لهذة المادة
-			</UncontrolledTooltip>}
+			{is_disabled && 
+					<UncontrolledTooltip placement="top" target={`MATERIAL${material.id}`}>
+							لا يوجد شعب لهذة المادة
+					</UncontrolledTooltip>}
+					
 		</div>
 }

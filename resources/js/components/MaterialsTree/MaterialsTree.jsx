@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import Tree, {withStyles} from 'react-vertical-tree';
 import { MaterialNode } from './MaterialNode';
 
+import { Spinner } from 'reactstrap';
+
 import './MaterialsTree.module.scss';
 
 //? data recieved from API.
@@ -123,7 +125,7 @@ export const MaterialsTree = ()=>{
     const [rows_of_data, setData] = useState([]);
     //? API call 
     useEffect(() => {
-        fetch('https://aabuschedule.herokuapp.com/api/courses/cs',{
+        fetch('https://aabuschedule.herokuapp.com/api/courses/cis',{
             method: 'GET',
             mode: 'cors',
             headers: {
@@ -159,6 +161,10 @@ export const MaterialsTree = ()=>{
 
     return(
         <div className="studyPlanTree">
+
+            {parents_array.length === 0 && 
+                <Spinner className='loading-spinner' color="success"/>}
+
             {parents_array.map( (material, index) => 
                 <div key={index} className="tree">
                     <StyledTree data={getArrayForMaterial(material)} 

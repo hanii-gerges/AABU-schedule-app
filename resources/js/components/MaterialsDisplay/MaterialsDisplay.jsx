@@ -24,7 +24,7 @@ export const MaterialsDisplay = ()=>{
                 <thead>
                     <tr>
                         <th> اضف المادة  </th>
-                        <th> اسم المادة  </th>
+                        <th colSpan={2}> اسم المادة  </th>
                         <th> مدرس المادة  /  الايام والاوقات / القاعة</th>
                     </tr>
                 </thead>

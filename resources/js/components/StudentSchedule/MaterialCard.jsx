@@ -1,22 +1,19 @@
 import React from 'react';
 
 import { useDispatch } from 'react-redux';
-import { REMOVE_FROM_SCHDULE } from "../../Redux/actions/types";
+import { RemoveFromSchdule } from "../../Redux/actions/schduleActions";
 
 import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { Badge, Button } from 'reactstrap';
+import { Badge } from 'reactstrap';
 
 export const MaterialCard = ({material}) => {
 
 	const dispatch = useDispatch();
 
 	const handleRemove = ()=>{
-		dispatch({
-			type: REMOVE_FROM_SCHDULE,
-			payload: material.course_id,
-		});
+		dispatch(RemoveFromSchdule(material.course_id));
 	}
 
 	const getTimeOnly = (str) => str.replace(new RegExp('[^\\d\\.-]', 'g'), '');

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './StudentSchedule.module.scss';
 
-
 import { useSelector } from 'react-redux';
 
 import { MaterialCard } from './MaterialCard';

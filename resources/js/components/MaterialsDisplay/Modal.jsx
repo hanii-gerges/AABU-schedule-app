@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { ADD_TO_SCHDULE, REMOVE_FROM_SCHDULE } from "../../Redux/actions/types";
+import { AddToSchdule, RemoveFromSchdule } from "../../Redux/actions/schduleActions";
 
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
@@ -9,7 +9,9 @@ import '!style-loader!css-loader!bootstrap/dist/css/bootstrap.css';
 import { faPlus, faBan,faCalendarTimes, faRedoAlt} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
+/* // TODO:
+	* use moment.js
+*/
 
 export const ButtonModal = ({material}) => {
   const [modal, setModal] = useState(false);
@@ -73,10 +75,7 @@ export const ButtonModal = ({material}) => {
 			isAlreadyScheduled() && isTimeOccupied().length > 0){
 			setModalInfo({
 				renderBtn: <Button color="danger" onClick={toggle}>  <FontAwesomeIcon icon={faBan}/> </Button>,
-				onAccept:	() => dispatch({
-					type: REMOVE_FROM_SCHDULE,
-					payload: material.course_id,
-				}),
+				onAccept:	() => dispatch(RemoveFromSchdule(material.course_id)),
 
 				title:'المادة مضافة مسبقا وبنفس الموعد',
 				content: <p>
@@ -94,15 +93,10 @@ export const ButtonModal = ({material}) => {
 			setModalInfo({
 				renderBtn: <Button color="primary" onClick={toggle}>  <FontAwesomeIcon icon={faRedoAlt}/> </Button>,
 				onAccept:	() => {
-					dispatch({
-						type: REMOVE_FROM_SCHDULE,
-						payload: material.course_id,
-					});
 
-					dispatch({
-						type: ADD_TO_SCHDULE,
-						payload: material,
-					});
+					dispatch(RemoveFromSchdule(material.course_id));
+					dispatch(AddToSchdule(material));
+
 				},
 
 				title:' المادة مضافة مسبقا',
@@ -133,18 +127,11 @@ export const ButtonModal = ({material}) => {
 				renderBtn: <Button color="warning" onClick={toggle}> <FontAwesomeIcon icon={faCalendarTimes}/> </Button>,
 				onAccept:	() => {
 
-					for(let mat of otherMaterials){
-						console.log(`Removing: ${mat.name}`);
-						dispatch({
-							type: REMOVE_FROM_SCHDULE,
-							payload: mat.course_id,
-						});
-					}
+					for(let mat of otherMaterials)
+						dispatch(RemoveFromSchdule(mat.course_id));
 						
-					dispatch({
-						type: ADD_TO_SCHDULE,
-						payload: material
-					})
+					dispatch(AddToSchdule(material));
+
 				},
 
 				title:'تعارض وقت',
@@ -152,12 +139,11 @@ export const ButtonModal = ({material}) => {
 					<p>
 						 المادة التي تحاول اضافتها 
 
-						"{ material.name }"
+						"{ material.name + (material.isLab ? ' (مختبر) ': '') }"
 
 						 :وقتها بتعارض مع المواد التالية
-
 							{	
-								otherMaterials.map( (_mat)=> <b> "{_mat.name}" </b> )
+								otherMaterials.map( (_mat)=> <b> {_mat.name + (_mat.isLab ? ' (مختبر) ': '')} </b> )
 							}
 
 					  	<br/>
@@ -168,11 +154,11 @@ export const ButtonModal = ({material}) => {
 					<p>
 						 المادة التي تحاول اضافتها 
 
-							"{ material.name }"
+							"{ material.name + (material.isLab ? ' (مختبر) ': '')}"
 
  							وقتها بتعارض مع 
 
-							 "{otherMaterials[0].name}"
+							 "{otherMaterials[0].name + (otherMaterials[0].isLab ? ' (مختبر) ': '')}"
 
 							هل ترغب بتبديل المادتين ببعضهما؟
 					</p>
@@ -181,15 +167,12 @@ export const ButtonModal = ({material}) => {
 		}else{
 			setModalInfo({
 				renderBtn: <Button color="success" onClick={toggle}> <FontAwesomeIcon icon={faPlus}/> </Button>,	
-				onAccept:	() => dispatch({
-					type: ADD_TO_SCHDULE,
-						payload: material,
-				}),
+				onAccept:	() => dispatch(AddToSchdule(material)),
 				
 				title:'اضافة مادة',
 				content: <p>
 					  هل ترغب باضافة 
-					 "{ material.name }" 
+					 "{ material.name + (material.isLab ? ' (مختبر) ': '')}" 
 					 
 					؟
 				</p>,
@@ -199,10 +182,8 @@ export const ButtonModal = ({material}) => {
 	}, [materialsInSchedule, material]);
 
 	
-
   return (
     <div>
-      {/* <Button color="danger" onClick={toggle}>{}</Button> */}
 			{modalInfo.renderBtn}
 
       <Modal id='modal' isOpen={modal} toggle={toggle}>

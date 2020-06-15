@@ -1,14 +1,15 @@
-// import React from 'react';
-// import { ADD_TO_DISPLAY } from "../actions/types";
+import { ADD_TO_DISPLAY, REMOVE_FROM_DISPLAY } from "../actions/types";
 
-// import { useDispatch } from 'react-redux';
+export const AddToDisplay = (material)=> {
+	return {
+		type: ADD_TO_DISPLAY,
+		payload: material
+	}
+}
 
-// export const useAddToDisplay = (material)=> {
-// 	const dispatch = useDispatch();
-// 	dispatch({
-// 		type: ADD_TO_DISPLAY,
-// 		payload: material
-// 	});
-
-// 	return [];
-// }
+export const RemoveFromDisplay = (id)=> {
+	return {
+		type: REMOVE_FROM_DISPLAY,
+		payload: id
+	}
+}

@@ -87153,6 +87153,62 @@ var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers_
 
 /***/ }),
 
+/***/ "./resources/js/Redux/actions/materialsActions.js":
+/*!********************************************************!*\
+  !*** ./resources/js/Redux/actions/materialsActions.js ***!
+  \********************************************************/
+/*! exports provided: AddToDisplay, RemoveFromDisplay */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddToDisplay", function() { return AddToDisplay; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RemoveFromDisplay", function() { return RemoveFromDisplay; });
+/* harmony import */ var _actions_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../actions/types */ "./resources/js/Redux/actions/types.js");
+
+var AddToDisplay = function AddToDisplay(material) {
+  return {
+    type: _actions_types__WEBPACK_IMPORTED_MODULE_0__["ADD_TO_DISPLAY"],
+    payload: material
+  };
+};
+var RemoveFromDisplay = function RemoveFromDisplay(id) {
+  return {
+    type: _actions_types__WEBPACK_IMPORTED_MODULE_0__["REMOVE_FROM_DISPLAY"],
+    payload: id
+  };
+};
+
+/***/ }),
+
+/***/ "./resources/js/Redux/actions/schduleActions.js":
+/*!******************************************************!*\
+  !*** ./resources/js/Redux/actions/schduleActions.js ***!
+  \******************************************************/
+/*! exports provided: AddToSchdule, RemoveFromSchdule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddToSchdule", function() { return AddToSchdule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RemoveFromSchdule", function() { return RemoveFromSchdule; });
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./types */ "./resources/js/Redux/actions/types.js");
+
+var AddToSchdule = function AddToSchdule(material) {
+  return {
+    type: _types__WEBPACK_IMPORTED_MODULE_0__["ADD_TO_SCHDULE"],
+    payload: material
+  };
+};
+var RemoveFromSchdule = function RemoveFromSchdule(id) {
+  return {
+    type: _types__WEBPACK_IMPORTED_MODULE_0__["REMOVE_FROM_SCHDULE"],
+    payload: id
+  };
+};
+
+/***/ }),
+
 /***/ "./resources/js/Redux/actions/types.js":
 /*!*********************************************!*\
   !*** ./resources/js/Redux/actions/types.js ***!
@@ -87524,7 +87580,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
+/* harmony import */ var _Redux_actions_schduleActions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Redux/actions/schduleActions */ "./resources/js/Redux/actions/schduleActions.js");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
 /* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! style-loader!css-loader!bootstrap/dist/css/bootstrap.css */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/bootstrap/dist/css/bootstrap.css");
 /* harmony import */ var _style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_style_loader_css_loader_bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4__);
@@ -87544,6 +87600,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+/* // TODO:
+	* use moment.js
+*/
 
 var ButtonModal = function ButtonModal(_ref) {
   var material = _ref.material;
@@ -87630,10 +87690,7 @@ var ButtonModal = function ButtonModal(_ref) {
           icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faBan"]
         }), " "),
         onAccept: function onAccept() {
-          return dispatch({
-            type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
-            payload: material.course_id
-          });
+          return dispatch(Object(_Redux_actions_schduleActions__WEBPACK_IMPORTED_MODULE_2__["RemoveFromSchdule"])(material.course_id));
         },
         title: 'المادة مضافة مسبقا وبنفس الموعد',
         content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0647\u0644 \u062A\u0631\u063A\u0628 \u0628\u062D\u0630\u0641 \u0645\u0627\u062F\u0629 \u0627\u0644 \"", material.name, "\" \u0645\u0646 \u0627\u0644\u062C\u062F\u0648\u0644\u061F")
@@ -87650,14 +87707,8 @@ var ButtonModal = function ButtonModal(_ref) {
           icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faRedoAlt"]
         }), " "),
         onAccept: function onAccept() {
-          dispatch({
-            type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
-            payload: material.course_id
-          });
-          dispatch({
-            type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["ADD_TO_SCHDULE"],
-            payload: material
-          });
+          dispatch(Object(_Redux_actions_schduleActions__WEBPACK_IMPORTED_MODULE_2__["RemoveFromSchdule"])(material.course_id));
+          dispatch(Object(_Redux_actions_schduleActions__WEBPACK_IMPORTED_MODULE_2__["AddToSchdule"])(material));
         },
         title: ' المادة مضافة مسبقا',
         content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "\u0647\u0644 \u062A\u0631\u064A\u062F \u062A\u063A\u064A\u064A\u0631 \u0648\u0642\u062A \u0627\u0644\u0645\u0627\u062F\u0629\u061F", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "\u0645\u0646 \u0627\u0644\u0645\u0648\u0639\u062F \u0627\u0644\u0633\u0627\u0628\u0642", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -87689,11 +87740,7 @@ var ButtonModal = function ButtonModal(_ref) {
           try {
             for (var _iterator = otherMaterials[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
               var mat = _step.value;
-              console.log("Removing: ".concat(mat.name));
-              dispatch({
-                type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
-                payload: mat.course_id
-              });
+              dispatch(Object(_Redux_actions_schduleActions__WEBPACK_IMPORTED_MODULE_2__["RemoveFromSchdule"])(mat.course_id));
             }
           } catch (err) {
             _didIteratorError = true;
@@ -87710,15 +87757,12 @@ var ButtonModal = function ButtonModal(_ref) {
             }
           }
 
-          dispatch({
-            type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["ADD_TO_SCHDULE"],
-            payload: material
-          });
+          dispatch(Object(_Redux_actions_schduleActions__WEBPACK_IMPORTED_MODULE_2__["AddToSchdule"])(material));
         },
         title: 'تعارض وقت',
-        content: otherMaterials.length > 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0627\u0644\u0645\u0627\u062F\u0629 \u0627\u0644\u062A\u064A \u062A\u062D\u0627\u0648\u0644 \u0627\u0636\u0627\u0641\u062A\u0647\u0627 \"", material.name, "\" :\u0648\u0642\u062A\u0647\u0627 \u0628\u062A\u0639\u0627\u0631\u0636 \u0645\u0639 \u0627\u0644\u0645\u0648\u0627\u062F \u0627\u0644\u062A\u0627\u0644\u064A\u0629", otherMaterials.map(function (_mat) {
-          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, " \"", _mat.name, "\" ");
-        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "\u0647\u0644 \u062A\u0631\u063A\u0628 \u0628\u062D\u0630\u0641 \u0627\u0644\u0645\u0648\u0627\u062F \u0627\u0644\u0645\u0630\u0643\u0648\u0631\u0629 \u0644\u062A\u0633\u062C\u064A\u0644 \u0627\u0644\u0645\u0627\u062F\u0629 \u0627\u0644\u0645\u0631\u0627\u062F \u062A\u0633\u062C\u064A\u0644\u0647\u0627\u061F") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0627\u0644\u0645\u0627\u062F\u0629 \u0627\u0644\u062A\u064A \u062A\u062D\u0627\u0648\u0644 \u0627\u0636\u0627\u0641\u062A\u0647\u0627 \"", material.name, "\" \u0648\u0642\u062A\u0647\u0627 \u0628\u062A\u0639\u0627\u0631\u0636 \u0645\u0639 \"", otherMaterials[0].name, "\" \u0647\u0644 \u062A\u0631\u063A\u0628 \u0628\u062A\u0628\u062F\u064A\u0644 \u0627\u0644\u0645\u0627\u062F\u062A\u064A\u0646 \u0628\u0628\u0639\u0636\u0647\u0645\u0627\u061F")
+        content: otherMaterials.length > 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0627\u0644\u0645\u0627\u062F\u0629 \u0627\u0644\u062A\u064A \u062A\u062D\u0627\u0648\u0644 \u0627\u0636\u0627\u0641\u062A\u0647\u0627 \"", material.name + (material.isLab ? ' (مختبر) ' : ''), "\" :\u0648\u0642\u062A\u0647\u0627 \u0628\u062A\u0639\u0627\u0631\u0636 \u0645\u0639 \u0627\u0644\u0645\u0648\u0627\u062F \u0627\u0644\u062A\u0627\u0644\u064A\u0629", otherMaterials.map(function (_mat) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, " ", _mat.name + (_mat.isLab ? ' (مختبر) ' : ''), " ");
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "\u0647\u0644 \u062A\u0631\u063A\u0628 \u0628\u062D\u0630\u0641 \u0627\u0644\u0645\u0648\u0627\u062F \u0627\u0644\u0645\u0630\u0643\u0648\u0631\u0629 \u0644\u062A\u0633\u062C\u064A\u0644 \u0627\u0644\u0645\u0627\u062F\u0629 \u0627\u0644\u0645\u0631\u0627\u062F \u062A\u0633\u062C\u064A\u0644\u0647\u0627\u061F") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0627\u0644\u0645\u0627\u062F\u0629 \u0627\u0644\u062A\u064A \u062A\u062D\u0627\u0648\u0644 \u0627\u0636\u0627\u0641\u062A\u0647\u0627 \"", material.name + (material.isLab ? ' (مختبر) ' : ''), "\" \u0648\u0642\u062A\u0647\u0627 \u0628\u062A\u0639\u0627\u0631\u0636 \u0645\u0639 \"", otherMaterials[0].name + (otherMaterials[0].isLab ? ' (مختبر) ' : ''), "\" \u0647\u0644 \u062A\u0631\u063A\u0628 \u0628\u062A\u0628\u062F\u064A\u0644 \u0627\u0644\u0645\u0627\u062F\u062A\u064A\u0646 \u0628\u0628\u0639\u0636\u0647\u0645\u0627\u061F")
       });
     } else {
       setModalInfo({
@@ -87729,13 +87773,10 @@ var ButtonModal = function ButtonModal(_ref) {
           icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faPlus"]
         }), " "),
         onAccept: function onAccept() {
-          return dispatch({
-            type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["ADD_TO_SCHDULE"],
-            payload: material
-          });
+          return dispatch(Object(_Redux_actions_schduleActions__WEBPACK_IMPORTED_MODULE_2__["AddToSchdule"])(material));
         },
         title: 'اضافة مادة',
-        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0647\u0644 \u062A\u0631\u063A\u0628 \u0628\u0627\u0636\u0627\u0641\u0629 \"", material.name, "\" \u061F")
+        content: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0647\u0644 \u062A\u0631\u063A\u0628 \u0628\u0627\u0636\u0627\u0641\u0629 \"", material.name + (material.isLab ? ' (مختبر) ' : ''), "\" \u061F")
       });
     }
   }, [materialsInSchedule, material]);
@@ -87771,7 +87812,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialNode", function() { return MaterialNode; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
+/* harmony import */ var _Redux_actions_materialsActions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Redux/actions/materialsActions */ "./resources/js/Redux/actions/materialsActions.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
 /* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
@@ -87789,13 +87830,7 @@ var MaterialNode = function MaterialNode(_ref) {
 
   var ToggleMaterialToDisplay = function ToggleMaterialToDisplay() {
     var isDisplayed = materialRef.current.classList.toggle('fadingNode');
-    if (!isDisplayed) dispatch({
-      type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__["ADD_TO_DISPLAY"],
-      payload: material
-    });else dispatch({
-      type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_1__["REMOVE_FROM_DISPLAY"],
-      payload: material.id
-    });
+    dispatch(isDisplayed ? Object(_Redux_actions_materialsActions__WEBPACK_IMPORTED_MODULE_1__["RemoveFromDisplay"])(material.id) : Object(_Redux_actions_materialsActions__WEBPACK_IMPORTED_MODULE_1__["AddToDisplay"])(material));
   };
 
   var is_disabled = material.sections.length == 0;
@@ -88326,7 +88361,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Redux/actions/types */ "./resources/js/Redux/actions/types.js");
+/* harmony import */ var _Redux_actions_schduleActions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Redux/actions/schduleActions */ "./resources/js/Redux/actions/schduleActions.js");
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
 /* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
@@ -88341,10 +88376,7 @@ var MaterialCard = function MaterialCard(_ref) {
   var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useDispatch"])();
 
   var handleRemove = function handleRemove() {
-    dispatch({
-      type: _Redux_actions_types__WEBPACK_IMPORTED_MODULE_2__["REMOVE_FROM_SCHDULE"],
-      payload: material.course_id
-    });
+    dispatch(Object(_Redux_actions_schduleActions__WEBPACK_IMPORTED_MODULE_2__["RemoveFromSchdule"])(material.course_id));
   };
 
   var getTimeOnly = function getTimeOnly(str) {

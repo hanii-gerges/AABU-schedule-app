@@ -1,6 +1,6 @@
 import React, { createRef } from 'react';
 
-import { ADD_TO_DISPLAY, REMOVE_FROM_DISPLAY } from "../../Redux/actions/types";
+import { AddToDisplay, RemoveFromDisplay } from "../../Redux/actions/materialsActions";
 import { useDispatch } from 'react-redux';
 
 import { faBan } from "@fortawesome/free-solid-svg-icons";
@@ -15,21 +15,10 @@ export const MaterialNode = ({material})=>{
 
 	//? add or remove a material from the MaterialsDisplay
 	const ToggleMaterialToDisplay = () =>{
-		
-		const isDisplayed = materialRef.current.classList.toggle('fadingNode');
-				
-		if(!isDisplayed)
-				dispatch({
-						type: ADD_TO_DISPLAY,
-						payload: material
-				});
 
-		else
-				dispatch({
-						type: REMOVE_FROM_DISPLAY,
-						payload: material.id
-				});
-		
+	const isDisplayed = materialRef.current.classList.toggle('fadingNode');
+	
+	dispatch( isDisplayed ? RemoveFromDisplay(material.id) : AddToDisplay(material) );
 }
 
 	const is_disabled = (material.sections.length == 0);

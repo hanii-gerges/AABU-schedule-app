@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 import { ButtonModal } from './Modal';
-import Switch from '@material-ui/core/Switch';
+
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 export const InteractiveRow = ({material}) => {
 	
@@ -56,27 +57,25 @@ export const InteractiveRow = ({material}) => {
 			{ //	only for materials with lab_sections
 				containsLabs &&
 				<td>
-					<span>
-							
-						<span> مختبرات </span>
-						
-						<Switch
-							checked={sectionsControl.useLabs}
-							onChange={ToggleLabs}
-							color="primary"
-							size="small" 
-							// inputProps={{ 'aria-label': 'secondary checkbox' }}
-						/> 
-				
-						<span> شعب المادة </span> 
-					</span>
+					<button className='switch' onClick={ToggleLabs}>
+						<div className={'selected-highlight '+ (sectionsControl.useLabs ? 'left-side' : 'right-side')}></div>
+						<div className='option'>مختبرات</div>
+
+						<div className='option'>شعب المادة</div>
+					</button>
 				</td>
 			}
 
 			<td>
-				<div className='drop-down' onClick={()=> setDropDownOpen(!isDropDownOpen)}>
+				<Dropdown className={'drop-down'+ (isDropDownOpen ? ' open' : '')} isOpen={isDropDownOpen} 
+				onClick={()=>setDropDownOpen(!isDropDownOpen)}
+				toggle={()=>setDropDownOpen(!isDropDownOpen)}>
+					<DropdownToggle
+						tag="span"
+						data-toggle="dropdown"
+						aria-expanded={isDropDownOpen}
+					>
 						<table>
-							
 							<tbody>
 								<tr id={selectIndex}>
 										<td>{sectionsControl.displaySections[selectIndex].instructor}</td>
@@ -84,26 +83,27 @@ export const InteractiveRow = ({material}) => {
 										<td>{sectionsControl.displaySections[selectIndex].room}</td>
 								</tr>
 							</tbody>
-						
-							
-							{isDropDownOpen && 
-								<tbody className='drop-down-menu' onMouseLeave={()=> setDropDownOpen(false)}>
-									{sectionsControl.displaySections.map(
-										(_option, index)=>
-											<tr key={index} onClick={()=>{setSelectIndex(index)}}>
-
-													<td>{_option.instructor}</td>
-													<td>{_option.time_days}</td>
-													<td>{_option.room}</td>
-													<td>{index == selectIndex ? "✔" : null}</td>
-
-											</tr>
-									)}
-								</tbody>
-							}
-
 						</table>
-					</div>
+					</DropdownToggle>
+
+					<DropdownMenu className='drop-down-menu'>
+						<table>
+							<tbody>
+								{sectionsControl.displaySections.map(
+									(_option, index)=>
+									<tr key={index} onClick={()=>{setSelectIndex(index)}}>
+
+										<td>{_option.instructor}</td>
+										<td>{_option.time_days}</td>
+										<td>{_option.room}</td>
+										<td>{index == selectIndex ? "✔" : null}</td>
+									</tr>
+								)}
+							</tbody>
+						</table>
+					</DropdownMenu>
+				</Dropdown>
+
 			</td>
 		</tr>
 	)

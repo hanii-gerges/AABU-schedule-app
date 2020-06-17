@@ -88542,8 +88542,12 @@ var StudentSchedule = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(fu
     }
   };
 
-  var materialsCount = 0;
-  var totalHours = 0;
+  var materialsCount = materialsInSchedule.length;
+  var totalHours = materialsCount == 0 ? 0 : materialsInSchedule.map(function (m) {
+    return m.credit_hours;
+  }).reduce(function (accum, value) {
+    return accum + value;
+  });
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "studentSchedule",
     ref: tableRef

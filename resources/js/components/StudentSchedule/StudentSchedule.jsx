@@ -44,8 +44,9 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 		}
 	}
 
-	const materialsCount = 0;
-	const totalHours = 0;
+	const materialsCount = materialsInSchedule.length;
+	const totalHours = materialsCount == 0 ? 0 : 
+	materialsInSchedule.map(m => m.credit_hours).reduce((accum, value) => accum + value);
 
 	return (
 		<div className='studentSchedule' ref={tableRef}>

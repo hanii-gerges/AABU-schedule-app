@@ -125,7 +125,7 @@ export const MaterialsTree = ()=>{
     const [rows_of_data, setData] = useState([]);
     //? API call 
     useEffect(() => {
-        fetch('https://aabuschedule.herokuapp.com/api/courses/cis',{
+        fetch('https://aabuschedule.herokuapp.com/api/courses/cs',{
             method: 'GET',
             mode: 'cors',
             headers: {
@@ -145,15 +145,7 @@ export const MaterialsTree = ()=>{
         lines: {
           color: 'green',
           height: '20px',
-        },
-        node: {
-          backgroundColor: '#19a83d',
-          position: 'fixed',
-        },
-        text: {
-          color: '#fff',
-        }
-        
+        },        
     };
 
     const parents_array =  rows_of_data.filter(m => m.pre_req === 0);

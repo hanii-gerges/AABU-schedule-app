@@ -12,7 +12,9 @@ import './NavBar.module.scss';
 import htmlToImage from 'html-to-image';
 const download = require("downloadjs");
 
-
+/* // TODO:
+		*  Change all className -> className
+*/
 export const NavBar = ({table})=> {
 
 	//? init hooks
@@ -55,34 +57,34 @@ export const NavBar = ({table})=> {
 
 	return(
 
-			<menu id='top-menu'>
-					<div id='left-nav'>
-							<span id='logo'> 
+			<menu className='top-menu'>
+					<div className='left-nav'>
+							<span className='logo'> 
 
-									{<img id='logo' src={'Assets/logo/somename.jpg'} alt='LOGO'/>}
+									{<img className='logo' src={'Assets/logo/somename.jpg'} alt='LOGO'/>}
 
 									&nbsp;
-									<h2 id='title'> AABU Schedule App </h2>
+									<h2 className='title'> AABU Schedule App </h2>
 							</span>
 					</div>
 
-					<div id='right-nav'>
+					<div className='right-nav'>
 						
-							<button id='btn'>		 مين سمير <FontAwesomeIcon icon={faInfoCircle}/> 		</button>
+							<button className='btn'>		 مين سمير <FontAwesomeIcon icon={faInfoCircle}/> 		</button>
 
-							<button id='btn' onClick={()=> TakeImageOfTable()}>		
+							<button className='btn' onClick={()=> TakeImageOfTable()}>		
 									حفظ صورة <FontAwesomeIcon icon={faFileImage}/> 
 							</button>
 
-							<button id='btn' onClick={()=> setTableLayout(tableLayout => ++tableLayout%4)}>
+							<button className='btn' onClick={()=> setTableLayout(tableLayout => ++tableLayout%4)}>
 								 تغيير نوع الجدول <FontAwesomeIcon icon={faTable}/>	
 							</button>
 
-							<button id='btn' onClick={()=> dispatch({type: CLEAR_SCHDULE}) }>
+							<button className='btn' onClick={()=> dispatch({type: CLEAR_SCHDULE}) }>
 								مسح الجدول <FontAwesomeIcon icon={faTrash}/>		
 							</button>
 
-							<button id='btn'>		
+							<button className='btn'>		
 									تواصل معنا
 							</button>
 					</div>

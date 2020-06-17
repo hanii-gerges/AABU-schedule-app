@@ -15,13 +15,20 @@
 		border: 3px dashed rgba(172, 164, 164, 0.5); //! DEBUG
 		margin: 5px;
 		padding: 3px;
+
+		li::after, li::before{
+			box-sizing: unset;
+		}
+		li .kOUIfz{ // removes nodes
+			 display: none;
+		}
 	}
 }
 
 .materialNode{
-	position: relative;
-	padding: 5px 5px;
-	font-size: 10pt;
+	position: 	relative;
+	padding: 		5px 5px;
+	font-size: 	10pt;
 
 	color: #ffffff;
 	background-color: $primary-greenColor;
@@ -33,6 +40,10 @@
 		color: red;
 		top: 0;
 		left: 0;
+	}
+	
+	&:focus{
+		outline: none;
 	}
 
 	&:hover{

@@ -11,7 +11,8 @@ $hoverColor : rgba(151, 255, 151, 0.363);
 }
 
 .girlSvg{
-	position: absolute;
+	// position: absolute;
+	display: block;
 	margin: auto;
 	
 	top: 		0px;
@@ -21,12 +22,16 @@ $hoverColor : rgba(151, 255, 151, 0.363);
 
 }
 
-.materialsProgram{
-	position: relative;
-	margin: 20px 10px;
-	height: 320px; //? change this value to prevent the page from scrolling when you create the TopNav
+button:focus{
+	outline: none;
+}
 
-	overflow-y: scroll;
+.materialsProgram{
+	// position: relative;
+	margin: auto;
+	// margin: 20px 10px;
+	height: 100%; //? change this value to prevent the page from scrolling when you create the TopNav
+
 	border-top: 2px solid #ccc;
 
 	.materialsTable{
@@ -39,6 +44,49 @@ $hoverColor : rgba(151, 255, 151, 0.363);
 		text-align: center;
 
 		table-layout:	fixed;
+
+		.switch{
+			position: relative;
+
+			display: flex;
+			justify-content: space-between;
+
+			width: 100%;
+			padding: 10px 20px;
+			
+			background-color: #fff;
+			border: 2px solid $primary-greenColor;
+			border-radius: 30px;
+			.selected-highlight{
+
+
+				&.left-side{
+					left: 55%;
+					right: 0%;
+				}
+
+				&.right-side{
+					left: 0%;
+					right: 40%;
+				}
+
+				position: absolute;
+				top: 6px;
+				bottom: 4px;
+
+				margin: auto 10px;
+				
+				transition: all 1s;
+				background-color: $primary-yellowColor;
+				border-radius: 30px;
+
+				z-index: 0;
+			}
+
+			.option{
+				z-index: 1;
+			}
+		}
 
 		.drop-down{
 			&:before{
@@ -53,23 +101,27 @@ $hoverColor : rgba(151, 255, 151, 0.363);
 				border-color: black transparent;
 			}
 
-			position: relative;
-			display: inline-block;
-			
-			direction: rtl;
+			&.open:before{
+				transform: rotate(180deg);
+			}
+
+			text-align: center;
+			font: inherit;
 			cursor: pointer;
+			direction: rtl;
 			
-			// box-shadow: 0px 0px 5px $primary-greenColor;
 			background-color: white;
 			
 			table, tr{
 				display: table;
 				table-layout:fixed;
 				background-color: white;
+				text-align: center;
+				border-collapse: collapse;
 				width: 100%;
 
 				td:nth-child(2){
-					width: 50%;
+					width: 60%;
 				}
 			}
 
@@ -79,25 +131,33 @@ $hoverColor : rgba(151, 255, 151, 0.363);
 			}
 
 			.drop-down-menu{
+
+				// @overrides
+				padding: 0.2rem;
 				border: none;
-				position: absolute;
-				top: 120%;
-				z-index: 1;
-				
-				box-shadow: 0px 0px 5px 2px $primary-greenColor;
+
+				// colors
+				color: black;
+				box-shadow: 0px 0px 10px 0px #000;
+
+				td:last-child{
+					width: 5%;
+				}
+
 			}
 		}
 
 
+
 		th{
-				background-color: $primary-greenColor;
-				color: white;
-				&:first-child{
-					width: 10%;
-				}
-				&:nth-child(3){
-					width: 50%;
-				}
+			background-color: $primary-greenColor;
+			color: white;
+			&:first-child{
+				width: 10%;
+			}
+			&:nth-child(3){ //material's details
+				width: 60%;
+			}
 		}
 
 		td{
@@ -107,7 +167,6 @@ $hoverColor : rgba(151, 255, 151, 0.363);
 
 		th, td{
 			border: 1px solid black;
-			direction: ltr;
 		}
 	}
 

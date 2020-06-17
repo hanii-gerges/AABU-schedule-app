@@ -30,6 +30,8 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 				}
 		}
 		
+		if(times.size == 0)
+			times = new Set([8, 9, 9.30]);
 
 		setSchedule(updated_schedule);
 	}, [materialsInSchedule]);
@@ -42,40 +44,44 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 		}
 	}
 
+	const materialsCount = 0;
+	const totalHours = 0;
+
 	return (
 		<div className='studentSchedule' ref={tableRef}>
 
-		<table className='singleTable'>
-				
-				<thead>
-					<tr>
-						<th> SUN </th>
-						<th> MON </th>
-						<th> TUE </th>
-						<th> WED </th>
-						<th> THR </th>
-					</tr>
-				</thead>
-
-			<tbody>
-				{[...times].sort((a, b)=> compTimes(a,b)).map( (t, index) =>
-						<tr key={index}>
-							{
-									days.map( (day, index)=>
-										
-									<td key={index}> {day in schedule && schedule[day].some( m => t == parseInt(m.time_days)) ? 
-										<MaterialCard
-											material={schedule[day].filter( m => t == parseInt(m.time_days))[0]}
-										/> 
-										: <pre> {null} </pre>} 
-									</td>
-								)
-							}
+			<div className='single-table'>
+			<table>			
+					<thead>
+						<tr>
+							<th> SUN </th>
+							<th> MON </th>
+							<th> TUE </th>
+							<th> WED </th>
+							<th> THR </th>
 						</tr>
-				)}
-			</tbody>
-			</table> 
-			
+					</thead>
+
+				<tbody>
+					{[...times].sort((a, b)=> compTimes(a,b)).map( (t, index) =>
+							<tr key={index}>
+								{
+										days.map( (day, index)=>
+											
+										<td key={index}> {day in schedule && schedule[day].some( m => t == parseInt(m.time_days)) ? 
+											<MaterialCard
+												material={schedule[day].filter( m => t == parseInt(m.time_days))[0]}
+											/> 
+											: <pre> {null} </pre>} 
+										</td>
+									)
+								}
+							</tr>
+					)}
+				</tbody>
+				</table> 
+			</div> 
+				
 			<div className='left-schedule'>
 				<table>
 					<thead>
@@ -139,6 +145,16 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 				</table>
 
 			</div>
+
+			<div className='table-info-display'> 
+			<div className='count-display'>
+				<span> {materialsCount} عدد المواد </span>
+			</div>
+
+			<div className='hours-display'>
+				<span> {totalHours} مجموع الساعات </span>
+			</div>
+		</div>
 
 		</div>
 	);

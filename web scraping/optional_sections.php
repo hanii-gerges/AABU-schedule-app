@@ -30,6 +30,7 @@
             if(strlen($id)==0)$id=$last;
             else $last=$id;
             $num=trim($cols[$i+2],' &nbsp;');
+            $credit_hours=trim($cols[$i+3],' &nbsp;');
             $start_time=trim($cols[$i+4],' &nbsp;');
             $end_time=trim($cols[$i+5],' &nbsp;');
             $days=trim($cols[$i+6],' &nbsp;');
@@ -47,10 +48,11 @@
 
             //inserting to database
             $sql='INSERT INTO sections
-            VALUES(:cid,:num,:t_d,:ins,:room)';
+            VALUES(:cid,:hours,:num,:t_d,:ins,:room)';
             $stmt=$pdo->prepare($sql);
             $stmt->execute(array(
                 ':cid'=>$id,
+                ':hours'=>$credit_hours,
                 ':num'=>$num,
                 't_d'=>$time_days,
                 ':ins'=>$instructor,

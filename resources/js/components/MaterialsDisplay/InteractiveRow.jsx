@@ -67,7 +67,8 @@ export const InteractiveRow = ({material}) => {
 			}
 
 			<td>
-				<Dropdown className={'drop-down'+ (isDropDownOpen ? ' open' : '')} isOpen={isDropDownOpen} 
+				<Dropdown className={'drop-down'+ (isDropDownOpen ? ' open' : '')} 
+				isOpen={isDropDownOpen} 
 				onClick={()=>setDropDownOpen(!isDropDownOpen)}
 				toggle={()=>setDropDownOpen(!isDropDownOpen)}>
 					<DropdownToggle

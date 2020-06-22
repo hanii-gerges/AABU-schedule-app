@@ -12861,7 +12861,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.AABU-Schedule-App {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .Pane1 {\n  direction: rtl;\n  overflow-y: scroll;\n}\n.Row .studyPlanTree {\n  direction: ltr;\n  position: relative;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n#modal {\n  direction: rtl;\n  text-align: right;\n}\n#modal .close {\n  display: none;\n}\n\n.girlSvg {\n  display: block;\n  margin: auto;\n  top: 0px;\n  bottom: 0;\n  right: 0;\n  left: 0;\n}\n\nbutton:focus {\n  outline: none;\n}\n\n.materialsProgram {\n  margin: auto;\n  height: 100%;\n  border-top: 2px solid #ccc;\n}\n.materialsProgram .materialsTable {\n  display: table;\n  direction: rtl;\n  width: 95%;\n  margin: 50px auto;\n  text-align: center;\n  table-layout: fixed;\n}\n.materialsProgram .materialsTable .switch {\n  position: relative;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  width: 100%;\n  padding: 10px 20px;\n  background-color: #fff;\n  border: 2px solid #25c04c;\n  border-radius: 30px;\n}\n.materialsProgram .materialsTable .switch .selected-highlight {\n  position: absolute;\n  top: 6px;\n  bottom: 4px;\n  margin: auto 10px;\n  -webkit-transition: all 1s;\n  transition: all 1s;\n  background-color: #eebb2d;\n  border-radius: 30px;\n  z-index: 0;\n}\n.materialsProgram .materialsTable .switch .selected-highlight.left-side {\n  left: 55%;\n  right: 0%;\n}\n.materialsProgram .materialsTable .switch .selected-highlight.right-side {\n  left: 0%;\n  right: 40%;\n}\n.materialsProgram .materialsTable .switch .option {\n  z-index: 1;\n}\n.materialsProgram .materialsTable .drop-down {\n  text-align: center;\n  font: inherit;\n  cursor: pointer;\n  direction: rtl;\n  background-color: white;\n}\n.materialsProgram .materialsTable .drop-down:before {\n  content: \"\";\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 16px;\n  top: 50%;\n  border-width: 6px 6px 0 6px;\n  border-style: solid;\n  border-color: black transparent;\n}\n.materialsProgram .materialsTable .drop-down.open:before {\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg);\n}\n.materialsProgram .materialsTable .drop-down table, .materialsProgram .materialsTable .drop-down tr {\n  display: table;\n  table-layout: fixed;\n  background-color: white;\n  text-align: center;\n  border-collapse: collapse;\n  width: 100%;\n}\n.materialsProgram .materialsTable .drop-down table td:nth-child(2), .materialsProgram .materialsTable .drop-down tr td:nth-child(2) {\n  width: 60%;\n}\n.materialsProgram .materialsTable .drop-down tr:hover {\n  color: white;\n  background-color: #25c04c;\n}\n.materialsProgram .materialsTable .drop-down .drop-down-menu {\n  padding: 0.2rem;\n  border: none;\n  color: black;\n  box-shadow: 0px 0px 10px 0px #000;\n}\n.materialsProgram .materialsTable .drop-down .drop-down-menu td:last-child {\n  width: 5%;\n}\n.materialsProgram .materialsTable th {\n  background-color: #25c04c;\n  color: white;\n}\n.materialsProgram .materialsTable th:first-child {\n  width: 10%;\n}\n.materialsProgram .materialsTable th:nth-child(3) {\n  width: 60%;\n}\n.materialsProgram .materialsTable td {\n  padding: 0.5rem;\n  vertical-align: middle;\n}\n.materialsProgram .materialsTable th, .materialsProgram .materialsTable td {\n  border: 1px solid black;\n}\n.materialsProgram tr:hover {\n  background-color: rgba(151, 255, 151, 0.363);\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.AABU-Schedule-App {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .Pane1 {\n  direction: rtl;\n  overflow-y: scroll;\n}\n.Row .studyPlanTree {\n  direction: ltr;\n  position: relative;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n#modal {\n  direction: rtl;\n  text-align: right;\n}\n#modal .close {\n  display: none;\n}\n\n.girlSvg {\n  display: block;\n  margin: auto;\n  top: 0px;\n  bottom: 0;\n  right: 0;\n  left: 0;\n}\n\nbutton:focus {\n  outline: none;\n}\n\n.materialsProgram {\n  margin: auto;\n  height: 100%;\n  border-top: 2px solid #ccc;\n}\n.materialsProgram .materialsTable {\n  display: table;\n  direction: rtl;\n  width: 95%;\n  margin: 50px auto;\n  text-align: center;\n  table-layout: fixed;\n}\n.materialsProgram .materialsTable .switch {\n  position: relative;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  width: 100%;\n  padding: 10px 20px;\n  background-color: #fff;\n  border: 2px solid #19a83d;\n  border-radius: 30px;\n}\n.materialsProgram .materialsTable .switch .selected-highlight {\n  position: absolute;\n  top: 6px;\n  bottom: 4px;\n  margin: auto 10px;\n  -webkit-transition: all 1s;\n  transition: all 1s;\n  background-color: #eebb2d;\n  border-radius: 30px;\n  z-index: 0;\n}\n.materialsProgram .materialsTable .switch .selected-highlight.left-side {\n  left: 55%;\n  right: 0%;\n}\n.materialsProgram .materialsTable .switch .selected-highlight.right-side {\n  left: 0%;\n  right: 40%;\n}\n.materialsProgram .materialsTable .switch .option {\n  z-index: 1;\n}\n.materialsProgram .materialsTable .drop-down {\n  text-align: center;\n  font: inherit;\n  cursor: pointer;\n  direction: rtl;\n  background-color: white;\n}\n.materialsProgram .materialsTable .drop-down:before {\n  content: \"\";\n  width: 0;\n  height: 0;\n  position: absolute;\n  left: 16px;\n  top: 50%;\n  border-width: 6px 6px 0 6px;\n  border-style: solid;\n  border-color: black transparent;\n}\n.materialsProgram .materialsTable .drop-down.open:before {\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg);\n}\n.materialsProgram .materialsTable .drop-down table, .materialsProgram .materialsTable .drop-down tr {\n  display: table;\n  table-layout: fixed;\n  background-color: white;\n  text-align: center;\n  border-collapse: collapse;\n  width: 100%;\n}\n.materialsProgram .materialsTable .drop-down table td:nth-child(2), .materialsProgram .materialsTable .drop-down tr td:nth-child(2) {\n  width: 60%;\n  direction: ltr;\n}\n.materialsProgram .materialsTable .drop-down tr:hover {\n  color: white;\n  background-color: #19a83d;\n}\n.materialsProgram .materialsTable .drop-down .drop-down-menu {\n  padding: 0.2rem;\n  border: none;\n  color: black;\n  box-shadow: 0px 0px 10px 0px #000;\n}\n.materialsProgram .materialsTable .drop-down .drop-down-menu td:last-child {\n  width: 5%;\n}\n.materialsProgram .materialsTable th {\n  background-color: #19a83d;\n  color: white;\n}\n.materialsProgram .materialsTable th:first-child {\n  width: 10%;\n}\n.materialsProgram .materialsTable th:nth-child(3) {\n  width: 50%;\n}\n.materialsProgram .materialsTable td {\n  padding: 0.5rem;\n  vertical-align: middle;\n}\n.materialsProgram .materialsTable th, .materialsProgram .materialsTable td {\n  border: 1px solid black;\n}\n.materialsProgram tr:hover {\n  background-color: rgba(151, 255, 151, 0.363);\n}", ""]);
 
 // exports
 
@@ -12880,7 +12880,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.AABU-Schedule-App {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .Pane1 {\n  direction: rtl;\n  overflow-y: scroll;\n}\n.Row .studyPlanTree {\n  direction: ltr;\n  position: relative;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.studyPlanTree {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-flow: row wrap;\n  height: 100%;\n}\n.studyPlanTree .loading-spinner {\n  margin: auto;\n  width: 100px;\n  height: 100px;\n}\n.studyPlanTree .tree {\n  border: 3px dashed rgba(172, 164, 164, 0.5);\n  margin: 5px;\n  padding: 3px;\n}\n.studyPlanTree .tree li::after, .studyPlanTree .tree li::before {\n  box-sizing: unset;\n}\n.studyPlanTree .tree li .kOUIfz {\n  display: none;\n}\n\n.materialNode {\n  position: relative;\n  padding: 5px 5px;\n  font-size: 10pt;\n  color: #ffffff;\n  background-color: #25c04c;\n  border-radius: 20px;\n  border: none;\n}\n.materialNode .disabled-material-ico {\n  position: absolute;\n  color: red;\n  top: 0;\n  left: 0;\n}\n.materialNode:focus {\n  outline: none;\n}\n.materialNode:hover {\n  box-shadow: 0 0 3pt 2pt darkgreen;\n}\n\n.fadingNode {\n  background-color: lightgreen;\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.AABU-Schedule-App {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .Pane1 {\n  direction: rtl;\n  overflow-y: scroll;\n}\n.Row .studyPlanTree {\n  direction: ltr;\n  position: relative;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.studyPlanTree {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-flow: row wrap;\n  height: 100%;\n}\n.studyPlanTree .loading-spinner {\n  margin: auto;\n  width: 100px;\n  height: 100px;\n}\n.studyPlanTree .tree {\n  border: 3px dashed rgba(172, 164, 164, 0.5);\n  margin: 5px;\n  padding: 3px;\n}\n.studyPlanTree .tree li::after, .studyPlanTree .tree li::before {\n  box-sizing: unset;\n}\n.studyPlanTree .tree li .kOUIfz {\n  display: none;\n}\n\n.materialNode {\n  position: relative;\n  padding: 5px 5px;\n  font-size: 10pt;\n  color: #ffffff;\n  background-color: #19a83d;\n  border-radius: 20px;\n  border: none;\n}\n.materialNode .disabled-material-ico {\n  position: absolute;\n  color: red;\n  top: 0;\n  left: 0;\n}\n.materialNode:focus {\n  outline: none;\n}\n.materialNode:hover {\n  box-shadow: 0 0 3pt 2pt darkgreen;\n}\n\n.fadingNode {\n  background-color: lightgreen;\n}", ""]);
 
 // exports
 
@@ -12899,7 +12899,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.AABU-Schedule-App {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .Pane1 {\n  direction: rtl;\n  overflow-y: scroll;\n}\n.Row .studyPlanTree {\n  direction: ltr;\n  position: relative;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.top-menu {\n  position: fixed;\n  top: 0;\n  z-index: 2;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  padding: 0px 5px;\n  width: 100%;\n  background-color: #25c04c;\n  color: white;\n  border-bottom: 5px solid #eebb2d;\n}\n.top-menu .left-nav {\n  display: -webkit-box;\n  display: flex;\n  justify-content: space-around;\n}\n.top-menu .left-nav span {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.top-menu .left-nav span .title {\n  margin-left: 10px;\n}\n.top-menu .left-nav span .logo {\n  width: 36px;\n  border: 2px solid black;\n  border-radius: 50%;\n}\n.top-menu .right-nav {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.top-menu .right-nav .btn {\n  color: white;\n  background: transparent;\n  border: none;\n  padding: 0px 25px;\n  border-right: 1px solid white;\n  text-decoration: none;\n  -webkit-transition: padding ease 0.5s;\n  transition: padding ease 0.5s;\n}\n.top-menu .right-nav .btn:hover {\n  font-weight: bold;\n}\n.top-menu .right-nav .btn:focus {\n  outline: none !important;\n}\n.top-menu .right-nav :last-child {\n  border: none;\n}\n@media only screen and (max-width: 768px) {\n  .top-menu {\n    /* For mobile phones: */\n  }\n  .top-menu .right-nav {\n    display: none;\n  }\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.AABU-Schedule-App {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .Pane1 {\n  direction: rtl;\n  overflow-y: scroll;\n}\n.Row .studyPlanTree {\n  direction: ltr;\n  position: relative;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.top-menu {\n  position: fixed;\n  top: 0;\n  z-index: 10;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  padding: 0px 5px;\n  width: 100%;\n  background-color: #19a83d;\n  color: white;\n  border-bottom: 5px solid #eebb2d;\n}\n.top-menu .left-nav {\n  display: -webkit-box;\n  display: flex;\n  justify-content: space-around;\n}\n.top-menu .left-nav span {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.top-menu .left-nav span .title {\n  margin-left: 10px;\n}\n.top-menu .left-nav span .logo {\n  width: 36px;\n  border: 2px solid black;\n  border-radius: 50%;\n}\n.top-menu .right-nav {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.top-menu .right-nav .btn {\n  color: white;\n  background: transparent;\n  border: none;\n  padding: 0px 25px;\n  border-right: 1px solid white;\n  text-decoration: none;\n  -webkit-transition: padding ease 0.5s;\n  transition: padding ease 0.5s;\n}\n.top-menu .right-nav .btn:hover {\n  font-weight: bold;\n}\n.top-menu .right-nav .btn:focus {\n  outline: none !important;\n}\n.top-menu .right-nav :last-child {\n  border: none;\n}\n@media only screen and (max-width: 768px) {\n  .top-menu {\n    /* For mobile phones: */\n  }\n  .top-menu .right-nav {\n    display: none;\n  }\n}", ""]);
 
 // exports
 
@@ -12918,7 +12918,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.AABU-Schedule-App {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .Pane1 {\n  direction: rtl;\n  overflow-y: scroll;\n}\n.Row .studyPlanTree {\n  direction: ltr;\n  position: relative;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.studentSchedule {\n  position: absolute;\n  display: -webkit-box;\n  display: flex;\n  height: 100%;\n}\n.studentSchedule .table-info-display {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  padding: 10px;\n  padding-left: 20px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: end;\n          align-items: flex-end;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-flow: column nowrap;\n  border-radius: 30px 0 0 0;\n  color: #fff;\n  background-color: #25c04c;\n  z-index: 10;\n}\n.studentSchedule .single-table, .studentSchedule .left-schedule, .studentSchedule .right-schedule {\n  display: none;\n  margin: 5px;\n  height: 90%;\n}\n.studentSchedule table {\n  margin: auto;\n  width: 100%;\n  text-align: center;\n  direction: ltr;\n  background-color: white;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.studentSchedule table tr {\n  height: 20px;\n}\n.studentSchedule table th {\n  height: 40px;\n  background-color: #25c04c;\n  color: white;\n}\n.studentSchedule table td {\n  text-align: center;\n}\n.studentSchedule table td .material {\n  position: relative;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-flow: column nowrap;\n  height: 50px;\n  background-color: #25c04c;\n  color: white;\n  overflow: hidden;\n}\n.studentSchedule table td .material .islab-badge {\n  position: absolute;\n  top: -5px;\n  left: -5px;\n  -webkit-transform: rotate(-25deg);\n          transform: rotate(-25deg);\n}\n.studentSchedule table td .material .material-name {\n  overflow: hidden;\n  width: 100%;\n}\n.studentSchedule table td .material:hover .close-btn {\n  display: block;\n}\n.studentSchedule table td .material .close-btn {\n  position: absolute;\n  top: -5px;\n  right: 0px;\n  display: none;\n  margin: 2px;\n  color: rgba(231, 20, 20, 0.5);\n  background-color: transparent;\n  border: none;\n  border-radius: 30px;\n  cursor: pointer;\n}\n.studentSchedule table td .material .close-btn:hover {\n  color: #d42839;\n}\n.studentSchedule table th, .studentSchedule table td {\n  border: 1px solid black;\n  direction: ltr;\n}", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box;\n  padding: 0px;\n  margin: 0px;\n}\n\n.AABU-Schedule-App {\n  margin-top: 60px;\n}\n\n.Row {\n  position: relative;\n  margin: 20px;\n  height: 310px;\n  width: auto;\n}\n.Row .Pane1 {\n  direction: rtl;\n  overflow-y: scroll;\n}\n.Row .studyPlanTree {\n  direction: ltr;\n  position: relative;\n}\n.Row .studentSchedule {\n  margin-left: 10px;\n  height: 100%;\n}\n\n.studentSchedule {\n  position: absolute;\n  display: -webkit-box;\n  display: flex;\n  height: 100%;\n}\n.studentSchedule .table-info-display {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  padding: 10px;\n  padding-left: 20px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: end;\n          align-items: flex-end;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-flow: column nowrap;\n  border-radius: 30px 0 0 0;\n  color: #fff;\n  background-color: #19a83d;\n  z-index: 10;\n}\n.studentSchedule .single-table, .studentSchedule .left-schedule, .studentSchedule .right-schedule {\n  display: none;\n  margin: 5px;\n  height: 90%;\n}\n.studentSchedule table {\n  margin: auto;\n  width: 100%;\n  text-align: center;\n  direction: rtl;\n  background-color: white;\n  table-layout: fixed;\n  border-collapse: collapse;\n}\n.studentSchedule table tr {\n  height: 20px;\n}\n.studentSchedule table th {\n  height: 40px;\n  background-color: #19a83d;\n  color: white;\n}\n.studentSchedule table td {\n  text-align: center;\n}\n.studentSchedule table td .material {\n  position: relative;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-flow: column nowrap;\n  height: 50px;\n  background-color: #19a83d;\n  color: white;\n  overflow: hidden;\n}\n.studentSchedule table td .material .islab-badge {\n  position: absolute;\n  top: -5px;\n  left: -5px;\n  -webkit-transform: rotate(-25deg);\n          transform: rotate(-25deg);\n}\n.studentSchedule table td .material .material-name {\n  overflow: hidden;\n  width: 100%;\n}\n.studentSchedule table td .material:hover .close-btn {\n  display: block;\n}\n.studentSchedule table td .material .close-btn {\n  position: absolute;\n  top: -5px;\n  right: 0px;\n  display: none;\n  margin: 2px;\n  color: rgba(231, 20, 20, 0.5);\n  background-color: transparent;\n  border: none;\n  border-radius: 30px;\n  cursor: pointer;\n}\n.studentSchedule table td .material .close-btn:hover {\n  color: #d42839;\n}\n.studentSchedule table th, .studentSchedule table td {\n  border: 1px solid black;\n  direction: ltr;\n}", ""]);
 
 // exports
 
@@ -87693,12 +87693,13 @@ var ButtonModal = function ButtonModal(_ref) {
 
   var isAlreadyScheduledAtExactTime = function isAlreadyScheduledAtExactTime() {
     return materialsInSchedule.some(function (mat) {
-      return mat.course_id == material.course_id && mat.time_days == material.time_days;
+      return mat.course_id === material.course_id && mat.number === material.number;
     });
   };
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (isAlreadyScheduledAtExactTime() || isAlreadyScheduled() && isTimeOccupied().length > 0) {
+    if (isAlreadyScheduledAtExactTime()) {
+      // || isAlreadyScheduled() && isTimeOccupied().length > 0
       setModalInfo({
         renderBtn: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
           color: "danger",
@@ -87732,11 +87733,19 @@ var ButtonModal = function ButtonModal(_ref) {
           style: {
             direction: 'ltr'
           }
-        }, "\"", otherMaterial.time_days, "\""), ":\u0627\u0644\u0649 \u0627\u0644\u0645\u0648\u0639\u062F \u0627\u0644\u062C\u062F\u064A\u062F", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        }, "\"", otherMaterial.time_days, "\""), material.instructor != otherMaterial.instructor && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          style: {
+            direction: 'rtl'
+          }
+        }, "\"", otherMaterial.instructor, "\""), ":\u0627\u0644\u0649 \u0627\u0644\u0645\u0648\u0639\u062F \u0627\u0644\u062C\u062F\u064A\u062F", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           style: {
             direction: 'ltr'
           }
-        }, "\"", material.time_days, "\""))
+        }, "\"", material.time_days, "\""), material.instructor != otherMaterial.instructor && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          style: {
+            direction: 'rtl'
+          }
+        }, "\"", material.instructor, "\""))
       });
     } else if (isTimeOccupied().length > 0) {
       // const selectedTime = material.time_days;
@@ -88393,21 +88402,75 @@ var MaterialCard = function MaterialCard(_ref) {
   var material = _ref.material;
   var dispatch = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useDispatch"])();
 
-  var handleRemove = function handleRemove() {
-    dispatch(Object(_Redux_actions_schduleActions__WEBPACK_IMPORTED_MODULE_2__["RemoveFromSchdule"])(material.course_id));
-  };
-
   var getTimeOnly = function getTimeOnly(str) {
     return str.replace(new RegExp('[^\\d\\.-]', 'g'), '');
   };
 
+  var handleRemove = function handleRemove() {
+    dispatch(Object(_Redux_actions_schduleActions__WEBPACK_IMPORTED_MODULE_2__["RemoveFromSchdule"])(material.course_id));
+  };
+
+  var applyFadeEffect = function applyFadeEffect() {
+    var arrOfMaterialCopies = document.getElementsByClassName("MATCARD-".concat(material.course_id));
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = arrOfMaterialCopies[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var materialCard = _step.value;
+        materialCard.style.background = "repeating-linear-gradient( 45deg, #19a83d, #19a83d 10px, #14802f 10px, #14802f 20px)";
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+          _iterator["return"]();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+  };
+
+  var removeFadeEffect = function removeFadeEffect() {
+    var arrOfMaterialCopies = document.getElementsByClassName("MATCARD-".concat(material.course_id));
+    var _iteratorNormalCompletion2 = true;
+    var _didIteratorError2 = false;
+    var _iteratorError2 = undefined;
+
+    try {
+      for (var _iterator2 = arrOfMaterialCopies[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+        var materialCard = _step2.value;
+        materialCard.style.background = '#19a83d';
+      }
+    } catch (err) {
+      _didIteratorError2 = true;
+      _iteratorError2 = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion2 && _iterator2["return"] != null) {
+          _iterator2["return"]();
+        }
+      } finally {
+        if (_didIteratorError2) {
+          throw _iteratorError2;
+        }
+      }
+    }
+  };
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "material"
+    className: 'material ' + "MATCARD-".concat(material.course_id)
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "close-btn",
-    onClick: function onClick() {
-      return handleRemove();
-    }
+    onClick: handleRemove,
+    onMouseEnter: applyFadeEffect,
+    onMouseLeave: removeFadeEffect
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__["FontAwesomeIcon"], {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faWindowClose"]
   })), material.isLab && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_5__["Badge"], {
@@ -88553,7 +88616,9 @@ var StudentSchedule = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(fu
     ref: tableRef
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "single-table"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " SUN "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " MON "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " TUE "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " WED "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " THR "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, _toConsumableArray(times).sort(function (a, b) {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, days.map(function (day) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, day);
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, _toConsumableArray(times).sort(function (a, b) {
     return compTimes(a, b);
   }).map(function (t, index) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
@@ -88571,7 +88636,9 @@ var StudentSchedule = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(fu
     }));
   })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "left-schedule"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " SUN "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " TUE "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " THR "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, _toConsumableArray(times).sort(function (a, b) {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, days.map(function (day, index) {
+    if (index % 2 == 0) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, day);
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, _toConsumableArray(times).sort(function (a, b) {
     return compTimes(a, b);
   }).map(function (t, index) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
@@ -88589,7 +88656,9 @@ var StudentSchedule = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(fu
     }));
   })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "right-schedule"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " MON "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " WED "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, _toConsumableArray(times).sort(function (a, b) {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, days.map(function (day, index) {
+    if (index % 2 == 1) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, day);
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, _toConsumableArray(times).sort(function (a, b) {
     return compTimes(a, b);
   }).map(function (t, index) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {

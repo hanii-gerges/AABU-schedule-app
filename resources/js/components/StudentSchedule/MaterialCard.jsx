@@ -11,17 +11,35 @@ import { Badge } from 'reactstrap';
 export const MaterialCard = ({material}) => {
 
 	const dispatch = useDispatch();
+	
+	const getTimeOnly = (str) => str.replace(new RegExp('[^\\d\\.-]', 'g'), '');
 
 	const handleRemove = ()=>{
 		dispatch(RemoveFromSchdule(material.course_id));
 	}
 
-	const getTimeOnly = (str) => str.replace(new RegExp('[^\\d\\.-]', 'g'), '');
+	const applyFadeEffect = ()=>{
+		const arrOfMaterialCopies = document.getElementsByClassName(`MATCARD-${material.course_id}`);
+
+		for(let materialCard of arrOfMaterialCopies)
+			materialCard.style.background = 
+			"repeating-linear-gradient( 45deg, #19a83d, #19a83d 10px, #14802f 10px, #14802f 20px)";
+		
+	}
+
+	const removeFadeEffect = () =>{
+		const arrOfMaterialCopies = document.getElementsByClassName(`MATCARD-${material.course_id}`);
+
+		for(let materialCard of arrOfMaterialCopies)
+			materialCard.style.background = '#19a83d';
+		
+	}
 
 	return (
-		<div className='material'>
+		<div className={'material ' + `MATCARD-${material.course_id}`} >
 
-			<button className='close-btn' onClick={()=>handleRemove()}> 
+			<button className='close-btn' onClick={handleRemove} 
+				onMouseEnter={applyFadeEffect} onMouseLeave={removeFadeEffect}> 
 				<FontAwesomeIcon icon={faWindowClose}/>
 			</button>
 

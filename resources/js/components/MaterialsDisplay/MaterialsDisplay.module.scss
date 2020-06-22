@@ -5,7 +5,7 @@ $hoverColor : rgba(151, 255, 151, 0.363);
 #modal{
 	direction: rtl;
 	text-align: right;
-	.close{
+	.close{ // @override
 		display: none;
 	}
 }
@@ -122,6 +122,7 @@ button:focus{
 
 				td:nth-child(2){
 					width: 60%;
+					direction: ltr;
 				}
 			}
 
@@ -156,7 +157,7 @@ button:focus{
 				width: 10%;
 			}
 			&:nth-child(3){ //material's details
-				width: 60%;
+				width: 50%;
 			}
 		}
 

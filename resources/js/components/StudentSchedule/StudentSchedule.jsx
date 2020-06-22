@@ -55,11 +55,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 			<table>			
 					<thead>
 						<tr>
-							<th> SUN </th>
-							<th> MON </th>
-							<th> TUE </th>
-							<th> WED </th>
-							<th> THR </th>
+							{days.map( day => <th>{day}</th>)}
 						</tr>
 					</thead>
 
@@ -87,9 +83,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 				<table>
 					<thead>
 						<tr>
-							<th> SUN </th>
-							<th> TUE </th>
-							<th> THR </th>
+							{days.map( (day, index) => {if(index%2 == 0) return <th>{day}</th>})}
 						</tr>
 					</thead>
 
@@ -120,8 +114,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef)=> {
 				<table>
 					<thead>
 						<tr>
-							<th> MON </th>
-							<th> WED </th>
+							{days.map( (day, index) => {if(index%2 == 1) return <th>{day}</th>})}
 						</tr>
 					</thead>
 

@@ -68,11 +68,10 @@ export const ButtonModal = ({material}) => {
 	}
 
 	const isAlreadyScheduledAtExactTime = () =>
-	 	materialsInSchedule.some(mat => mat.course_id == material.course_id && mat.time_days == material.time_days);
+	 	materialsInSchedule.some(mat => (mat.course_id === material.course_id && mat.number === material.number));
 
 	useEffect(() => {
-		if(isAlreadyScheduledAtExactTime() || 
-			isAlreadyScheduled() && isTimeOccupied().length > 0){
+		if(isAlreadyScheduledAtExactTime()){ // || isAlreadyScheduled() && isTimeOccupied().length > 0
 			setModalInfo({
 				renderBtn: <Button color="danger" onClick={toggle}>  <FontAwesomeIcon icon={faBan}/> </Button>,
 				onAccept:	() => dispatch(RemoveFromSchdule(material.course_id)),
@@ -110,11 +109,24 @@ export const ButtonModal = ({material}) => {
 							"{ otherMaterial.time_days }"
 						</p>
 
+						{material.instructor != otherMaterial.instructor &&
+							<p style={{direction: 'rtl'}}>
+							"{ otherMaterial.instructor }"
+							</p>
+						}
+
  							:الى	الموعد الجديد
 
 						<p style={{direction: 'ltr'}}>
-							"{ material.time_days }"  
+							"{ material.time_days }" 
 						</p>
+
+						{material.instructor != otherMaterial.instructor &&
+							<p style={{direction: 'rtl'}}>
+								"{ material.instructor }"
+							</p>
+						}
+						
 				</div>,
 			});
 	

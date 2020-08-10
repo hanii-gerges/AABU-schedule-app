@@ -17,7 +17,8 @@
 
 .Row .Pane1 {
   direction: rtl;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .Row .studyPlanTree {

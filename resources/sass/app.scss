@@ -5,7 +5,9 @@
     margin: 0px;
 }
 
-$primary-greenColor:    #25c04c;// #19a83d; 
+// $primary-greenColor:    #25c04c;
+$primary-greenColor:    #19a83d;
+// $primary-greenColor:    #14802f;
 $primary-yellowColor:   #eebb2d;
 
 .AABU-Schedule-App{
@@ -26,21 +28,19 @@ $primary-yellowColor:   #eebb2d;
 
     .Pane1{
         direction: rtl;
-        overflow-y: scroll;
+        overflow-y: auto;
+        overflow-x: auto;
     }
     
     .studyPlanTree{
         direction: ltr;
         position: relative;
-
-        // flex-basis: 50%;
         // border: 1px solid rgba(0, 0, 0, 0.3);
     }
     
     .studentSchedule{
         margin-left: 10px;
         height: 100%;
-        // flex-basis: 50%;
         // border: 1px solid rgba(0, 0, 0, 0.3);
     }
 }

@@ -42,10 +42,12 @@ UPDATE courses SET pre_req=902221 WHERE id=901327 AND major="cis"; -- wireless c
 UPDATE courses SET pre_req=902220 WHERE id=901332 AND major="cis"; -- os cis
 UPDATE courses SET pre_req=904460 WHERE id=901480 AND major="cis"; -- security cis
 UPDATE courses SET pre_req=902221 WHERE id=901420 AND major="cis"; -- ربط الشبكات وتطبيقاته	cis
+UPDATE courses SET pre_req=901133 WHERE id=902220 AND major="cis"; --  تركيب النظم الحاسوبية cis
 UPDATE courses SET pre_req=904230 WHERE id=904354 AND major="mis"; -- محاسبية محوسبة mis
 UPDATE courses SET pre_req=904230 WHERE id=902221 AND major="mis"; -- شبكات mis
 UPDATE courses SET pre_req=904230 WHERE id=904370 AND major="mis"; -- ادارة معرفة mis
 UPDATE courses SET pre_req=904230 WHERE id=904340; -- تحليل
+
 
 
 

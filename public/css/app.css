@@ -4,14 +4,24 @@
   margin: 0px;
 }
 
+body,
+html {
+  height: calc(100% - 60px) !important;
+}
+
+#root {
+  height: 100%;
+}
+
 .AABU-Schedule-App {
   margin-top: 60px;
+  height: 100%;
 }
 
 .Row {
   position: relative;
   margin: 20px;
-  height: 310px;
+  height: 50%;
   width: auto;
 }
 

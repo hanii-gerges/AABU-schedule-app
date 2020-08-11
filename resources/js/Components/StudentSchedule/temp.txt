@@ -1,0 +1,96 @@
+<div className="left-schedule">
+<table>
+    <thead>
+        <tr>
+            {days.map((day, index) => {
+                if (index % 2 == 0)
+                    return <th key={index}>{day}</th>;
+            })}
+        </tr>
+    </thead>
+
+    <tbody>
+        {times
+            .sort((a, b) =>
+                moment(a).isBefore(moment(b)) ? -1 : 1
+            )
+            .map((t, index) => (
+                <tr key={index}>
+                    {["حد", "ثل", "خمس"].map((day, index) => (
+                        <td key={index}>
+                            {" "}
+                            {day in schedule &&
+                            schedule[day].some(
+                                moment(t).isSame(
+                                    getValidTime(m.time_days)
+                                )
+                            ) ? (
+                                <MaterialCard
+                                    material={
+                                        schedule[day].filter(
+                                            m =>
+                                            moment(t).isSame(
+                                                getValidTime(m.time_days)
+                                            )
+                                        )[0]
+                                    }
+                                />
+                            ) : (
+                                <pre> {null} </pre>
+                            )}
+                        </td>
+                    ))}
+                </tr>
+            ))}
+    </tbody>
+</table>
+</div>
+
+<div className="right-schedule">
+<table>
+    <thead>
+        <tr>
+            {days.map((day, index) => {
+                if (index % 2 == 1)
+                    return <th key={index}>{day}</th>;
+            })}
+        </tr>
+    </thead>
+
+    <tbody>
+        {times
+            .sort((a, b) =>
+                moment(a).isBefore(moment(b)) ? -1 : 1
+            )
+            .map((t, index) => (
+                <tr key={index}>
+                    {["ثن", "ربع"].map((day, index) => (
+                        <td key={index}>
+                            {" "}
+                            {day in schedule &&
+                            schedule[day].some(
+                                m =>
+                                moment(t).isSame(
+                                    getValidTime(m.time_days)
+                                )
+                            ) ? (
+                                <MaterialCard
+                                    material={
+                                        schedule[day].filter(
+                                            m =>
+                                            moment(t).isSame(
+                                                getValidTime(m.time_days)
+                                            )
+                                        )[0]
+                                    }
+                                />
+                            ) : (
+                                <pre> {null} </pre>
+                            )}
+                        </td>
+                    ))}
+                </tr>
+            ))}
+    </tbody>
+</table>
+</div>

@@ -9,10 +9,17 @@
 $primary-greenColor:    #19a83d;
 // $primary-greenColor:    #14802f;
 $primary-yellowColor:   #eebb2d;
+$secondary-yellowColor:   rgba(238, 186, 45, 0.6);
 
+body, html{ 
+    height: calc(100% - 60px) !important;
+}
+#root{
+    height: 100%;
+}
 .AABU-Schedule-App{
     margin-top: 60px;
-    // height: 100vh;
+    height: 100%;
 }
 
 .Row{
@@ -23,7 +30,7 @@ $primary-yellowColor:   #eebb2d;
     margin: 20px;
     // display: flex;
 
-    height: 310px;  //! adjust this so the schedule looks good even if materials at all times are full.
+    height: 50%;  //! adjust this so the schedule looks good even if materials at all times are full.
     width: auto;
 
     .Pane1{

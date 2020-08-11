@@ -90,7 +90,7 @@ export const NavBar = ({ table }) => {
                         </div>
                         <p>
                             كن جزء من هذا
-                            <a href="#"> المشروع </a>
+                            <a href="https://github.com/abualhen/AABU-schedule-app"> المشروع </a>
                             :)
                         </p>
                     </div>

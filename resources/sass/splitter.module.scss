@@ -1,51 +1,85 @@
-@import './app.scss';
+@import "./app.scss";
 
 .Resizer {
-	height: 100%;
-  background: #000;
-  opacity: 0.3;
-  z-index: 1;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding;
-  background-clip: padding-box;
+    position: relative;
+    height: 100%;
+    background: $primary-yellowColor;
+    opacity: 0.6;
+    z-index: 1;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 0.5rem;
+        top: 50%;
+        border-width: 8px 8px 0 6px;
+        border-style: solid;
+        border-color: $primary-yellowColor transparent;
+        transform: rotate(-90deg);
+        transition: left .5s;
+    }
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        border-width: 8px 8px 0 6px;
+        border-style: solid;
+        border-color: $primary-yellowColor transparent;
+        transform: rotate(90deg);
+        transition: right .5s;
+    }
 }
 
 .Resizer:hover {
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
 }
 
 .Resizer.horizontal {
-  margin: -5px 0;
-  border-top: 5px solid rgba(255, 255, 255, 0);
-  border-bottom: 5px solid rgba(255, 255, 255, 0);
-  cursor: row-resize;
-  width: 100%;
+    margin: -5px 0;
+    border-top: 5px solid rgba(255, 255, 255, 0);
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+    cursor: row-resize;
+    width: 100%;
 }
 
 .Resizer.horizontal:hover {
-  border-top: 5px solid rgba(0, 0, 0, 0.5);
-  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+    border-top: 5px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
 }
 
 .Resizer.vertical {
-  width: 11px;
-  margin: 0 -5px;
-  border-left: 5px solid rgba(255, 255, 255, 0);
-  border-right: 5px solid rgba(255, 255, 255, 0);
-  cursor: col-resize;
+    width: 18px;
+    margin: 0 -5px;
+    border-left: 5px solid rgba(255, 255, 255, 0);
+    border-right: 5px solid rgba(255, 255, 255, 0);
+    cursor: col-resize;
 }
 
 .Resizer.vertical:hover {
-  border-left: 5px solid rgba(0, 0, 0, 0.5);
-  border-right: 5px solid rgba(0, 0, 0, 0.5);
+    background-color: $secondary-yellowColor;
+    &:before {
+        right: 0.8rem;
+    }
+
+    &:after {
+        left: 0.8rem;
+    }
 }
 .Resizer.disabled {
-  cursor: not-allowed;
+    cursor: not-allowed;
 }
 .Resizer.disabled:hover {
-  border-color: transparent;
+    border-color: transparent;
 }

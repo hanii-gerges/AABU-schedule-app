@@ -1,0 +1,97 @@
+@import "../../../sass/app.scss";
+
+.studyPlanTree {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 5rem;
+    height: 100%;
+
+    .loading-spinner {
+        margin: auto;
+        width: 100px;
+        height: 100px;
+    }
+
+    .tree {
+        margin: 5px;
+        padding: 3px;
+        
+        li::after,
+        li::before {
+            box-sizing: unset;
+        }
+        li .kOUIfz {
+            // removes nodes
+            display: none;
+        }
+    }
+
+    .info-display {
+        position: fixed;
+
+        left: -210px;
+        top: 3.5rem;
+
+        padding: 5px 10px;
+        min-width: 200px;
+
+        display: flex;
+		align-items: flex-start;
+        flex-flow: column nowrap;
+
+        border-radius: 0 0 30px 0;
+
+        color: #fff;
+        background-color: $primary-greenColor;
+        z-index: 10;
+
+		.display{
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: center;
+		}
+		&:hover{
+			left: 0;
+			transition: left .5s;
+		}
+
+        .keyword {
+			padding-left: 1rem;
+			text-align: right;
+        }
+        .dropdown button{
+			min-width: 200px;
+			margin-bottom: .5rem;
+        }
+    }
+}
+
+.materialNode {
+    position: relative;
+    padding: 5px;
+    font-size: 10pt;
+
+    color: #ffffff;
+    background-color: $primary-greenColor;
+    border-radius: 20px;
+    border: none;
+
+    .disabled-material-ico {
+        position: absolute;
+        color: red;
+        top: 0;
+        left: 0;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        box-shadow: 0 0 3pt 2pt darkgreen;
+    }
+}
+
+.fadingNode {
+    background-color: lightgreen;
+}

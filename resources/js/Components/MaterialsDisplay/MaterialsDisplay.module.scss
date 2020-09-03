@@ -28,8 +28,9 @@ button:focus {
 
 .materialsProgram {
     margin: auto;
+    margin-bottom: 5rem;
 
-    height: 50%; //? change this value to prevent the page from scrolling when you create the TopNav
+    height: 55%;
     overflow: auto;
     border-top: 2px solid #ccc;
 
@@ -37,8 +38,7 @@ button:focus {
         display: table;
         direction: rtl;
 
-        width: 95%;
-        margin: 50px auto;
+        margin: 1rem auto;
 
         text-align: center;
 
@@ -57,14 +57,30 @@ button:focus {
             border: 2px solid $primary-greenColor;
             border-radius: 30px;
             .selected-highlight {
-                &.left-side {
+                &.right-side {
+
                     left: 55%;
                     right: 0%;
+
+                    @media screen and (max-width: "1100px"){
+                        left: 0%;
+                        & ~ .option-materials{
+                            display: none;
+                        }
+                    }
                 }
 
-                &.right-side {
+                &.left-side {
+
                     left: 0%;
                     right: 40%;
+
+                    @media screen and (max-width: "1100px"){
+                        right: 0%;
+                        & ~ .option-labs{
+                            display: none;
+                        }
+                    }
                 }
 
                 position: absolute;
@@ -79,9 +95,12 @@ button:focus {
 
                 z-index: 0;
             }
-
-            .option {
+            
+            .option-labs, .option-materials{
                 z-index: 1;
+                @media screen and (max-width: "1100px"){
+                    margin: auto;
+                }
             }
         }
 
@@ -122,6 +141,12 @@ button:focus {
                     width: 60%;
                     direction: ltr;
                 }
+
+                @media screen and (max-width: "1100px"){
+                    td:last-child{
+                        display: none;
+                    }
+                }
             }
 
             tr:hover {
@@ -145,6 +170,12 @@ button:focus {
 
                 td:last-child {
                     width: 5%;
+                }
+                
+                @media screen and (max-width: "1100px"){
+                    td:nth-child(3){
+                        display: none;
+                    }
                 }
             }
         }

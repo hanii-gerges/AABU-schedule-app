@@ -15,29 +15,30 @@ html {
 
 .AABU-Schedule-App {
   margin-top: 60px;
-  height: 100%;
+  height: 92vh;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-.Row {
+@media screen and (max-width: 1100px) {
+  .AABU-Schedule-App {
+    flex-flow: column nowrap;
+  }
+}
+
+.Column {
   position: relative;
+  padding: 0.5rem;
   margin: 20px;
-  height: 50%;
-  width: auto;
+  border-right: 2px solid #ccc;
+  width: 75%;
 }
 
-.Row .Pane1 {
-  direction: rtl;
-  overflow-y: auto;
-  overflow-x: auto;
-}
-
-.Row .studyPlanTree {
-  direction: ltr;
-  position: relative;
-}
-
-.Row .studentSchedule {
-  margin-left: 10px;
-  height: 100%;
+@media screen and (max-width: 1100px) {
+  .Column {
+    width: 100%;
+    margin: auto;
+    border-top: 2px solid #ccc;
+  }
 }
 

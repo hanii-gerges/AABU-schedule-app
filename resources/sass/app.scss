@@ -1,4 +1,4 @@
-*{
+* {
     //* defaults
     box-sizing: border-box;
     padding: 0px;
@@ -6,48 +6,52 @@
 }
 
 // $primary-greenColor:    #25c04c;
-$primary-greenColor:    #19a83d;
+$primary-greenColor: #0a8228;
 // $primary-greenColor:    #14802f;
-$primary-yellowColor:   #eebb2d;
-$secondary-yellowColor:   rgba(238, 186, 45, 0.6);
+$primary-yellowColor: #eebb2d;
+$secondary-yellowColor: rgba(238, 186, 45, 0.6);
 
-body, html{ 
+body,
+html {
     height: calc(100% - 60px) !important;
 }
-#root{
+#root {
     height: 100%;
 }
-.AABU-Schedule-App{
+.AABU-Schedule-App {
     margin-top: 60px;
-    height: 100%;
+    height: 92vh;
+    display: flex;
+    flex-flow: row nowrap;
+
+    @media screen and (max-width: "1100px") {
+        flex-flow: column nowrap;
+    }
 }
 
-.Row{
+.Column {
     position: relative;
-    
-    // border: 1px solid rgba(0, 0, 0, 0.3); //! debug
-
+    padding: 0.5rem;
     margin: 20px;
-    // display: flex;
 
-    height: 50%;  //! adjust this so the schedule looks good even if materials at all times are full.
-    width: auto;
+    border-right: 2px solid #ccc;
 
-    .Pane1{
-        direction: rtl;
-        overflow-y: auto;
-        overflow-x: auto;
+    width: 75%;
+    @media screen and (max-width: "1100px") {
+        width: 100%;
+        margin: auto;
+        border-top: 2px solid #ccc;
     }
-    
-    .studyPlanTree{
-        direction: ltr;
-        position: relative;
-        // border: 1px solid rgba(0, 0, 0, 0.3);
-    }
-    
-    .studentSchedule{
-        margin-left: 10px;
-        height: 100%;
-        // border: 1px solid rgba(0, 0, 0, 0.3);
-    }
+
+    // .studyPlanTree{
+    //     direction: ltr;
+    //     position: relative;
+    //     // border: 1px solid rgba(0, 0, 0, 0.3);
+    // }
+
+    // .studentSchedule{
+    //     margin-left: 10px;
+    //     height: 100%;
+    //     // border: 1px solid rgba(0, 0, 0, 0.3);
+    // }
 }

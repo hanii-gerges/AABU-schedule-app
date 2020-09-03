@@ -229,42 +229,6 @@ export const MaterialsTree = () => {
     //? API call
     const [rows_of_data, setData] = useState([]);
 
-    // useEffect(() => {
-    //     setData([
-    //         {
-    //             id: 1,
-    //             name: "حاسوب 2 ",
-    //             pre_req: 0,
-    //             lab_sections: [],
-    //             sections: [
-    //                 {
-    //                     course_id: 1,
-    //                     credit_hours: 3,
-    //                     number: 1,
-    //                     time_days: " 8.00 AM- 9.00 AM  حد ثل خمس",
-    //                     room: "تم202",
-    //                     instructor: "TutorName"
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             id: 2,
-    //             name: "تدريب ميداني",
-    //             pre_req: 0,
-    //             lab_sections: [],
-    //             sections: [
-    //                 {
-    //                     course_id: 2,
-    //                     credit_hours: 3,
-    //                     number: 1,
-    //                     time_days: " 8.00 PM- 9.00 PM  حد ثل خمس",
-    //                     room: "تم202",
-    //                     instructor: "TutorName"
-    //                 }
-    //             ]
-    //         }
-    //     ]);
-    // }, []);
     useEffect(() => {
         setData([]);
 

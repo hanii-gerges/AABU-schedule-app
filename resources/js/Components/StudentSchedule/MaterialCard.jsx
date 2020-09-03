@@ -31,7 +31,7 @@ export const MaterialCard = ({material}) => {
 		const arrOfMaterialCopies = document.getElementsByClassName(`MATCARD-${material.course_id}`);
 
 		for(let materialCard of arrOfMaterialCopies)
-			materialCard.style.background = '#19a83d';
+			materialCard.style.background = '#0a8228';
 		
 	}
 

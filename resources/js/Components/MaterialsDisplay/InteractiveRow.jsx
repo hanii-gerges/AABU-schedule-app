@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { ButtonModal } from "./Modal";
 
+import { extractTimeFromString, extractDaysFromString } from "../../Util/TimeFunctions";
 import {
     Dropdown,
     DropdownToggle,
@@ -25,18 +26,14 @@ export const InteractiveRow = ({ material }) => {
         });
 
         //! FIXING TIME PROBLEM FROM AABU's SITE:
-        const getTimeOnly = str =>
-            str.replace(new RegExp("[^\\d\\.\\-AMP]", "g"), "");
-        const getDaysOnly = str =>
-            str.replace(new RegExp("[\\d\\.\\-AMP]", "g"), "");
 
         const FIX_AM_PM = t =>
             t[0] + t[1] == "12" ? (t = t.replace(new RegExp("AM"), "PM")) : t;
 
-        let days = getDaysOnly(
+        let days = extractDaysFromString(
             sectionsControl.displaySections[selectIndex].time_days
         );
-        let time = getTimeOnly(
+        let time = extractTimeFromString(
             sectionsControl.displaySections[selectIndex].time_days
         ).split("-");
         time = [FIX_AM_PM(time[0]), FIX_AM_PM(time[1])].join(" - ");
@@ -94,13 +91,13 @@ export const InteractiveRow = ({ material }) => {
                             className={
                                 "selected-highlight " +
                                 (sectionsControl.useLabs
-                                    ? "left-side"
-                                    : "right-side")
+                                    ? "right-side"
+                                    : "left-side")
                             }
                         ></div>
-                        <div className="option">مختبرات</div>
+                        <div className="option-labs">مختبرات</div>
 
-                        <div className="option">شعب المادة</div>
+                        <div className="option-materials">شعب المادة</div>
                     </button>
                 </td>
             )}

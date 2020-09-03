@@ -1,16 +1,16 @@
-import React, {useRef} from 'react';
-import ReactDOM from 'react-dom';
+import React, { useRef } from "react";
+import ReactDOM from "react-dom";
 
-import {MaterialsTree} from './MaterialsTree/MaterialsTree.jsx';
-import {StudentSchedule} from './StudentSchedule/StudentSchedule.jsx';
-import {MaterialsDisplay} from './MaterialsDisplay/MaterialsDisplay.jsx';
-import {NavBar} from './NavBar/NavBar.jsx';
+import { MaterialsTree } from "./MaterialsTree/MaterialsTree.jsx";
+import { StudentSchedule } from "./StudentSchedule/StudentSchedule.jsx";
+import { MaterialsDisplay } from "./MaterialsDisplay/MaterialsDisplay.jsx";
+import { NavBar } from "./NavBar/NavBar.jsx";
 
-import SplitPane from 'react-split-pane';
-import '../../sass/splitter.module.scss';
+import SplitPane from "react-split-pane";
+import "../../sass/splitter.module.scss";
 
 import { Provider } from "react-redux";
-import store from '../Redux/Store.js';
+import store from "../Redux/Store.js";
 /*  // TODO:
 
 	*[upd] when attempting to add an already added material but different time suggest replacement of time.
@@ -38,34 +38,29 @@ import store from '../Redux/Store.js';
 
     *[design] when the materials display is empty display a helpful and cute svg.
 */
-const App = ()=> {
-
-	const tableRef = useRef(null);
+const App = () => {
+    const tableRef = useRef(null);
     return (
         <Provider store={store}>
             <div className="AABU-Schedule-App">
-
-
-                <div className="Row">
+                {/* <div className="Row">
                     <SplitPane minSize={10} maxSize={1200} defaultSize={770}>
-                        <MaterialsTree/>
-                        <StudentSchedule ref={tableRef}/>
-
                     </SplitPane>
+                </div> */}
+                <div className="Column">
+                    <StudentSchedule ref={tableRef} />
+                    <MaterialsDisplay />
                 </div>
-
-				<NavBar table={tableRef} />  {/*  */}
-
-                <MaterialsDisplay />                
+                
+                <MaterialsTree />
+                <NavBar table={tableRef} /> 
             </div>
         </Provider>
     );
-}
+};
 
-export default <App />
+export default <App />;
 
-if (document.getElementById('root'))
-    ReactDOM.render(<App />, document.getElementById('root'));
-else
-    alert('err: root element not found!');
-
+if (document.getElementById("root"))
+    ReactDOM.render(<App />, document.getElementById("root"));
+else alert("err: root element not found!");

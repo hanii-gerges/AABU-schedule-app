@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import { MaterialCard } from "./MaterialCard";
 
 import moment from "moment";
+import { getValidMomentTime } from "../../Util/TimeFunctions";
 
 let times = [];
 const days = ["حد", "ثن", "ثل", "ربع", "خمس"];
@@ -15,39 +16,24 @@ export const StudentSchedule = React.forwardRef((_, tableRef) => {
         state => state.materials.scheduleMaterials
     );
     const [schedule, setSchedule] = useState({});
-
-    const getTimeOnly = str =>
-        str.replace(new RegExp("[^\\d\\.\\-AMP]", "g"), "");
-
-    const getValidTime = time => {
-        time = getTimeOnly(time)
-            .split("-")[0]
-            .toLowerCase()
-            .replace(".", ":");
-        return moment(time, "hh.mma");
-    };
-
     useEffect(() => {
         let updated_schedule = {};
         times = [];
 
-        for (let day of days) {
-            for (let m of materialsInSchedule.filter(m =>
-                m.time_days.includes(day)
-            )) {
-                // console.log(times.has(getValidTime(m.time_days)));
-                times.push(getValidTime(m.time_days));
-
-                if (typeof updated_schedule[day] === "undefined")
-                    updated_schedule[day] = [];
-
-                updated_schedule[day].push(m);
-            }
+        for (let day of days){
+            updated_schedule[day] = materialsInSchedule.filter(m => {
+                
+                if(m.time_days.includes(day)){
+                    times.push(getValidMomentTime(m.time_days));
+                    return true;     
+                }
+                return false;
+            });
         }
 
-        if (times.length === 0) times = [getValidTime("8:00am"), getValidTime("9:00am"), getValidTime("9:30am")];
+        if (times.length === 0) times = [getValidMomentTime("8:00am"), getValidMomentTime("9:00am"), getValidMomentTime("9:30am")];
         else {
-            /* Removes all dublicates */
+            /* Removes all dublicates */0
             const comparisonValues = times.map(v => v.valueOf());
             times = times.filter(
                 (v, i) => comparisonValues.indexOf(v.valueOf()) == i
@@ -92,7 +78,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef) => {
                                             {day in schedule &&
                                             schedule[day].some(m =>
                                                 moment(t).isSame(
-                                                    getValidTime(m.time_days)
+                                                    getValidMomentTime(m.time_days)
                                                 )
                                             ) ? (
                                                 <MaterialCard
@@ -101,7 +87,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef) => {
                                                             day
                                                         ].filter(m =>
                                                             moment(t).isSame(
-                                                                getValidTime(
+                                                                getValidMomentTime(
                                                                     m.time_days
                                                                 )
                                                             )
@@ -142,7 +128,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef) => {
                                             {day in schedule &&
                                             schedule[day].some(m =>
                                                 moment(t).isSame(
-                                                    getValidTime(m.time_days)
+                                                    getValidMomentTime(m.time_days)
                                                 )
                                             ) ? (
                                                 <MaterialCard
@@ -151,7 +137,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef) => {
                                                             day
                                                         ].filter(m =>
                                                             moment(t).isSame(
-                                                                getValidTime(
+                                                                getValidMomentTime(
                                                                     m.time_days
                                                                 )
                                                             )
@@ -193,7 +179,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef) => {
                                             {day in schedule &&
                                             schedule[day].some(m =>
                                                 moment(t).isSame(
-                                                    getValidTime(m.time_days)
+                                                    getValidMomentTime(m.time_days)
                                                 )
                                             ) ? (
                                                 <MaterialCard
@@ -202,7 +188,7 @@ export const StudentSchedule = React.forwardRef((_, tableRef) => {
                                                             day
                                                         ].filter(m =>
                                                             moment(t).isSame(
-                                                                getValidTime(
+                                                                getValidMomentTime(
                                                                     m.time_days
                                                                 )
                                                             )

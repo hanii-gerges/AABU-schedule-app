@@ -22,12 +22,7 @@ const download = require("downloadjs");
 export const NavBar = ({ table }) => {
     //? init hooks
     const [tableLayout, setTableLayout] = useState(3);
-    const layoutModes = [
-		"2 يومي",
-		"ثلاث ايام",
-		"يومين",
-		"يومي",
-	];
+    const layoutModes = ["2 يومي", "ثلاث ايام", "يومين", "يومي"];
     const dispatch = useDispatch();
 
     const TakeImageOfTable = () => {
@@ -81,16 +76,34 @@ export const NavBar = ({ table }) => {
                         <div style={{ textAlign: "center" }}>
                             <p>
                                 Front-end Developer (React):
-                                <a href="https://github.com/MrN-Nabhani" target="_blank"> Najm Nabhani </a>
+                                <a
+                                    href="https://github.com/MrN-Nabhani"
+                                    target="_blank"
+                                >
+                                    {" "}
+                                    Najm Nabhani{" "}
+                                </a>
                             </p>
                             <p>
                                 Backend Developer (Laravel):
-                                <a href="https://github.com/abualhen" target="_blank"> Hanii Gerges </a>
+                                <a
+                                    href="https://github.com/abualhen"
+                                    target="_blank"
+                                >
+                                    {" "}
+                                    Hanii Gerges{" "}
+                                </a>
                             </p>
                         </div>
                         <p>
                             كن جزء من هذا
-                            <a href="https://github.com/abualhen/AABU-schedule-app"> المشروع </a>
+                            <a
+                                href="https://github.com/abualhen/AABU-schedule-app"
+                                target="_blank"
+                            >
+                                {" "}
+                                المشروع{" "}
+                            </a>
                             :)
                         </p>
                     </div>

@@ -28,7 +28,7 @@
         "bootstrap": "^4.4.1",
         "downloadjs": "^1.4.7",
         "html-to-image": "^0.1.1",
-        "moment": "^2.27.0",
+        "moment": "^2.29.4",
         "react-redux": "^7.2.0",
         "react-split-pane": "^0.1.91",
         "react-vertical-tree": "^1.1.7",
